@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import dynamic from "next/dynamic";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ContentDetailClient } from "@/components/content-detail-client";
@@ -8,12 +7,8 @@ import { ContentNavigation } from "@/components/content-navigation";
 import { TableOfContents } from "@/components/table-of-contents";
 import { ProgressTracker } from "@/components/progress-tracker";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { NotesPanel } from "@/components/notes-panel";
 import { getAllSlugs, getContentBySlug, getAdjacentContent } from "@/lib/content-loader";
-
-const NotesPanel = dynamic(
-  () => import("@/components/notes-panel").then((mod) => mod.NotesPanel),
-  { ssr: false }
-);
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs();

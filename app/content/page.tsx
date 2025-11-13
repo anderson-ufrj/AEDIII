@@ -1,5 +1,4 @@
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -7,14 +6,10 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { CourseProgress } from "@/components/course-progress";
 import { FavoriteButton } from "@/components/favorite-button";
+import { FavoritesList } from "@/components/favorites-list";
 import { getAllContent, getContentByCategory, getAllSlugs } from "@/lib/content-loader";
 import { COURSE_CATEGORIES } from "@/lib/types";
 import { BookOpen, FileText, Star } from "lucide-react";
-
-const FavoritesList = dynamic(
-  () => import("@/components/favorites-list").then((mod) => mod.FavoritesList),
-  { ssr: false }
-);
 
 export default function ContentPage() {
   const allContent = getAllContent();
