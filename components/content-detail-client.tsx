@@ -2,13 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { PDFViewer } from "@/components/pdf-viewer";
 import { ArrowLeft, FileText, FileDown, ExternalLink } from "lucide-react";
 import type { CourseContent } from "@/lib/types";
+
+// Dynamically import PDFViewer to avoid SSR issues
+const PDFViewer = dynamic(
+  () => import("@/components/pdf-viewer").then((mod) => mod.PDFViewer),
+  { ssr: false }
+);
 
 interface ContentDetailClientProps {
   content: CourseContent;
