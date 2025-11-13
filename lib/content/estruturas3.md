@@ -36,7 +36,7 @@ pop_front que não estão disponíveis em um vetor.
 
 Um deque pode ser usado da seguinte forma:
 
-![Imagem 1](../images/estruturas3_p3_img0.jpeg)
+![Imagem 1](/images/estruturas3_p3_img0.jpeg)
 
 
 ## Página 4
@@ -149,7 +149,7 @@ da parte superior. Só é possível acessar o elemento superior de uma pilha.
 
 O código a seguir mostra como uma pilha pode ser usada:
 
-![Imagem 1](../images/estruturas3_p6_img0.jpeg)
+![Imagem 1](/images/estruturas3_p6_img0.jpeg)
 
 
 ## Página 7
@@ -204,7 +204,7 @@ possível acessar o primeiro e último elemento de uma fila.
 
 O código a seguir mostra como uma fila pode ser usada:
 
-![Imagem 1](../images/estruturas3_p9_img0.jpeg)
+![Imagem 1](/images/estruturas3_p9_img0.jpeg)
 
 
 ## Página 10

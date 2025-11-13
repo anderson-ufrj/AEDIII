@@ -56,7 +56,7 @@ AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p1_img0.jpeg)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p1_img0.jpeg)
 
 
 ## Página 2
@@ -97,10 +97,10 @@ Armazenamento de Dados
 
 Armazenamento de Dados
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img1.jpeg)
 
 
 ## Página 3
@@ -153,10 +153,10 @@ Exemplos de Dispositivos de Armazenamento de Dados
 
 Exemplos de Dispositivos de Armazenamento de Dados
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img1.jpeg)
 
 
 ## Página 4
@@ -189,10 +189,10 @@ Hierarquia de Memória
 
 ria
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img1.jpeg)
 
 
 ## Página 5
@@ -249,10 +249,10 @@ ria Secundária
 
 ria
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img1.jpeg)
 
 
 ## Página 6
@@ -309,10 +309,10 @@ ria Secundária
 
 ria
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img1.jpeg)
 
 
 ## Página 7
@@ -365,10 +365,10 @@ Dispositivos Existentes
 
 Dispositivos Existentes
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img1.jpeg)
 
 
 ## Página 8
@@ -417,10 +417,10 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img1.jpeg)
 
 
 ## Página 9
@@ -433,13 +433,13 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img1.png)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img1.png)
 
 
-![Imagem 3](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img2.jpeg)
+![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img2.jpeg)
 
 
 ## Página 10
@@ -468,13 +468,13 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img1.png)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img1.png)
 
 
-![Imagem 3](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img2.jpeg)
+![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img2.jpeg)
 
 
 ## Página 11
@@ -507,10 +507,10 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img1.jpeg)
 
 
 ## Página 12
@@ -539,10 +539,10 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img1.jpeg)
 
 
 ## Página 13
@@ -591,10 +591,10 @@ Estrutura dos Discos
 
 Estrutura dos Discos
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img1.jpeg)
 
 
 ## Página 14
@@ -673,10 +673,10 @@ Exercício Dirigido
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img1.jpeg)
 
 
 ## Página 15
@@ -713,10 +713,10 @@ Soluções para as Questões do Exerc
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img1.jpeg)
 
 
 ## Página 16
@@ -749,10 +749,10 @@ Soluções para as Questões do Exerc
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img1.jpeg)
 
 
 ## Página 17
@@ -789,10 +789,10 @@ Soluções para as Questões do Exerc
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img1.jpeg)
 
 
 ## Página 18
@@ -829,10 +829,10 @@ Soluções para as Questões do Exerc
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img1.jpeg)
 
 
 ## Página 19
@@ -869,7 +869,7 @@ Soluções para as Questões do Exerc
 
 cio Dirigido
 
-![Imagem 1](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img0.png)
+![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img0.png)
 
 
-![Imagem 2](../images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img1.jpeg)
+![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img1.jpeg)

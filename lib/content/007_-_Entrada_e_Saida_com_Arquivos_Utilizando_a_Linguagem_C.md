@@ -62,7 +62,7 @@ AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p1_img0.jpeg)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p1_img0.jpeg)
 
 
 ## Página 2
@@ -87,10 +87,10 @@ escreve seu argumento na tela a partir da posição atual do cursor;
 
 devolve o caractere escrito ou -1 (constante EOF definida em stdio.h)
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img1.jpeg)
 
 
 ## Página 3
@@ -135,10 +135,10 @@ putchar(ch);
 
 }
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img1.jpeg)
 
 
 ## Página 4
@@ -165,10 +165,10 @@ Ex: puts(“alo”);
 
 Entrada e Saída de Dados pelo Console
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img1.jpeg)
 
 
 ## Página 5
@@ -195,10 +195,10 @@ Entrada e Saída de Dados pelo Console
 
 da de Dados pelo Console
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img1.jpeg)
 
 
 ## Página 6
@@ -233,10 +233,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img1.jpeg)
 
 
 ## Página 7
@@ -265,10 +265,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img1.jpeg)
 
 
 ## Página 8
@@ -319,10 +319,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img1.jpeg)
 
 
 ## Página 9
@@ -399,10 +399,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img1.jpeg)
 
 
 ## Página 10
@@ -467,10 +467,10 @@ Cria arquivo texto para leitura/escrita
 
 Entrada e Saída com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img1.jpeg)
 
 
 ## Página 11
@@ -517,10 +517,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img1.jpeg)
 
 
 ## Página 12
@@ -577,10 +577,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img1.jpeg)
 
 
 ## Página 13
@@ -645,10 +645,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img1.jpeg)
 
 
 ## Página 14
@@ -679,10 +679,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img1.jpeg)
 
 
 ## Página 15
@@ -729,10 +729,10 @@ Entrada e Saída com Arquivos
 
 da com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img1.jpeg)
 
 
 ## Página 16
@@ -773,10 +773,10 @@ fclose(fp);
 
 Entrada e Saída com Arquivos
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img1.jpeg)
 
 
 ## Página 17
@@ -821,7 +821,7 @@ cadastrados.
 
 : string[15]
 
-![Imagem 1](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img0.png)
+![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img0.png)
 
 
-![Imagem 2](../images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img1.jpeg)
+![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img1.jpeg)

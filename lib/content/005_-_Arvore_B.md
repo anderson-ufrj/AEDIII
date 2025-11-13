@@ -528,7 +528,7 @@ Primeiro Semestre de 2014
 
 7 / 33
 
-![Imagem 1](../images/005_-_Arvore_B_p18_img0.jpeg)
+![Imagem 1](/images/005_-_Arvore_B_p18_img0.jpeg)
 
 
 ## Página 19

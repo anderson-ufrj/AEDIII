@@ -66,10 +66,10 @@ AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img1.png)
 
 
 ## Página 2
@@ -94,10 +94,10 @@ Tipos de Arquivos
 
  Direto
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img1.png)
 
 
 ## Página 3
@@ -142,10 +142,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img1.png)
 
 
 ## Página 4
@@ -180,10 +180,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img1.png)
 
 
 ## Página 5
@@ -250,10 +250,10 @@ Arquivo Seqüencial
 
 encial
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img1.png)
 
 
 ## Página 6
@@ -298,10 +298,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img1.png)
 
 
 ## Página 7
@@ -340,10 +340,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img1.png)
 
 
 ## Página 8
@@ -390,10 +390,10 @@ registro
 
 Registro de índice
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img1.png)
 
 
 ## Página 9
@@ -416,13 +416,13 @@ encial indexado estruturado em dois níveis
 
 veis
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img0.png)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img0.png)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img1.jpeg)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img1.jpeg)
 
 
-![Imagem 3](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img2.png)
+![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img2.png)
 
 
 ## Página 10
@@ -461,10 +461,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img1.png)
 
 
 ## Página 11
@@ -483,19 +483,19 @@ campo de elo em cada
 
 registro
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img0.png)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img0.png)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img1.png)
 
 
-![Imagem 3](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img2.png)
+![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img2.png)
 
 
-![Imagem 4](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img3.jpeg)
+![Imagem 4](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img3.jpeg)
 
 
-![Imagem 5](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img4.png)
+![Imagem 5](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img4.png)
 
 
 ## Página 12
@@ -514,19 +514,19 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img0.png)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img0.png)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img1.png)
 
 
-![Imagem 3](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img2.png)
+![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img2.png)
 
 
-![Imagem 4](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img3.jpeg)
+![Imagem 4](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img3.jpeg)
 
 
-![Imagem 5](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img4.png)
+![Imagem 5](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img4.png)
 
 
 ## Página 13
@@ -575,10 +575,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img1.png)
 
 
 ## Página 14
@@ -679,10 +679,10 @@ Arquivo Indexado
 
 Arquivo Indexado
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img1.png)
 
 
 ## Página 15
@@ -725,10 +725,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img1.png)
 
 
 ## Página 16
@@ -763,10 +763,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img1.png)
 
 
 ## Página 17
@@ -807,10 +807,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img1.png)
 
 
 ## Página 18
@@ -849,10 +849,10 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img1.png)
 
 
 ## Página 19
@@ -889,7 +889,7 @@ sicas de Organização
 
 ão
 
-![Imagem 1](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img0.jpeg)
+![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img0.jpeg)
 
 
-![Imagem 2](../images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img1.png)
+![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img1.png)

@@ -502,7 +502,7 @@ Primeiro Semestre de 2014
 
 9 / 30
 
-![Imagem 1](../images/Tabela Hash_p18_img0.jpeg)
+![Imagem 1](/images/Tabela Hash_p18_img0.jpeg)
 
 
 ## Página 19
@@ -741,10 +741,10 @@ Primeiro Semestre de 2014
 
 13 / 30
 
-![Imagem 1](../images/Tabela Hash_p26_img0.png)
+![Imagem 1](/images/Tabela Hash_p26_img0.png)
 
 
-![Imagem 2](../images/Tabela Hash_p26_img1.png)
+![Imagem 2](/images/Tabela Hash_p26_img1.png)
 
 
 ## Página 27
@@ -763,7 +763,7 @@ Primeiro Semestre de 2014
 
 14 / 30
 
-![Imagem 1](../images/Tabela Hash_p27_img0.png)
+![Imagem 1](/images/Tabela Hash_p27_img0.png)
 
 
 ## Página 28
@@ -1098,7 +1098,7 @@ Primeiro Semestre de 2014
 
 19 / 30
 
-![Imagem 1](../images/Tabela Hash_p38_img0.jpeg)
+![Imagem 1](/images/Tabela Hash_p38_img0.jpeg)
 
 
 ## Página 39

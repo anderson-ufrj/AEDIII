@@ -288,7 +288,7 @@ else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 
 ...
 
-![Imagem 1](../images/pesquisa_completa_p11_img0.jpeg)
+![Imagem 1](/images/pesquisa_completa_p11_img0.jpeg)
 
 
 ## Página 12
@@ -481,4 +481,4 @@ Caso 2:
 
 4->1->2->3->5->6->7->4: 48.00000
 
-![Imagem 1](../images/pesquisa_completa_p16_img0.jpeg)
+![Imagem 1](/images/pesquisa_completa_p16_img0.jpeg)

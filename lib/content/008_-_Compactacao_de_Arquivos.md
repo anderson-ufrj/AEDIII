@@ -50,10 +50,10 @@ AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p1_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p1_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p1_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p1_img1.png)
 
 
 ## Página 2
@@ -78,13 +78,13 @@ o uso deles é mais voltado a transferência de arquivos pela
 
 Internet para reduzir a massa de dados a ser transferida pela rede.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p2_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p2_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p2_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p2_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p2_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p2_img2.png)
 
 
 ## Página 3
@@ -123,13 +123,13 @@ teremos:
 
 2. a@2l is t@2o we@2l.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p3_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p3_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p3_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p3_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p3_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p3_img2.png)
 
 
 ## Página 4
@@ -168,13 +168,13 @@ risco de expansão, mas ela é ligeiramente menor (e mais rara) do que
 
 no caso do caractere de escape.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p4_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p4_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p4_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p4_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p4_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p4_img2.png)
 
 
 ## Página 5
@@ -203,13 +203,13 @@ armazenado é 0, indicando uma seqüencia de tamanho 0 de pixels
 
 brancos.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p5_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p5_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p5_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p5_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p5_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p5_img2.png)
 
 
 ## Página 6
@@ -242,13 +242,13 @@ finalmente para ASCII
 
 Ou seja, o texto foi reduzido de 12 para 3 caracteres
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p6_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p6_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p6_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p6_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p6_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p6_img2.png)
 
 
 ## Página 7
@@ -271,13 +271,13 @@ possui 8 dígitos diferentes: a, b, c, d, e, f, g
 
 e h.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p7_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p7_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p7_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p7_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p7_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p7_img2.png)
 
 
 ## Página 8
@@ -312,13 +312,13 @@ representados por códigos proporcionalmente maiores.
 
 Algoritmo de Shannon-Fano
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p8_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p8_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p8_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p8_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p8_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p8_img2.png)
 
 
 ## Página 9
@@ -349,16 +349,16 @@ Ordena-se a tabela de ocorrências (ordem crescente)
 
 Retira-se da lista os dois caracteres de menor valor;
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p9_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p9_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p9_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p9_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p9_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p9_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p9_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p9_img3.png)
 
 
 ## Página 10
@@ -389,56 +389,56 @@ Volta-se ao primeiro passo ate que reste somente um
 
 elemento na lista, cuja probabilidade seja 1.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p10_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p10_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p10_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p10_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p10_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p10_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p10_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p10_img3.png)
 
 
 ## Página 11
 
 Exemplo de Codificação Huffman
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p11_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p11_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p11_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p11_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p11_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p11_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p11_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p11_img3.png)
 
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p12_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p12_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p12_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p12_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p12_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p12_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p12_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p12_img3.png)
 
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p13_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p13_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p13_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p13_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p13_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p13_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p13_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p13_img3.png)
 
 
 ## Página 14
@@ -491,13 +491,13 @@ b
 
 a
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p14_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p14_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p14_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p14_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p14_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p14_img2.png)
 
 
 ## Página 15
@@ -530,16 +530,16 @@ de Huffman, baseia-se na divisão de conjuntos de
 
 probabilidades para a obtenção do código binário.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p15_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p15_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p15_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p15_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p15_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p15_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p15_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p15_img3.png)
 
 
 ## Página 16
@@ -558,16 +558,16 @@ primeiro grupo recebe como primeiro valor de código o
 
 binário 0 e o segundo recebe 1:
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p16_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p16_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p16_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p16_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p16_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p16_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p16_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p16_img3.png)
 
 
 ## Página 17
@@ -586,16 +586,16 @@ distinguir o primeiro e 1 para o segundo. O processo se
 
 repete ate que não haja mais grupos a dividir.
 
-![Imagem 1](../images/008_-_Compactacao_de_Arquivos_p17_img0.png)
+![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p17_img0.png)
 
 
-![Imagem 2](../images/008_-_Compactacao_de_Arquivos_p17_img1.png)
+![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p17_img1.png)
 
 
-![Imagem 3](../images/008_-_Compactacao_de_Arquivos_p17_img2.png)
+![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p17_img2.png)
 
 
-![Imagem 4](../images/008_-_Compactacao_de_Arquivos_p17_img3.png)
+![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p17_img3.png)
 
 
-![Imagem 5](../images/008_-_Compactacao_de_Arquivos_p17_img4.png)
+![Imagem 5](/images/008_-_Compactacao_de_Arquivos_p17_img4.png)

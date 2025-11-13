@@ -58,7 +58,7 @@ ZIG (Rotação para Direita) e ZAG (Rotação para Esquerda)
 
 Se pai(B) é raiz fazemos apenas uma rotação para esquerda ou direita.
 
-![Imagem 1](../images/004_-_Splay_Tree_p4_img0.jpeg)
+![Imagem 1](/images/004_-_Splay_Tree_p4_img0.jpeg)
 
 
 ## Página 5
@@ -73,7 +73,7 @@ para direita ou duas rotações para a esquerda, no mesmo sentido começando
 
 pelo pai(pai(C)).
 
-![Imagem 1](../images/004_-_Splay_Tree_p5_img0.jpeg)
+![Imagem 1](/images/004_-_Splay_Tree_p5_img0.jpeg)
 
 
 ## Página 6
@@ -86,7 +86,7 @@ Se pai(C) não é raiz e C e pai(C) são filhos do lado oposto, faz uma rotaçã
 
 pai(C) para direita e outra rotação no avô para esquerda de C.
 
-![Imagem 1](../images/004_-_Splay_Tree_p6_img0.jpeg)
+![Imagem 1](/images/004_-_Splay_Tree_p6_img0.jpeg)
 
 
 ## Página 7
@@ -99,7 +99,7 @@ Se pai(C) não é raiz e C e pai(C) são filhos do lado oposto, faz uma rotaçã
 
 pai(C) para esquerda e outra rotação no avô para direita de C.
 
-![Imagem 1](../images/004_-_Splay_Tree_p7_img0.jpeg)
+![Imagem 1](/images/004_-_Splay_Tree_p7_img0.jpeg)
 
 
 ## Página 8

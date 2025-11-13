@@ -28,7 +28,7 @@ diferentes de como uma solução pode ser construída.
 
 Sudoku
 
-![Imagem 1](../images/backtracking_p3_img0.jpeg)
+![Imagem 1](/images/backtracking_p3_img0.jpeg)
 
 
 ## Página 4
@@ -279,7 +279,7 @@ que as rainhas podem ser colocadas em um xadrez n × n para que nenhuma
 
 rainha se ataque. Por exemplo, quando n = 4, existem duas soluções possíveis:
 
-![Imagem 1](../images/backtracking_p11_img0.jpeg)
+![Imagem 1](/images/backtracking_p11_img0.jpeg)
 
 
 ## Página 12
@@ -304,13 +304,13 @@ de backtracking são as seguintes:
 
 Backtracking
 
-![Imagem 1](../images/backtracking_p13_img0.jpeg)
+![Imagem 1](/images/backtracking_p13_img0.jpeg)
 
 
-![Imagem 2](../images/backtracking_p13_img1.jpeg)
+![Imagem 2](/images/backtracking_p13_img1.jpeg)
 
 
-![Imagem 3](../images/backtracking_p13_img2.jpeg)
+![Imagem 3](/images/backtracking_p13_img2.jpeg)
 
 
 ## Página 14
