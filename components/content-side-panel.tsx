@@ -180,7 +180,7 @@ export function ContentSidePanel({
                     <ArrowLeftRight className="h-4 w-4" />
                     Navegação Entre Conteúdos
                   </h3>
-                  <ContentNavigation previous={previous} next={next} />
+                  <ContentNavigation previous={previous ?? null} next={next ?? null} />
                 </div>
                 <Separator />
                 <div className="p-3 bg-muted rounded-lg">
