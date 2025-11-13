@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { getAllContent, getContentByCategory } from "@/lib/content-loader";
+import { CourseProgress } from "@/components/course-progress";
+import { getAllContent, getContentByCategory, getAllSlugs } from "@/lib/content-loader";
 import { COURSE_CATEGORIES } from "@/lib/types";
 import { BookOpen, FileText } from "lucide-react";
 
 export default function ContentPage() {
   const allContent = getAllContent();
+  const allSlugs = getAllSlugs();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900">
@@ -24,6 +26,11 @@ export default function ContentPage() {
               Explore todo o conteúdo da disciplina organizado por categorias.
               {allContent.length} materiais disponíveis.
             </p>
+          </div>
+
+          {/* Course Progress Card */}
+          <div className="mb-8">
+            <CourseProgress totalContent={allContent.length} allSlugs={allSlugs} />
           </div>
 
           <Tabs defaultValue="all" className="w-full">
