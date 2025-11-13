@@ -5,10 +5,13 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SearchBar } from "@/components/search-bar";
+import { SkipLink } from "@/components/skip-link";
 
 export function Header() {
   return (
-    <header className="border-b bg-white/50 backdrop-blur-sm dark:bg-zinc-950/50 sticky top-0 z-50">
+    <>
+      <SkipLink />
+      <header className="border-b bg-white/50 backdrop-blur-sm dark:bg-zinc-950/50 sticky top-0 z-50" role="banner">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
@@ -29,17 +32,17 @@ export function Header() {
             <SearchBar />
           </div>
 
-          <nav className="flex items-center gap-2 flex-shrink-0">
+          <nav className="flex items-center gap-2 flex-shrink-0" role="navigation" aria-label="Navegação principal">
             <Button variant="ghost" asChild className="hidden lg:flex">
-              <Link href="/">Início</Link>
+              <Link href="/" aria-label="Ir para página inicial">Início</Link>
             </Button>
             <Button variant="ghost" asChild className="hidden lg:flex">
-              <Link href="/content">Conteúdo</Link>
+              <Link href="/content" aria-label="Ver todo o conteúdo">Conteúdo</Link>
             </Button>
             <Button variant="ghost" asChild className="hidden lg:flex">
-              <Link href="/#pdfs">PDFs</Link>
+              <Link href="/#pdfs" aria-label="Ver PDFs disponíveis">PDFs</Link>
             </Button>
-            <div className="border-l pl-2 ml-2">
+            <div className="border-l pl-2 ml-2" aria-label="Configurações">
               <ThemeToggle />
             </div>
           </nav>
@@ -50,6 +53,7 @@ export function Header() {
           <SearchBar />
         </div>
       </div>
-    </header>
+      </header>
+    </>
   );
 }

@@ -18,7 +18,7 @@ export default function ContentPage() {
       <Header />
 
       {/* Content Section */}
-      <section className="container mx-auto px-4 py-12">
+      <main id="main-content" className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Material Didático</h1>
@@ -105,7 +105,7 @@ export default function ContentPage() {
             })}
           </Tabs>
         </div>
-      </section>
+      </main>
 
       <Footer />
     </div>
