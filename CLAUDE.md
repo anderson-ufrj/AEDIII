@@ -17,6 +17,12 @@ npm run build        # Production build (runs type checking and builds)
 npm run start        # Start production server
 npm run lint         # Run ESLint
 
+# Testing
+npm test             # Run tests in watch mode
+npm run test:run     # Run tests once
+npm run test:ui      # Run tests with UI
+npm run test:coverage # Run tests with coverage report
+
 # PDF Conversion (if needed)
 source venv/bin/activate
 python3 scripts/extract_pdfs.py --docs-dir ./docs --output-dir ./content

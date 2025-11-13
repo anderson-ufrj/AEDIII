@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ContentDetailClient } from "@/components/content-detail-client";
@@ -6,7 +7,13 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ContentNavigation } from "@/components/content-navigation";
 import { TableOfContents } from "@/components/table-of-contents";
 import { ProgressTracker } from "@/components/progress-tracker";
+import { ScrollToTop } from "@/components/scroll-to-top";
 import { getAllSlugs, getContentBySlug, getAdjacentContent } from "@/lib/content-loader";
+
+const NotesPanel = dynamic(
+  () => import("@/components/notes-panel").then((mod) => mod.NotesPanel),
+  { ssr: false }
+);
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs();
@@ -38,6 +45,7 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-8">
           <div className="min-w-0">
             <ProgressTracker contentSlug={content.slug} contentTitle={content.title} />
+            <NotesPanel contentSlug={content.slug} contentTitle={content.title} />
             <ContentDetailClient content={content} />
             <ContentNavigation
               previous={previous ? { slug: previous.slug, title: previous.title } : null}
@@ -47,10 +55,13 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
 
           {/* Table of Contents - Hidden on mobile */}
           <aside className="hidden lg:block">
-            <TableOfContents />
+            <div className="sticky top-8">
+              <TableOfContents />
+            </div>
           </aside>
         </div>
       </main>
+      <ScrollToTop />
       <Footer />
     </div>
   );

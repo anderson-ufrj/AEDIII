@@ -24,6 +24,16 @@ const CodeCompiler = dynamic(
   { ssr: false }
 );
 
+// Dynamically import NotesPanel to avoid SSR issues
+const NotesPanel = dynamic(
+  () => import("@/components/notes-panel").then((mod) => mod.NotesPanel),
+  { ssr: false }
+);
+
+// Import ReadingModeWrapper
+import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
+import { FavoriteButton } from "@/components/favorite-button";
+
 interface ContentDetailClientProps {
   content: CourseContent;
 }
@@ -66,24 +76,30 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                 </div>
               </div>
 
-              {/* PDF Actions */}
-              {pdfUrl && (
-                <div className="flex flex-col gap-2">
-                  <Button
-                    onClick={() => setShowPDFViewer(true)}
-                    className="gap-2"
-                  >
-                    <FileDown className="h-4 w-4" />
-                    Abrir PDF Original
-                  </Button>
-                  <Button variant="outline" asChild className="gap-2">
-                    <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4" />
-                      Nova Aba
-                    </a>
-                  </Button>
-                </div>
-              )}
+              {/* Actions */}
+              <div className="flex flex-col gap-2">
+                <FavoriteButton
+                  contentSlug={content.slug}
+                  contentTitle={content.title}
+                />
+                {pdfUrl && (
+                  <>
+                    <Button
+                      onClick={() => setShowPDFViewer(true)}
+                      className="gap-2"
+                    >
+                      <FileDown className="h-4 w-4" />
+                      Abrir PDF Original
+                    </Button>
+                    <Button variant="outline" asChild className="gap-2">
+                      <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                        Nova Aba
+                      </a>
+                    </Button>
+                  </>
+                )}
+              </div>
             </div>
 
             {pdfUrl && (
@@ -97,8 +113,9 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
           </Card>
 
           {/* Markdown Content */}
-          <Card className="p-8">
-            <article className="prose prose-zinc dark:prose-invert max-w-none">
+          <ReadingModeWrapper>
+            <Card className="p-8">
+              <article className="prose prose-zinc dark:prose-invert max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeHighlight]}
@@ -198,6 +215,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
               </ReactMarkdown>
             </article>
           </Card>
+          </ReadingModeWrapper>
 
           {/* Navigation */}
           <div className="mt-8 flex justify-between">

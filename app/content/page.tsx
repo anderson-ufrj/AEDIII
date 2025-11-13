@@ -1,13 +1,20 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { CourseProgress } from "@/components/course-progress";
+import { FavoriteButton } from "@/components/favorite-button";
 import { getAllContent, getContentByCategory, getAllSlugs } from "@/lib/content-loader";
 import { COURSE_CATEGORIES } from "@/lib/types";
-import { BookOpen, FileText } from "lucide-react";
+import { BookOpen, FileText, Star } from "lucide-react";
+
+const FavoritesList = dynamic(
+  () => import("@/components/favorites-list").then((mod) => mod.FavoritesList),
+  { ssr: false }
+);
 
 export default function ContentPage() {
   const allContent = getAllContent();
@@ -34,8 +41,12 @@ export default function ContentPage() {
           </div>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 lg:grid-cols-7 mb-8">
+            <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8 mb-8">
               <TabsTrigger value="all">Todos</TabsTrigger>
+              <TabsTrigger value="favorites" className="gap-1">
+                <Star className="h-3 w-3" />
+                Favoritos
+              </TabsTrigger>
               {COURSE_CATEGORIES.map((category) => (
                 <TabsTrigger key={category.id} value={category.id}>
                   {category.name.split(' ')[0]}
@@ -48,10 +59,17 @@ export default function ContentPage() {
                 {allContent.map((content) => (
                   <Card key={content.slug} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
-                      <CardTitle className="flex items-center gap-2 text-lg">
-                        <FileText className="h-5 w-5" />
-                        {content.title}
-                      </CardTitle>
+                      <div className="flex items-start justify-between gap-2">
+                        <CardTitle className="flex items-center gap-2 text-lg">
+                          <FileText className="h-5 w-5" />
+                          {content.title}
+                        </CardTitle>
+                        <FavoriteButton
+                          contentSlug={content.slug}
+                          contentTitle={content.title}
+                          variant="icon"
+                        />
+                      </div>
                       <CardDescription>
                         {content.pages > 0 && `${content.pages} páginas`}
                       </CardDescription>
@@ -67,6 +85,12 @@ export default function ContentPage() {
                   </Card>
                 ))}
               </div>
+            </TabsContent>
+
+            <TabsContent value="favorites" className="space-y-4">
+              <FavoritesList
+                allContent={allContent.map((c) => ({ slug: c.slug, title: c.title }))}
+              />
             </TabsContent>
 
             {COURSE_CATEGORIES.map((category) => {
