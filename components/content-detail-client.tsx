@@ -7,7 +7,8 @@ import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PDFViewer } from "@/components/pdf-viewer";
-import { ArrowLeft, FileText, FileDown, ExternalLink } from "lucide-react";
+import { CodeCompiler } from "@/components/code-compiler";
+import { ArrowLeft, FileText, FileDown, ExternalLink, Code2, Play } from "lucide-react";
 import type { CourseContent } from "@/lib/types";
 
 interface ContentDetailClientProps {
@@ -16,6 +17,15 @@ interface ContentDetailClientProps {
 
 export function ContentDetailClient({ content }: ContentDetailClientProps) {
   const [showPDFViewer, setShowPDFViewer] = useState(false);
+  const [showCompiler, setShowCompiler] = useState(false);
+  const [selectedCode, setSelectedCode] = useState("");
+  const [codeLanguage, setCodeLanguage] = useState<"cpp" | "c">("cpp");
+
+  const handleRunCode = (code: string, language: "cpp" | "c" = "cpp") => {
+    setSelectedCode(code);
+    setCodeLanguage(language);
+    setShowCompiler(true);
+  };
 
   // Get PDF URL from source filename
   const pdfUrl = content.source ? `/pdfs/${content.source}` : null;
@@ -101,18 +111,43 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                   ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4" {...props} />,
                   ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4" {...props} />,
                   li: ({ node, ...props }) => <li className="mb-2" {...props} />,
-                  code: ({ node, inline, ...props }: any) =>
-                    inline ? (
-                      <code
-                        className="bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-sm"
-                        {...props}
-                      />
-                    ) : (
-                      <code
-                        className="block bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg overflow-x-auto"
-                        {...props}
-                      />
-                    ),
+                  code: ({ node, inline, className, children, ...props }: any) => {
+                    const match = /language-(\w+)/.exec(className || "");
+                    const language = match ? match[1] : null;
+                    const code = String(children).replace(/\n$/, "");
+                    const isCppOrC = language === "cpp" || language === "c" || language === "c++";
+
+                    if (inline) {
+                      return (
+                        <code
+                          className="bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-sm"
+                          {...props}
+                        >
+                          {children}
+                        </code>
+                      );
+                    }
+
+                    return (
+                      <div className="relative group">
+                        <pre className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg overflow-x-auto">
+                          <code className={className} {...props}>
+                            {children}
+                          </code>
+                        </pre>
+                        {isCppOrC && (
+                          <Button
+                            onClick={() => handleRunCode(code, language === "c" ? "c" : "cpp")}
+                            className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity gap-2"
+                            size="sm"
+                          >
+                            <Play className="h-3 w-3" />
+                            Executar
+                          </Button>
+                        )}
+                      </div>
+                    );
+                  },
                   img: ({ node, ...props }) => (
                     <img className="rounded-lg shadow-md my-6" {...props} alt={props.alt || "Image"} />
                   ),
@@ -142,6 +177,15 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
       {/* PDF Viewer Modal */}
       {showPDFViewer && pdfUrl && (
         <PDFViewer pdfUrl={pdfUrl} onClose={() => setShowPDFViewer(false)} />
+      )}
+
+      {/* Code Compiler Modal */}
+      {showCompiler && (
+        <CodeCompiler
+          initialCode={selectedCode}
+          language={codeLanguage}
+          onClose={() => setShowCompiler(false)}
+        />
       )}
     </>
   );
