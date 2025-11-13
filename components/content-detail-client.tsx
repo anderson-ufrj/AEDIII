@@ -174,6 +174,24 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                     <img className="rounded-lg shadow-md my-6" {...props} alt={props.alt || "Image"} />
                   ),
                   a: ({ node, ...props }) => <a className="text-primary hover:underline" {...props} />,
+                  table: ({ node, ...props }) => (
+                    <div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
+                      <table className="min-w-full divide-y divide-border" {...props} />
+                    </div>
+                  ),
+                  thead: ({ node, ...props }) => (
+                    <thead className="bg-muted" {...props} />
+                  ),
+                  tbody: ({ node, ...props }) => (
+                    <tbody className="divide-y divide-border bg-background" {...props} />
+                  ),
+                  tr: ({ node, ...props }) => <tr className="hover:bg-muted/50 transition-colors" {...props} />,
+                  th: ({ node, ...props }) => (
+                    <th className="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap" {...props} />
+                  ),
+                  td: ({ node, ...props }) => (
+                    <td className="px-4 py-3 text-sm whitespace-nowrap" {...props} />
+                  ),
                 }}
               >
                 {content.content}
