@@ -58,40 +58,23 @@ elemento no conjunto e a função apaga remove um elemento do conjunto.
 
 ## Página 4
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-set<int> s;
-
-s.insert(3);
-
-s.insert(2);
-
-s.insert(5);
-
-printf("%d\n", s.count(3));
-
-printf("%d\n", s.count(4));
-
-s.erase(3);
-
-s.insert(4);
-
-printf("%d\n", s.count(3));
-
-printf("%d\n", s.count(4));
-
-return 0;
-
+    set<int> s;
+    s.insert(3);
+    s.insert(2);
+    s.insert(5);
+    printf("%d\n", s.count(3));
+    printf("%d\n", s.count(4));
+    s.erase(3);
+    s.insert(4);
+    printf("%d\n", s.count(3));
+    printf("%d\n", s.count(4));
+    return 0;
 }
-
-
 ```
 ## Página 5
 
@@ -107,46 +90,27 @@ elementos:
 
 ## Página 6
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
+    set<int> s;
+    set<int>:: iterator it;
+    s.insert(2);
+    s.insert(5);
+    s.insert(6);
+    s.insert(8);
+    printf("Tamanho do Conjunto: %d\n", s.size());
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-set<int> s;
-
-set<int>:: iterator it;
-
-s.insert(2);
-
-s.insert(5);
-
-s.insert(6);
-
-s.insert(8);
-
-printf("Tamanho do Conjunto: %d\n", s.size());
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
+    printf("}\n");
+    return 0;
 }
-
-printf("}\n");
-
-return 0;
-
-}
-
-
 ```
 ## Página 7
 
@@ -164,66 +128,38 @@ isso:
 
 ## Página 8
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
+    set<int> s;
+    set<int>:: iterator it;
+    s.insert(2);
+    s.insert(5);
+    s.insert(6);
+    s.insert(8);
+    printf("Tamanho do Conjunto: %d\n", s.size());
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-set<int> s;
+    printf("}\n");
+    s.insert(5);
+    s.insert(7);
+    s.insert(8);
+    printf("Tamanho do Conjunto: %d\n", s.size());
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-set<int>:: iterator it;
-
-s.insert(2);
-
-s.insert(5);
-
-s.insert(6);
-
-s.insert(8);
-
-printf("Tamanho do Conjunto: %d\n", s.size());
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
+    printf("}\n");
+    return 0;
 }
-
-printf("}\n");
-
-s.insert(5);
-
-s.insert(7);
-
-s.insert(8);
-
-printf("Tamanho do Conjunto: %d\n", s.size());
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-return 0;
-
-}
-
-
 ```
 ## Página 9
 
@@ -263,74 +199,43 @@ printf("Quantidade de 5: %d\n", s.count(5));
 
 ## Página 11
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
+    multiset<int> s;
+    multiset<int>:: iterator it;
+    s.insert(5); s.insert(5); s.insert(5);
+    printf("Quantidade de 5: %d\n", s.count(5));
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-multiset<int> s;
+    printf("}\n");
+    s.erase(5);
+    printf("Quantidade de 5: %d\n", s.count(5));
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-multiset<int>:: iterator it;
+    printf("}\n");
+    s.insert(5); s.insert(5); s.insert(5);
+    s.erase(s.find(5));
+    printf("Quantidade de 5: %d\n", s.count(5));
+    printf("s = {");
+    for (it = s.begin(); it != s.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-s.insert(5); s.insert(5); s.insert(5);
-
-printf("Quantidade de 5: %d\n", s.count(5));
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
+    printf("}\n");
+    return 0;
 }
-
-printf("}\n");
-
-s.erase(5);
-
-printf("Quantidade de 5: %d\n", s.count(5));
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-s.insert(5); s.insert(5); s.insert(5);
-
-s.erase(s.find(5));
-
-printf("Quantidade de 5: %d\n", s.count(5));
-
-printf("s = {");
-
-for (it = s.begin(); it != s.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-return 0;
-
-}
-
-
 ```
 ## Página 12
 
@@ -370,46 +275,26 @@ O código a seguir mostra como manipular o bitset:
 
 ## Página 14
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-bitset<10> s(string("0010011010"));
-
-// from right to left
-
-cout << "s = (" << s << ")\n";
-
-cout << "s[4] = " << s[4] << "\n";
-
-cout << "s[5] = " << s[5] << "\n";
-
-printf("Total = %d\n", s.count());
-
-bitset<10> a(string("0010110110"));
-
-bitset<10> b(string("1011011000"));
-
-cout << "a = (" << a << ")\n";
-
-cout << "b = (" << b << ")\n";
-
-cout << "a&b = (" << (a&b) << ")\n";
-
-cout << "a|b = (" << (a|b) << ")\n";
-
-cout << "a^b = (" << (a^b) << ")\n";
-
-return 0;
-
+    bitset<10> s(string("0010011010"));
+    // from right to left
+    cout << "s = (" << s << ")\n";
+    cout << "s[4] = " << s[4] << "\n";
+    cout << "s[5] = " << s[5] << "\n";
+    printf("Total = %d\n", s.count());
+    bitset<10> a(string("0010110110"));
+    bitset<10> b(string("1011011000"));
+    cout << "a = (" << a << ")\n";
+    cout << "b = (" << b << ")\n";
+    cout << "a&b = (" << (a&b) << ")\n";
+    cout << "a|b = (" << (a|b) << ")\n";
+    cout << "a^b = (" << (a^b) << ")\n";
+    return 0;
 }
-
-
 ```
 ## Página 15
 
@@ -449,34 +334,20 @@ inteiros:
 
 ## Página 17
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-map<string,int> m;
-
-m["primeiro"] = 4;
-
-m["segundo"] = 3;
-
-m["terceiro"] = 9;
-
-printf("primeiro: %d\n", m["primeiro"]);
-
-printf("segundo: %d\n", m["segundo"]);
-
-printf("terceiro: %d\n", m["terceiro"]);
-
-return 0;
-
+    map<string,int> m;
+    m["primeiro"] = 4;
+    m["segundo"] = 3;
+    m["terceiro"] = 9;
+    printf("primeiro: %d\n", m["primeiro"]);
+    printf("segundo: %d\n", m["segundo"]);
+    printf("terceiro: %d\n", m["terceiro"]);
+    return 0;
 }
-
-
 ```
 ## Página 18
 
@@ -492,40 +363,24 @@ código a seguir, a chave “fulano" com valor 0 é adicionada ao mapa.
 
 ## Página 19
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
+    map<string,int> m;
+    map<string,int>:: iterator it;
+    m["primeiro"] = 4;
+    m["segundo"] = 3;
+    m["terceiro"] = 9;
+    printf("fulano - %d\n\n", m["fulano"]);
+    for (it = m.begin(); it != m.end(); ++it)
+    {
+        cout << it->first << " - " << it->second << "\n";
+    }
 
-map<string,int> m;
-
-map<string,int>:: iterator it;
-
-m["primeiro"] = 4;
-
-m["segundo"] = 3;
-
-m["terceiro"] = 9;
-
-printf("fulano - %d\n\n", m["fulano"]);
-
-for (it = m.begin(); it != m.end(); ++it)
-
-{
-
-cout << it->first << " - " << it->second << "\n";
-
+    return 0;
 }
-
-return 0;
-
-}
-
-
 ```
 ## Página 20
 

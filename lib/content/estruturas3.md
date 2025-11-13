@@ -41,91 +41,54 @@ Um deque pode ser usado da seguinte forma:
 
 ## Página 4
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
+    deque<int> d;
+    deque<int>:: iterator it;
+    d.push_back(5);
+    printf("d = {");
+    for (it = d.begin(); it != d.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-deque<int> d;
+    printf("}\n");
+    d.push_back(2);
+    printf("d = {");
+    for (it = d.begin(); it != d.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-deque<int>:: iterator it;
+    printf("}\n");
+    d.push_front(3);
+    printf("d = {");
+    for (it = d.begin(); it != d.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-d.push_back(5);
+    printf("}\n");
+    d.pop_back();
+    printf("d = {");
+    for (it = d.begin(); it != d.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-printf("d = {");
+    printf("}\n");
+    d.pop_front();
+    printf("d = {");
+    for (it = d.begin(); it != d.end(); ++it)
+    {
+        printf(" %d", *it);
+    }
 
-for (it = d.begin(); it != d.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-d.push_back(2);
-
-printf("d = {");
-
-for (it = d.begin(); it != d.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-d.push_front(3);
-
-printf("d = {");
-
-for (it = d.begin(); it != d.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-d.pop_back();
-
-printf("d = {");
-
-for (it = d.begin(); it != d.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-d.pop_front();
-
-printf("d = {");
-
-for (it = d.begin(); it != d.end(); ++it)
-
-{
-
-printf(" %d", *it);
-
-}
-
-printf("}\n");
-
-return 0;
-
+    printf("}\n");
+    return 0;
 }
 
 d = { 5}
@@ -137,8 +100,6 @@ d = { 3 5 2}
 d = { 3 5}
 
 d = { 5}
-
-
 ```
 ## Página 5
 
@@ -165,38 +126,22 @@ Elemento do topo: 5
 
 Elemento do topo: 2
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-stack<int> s;
-
-s.push(3);
-
-printf("Elemento do topo: %d\n", s.top());
-
-s.push(2);
-
-printf("Elemento do topo: %d\n", s.top());
-
-s.push(5);
-
-printf("Elemento do topo: %d\n", s.top());
-
-s.pop();
-
-printf("Elemento do topo: %d\n", s.top());
-
-return 0;
-
+    stack<int> s;
+    s.push(3);
+    printf("Elemento do topo: %d\n", s.top());
+    s.push(2);
+    printf("Elemento do topo: %d\n", s.top());
+    s.push(5);
+    printf("Elemento do topo: %d\n", s.top());
+    s.pop();
+    printf("Elemento do topo: %d\n", s.top());
+    return 0;
 }
-
-
 ```
 ## Página 8
 
@@ -223,38 +168,22 @@ Elemento do inicio: 3
 
 Elemento do inicio: 2
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-queue<int> q;
-
-q.push(3);
-
-printf("Elemento do inicio: %d\n", q.front());
-
-q.push(2);
-
-printf("Elemento do inicio: %d\n", q.front());
-
-q.push(5);
-
-printf("Elemento do inicio: %d\n", q.front());
-
-q.pop();
-
-printf("Elemento do inicio: %d\n", q.front());
-
-return 0;
-
+    queue<int> q;
+    q.push(3);
+    printf("Elemento do inicio: %d\n", q.front());
+    q.push(2);
+    printf("Elemento do inicio: %d\n", q.front());
+    q.push(5);
+    printf("Elemento do inicio: %d\n", q.front());
+    q.pop();
+    printf("Elemento do inicio: %d\n", q.front());
+    return 0;
 }
-
-
 ```
 ## Página 11
 
@@ -304,50 +233,28 @@ Elemento do inicio: 3
 
 Elemento do inicio: 6
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-priority_queue<int> q;
-
-q.push(3);
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.push(5);
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.push(7);
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.push(2);
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.pop();
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.pop();
-
-printf("Elemento do inicio: %d\n", q.top());
-
-q.push(6);
-
-printf("Elemento do inicio: %d\n", q.top());
-
-return 0;
-
+    priority_queue<int> q;
+    q.push(3);
+    printf("Elemento do inicio: %d\n", q.top());
+    q.push(5);
+    printf("Elemento do inicio: %d\n", q.top());
+    q.push(7);
+    printf("Elemento do inicio: %d\n", q.top());
+    q.push(2);
+    printf("Elemento do inicio: %d\n", q.top());
+    q.pop();
+    printf("Elemento do inicio: %d\n", q.top());
+    q.pop();
+    printf("Elemento do inicio: %d\n", q.top());
+    q.push(6);
+    printf("Elemento do inicio: %d\n", q.top());
+    return 0;
 }
-
-
 ```
 ## Página 14
 
@@ -359,18 +266,13 @@ priority_queue<int,vector<int>,greater<int>> q;
 
 ## Página 15
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-priority_queue<int, vector<int>, greater<int> > q;
-
-for( int i= 0; i< 10; ++i ) q.push( rand() );
+    priority_queue<int, vector<int>, greater<int> > q;
+    for( int i= 0; i< 10; ++i ) q.push( rand() );
 ```
 
 

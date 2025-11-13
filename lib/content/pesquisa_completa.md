@@ -60,7 +60,6 @@ começa quando a função é chamada sem parâmetros.
 
 ```c
 void search()
-
 {
 ```
 
@@ -71,35 +70,21 @@ if(permutation.size() == n)
 
 ```c
 // process permutation
-
 }
 
 else
-
 {
-
-for (int i = 0; i < n; i++)
-
-{
-
-if (chosen[i]) continue;
-
-chosen[i] = true;
-
-permutation.push_back(i);
-
-search();
-
-chosen[i] = false;
-
-permutation.pop_back();
-
+    for (int i = 0; i < n; i++)
+    {
+        if (chosen[i]) continue;
+        chosen[i] = true;
+        permutation.push_back(i);
+        search();
+        chosen[i] = false;
+        permutation.pop_back();
+    }
 }
-
 }
-
-}
-
 ```
 
 
@@ -139,10 +124,7 @@ do
 
 ```c
 // process permutation
-
 } while(next_permutation(permutation.begin(),permutation.end()));
-
-
 ```
 ## Página 7
 
@@ -208,28 +190,18 @@ cba
 
 ## Página 8
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-int n;
-
-string line;
-
-scanf ("%d", &n);
-
-for (int t = 0; t < n; ++t)
-
-{
-
-cin >> line;
-
-sort(line.begin(), line.end());
+    int n;
+    string line;
+    scanf ("%d", &n);
+    for (int t = 0; t < n; ++t)
+    {
+        cin >> line;
+        sort(line.begin(), line.end());
 ```
 
 
@@ -264,34 +236,20 @@ Como proceder?
 
 Deve-se verificar todas as 6 combinações possíveis (3!)
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-int a,b,c;
-
-scanf("%d %d %d",&a,&b,&c);
-
-if((a<=b)&&(b<=c)) printf("%d %d %d\n",a,b,c);
-
-else if((a<=c)&&(c<=b)) printf("%d %d %d\n",a,c,b);
-
-else if((b<=a)&&(a<=c)) printf("%d %d %d\n",b,a,c);
-
-else if((b<=c)&&(c<=a)) printf("%d %d %d\n",b,c,a);
-
-else if((c<=a)&&(a<=b)) printf("%d %d %d\n",c,a,b);
-
-else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
-
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if((a<=b)&&(b<=c)) printf("%d %d %d\n",a,b,c);
+    else if((a<=c)&&(c<=b)) printf("%d %d %d\n",a,c,b);
+    else if((b<=a)&&(a<=c)) printf("%d %d %d\n",b,a,c);
+    else if((b<=c)&&(c<=a)) printf("%d %d %d\n",b,c,a);
+    else if((c<=a)&&(a<=b)) printf("%d %d %d\n",c,a,b);
+    else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 }
-
-
 ```
 ## Página 11
 
@@ -310,50 +268,28 @@ else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 
 ## Página 12
 
-```c
+```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main()
-
 {
-
-int n;
-
-string line;
-
-char name[100][2];
-
-char resposta[100], r[100];
-
-char parte[100];
-
-bool question;
-
-map<string, int> numbers;
-
-scanf ("%d", &n);
-
-for (int t = 0; t < n; ++t)
-
-{
-
-cin >> line;
-
-for(int i=0; i<line.length();i++)
-
-{
-
-name[i][0]=line[i];
-
-name[i][1]='\0’;
-
-scanf("%d",&numbers[name[i]]);
-
-}
-
-
+    int n;
+    string line;
+    char name[100][2];
+    char resposta[100], r[100];
+    char parte[100];
+    bool question;
+    map<string, int> numbers;
+    scanf ("%d", &n);
+    for (int t = 0; t < n; ++t)
+    {
+        cin >> line;
+        for(int i=0; i<line.length();i++)
+        {
+            name[i][0]=line[i];
+            name[i][1]='\0’;
+            scanf("%d",&numbers[name[i]]);
+        }
 ```
 ## Página 13
 

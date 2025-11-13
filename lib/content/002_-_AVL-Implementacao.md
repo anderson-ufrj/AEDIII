@@ -196,21 +196,13 @@ INSERIR(T.esquerda, k);
 
 ```c
 // Ajustar ponteiro para nó pai
-
 CALCULAR_FB(T);
-
 BALANCEAR(T);
-
 else
-
 INSERIR(T.direita, k);
-
 // Ajustar ponteiro para nó pai
-
 CALCULAR_FB(T);
-
 BALANCEAR(T);
-
 }
 ```
 
@@ -647,7 +639,6 @@ Inserção
 
 ```c
 int insereAVL(no **T, int x) {
-
 ```
 
 // variável booleana que indica se a altura da árvore cresceu
@@ -669,19 +660,12 @@ cresceu = 1;
 
 ```c
 // Esta sub arvore cresceu
-
 } else if ((*T)->chave > x) {
-
-// chama inserção para esquerda
-
+    // chama inserção para esquerda
 } else if ((*T)->chave < x) {
-
-// chama inserção para direita
-
+    // chama inserção para direita
 } else cresceu = 0;
-
 return cresceu;
-
 }
 ```
 
@@ -702,15 +686,10 @@ Inserção
 
 ```c
 // Tenta inserir à esquerda e vê se a sub-árvore cresceu
-
 cresceu = insereAVL(&(*T)->esq, x);
-
 if (cresceu) {
-
-// Verifica o estado atual de balanceamento
-
-switch((*T)->bal) {
-
+    // Verifica o estado atual de balanceamento
+    switch((*T)->bal) {
 ```
 
 
@@ -800,35 +779,21 @@ if ((*T)->esq->bal == -1) {
 
 ```c
 // FB filho esquerdo = -1
-
 rot_dir(T);
-
 (*T)->bal = (*T)->dir->bal = 0;
-
 } else {
+    // FB filho esquerdo = 0 ou 1
+    rot_esq(&(*T)->esq);
+    rot_dir(T);
+    if ((*T)->bal == -1) {
+        (*T)->esq->bal = 0;
+        (*T)->dir->bal = 1;
+    } else {
+        (*T)->dir->bal = 0;
+        (*T)->esq->bal = -(*T)->bal;
+    }
 
-// FB filho esquerdo = 0 ou 1
-
-rot_esq(&(*T)->esq);
-
-rot_dir(T);
-
-if ((*T)->bal == -1) {
-
-(*T)->esq->bal = 0;
-
-(*T)->dir->bal = 1;
-
-} else {
-
-(*T)->dir->bal = 0;
-
-(*T)->esq->bal = -(*T)->bal;
-
-}
-
-(*T)->bal = 0;
-
+    (*T)->bal = 0;
 }
 ```
 

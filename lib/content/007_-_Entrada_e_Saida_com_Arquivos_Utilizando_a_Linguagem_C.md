@@ -532,13 +532,10 @@ Exemplo 1
 
 Programa que lê strings do teclado e as escreve em um arquivo em disco
 
-```c
+```cpp
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <string.h>
-
 ```
 
 
@@ -599,26 +596,16 @@ Programa que simula o comando TYPE do DOS
 
 ```c
 #include <stdio.h>
-
 #include <stdlib.h>
-
 main(int argc, char *argv[])
-
 {
-
-FILE *fp;
-
-char ch;
-
-if (argc!=2)
-
-{
-
-printf(“entrar com o nome do arquivo”);
-
-exit(1);
-
-}
+    FILE *fp;
+    char ch;
+    if (argc!=2)
+    {
+        printf(“entrar com o nome do arquivo”);
+        exit(1);
+    }
 ```
 
 
@@ -723,7 +710,6 @@ Escreve alguns dados não-caracteres em um arquivo em disco e lê de volta.
 
 ```c
 #include <stdio.h>
-
 #include <stdlib.h>
 ```
 
