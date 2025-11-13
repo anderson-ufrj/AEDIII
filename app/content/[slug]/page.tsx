@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { ContentDetailClient } from "@/components/content-detail-client";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ContentNavigation } from "@/components/content-navigation";
+import { TableOfContents } from "@/components/table-of-contents";
 import { getAllSlugs, getContentBySlug, getAdjacentContent } from "@/lib/content-loader";
 
 export async function generateStaticParams() {
@@ -31,11 +32,22 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
             { label: content.title },
           ]}
         />
-        <ContentDetailClient content={content} />
-        <ContentNavigation
-          previous={previous ? { slug: previous.slug, title: previous.title } : null}
-          next={next ? { slug: next.slug, title: next.title } : null}
-        />
+
+        {/* Two column layout with TOC sidebar */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-8">
+          <div className="min-w-0">
+            <ContentDetailClient content={content} />
+            <ContentNavigation
+              previous={previous ? { slug: previous.slug, title: previous.title } : null}
+              next={next ? { slug: next.slug, title: next.title } : null}
+            />
+          </div>
+
+          {/* Table of Contents - Hidden on mobile */}
+          <aside className="hidden lg:block">
+            <TableOfContents />
+          </aside>
+        </div>
       </div>
       <Footer />
     </div>

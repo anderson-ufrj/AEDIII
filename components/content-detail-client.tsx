@@ -47,7 +47,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
   return (
     <>
       {/* Content Section */}
-      <div className="max-w-4xl mx-auto">
+      <div>
 
           {/* Title Card */}
           <Card className="p-8 mb-8">
