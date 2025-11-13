@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
 import { PWARegister } from "@/components/pwa-register";
 import { VLibrasWidget } from "@/components/vlibras-widget";
+import { MobileSearchButton } from "@/components/mobile-search-button";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <PWARegister />
         {children}
+        <MobileSearchButton />
         <VLibrasWidget />
         <Toaster position="top-right" richColors closeButton />
       </body>
