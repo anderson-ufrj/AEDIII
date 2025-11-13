@@ -130,6 +130,30 @@ NEXT_PUBLIC_JUDGE0_API_KEY=your_key_here
 
 Without API key, the compiler uses free rate-limited access.
 
+## Interactive Features
+
+### C/C++ Online Compiler
+- **Component**: `components/code-compiler.tsx`
+- **Integration**: Dynamically imported in `content-detail-client.tsx`
+- **API**: Uses Judge0 CE (Community Edition) via RapidAPI
+- **Language Detection**: Automatically identifies C/C++ code blocks from markdown
+- **Features**:
+  - Live code compilation and execution
+  - Input/output tabs for stdin/stdout
+  - Error and compilation output display
+  - CPU time limit: 2 seconds
+  - Memory limit: 128MB
+- **Environment Variable** (optional): `NEXT_PUBLIC_JUDGE0_API_KEY`
+  - Without key: Uses rate-limited free tier
+  - With key: Higher rate limits for production
+
+### How It Works
+1. Markdown is rendered with `react-markdown`
+2. Code blocks with `language-c` or `language-cpp` class are detected
+3. "Execute in Compiler" button appears on hover
+4. Clicking opens full-screen compiler modal with the code pre-loaded
+5. Students can modify, compile, and run code instantly
+
 ## Important Implementation Details
 
 ### PDF Loading
@@ -139,9 +163,18 @@ Without API key, the compiler uses free rate-limited access.
 - Worker loaded from CDN in production
 
 ### Code Blocks in Markdown
-- Syntax highlighting via `rehype-highlight`
-- C/C++ code can be compiled directly via code-compiler component
-- Code blocks use GitHub-style markdown fences
+- **Syntax highlighting** via `rehype-highlight` with `highlight.js`
+- **Interactive C/C++ compiler**: Automatically detects C/C++ code blocks
+  - Shows "Execute in Compiler" button on hover
+  - Opens full Judge0-powered compiler in modal
+  - Students can run and test code examples directly
+- Code blocks use GitHub-style markdown fences with language tags:
+  ```markdown
+  ```c
+  #include <stdio.h>
+  int main() { printf("Hello"); }
+  ```
+  ```
 
 ### Markdown Rendering
 Uses `react-markdown` with plugins:
