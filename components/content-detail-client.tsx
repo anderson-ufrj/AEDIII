@@ -32,7 +32,7 @@ const NotesPanel = dynamic(
 
 // Import ReadingModeWrapper
 import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
-import { FavoriteButton } from "@/components/favorite-button";
+import { ContentSidePanel } from "@/components/content-side-panel";
 
 interface ContentDetailClientProps {
   content: CourseContent;
@@ -76,40 +76,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                 </div>
               </div>
 
-              {/* Actions */}
-              <div className="flex flex-col gap-2">
-                <FavoriteButton
-                  contentSlug={content.slug}
-                  contentTitle={content.title}
-                />
-                {pdfUrl && (
-                  <>
-                    <Button
-                      onClick={() => setShowPDFViewer(true)}
-                      className="gap-2"
-                    >
-                      <FileDown className="h-4 w-4" />
-                      Abrir PDF Original
-                    </Button>
-                    <Button variant="outline" asChild className="gap-2">
-                      <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
-                        Nova Aba
-                      </a>
-                    </Button>
-                  </>
-                )}
-              </div>
             </div>
-
-            {pdfUrl && (
-              <div className="mt-4 p-4 bg-primary/10 rounded-lg">
-                <p className="text-sm text-primary font-medium">
-                  💡 Dica: Clique em "Abrir PDF Original" para visualizar o material com ferramentas de
-                  anotação interativas!
-                </p>
-              </div>
-            )}
           </Card>
 
           {/* Markdown Content */}
@@ -230,6 +197,14 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
             </Button>
           </div>
       </div>
+
+      {/* Side Panel */}
+      <ContentSidePanel
+        contentSlug={content.slug}
+        contentTitle={content.title}
+        pdfUrl={pdfUrl}
+        onOpenPDF={() => setShowPDFViewer(true)}
+      />
 
       {/* PDF Viewer Modal */}
       {showPDFViewer && pdfUrl && (
