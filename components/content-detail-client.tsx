@@ -36,9 +36,11 @@ import { ContentSidePanel } from "@/components/content-side-panel";
 
 interface ContentDetailClientProps {
   content: CourseContent;
+  previous?: { slug: string; title: string } | null;
+  next?: { slug: string; title: string } | null;
 }
 
-export function ContentDetailClient({ content }: ContentDetailClientProps) {
+export function ContentDetailClient({ content, previous, next }: ContentDetailClientProps) {
   const [showPDFViewer, setShowPDFViewer] = useState(false);
   const [showCompiler, setShowCompiler] = useState(false);
   const [compilerCode, setCompilerCode] = useState("");
@@ -204,6 +206,8 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
         contentTitle={content.title}
         pdfUrl={pdfUrl}
         onOpenPDF={() => setShowPDFViewer(true)}
+        previous={previous}
+        next={next}
       />
 
       {/* PDF Viewer Modal */}
