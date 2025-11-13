@@ -168,3 +168,121 @@ html {
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
+
+/* Print optimization styles */
+@media print {
+  /* Hide UI elements not needed in print */
+  header,
+  footer,
+  .no-print,
+  button,
+  .mobile-search-button,
+  [vw],
+  nav,
+  aside,
+  .table-of-contents,
+  .progress-tracker,
+  .breadcrumbs,
+  .content-navigation {
+    display: none !important;
+  }
+
+  /* Optimize page layout for print */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure content fills the page */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Optimize cards for print */
+  .card,
+  [class*="card"] {
+    border: 1px solid #e5e5e5 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  /* Optimize headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    color: black !important;
+  }
+
+  /* Optimize code blocks */
+  pre {
+    page-break-inside: avoid;
+    border: 1px solid #e5e5e5 !important;
+    background: #f5f5f5 !important;
+  }
+
+  code {
+    background: #f5f5f5 !important;
+    color: black !important;
+  }
+
+  /* Optimize tables for print */
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse !important;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #e5e5e5 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Optimize images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Show URLs for links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Don't show URLs for internal links or images */
+  a[href^="#"]:after,
+  a[href^="/"]:after,
+  a[href*="javascript"]:after {
+    content: "";
+  }
+
+  /* Optimize paragraphs */
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-after: always;
+  }
+
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+}
