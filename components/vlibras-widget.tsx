@@ -1,34 +1,35 @@
 "use client";
 
-import { useEffect } from "react";
-import Script from "next/script";
+import { useEffect, useRef } from "react";
 
 export function VLibrasWidget() {
+  const widgetRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    // Initialize VLibras when the script is loaded
-    const initVLibras = () => {
-      if (window.VLibras) {
+    // Load VLibras script
+    const script = document.createElement('script');
+    script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+    script.async = true;
+
+    script.onload = () => {
+      // Initialize VLibras after script loads
+      if (window.VLibras && widgetRef.current) {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       }
     };
 
-    // Check if VLibras is already loaded
-    if (window.VLibras) {
-      initVLibras();
-    }
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
   }, []);
 
   return (
-    <>
-      <Script
-        src="https://vlibras.gov.br/app/vlibras-plugin.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          if (window.VLibras) {
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-          }
-        }}
-      />
+    <div ref={widgetRef}>
       <div
         dangerouslySetInnerHTML={{
           __html: `
@@ -41,7 +42,7 @@ export function VLibrasWidget() {
           `,
         }}
       />
-    </>
+    </div>
   );
 }
 
