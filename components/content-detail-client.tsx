@@ -1,15 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { PDFViewer } from "@/components/pdf-viewer";
-import { CodeCompiler } from "@/components/code-compiler";
 import { ArrowLeft, FileText, FileDown, ExternalLink, Code2, Play } from "lucide-react";
 import type { CourseContent } from "@/lib/types";
+
+// Dynamic imports para evitar SSR
+const PDFViewer = dynamic(() => import("@/components/pdf-viewer").then(mod => ({ default: mod.PDFViewer })), {
+  ssr: false,
+  loading: () => <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"><div className="text-white">Carregando visualizador...</div></div>
+});
+
+const CodeCompiler = dynamic(() => import("@/components/code-compiler").then(mod => ({ default: mod.CodeCompiler })), {
+  ssr: false,
+  loading: () => <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"><div className="text-white">Carregando compilador...</div></div>
+});
 
 interface ContentDetailClientProps {
   content: CourseContent;
