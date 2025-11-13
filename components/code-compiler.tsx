@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Play, Loader2, Code2, Terminal, X } from "lucide-react";
+import { Play, Loader2, Code2, Terminal, X, FileCode, Trash2, Save } from "lucide-react";
 
 interface CodeCompilerProps {
   initialCode?: string;
@@ -12,16 +12,103 @@ interface CodeCompilerProps {
   onClose?: () => void;
 }
 
+// Code examples
+const EXAMPLES = {
+  c: {
+    "Hello World": `#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}`,
+    "Soma de Números": `#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Digite dois números: ");
+    scanf("%d %d", &a, &b);
+    printf("Soma: %d\\n", a + b);
+    return 0;
+}`,
+    "Fatorial": `#include <stdio.h>
+
+int fatorial(int n) {
+    if (n <= 1) return 1;
+    return n * fatorial(n - 1);
+}
+
+int main() {
+    int num;
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    printf("Fatorial de %d = %d\\n", num, fatorial(num));
+    return 0;
+}`,
+  },
+  cpp: {
+    "Hello World": `#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}`,
+    "Soma de Números": `#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Digite dois números: ";
+    cin >> a >> b;
+    cout << "Soma: " << (a + b) << endl;
+    return 0;
+}`,
+    "Vetor e Ordenação": `#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    sort(arr, arr + n);
+
+    cout << "Array ordenado: ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+
+    return 0;
+}`,
+  }
+};
+
 export function CodeCompiler({
   initialCode = "",
   language = "cpp",
   onClose
 }: CodeCompilerProps) {
-  const [code, setCode] = useState(initialCode);
+  const STORAGE_KEY = `compiler_${language}_code`;
+
+  const [code, setCode] = useState(() => {
+    // Try to load from localStorage on mount
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return saved || initialCode;
+    }
+    return initialCode;
+  });
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [isCompiling, setIsCompiling] = useState(false);
   const [error, setError] = useState("");
+
+  // Auto-save to localStorage when code changes
+  useEffect(() => {
+    if (code && typeof window !== "undefined") {
+      localStorage.setItem(STORAGE_KEY, code);
+    }
+  }, [code, STORAGE_KEY]);
 
   const compileCode = useCallback(async () => {
     setIsCompiling(true);
@@ -97,10 +184,38 @@ export function CodeCompiler({
           <div className="flex-1 flex flex-col gap-2">
             <div className="flex items-center justify-between">
               <label className="text-sm font-medium">Código</label>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
+                {/* Examples dropdown */}
+                <select
+                  className="px-3 py-1.5 text-sm border rounded-md bg-background"
+                  onChange={(e) => {
+                    if (e.target.value) {
+                      setCode(EXAMPLES[language][e.target.value as keyof typeof EXAMPLES[typeof language]]);
+                      e.target.value = "";
+                    }
+                  }}
+                  defaultValue=""
+                >
+                  <option value="" disabled>📚 Exemplos</option>
+                  {Object.keys(EXAMPLES[language]).map((name) => (
+                    <option key={name} value={name}>{name}</option>
+                  ))}
+                </select>
+
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCode("")}
+                  className="gap-2"
+                >
+                  <Trash2 className="h-4 w-4" />
+                  Limpar
+                </Button>
+
                 <Button
                   onClick={compileCode}
                   disabled={isCompiling}
+                  size="sm"
                   className="gap-2"
                 >
                   {isCompiling ? (
