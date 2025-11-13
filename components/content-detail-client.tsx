@@ -47,17 +47,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
   return (
     <>
       {/* Content Section */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          {/* Breadcrumb */}
-          <div className="mb-8">
-            <Button variant="ghost" asChild className="mb-4">
-              <Link href="/content">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Voltar ao conteúdo
-              </Link>
-            </Button>
-          </div>
+      <div className="max-w-4xl mx-auto">
 
           {/* Title Card */}
           <Card className="p-8 mb-8">
@@ -203,8 +193,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
               <Link href="/">Ir para início</Link>
             </Button>
           </div>
-        </div>
-      </section>
+      </div>
 
       {/* PDF Viewer Modal */}
       {showPDFViewer && pdfUrl && (

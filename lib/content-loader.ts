@@ -59,3 +59,20 @@ export function getAllSlugs(): string[] {
   const allContent = getAllContent();
   return allContent.map((content) => content.slug);
 }
+
+export function getAdjacentContent(slug: string): {
+  previous: CourseContent | null;
+  next: CourseContent | null;
+} {
+  const allContent = getAllContent();
+  const currentIndex = allContent.findIndex((content) => content.slug === slug);
+
+  if (currentIndex === -1) {
+    return { previous: null, next: null };
+  }
+
+  return {
+    previous: currentIndex > 0 ? allContent[currentIndex - 1] : null,
+    next: currentIndex < allContent.length - 1 ? allContent[currentIndex + 1] : null,
+  };
+}
