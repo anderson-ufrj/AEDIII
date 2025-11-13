@@ -5,14 +5,22 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github-dark.css";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, FileText, FileDown, ExternalLink } from "lucide-react";
+import { ArrowLeft, FileText, FileDown, ExternalLink, Play } from "lucide-react";
 import type { CourseContent } from "@/lib/types";
 
 // Dynamically import PDFViewer to avoid SSR issues
 const PDFViewer = dynamic(
   () => import("@/components/pdf-viewer").then((mod) => mod.PDFViewer),
+  { ssr: false }
+);
+
+// Dynamically import CodeCompiler to avoid SSR issues
+const CodeCompiler = dynamic(
+  () => import("@/components/code-compiler").then((mod) => mod.CodeCompiler),
   { ssr: false }
 );
 
@@ -22,9 +30,19 @@ interface ContentDetailClientProps {
 
 export function ContentDetailClient({ content }: ContentDetailClientProps) {
   const [showPDFViewer, setShowPDFViewer] = useState(false);
+  const [showCompiler, setShowCompiler] = useState(false);
+  const [compilerCode, setCompilerCode] = useState("");
+  const [compilerLanguage, setCompilerLanguage] = useState<"c" | "cpp">("c");
 
   // Get PDF URL from source filename
   const pdfUrl = content.source ? `/pdfs/${content.source}` : null;
+
+  // Function to open compiler with code
+  const openCompiler = (code: string, language: "c" | "cpp") => {
+    setCompilerCode(code);
+    setCompilerLanguage(language);
+    setShowCompiler(true);
+  };
 
   return (
     <>
@@ -93,6 +111,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
             <article className="prose prose-zinc dark:prose-invert max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeHighlight]}
                 components={{
                   h1: ({ node, ...props }) => (
                     <h1 className="text-3xl font-bold mt-8 mb-4" {...props} />
@@ -107,18 +126,47 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                   ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4" {...props} />,
                   ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4" {...props} />,
                   li: ({ node, ...props }) => <li className="mb-2" {...props} />,
-                  code: ({ node, inline, ...props }: any) =>
-                    inline ? (
-                      <code
-                        className="bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-sm"
-                        {...props}
-                      />
-                    ) : (
-                      <code
-                        className="block bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg overflow-x-auto"
-                        {...props}
-                      />
-                    ),
+                  code: ({ node, inline, className, children, ...props }: any) => {
+                    if (inline) {
+                      return (
+                        <code
+                          className="bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-sm"
+                          {...props}
+                        >
+                          {children}
+                        </code>
+                      );
+                    }
+
+                    // Detect language from className (format: language-c or language-cpp)
+                    const match = /language-(\w+)/.exec(className || "");
+                    const language = match ? match[1] : "";
+                    const isCompilable = language === "c" || language === "cpp" || language === "C";
+                    const codeString = String(children).replace(/\n$/, "");
+
+                    return (
+                      <div className="relative group">
+                        {isCompilable && (
+                          <Button
+                            onClick={() => openCompiler(codeString, language === "cpp" ? "cpp" : "c")}
+                            size="sm"
+                            className="absolute top-2 right-2 gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                          >
+                            <Play className="h-3 w-3" />
+                            Executar no Compilador
+                          </Button>
+                        )}
+                        <pre className="!bg-zinc-900 !p-4 !rounded-lg overflow-x-auto !my-4">
+                          <code
+                            className={className}
+                            {...props}
+                          >
+                            {children}
+                          </code>
+                        </pre>
+                      </div>
+                    );
+                  },
                   img: ({ node, ...props }) => (
                     <img className="rounded-lg shadow-md my-6" {...props} alt={props.alt || "Image"} />
                   ),
@@ -148,6 +196,15 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
       {/* PDF Viewer Modal */}
       {showPDFViewer && pdfUrl && (
         <PDFViewer pdfUrl={pdfUrl} onClose={() => setShowPDFViewer(false)} />
+      )}
+
+      {/* Code Compiler Modal */}
+      {showCompiler && (
+        <CodeCompiler
+          initialCode={compilerCode}
+          language={compilerLanguage}
+          onClose={() => setShowCompiler(false)}
+        />
       )}
     </>
   );
