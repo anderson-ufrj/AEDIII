@@ -639,33 +639,22 @@ Inserção
 
 ```c
 int insereAVL(no **T, int x) {
-```
+    // variável booleana que indica se a altura da árvore cresceu
+    int cresceu;
 
-// variável booleana que indica se a altura da árvore cresceu
-
-int cresceu;
-
-if (*T == NULL) {
-
-
-*T = (no *) malloc(sizeof(no));
-
-(*T)->chave = x;
-
-(*T)->dir = (*T)->esq = NULL;
-
-(*T)->bal = 0;
-
-cresceu = 1;
-
-```c
-// Esta sub arvore cresceu
-} else if ((*T)->chave > x) {
-    // chama inserção para esquerda
-} else if ((*T)->chave < x) {
-    // chama inserção para direita
-} else cresceu = 0;
-return cresceu;
+    if (*T == NULL) {
+        *T = (no *) malloc(sizeof(no));
+        (*T)->chave = x;
+        (*T)->dir = (*T)->esq = NULL;
+        (*T)->bal = 0;
+        cresceu = 1;
+        // Esta sub arvore cresceu
+    } else if ((*T)->chave > x) {
+        // chama inserção para esquerda
+    } else if ((*T)->chave < x) {
+        // chama inserção para direita
+    } else cresceu = 0;
+    return cresceu;
 }
 ```
 
@@ -690,24 +679,15 @@ cresceu = insereAVL(&(*T)->esq, x);
 if (cresceu) {
     // Verifica o estado atual de balanceamento
     switch((*T)->bal) {
+        case 1:
+            ...
+        case 0:
+            ...
+        case -1:
+            ...
+    }
+}
 ```
-
-
-case 1:
-
-...
-
-case 0:
-
-...
-
-case -1:
-
-...
-
-}
-
-}
 
 (Ciência da Computação – IFSULDEMINAS)
 

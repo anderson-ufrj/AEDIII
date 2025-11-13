@@ -532,47 +532,31 @@ Exemplo 1
 
 Programa que lê strings do teclado e as escreve em um arquivo em disco
 
-```cpp
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-```
-
 
 main()
-
 {
+    FILE *fp;
+    char str[80];
 
-FILE *fp;
+    if((fp=fopen("teste.txt", "w"))==NULL)
+    {
+        printf("arquivo não pode ser aberto\n");
+        exit(1);
+    }
 
-char str[80];
-
-if((fp=fopen(“teste.txt”, “w”))==NULL)
-
-{
-
-printf(“arquivo não pode ser aberto\n”);
-
-
-exit(1);
-
+    do
+    {
+        printf("Entre uma string (CR para sair) : \n");
+        gets(str);
+        strcat(str, "\n");
+        fputs(str, fp);
+    } while(*str != '\n' );
 }
-
-do
-
-{
-
-printf(“Entre uma string (CR para sair) : \n”);
-
-gets(str);
-
-strcat(str, “\n”);
-
-fputs(str, fp);
-
-} while(*str != ‘\n’ );
-
-}
+```
 
 Entrada e Sa
 
@@ -597,44 +581,33 @@ Programa que simula o comando TYPE do DOS
 ```c
 #include <stdio.h>
 #include <stdlib.h>
+
 main(int argc, char *argv[])
 {
     FILE *fp;
     char ch;
     if (argc!=2)
     {
-        printf(“entrar com o nome do arquivo”);
+        printf("entrar com o nome do arquivo");
         exit(1);
     }
+
+    if((fp=fopen(argv[1],"r"))==NULL)
+    {
+        printf("arquivo não pode ser aberto\n");
+        exit(1);
+    }
+
+    ch = getc(fp);
+    while(ch != EOF)
+    {
+        putchar(ch);
+        ch = getc(fp);
+    }
+
+    fclose(fp);
+}
 ```
-
-
-if((fp=fopen(argv[1],”r”))==NULL)
-
-{
-
-printf(“arquivo não pode ser aberto\n”);
-
-
-exit(1);
-
-}
-
-ch = getc(fp);
-
-while(ch != EOF)
-
-{
-
-putchar(ch);
-
-ch = getc(fp);
-
-}
-
-fclose(fp);
-
-}
 
 Entrada e Sa
 
@@ -737,40 +710,30 @@ da com Arquivos
 
 ## Página 16
 
+```c
 int i = 101;
-
 long l = 123023L;
 
-if ((fp=fopen(“dados.dat”, “wb+”)) == NULL)
-
+if ((fp=fopen("dados.dat", "wb+")) == NULL)
 {
-
-printf(“arquivo não pode ser aberto\n”);
-
-
-exit(1);
-
+    printf("arquivo não pode ser aberto\n");
+    exit(1);
 }
 
 fwrite(&d, sizeof(double), 1, fp);
-
 fwrite(&i, sizeof(int), 1, fp);
-
 fwrite(&l, sizeof(long), 1, fp);
 
 rewind(fp);
 
 fread(&d, sizeof(double), 1, fp);
-
 fread(&i, sizeof(int), 1, fp);
-
 fread(&l, sizeof(long), 1, fp);
 
-printf(“%f %d %ld, d, i, l);
-
+printf("%f %d %ld, d, i, l);
 fclose(fp);
-
 }
+```
 
 Entrada e Saída com Arquivos
 

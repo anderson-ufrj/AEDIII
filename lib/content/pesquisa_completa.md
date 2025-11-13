@@ -58,32 +58,25 @@ começa quando a função é chamada sem parâmetros.
 
 ## Página 5
 
-```c
+```cpp
 void search()
 {
-```
-
-
-if(permutation.size() == n)
-
-{
-
-```c
-// process permutation
-}
-
-else
-{
-    for (int i = 0; i < n; i++)
+    if(permutation.size() == n)
     {
-        if (chosen[i]) continue;
-        chosen[i] = true;
-        permutation.push_back(i);
-        search();
-        chosen[i] = false;
-        permutation.pop_back();
+        // process permutation
     }
-}
+    else
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if (chosen[i]) continue;
+            chosen[i] = true;
+            permutation.push_back(i);
+            search();
+            chosen[i] = false;
+            permutation.pop_back();
+        }
+    }
 }
 ```
 
@@ -108,22 +101,17 @@ ordem crescente. A biblioteca padrão C++ contém a função next_permutation
 
 que pode ser usada para isso:
 
+```cpp
 vector<int> permutation;
 
 for (int i = 0; i < n; i++)
-
 {
-
-permutation.push_back(i);
-
+    permutation.push_back(i);
 }
 
 do
-
 {
-
-```c
-// process permutation
+    // process permutation
 } while(next_permutation(permutation.begin(),permutation.end()));
 ```
 ## Página 7
@@ -193,34 +181,29 @@ cba
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
+
 int main()
 {
     int n;
     string line;
     scanf ("%d", &n);
+
     for (int t = 0; t < n; ++t)
     {
         cin >> line;
         sort(line.begin(), line.end());
+
+        do
+        {
+            printf("%s\n", line.c_str());
+        } while (next_permutation(line.begin(), line.end()));
+
+        printf("\n");
+    }
+
+    return 0;
+}
 ```
-
-
-do
-
-{
-
-printf("%s\n", line.c_str());
-
-} while (next_permutation(line.begin(), line.end()));
-
-printf("\n");
-
-}
-
-
-return 0;
-
-}
 
 ## Página 9
 
@@ -271,6 +254,7 @@ int main()
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
+
 int main()
 {
     int n;
@@ -280,6 +264,7 @@ int main()
     char parte[100];
     bool question;
     map<string, int> numbers;
+
     scanf ("%d", &n);
     for (int t = 0; t < n; ++t)
     {
@@ -287,75 +272,51 @@ int main()
         for(int i=0; i<line.length();i++)
         {
             name[i][0]=line[i];
-            name[i][1]='\0’;
+            name[i][1]='\0';
             scanf("%d",&numbers[name[i]]);
         }
+
+        do
+        {
+            for(int i=0; i<line.length();i++)
+            {
+                name[i][0]=line[i];
+                name[i][1]='\0';
+            }
+
+            question = true;
+            for(int i=0; i<line.length()-1;i++)
+            {
+                question = question && (numbers[name[i]]<=numbers[name[i+1]]);
+            }
+
+            strcpy(resposta,"");
+            if(question)
+            {
+                sprintf(parte,"%d",numbers[name[0]]);
+                strcat(resposta,parte);
+
+                for(int i=1; i<line.length();i++)
+                {
+                    sprintf(parte," %d",numbers[name[i]]);
+                    strcat(resposta,parte);
+                }
+
+                strcat(resposta,"\n");
+                strcpy(r,resposta);
+            }
+        } while (next_permutation(line.begin(), line.end()));
+
+        printf("%s",r);
+    }
+
+    return 0;
+}
 ```
+
 ## Página 13
 
-do
-
-{
-
-for(int i=0; i<line.length();i++)
-
-{
-
-
-name[i][0]=line[i];
-
-name[i][1]='\0’;
-
-}
-
-question = true;
-
-for(int i=0; i<line.length()-1;i++)
-
-{
-
-question = question && (numbers[name[i]]<=numbers[name[i+1]]);
-
-}
-
-strcpy(resposta,"");
-
-if(question)
-
-{
-
-sprintf(parte,"%d",numbers[name[0]]);
-
-strcat(resposta,parte);
-
-for(int i=1; i<line.length();i++)
-
-{
-
-sprintf(parte," %d",numbers[name[i]]);
-
-strcat(resposta,parte);
-
-}
-
 ## Página 14
-
-strcat(resposta,"\n");
-
-strcpy(r,resposta);
-
-}
-
-} while (next_permutation(line.begin(), line.end()));
-
-printf("%s",r);
-
-}
-
-
-return 0;
-
-}
 
 ## Página 15
 
