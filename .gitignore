@@ -54,8 +54,11 @@ __pycache__/
 *.swo
 *~
 
-# Old website folder (moved to root)
-aed3-website/
-
 # Claude
 .claude/
+
+# Old aed3-website subdirectory (moved to root)
+aed3-website/
+
+# Duplicate gitignore from migration
+.gitignore.nextjs
