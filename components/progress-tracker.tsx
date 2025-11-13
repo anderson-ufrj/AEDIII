@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Check, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { toast } from "sonner";
 
 interface ProgressTrackerProps {
   contentSlug: string;
@@ -25,6 +26,17 @@ export function ProgressTracker({ contentSlug, contentTitle }: ProgressTrackerPr
     const newStatus = !isCompleted;
     setIsCompleted(newStatus);
     localStorage.setItem(`content_completed_${contentSlug}`, String(newStatus));
+
+    // Show toast notification
+    if (newStatus) {
+      toast.success("Conteúdo concluído!", {
+        description: `"${contentTitle}" foi marcado como concluído.`,
+      });
+    } else {
+      toast.info("Conteúdo desmarcado", {
+        description: `"${contentTitle}" foi desmarcado.`,
+      });
+    }
 
     // Trigger storage event for other components
     window.dispatchEvent(new Event("progressUpdated"));
