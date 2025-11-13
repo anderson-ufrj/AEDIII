@@ -29,13 +29,12 @@ export function CodeCompiler({
     setOutput("");
 
     try {
-      // Usando Judge0 CE API (Community Edition - Free)
-      const response = await fetch("https://judge0-ce.p.rapidapi.com/submissions", {
+      // Usando instância pública gratuita do Judge0 CE
+      // Referência: https://ce.judge0.com
+      const response = await fetch("https://ce.judge0.com/submissions?base64_encoded=false&wait=true", {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          "X-RapidAPI-Key": process.env.NEXT_PUBLIC_JUDGE0_API_KEY || "demo-key",
-          "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com"
         },
         body: JSON.stringify({
           source_code: code,
@@ -47,50 +46,25 @@ export function CodeCompiler({
       });
 
       if (!response.ok) {
-        throw new Error("Erro ao enviar código para compilação");
+        const errorText = await response.text();
+        throw new Error(`Erro ${response.status}: ${errorText || 'Falha ao compilar código'}`);
       }
 
-      const { token } = await response.json();
+      const result = await response.json();
 
-      // Poll para resultado
-      let attempts = 0;
-      const maxAttempts = 10;
-
-      while (attempts < maxAttempts) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-        const resultResponse = await fetch(
-          `https://judge0-ce.p.rapidapi.com/submissions/${token}`,
-          {
-            headers: {
-              "X-RapidAPI-Key": process.env.NEXT_PUBLIC_JUDGE0_API_KEY || "demo-key",
-              "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com"
-            }
-          }
-        );
-
-        const result = await resultResponse.json();
-
-        if (result.status.id > 2) { // Not in queue or processing
-          if (result.stdout) {
-            setOutput(atob(result.stdout));
-          } else if (result.stderr) {
-            setError(atob(result.stderr));
-          } else if (result.compile_output) {
-            setError(atob(result.compile_output));
-          } else if (result.message) {
-            setError(result.message);
-          } else {
-            setError("Erro desconhecido ao compilar");
-          }
-          break;
-        }
-
-        attempts++;
-      }
-
-      if (attempts >= maxAttempts) {
-        setError("Timeout: compilação demorou muito");
+      // Com wait=true, a resposta já vem processada
+      if (result.stdout) {
+        setOutput(result.stdout);
+      } else if (result.stderr) {
+        setError(result.stderr);
+      } else if (result.compile_output) {
+        setError(result.compile_output);
+      } else if (result.message) {
+        setError(result.message);
+      } else if (result.status?.description) {
+        setError(`Status: ${result.status.description}`);
+      } else {
+        setError("Nenhuma saída produzida");
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erro ao compilar código");
