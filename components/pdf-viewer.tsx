@@ -17,9 +17,9 @@ import {
   X,
 } from "lucide-react";
 
-// Configure PDF.js worker
+// Configure PDF.js worker with better error handling
 if (typeof window !== "undefined") {
-  pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 }
 
 interface Annotation {
@@ -57,6 +57,10 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
 
   const onDocumentLoadSuccess = useCallback(({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
+  }, []);
+
+  const onDocumentLoadError = useCallback((error: Error) => {
+    console.error("Error loading PDF:", error);
   }, []);
 
   const changePage = useCallback((offset: number) => {
@@ -212,21 +216,28 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
     if (!canvas || !container) return;
 
     const resizeCanvas = () => {
-      const rect = container.getBoundingClientRect();
-      canvas.width = rect.width;
-      canvas.height = rect.height;
-      // Redraw after resize
-      redrawAnnotations();
+      try {
+        const rect = container.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+          canvas.width = rect.width;
+          canvas.height = rect.height;
+          // Redraw after resize
+          redrawAnnotations();
+        }
+      } catch (error) {
+        console.error("Error resizing canvas:", error);
+      }
     };
 
-    // Initial resize
-    resizeCanvas();
+    // Initial resize with delay to ensure PDF is rendered
+    const timeoutId = setTimeout(resizeCanvas, 100);
 
     // Use ResizeObserver for better performance
     const resizeObserver = new ResizeObserver(resizeCanvas);
     resizeObserver.observe(container);
 
     return () => {
+      clearTimeout(timeoutId);
       resizeObserver.disconnect();
     };
   }, [scale, pageNumber, redrawAnnotations]);
@@ -333,12 +344,21 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
               <Document
                 file={pdfUrl}
                 onLoadSuccess={onDocumentLoadSuccess}
+                onLoadError={onDocumentLoadError}
                 className="shadow-lg"
                 loading={
                   <div className="flex items-center justify-center min-h-[600px]">
                     <div className="text-center">
                       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
                       <p className="text-muted-foreground">Carregando PDF...</p>
+                    </div>
+                  </div>
+                }
+                error={
+                  <div className="flex items-center justify-center min-h-[600px]">
+                    <div className="text-center">
+                      <p className="text-destructive font-medium mb-2">Erro ao carregar PDF</p>
+                      <p className="text-sm text-muted-foreground">Tente recarregar a página</p>
                     </div>
                   </div>
                 }
