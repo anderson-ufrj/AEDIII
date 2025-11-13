@@ -142,7 +142,20 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                     const match = /language-(\w+)/.exec(className || "");
                     const language = match ? match[1] : "";
                     const isCompilable = language === "c" || language === "cpp" || language === "C";
-                    const codeString = String(children).replace(/\n$/, "");
+
+                    // Extract text content from children (handles React elements)
+                    const extractText = (children: any): string => {
+                      if (typeof children === 'string') return children;
+                      if (Array.isArray(children)) {
+                        return children.map(extractText).join('');
+                      }
+                      if (children?.props?.children) {
+                        return extractText(children.props.children);
+                      }
+                      return '';
+                    };
+
+                    const codeString = extractText(children).replace(/\n$/, "");
 
                     return (
                       <div className="relative group">
