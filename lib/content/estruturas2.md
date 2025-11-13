@@ -67,8 +67,6 @@ int main()
 
 {
 
-```
-
 set<int> s;
 
 s.insert(3);
@@ -93,6 +91,8 @@ return 0;
 
 }
 
+
+```
 ## Página 5
 
 Set
@@ -116,8 +116,6 @@ int main()
 
 {
 
-```
-
 set<int> s;
 
 set<int>:: iterator it;
@@ -130,7 +128,6 @@ s.insert(6);
 
 s.insert(8);
 
-```c
 printf("Tamanho do Conjunto: %d\n", s.size());
 
 printf("s = {");
@@ -145,12 +142,12 @@ printf(" %d", *it);
 
 printf("}\n");
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 7
 
 Set
@@ -176,8 +173,6 @@ int main()
 
 {
 
-```
-
 set<int> s;
 
 set<int>:: iterator it;
@@ -190,7 +185,6 @@ s.insert(6);
 
 s.insert(8);
 
-```c
 printf("Tamanho do Conjunto: %d\n", s.size());
 
 printf("s = {");
@@ -204,8 +198,6 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 s.insert(5);
 
@@ -213,7 +205,6 @@ s.insert(7);
 
 s.insert(8);
 
-```c
 printf("Tamanho do Conjunto: %d\n", s.size());
 
 printf("s = {");
@@ -228,12 +219,12 @@ printf(" %d", *it);
 
 printf("}\n");
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 9
 
 Multiset
@@ -281,15 +272,12 @@ int main()
 
 {
 
-```
-
 multiset<int> s;
 
 multiset<int>:: iterator it;
 
 s.insert(5); s.insert(5); s.insert(5);
 
-```c
 printf("Quantidade de 5: %d\n", s.count(5));
 
 printf("s = {");
@@ -303,12 +291,9 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 s.erase(5);
 
-```c
 printf("Quantidade de 5: %d\n", s.count(5));
 
 printf("s = {");
@@ -322,14 +307,11 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 s.insert(5); s.insert(5); s.insert(5);
 
 s.erase(s.find(5));
 
-```c
 printf("Quantidade de 5: %d\n", s.count(5));
 
 printf("s = {");
@@ -344,12 +326,12 @@ printf(" %d", *it);
 
 printf("}\n");
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 12
 
 Exercício
@@ -397,11 +379,8 @@ int main()
 
 {
 
-```
-
 bitset<10> s(string("0010011010"));
 
-```c
 // from right to left
 
 cout << "s = (" << s << ")\n";
@@ -412,13 +391,10 @@ cout << "s[5] = " << s[5] << "\n";
 
 printf("Total = %d\n", s.count());
 
-```
-
 bitset<10> a(string("0010110110"));
 
 bitset<10> b(string("1011011000"));
 
-```c
 cout << "a = (" << a << ")\n";
 
 cout << "b = (" << b << ")\n";
@@ -429,12 +405,12 @@ cout << "a|b = (" << (a|b) << ")\n";
 
 cout << "a^b = (" << (a^b) << ")\n";
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 15
 
 Exercício
@@ -482,8 +458,6 @@ int main()
 
 {
 
-```
-
 map<string,int> m;
 
 m["primeiro"] = 4;
@@ -492,19 +466,18 @@ m["segundo"] = 3;
 
 m["terceiro"] = 9;
 
-```c
 printf("primeiro: %d\n", m["primeiro"]);
 
 printf("segundo: %d\n", m["segundo"]);
 
 printf("terceiro: %d\n", m["terceiro"]);
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 18
 
 Map
@@ -528,8 +501,6 @@ int main()
 
 {
 
-```
-
 map<string,int> m;
 
 map<string,int>:: iterator it;
@@ -540,7 +511,6 @@ m["segundo"] = 3;
 
 m["terceiro"] = 9;
 
-```c
 printf("fulano - %d\n\n", m["fulano"]);
 
 for (it = m.begin(); it != m.end(); ++it)
@@ -551,12 +521,12 @@ cout << it->first << " - " << it->second << "\n";
 
 }
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 20
 
 Exercício

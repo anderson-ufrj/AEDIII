@@ -194,6 +194,7 @@ if k < T.chave
 
 INSERIR(T.esquerda, k);
 
+```c
 // Ajustar ponteiro para nó pai
 
 CALCULAR_FB(T);
@@ -211,6 +212,8 @@ CALCULAR_FB(T);
 BALANCEAR(T);
 
 }
+```
+
 
 (Ciência da Computação – IFSULDEMINAS)
 
@@ -645,13 +648,14 @@ Inserção
 ```c
 int insereAVL(no **T, int x) {
 
+```
+
 // variável booleana que indica se a altura da árvore cresceu
 
 int cresceu;
 
 if (*T == NULL) {
 
-```
 
 *T = (no *) malloc(sizeof(no));
 
@@ -676,11 +680,11 @@ cresceu = 1;
 
 } else cresceu = 0;
 
-```
-
 return cresceu;
 
 }
+```
+
 
 (Ciência da Computação – IFSULDEMINAS)
 
@@ -696,11 +700,11 @@ Analisando Inserção à Esquerda
 
 Inserção
 
+```c
 // Tenta inserir à esquerda e vê se a sub-árvore cresceu
 
 cresceu = insereAVL(&(*T)->esq, x);
 
-```c
 if (cresceu) {
 
 // Verifica o estado atual de balanceamento
@@ -708,6 +712,7 @@ if (cresceu) {
 switch((*T)->bal) {
 
 ```
+
 
 case 1:
 
@@ -793,6 +798,7 @@ case -1:
 
 if ((*T)->esq->bal == -1) {
 
+```c
 // FB filho esquerdo = -1
 
 rot_dir(T);
@@ -824,6 +830,8 @@ if ((*T)->bal == -1) {
 (*T)->bal = 0;
 
 }
+```
+
 
 (Ciência da Computação – IFSULDEMINAS)
 

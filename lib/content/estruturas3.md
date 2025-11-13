@@ -50,15 +50,12 @@ int main()
 
 {
 
-```
-
 deque<int> d;
 
 deque<int>:: iterator it;
 
 d.push_back(5);
 
-```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -70,12 +67,9 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 d.push_back(2);
 
-```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -87,12 +81,9 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 d.push_front(3);
 
-```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -104,12 +95,9 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 d.pop_back();
 
-```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -121,12 +109,9 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 d.pop_front();
 
-```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -138,8 +123,6 @@ printf(" %d", *it);
 }
 
 printf("}\n");
-
-```
 
 return 0;
 
@@ -155,6 +138,8 @@ d = { 3 5}
 
 d = { 5}
 
+
+```
 ## Página 5
 
 Stack
@@ -189,8 +174,6 @@ int main()
 
 {
 
-```
-
 stack<int> s;
 
 s.push(3);
@@ -213,6 +196,8 @@ return 0;
 
 }
 
+
+```
 ## Página 8
 
 Queue
@@ -247,8 +232,6 @@ int main()
 
 {
 
-```
-
 queue<int> q;
 
 q.push(3);
@@ -271,6 +254,8 @@ return 0;
 
 }
 
+
+```
 ## Página 11
 
 Priority Queue
@@ -328,8 +313,6 @@ int main()
 
 {
 
-```
-
 priority_queue<int> q;
 
 q.push(3);
@@ -364,6 +347,8 @@ return 0;
 
 }
 
+
+```
 ## Página 14
 
 Se quisermos criar uma fila de prioridade que suporte a descoberta e remoção
@@ -383,12 +368,11 @@ int main()
 
 {
 
-```
-
 priority_queue<int, vector<int>, greater<int> > q;
 
-```c
 for( int i= 0; i< 10; ++i ) q.push( rand() );
+```
+
 
 while( !q.empty() )
 
@@ -396,7 +380,6 @@ while( !q.empty() )
 
 printf("%d\n", q.top());
 
-```
 
 q.pop();
 

@@ -62,20 +62,20 @@ começa quando a função é chamada sem parâmetros.
 void search()
 
 {
+```
+
 
 if(permutation.size() == n)
 
 {
 
+```c
 // process permutation
 
 }
 
-```
-
 else
 
-```c
 {
 
 for (int i = 0; i < n; i++)
@@ -83,8 +83,6 @@ for (int i = 0; i < n; i++)
 {
 
 if (chosen[i]) continue;
-
-```
 
 chosen[i] = true;
 
@@ -96,7 +94,6 @@ chosen[i] = false;
 
 permutation.pop_back();
 
-```c
 }
 
 }
@@ -104,6 +101,7 @@ permutation.pop_back();
 }
 
 ```
+
 
 Cada chamada de função adiciona um novo elemento à permutação. A matriz
 
@@ -137,15 +135,15 @@ permutation.push_back(i);
 
 do
 
-```c
 {
 
+```c
 // process permutation
 
 } while(next_permutation(permutation.begin(),permutation.end()));
 
-```
 
+```
 ## Página 7
 
 Exercício Resolvido
@@ -221,11 +219,8 @@ int main()
 
 int n;
 
-```
-
 string line;
 
-```c
 scanf ("%d", &n);
 
 for (int t = 0; t < n; ++t)
@@ -234,13 +229,12 @@ for (int t = 0; t < n; ++t)
 
 cin >> line;
 
+sort(line.begin(), line.end());
 ```
 
-sort(line.begin(), line.end());
 
 do
 
-```c
 {
 
 printf("%s\n", line.c_str());
@@ -251,7 +245,6 @@ printf("\n");
 
 }
 
-```
 
 return 0;
 
@@ -286,8 +279,6 @@ scanf("%d %d %d",&a,&b,&c);
 
 if((a<=b)&&(b<=c)) printf("%d %d %d\n",a,b,c);
 
-```
-
 else if((a<=c)&&(c<=b)) printf("%d %d %d\n",a,c,b);
 
 else if((b<=a)&&(a<=c)) printf("%d %d %d\n",b,a,c);
@@ -300,6 +291,8 @@ else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 
 }
 
+
+```
 ## Página 11
 
 4! = 24
@@ -328,11 +321,8 @@ int main()
 
 int n;
 
-```
-
 string line;
 
-```c
 char name[100][2];
 
 char resposta[100], r[100];
@@ -341,11 +331,8 @@ char parte[100];
 
 bool question;
 
-```
-
 map<string, int> numbers;
 
-```c
 scanf ("%d", &n);
 
 for (int t = 0; t < n; ++t)
@@ -358,8 +345,6 @@ for(int i=0; i<line.length();i++)
 
 {
 
-```
-
 name[i][0]=line[i];
 
 name[i][1]='\0’;
@@ -368,18 +353,18 @@ scanf("%d",&numbers[name[i]]);
 
 }
 
+
+```
 ## Página 13
 
 do
 
-```c
 {
 
 for(int i=0; i<line.length();i++)
 
 {
 
-```
 
 name[i][0]=line[i];
 
@@ -423,7 +408,6 @@ strcat(resposta,"\n");
 
 strcpy(r,resposta);
 
-```c
 }
 
 } while (next_permutation(line.begin(), line.end()));
@@ -432,7 +416,6 @@ printf("%s",r);
 
 }
 
-```
 
 return 0;
 

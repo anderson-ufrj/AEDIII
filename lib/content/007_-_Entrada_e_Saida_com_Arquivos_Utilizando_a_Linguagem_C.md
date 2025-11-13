@@ -109,14 +109,12 @@ Programa que lê caracteres da tela e inverte a caixa deles
 
 main()
 
-```c
 {
 
 char ch;
 
 printf(“Entre com algum texto (digite um . para sair)”);
 
-```
 
 do
 
@@ -543,13 +541,13 @@ Programa que lê strings do teclado e as escreve em um arquivo em disco
 
 ```
 
+
 main()
 
 {
 
 FILE *fp;
 
-```c
 char str[80];
 
 if((fp=fopen(“teste.txt”, “w”))==NULL)
@@ -558,7 +556,6 @@ if((fp=fopen(“teste.txt”, “w”))==NULL)
 
 printf(“arquivo não pode ser aberto\n”);
 
-```
 
 exit(1);
 
@@ -611,9 +608,6 @@ main(int argc, char *argv[])
 
 FILE *fp;
 
-```
-
-```c
 char ch;
 
 if (argc!=2)
@@ -622,12 +616,11 @@ if (argc!=2)
 
 printf(“entrar com o nome do arquivo”);
 
-```
-
 exit(1);
 
-```c
 }
+```
+
 
 if((fp=fopen(argv[1],”r”))==NULL)
 
@@ -635,7 +628,6 @@ if((fp=fopen(argv[1],”r”))==NULL)
 
 printf(“arquivo não pode ser aberto\n”);
 
-```
 
 exit(1);
 
@@ -733,6 +725,8 @@ Escreve alguns dados não-caracteres em um arquivo em disco e lê de volta.
 #include <stdio.h>
 
 #include <stdlib.h>
+```
+
 
 main()
 
@@ -742,7 +736,6 @@ FILE *fp;
 
 double d = 12.23;
 
-```
 
 Entrada e Sa
 
@@ -758,7 +751,6 @@ da com Arquivos
 
 ## Página 16
 
-```c
 int i = 101;
 
 long l = 123023L;
@@ -769,7 +761,6 @@ if ((fp=fopen(“dados.dat”, “wb+”)) == NULL)
 
 printf(“arquivo não pode ser aberto\n”);
 
-```
 
 exit(1);
 

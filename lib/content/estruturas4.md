@@ -218,13 +218,13 @@ serão seus membros second. Segue o código para melhor entendimento:
 
 ## Página 9
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
 
 vector< pair< pair<int, int>, int > > aluno; // declara o vetor que irá guardar os alunos
 
-```c
 int n; // declaro o int n
 
 int main()
@@ -243,15 +243,12 @@ scanf("%d %d", &s, &f);
 
 // depois o adiciona ao vetor de alunos
 
-```
-
 aluno.push_back(make_pair(make_pair(-s, f), i));
 
 }
 
 sort(aluno.begin(), aluno.end()); // ordeno os alunos
 
-```c
 // e imprimo suas identificações ordenadas
 
 for(int i=0; i<n; i++) printf("%d ", aluno[i].second);
@@ -260,12 +257,12 @@ for(int i=0; i<n; i++) printf("%d ", aluno[i].second);
 
 printf("\n");
 
-```
-
 return 0;
 
 }
 
+
+```
 ## Página 10
 
 Exercícios
