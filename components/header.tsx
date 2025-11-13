@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   return (
@@ -20,7 +23,7 @@ export function Header() {
               <p className="text-xs text-muted-foreground">Ciência da Computação</p>
             </div>
           </Link>
-          <nav className="flex gap-2">
+          <nav className="flex items-center gap-2">
             <Button variant="ghost" asChild>
               <Link href="/">Início</Link>
             </Button>
@@ -30,6 +33,9 @@ export function Header() {
             <Button variant="ghost" asChild>
               <Link href="/#pdfs">PDFs</Link>
             </Button>
+            <div className="border-l pl-2 ml-2">
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       </div>
