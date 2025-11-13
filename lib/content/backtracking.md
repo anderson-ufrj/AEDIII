@@ -35,6 +35,7 @@ Sudoku
 
 Sudoku
 
+```c
 #include <bits/stdc++.h>
 
 // UNASSIGNED é usado por células vazias
@@ -52,6 +53,8 @@ bool FindUnassignedLocation(int grid[N][N], int &row, int &col);
 // Checa se é permitido colocar um determinado número na célula encontrada
 
 bool isSafe(int grid[N][N], int row, int col, int num);
+```
+
 
 ## Página 5
 
@@ -61,6 +64,7 @@ verificando os requisitos para solução do Sudoku (não duplicação nas linhas
 
 matrizes 3x3) */
 
+```c
 bool SolveSudoku(int grid[N][N])
 
 { int row, col;
@@ -68,6 +72,8 @@ bool SolveSudoku(int grid[N][N])
 // Se não há célula vazia, sucesso!
 
 if (!FindUnassignedLocation(grid, row, col))
+
+```
 
 return true; // successo!
 
@@ -111,6 +117,7 @@ return false; // isto engatilha o backtracking
 
 coluna são retornadas nos ponteiros */
 
+```c
 bool FindUnassignedLocation(int grid[N][N], int &row, int &col)
 
 {
@@ -126,11 +133,14 @@ return true;
 return false;
 
 }
+```
+
 
 ## Página 7
 
 // Retorna um booleano que indica se um número já foi utilizado em uma linha específica
 
+```c
 bool UsedInRow(int grid[N][N], int row, int num)
 
 {
@@ -172,6 +182,8 @@ if (grid[row+boxStartRow][col+boxStartCol] == num) return true;
 return false;
 
 }
+```
+
 
 ## Página 8
 
@@ -179,11 +191,14 @@ return false;
 
 determinada célula */
 
+```c
 bool isSafe(int grid[N][N], int row, int col, int num)
 
 {
 
 /* Checa se num já não está na linha definida, na coluna definida ou na matriz 3x3
+
+```
 
 correspondente */
 
@@ -197,6 +212,7 @@ return !UsedInRow(grid, row, num) &&
 
 /* Função para imprimir a matriz toda */
 
+```c
 void printGrid(int grid[N][N])
 
 {
@@ -214,9 +230,12 @@ printf("\n");
 }
 
 }
+```
+
 
 ## Página 9
 
+```c
 int main()
 
 {
@@ -244,6 +263,8 @@ int grid[N][N] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
 if (SolveSudoku(grid) == true)
 
 printGrid(grid);
+
+```
 
 else
 

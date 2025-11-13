@@ -41,6 +41,7 @@ Um deque pode ser usado da seguinte forma:
 
 ## Página 4
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -49,12 +50,15 @@ int main()
 
 {
 
+```
+
 deque<int> d;
 
 deque<int>:: iterator it;
 
 d.push_back(5);
 
+```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -66,9 +70,12 @@ printf(" %d", *it);
 }
 
 printf("}\n");
+
+```
 
 d.push_back(2);
 
+```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -80,9 +87,12 @@ printf(" %d", *it);
 }
 
 printf("}\n");
+
+```
 
 d.push_front(3);
 
+```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -94,9 +104,12 @@ printf(" %d", *it);
 }
 
 printf("}\n");
+
+```
 
 d.pop_back();
 
+```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -108,9 +121,12 @@ printf(" %d", *it);
 }
 
 printf("}\n");
+
+```
 
 d.pop_front();
 
+```c
 printf("d = {");
 
 for (it = d.begin(); it != d.end(); ++it)
@@ -122,6 +138,8 @@ printf(" %d", *it);
 }
 
 printf("}\n");
+
+```
 
 return 0;
 
@@ -162,6 +180,7 @@ Elemento do topo: 5
 
 Elemento do topo: 2
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -169,6 +188,8 @@ using namespace std;
 int main()
 
 {
+
+```
 
 stack<int> s;
 
@@ -217,6 +238,7 @@ Elemento do inicio: 3
 
 Elemento do inicio: 2
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -224,6 +246,8 @@ using namespace std;
 int main()
 
 {
+
+```
 
 queue<int> q;
 
@@ -295,6 +319,7 @@ Elemento do inicio: 3
 
 Elemento do inicio: 6
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -302,6 +327,8 @@ using namespace std;
 int main()
 
 {
+
+```
 
 priority_queue<int> q;
 
@@ -347,6 +374,7 @@ priority_queue<int,vector<int>,greater<int>> q;
 
 ## Página 15
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -355,8 +383,11 @@ int main()
 
 {
 
+```
+
 priority_queue<int, vector<int>, greater<int> > q;
 
+```c
 for( int i= 0; i< 10; ++i ) q.push( rand() );
 
 while( !q.empty() )
@@ -364,6 +395,8 @@ while( !q.empty() )
 {
 
 printf("%d\n", q.top());
+
+```
 
 q.pop();
 

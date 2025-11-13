@@ -642,6 +642,7 @@ Outra Proposta de Inserção em Árvore AVL
 
 Inserção
 
+```c
 int insereAVL(no **T, int x) {
 
 // variável booleana que indica se a altura da árvore cresceu
@@ -649,6 +650,8 @@ int insereAVL(no **T, int x) {
 int cresceu;
 
 if (*T == NULL) {
+
+```
 
 *T = (no *) malloc(sizeof(no));
 
@@ -660,6 +663,7 @@ if (*T == NULL) {
 
 cresceu = 1;
 
+```c
 // Esta sub arvore cresceu
 
 } else if ((*T)->chave > x) {
@@ -671,6 +675,8 @@ cresceu = 1;
 // chama inserção para direita
 
 } else cresceu = 0;
+
+```
 
 return cresceu;
 
@@ -694,11 +700,14 @@ Inserção
 
 cresceu = insereAVL(&(*T)->esq, x);
 
+```c
 if (cresceu) {
 
 // Verifica o estado atual de balanceamento
 
 switch((*T)->bal) {
+
+```
 
 case 1:
 

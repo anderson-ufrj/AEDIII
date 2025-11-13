@@ -58,6 +58,7 @@ começa quando a função é chamada sem parâmetros.
 
 ## Página 5
 
+```c
 void search()
 
 {
@@ -70,8 +71,11 @@ if(permutation.size() == n)
 
 }
 
+```
+
 else
 
+```c
 {
 
 for (int i = 0; i < n; i++)
@@ -79,6 +83,8 @@ for (int i = 0; i < n; i++)
 {
 
 if (chosen[i]) continue;
+
+```
 
 chosen[i] = true;
 
@@ -90,11 +96,14 @@ chosen[i] = false;
 
 permutation.pop_back();
 
+```c
 }
 
 }
 
 }
+
+```
 
 Cada chamada de função adiciona um novo elemento à permutação. A matriz
 
@@ -128,11 +137,14 @@ permutation.push_back(i);
 
 do
 
+```c
 {
 
 // process permutation
 
 } while(next_permutation(permutation.begin(),permutation.end()));
+
+```
 
 ## Página 7
 
@@ -198,6 +210,7 @@ cba
 
 ## Página 8
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -208,8 +221,11 @@ int main()
 
 int n;
 
+```
+
 string line;
 
+```c
 scanf ("%d", &n);
 
 for (int t = 0; t < n; ++t)
@@ -218,10 +234,13 @@ for (int t = 0; t < n; ++t)
 
 cin >> line;
 
+```
+
 sort(line.begin(), line.end());
 
 do
 
+```c
 {
 
 printf("%s\n", line.c_str());
@@ -231,6 +250,8 @@ printf("%s\n", line.c_str());
 printf("\n");
 
 }
+
+```
 
 return 0;
 
@@ -250,6 +271,7 @@ Como proceder?
 
 Deve-se verificar todas as 6 combinações possíveis (3!)
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -263,6 +285,8 @@ int a,b,c;
 scanf("%d %d %d",&a,&b,&c);
 
 if((a<=b)&&(b<=c)) printf("%d %d %d\n",a,b,c);
+
+```
 
 else if((a<=c)&&(c<=b)) printf("%d %d %d\n",a,c,b);
 
@@ -293,6 +317,7 @@ else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 
 ## Página 12
 
+```c
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -303,8 +328,11 @@ int main()
 
 int n;
 
+```
+
 string line;
 
+```c
 char name[100][2];
 
 char resposta[100], r[100];
@@ -313,8 +341,11 @@ char parte[100];
 
 bool question;
 
+```
+
 map<string, int> numbers;
 
+```c
 scanf ("%d", &n);
 
 for (int t = 0; t < n; ++t)
@@ -326,6 +357,8 @@ cin >> line;
 for(int i=0; i<line.length();i++)
 
 {
+
+```
 
 name[i][0]=line[i];
 
@@ -339,11 +372,14 @@ scanf("%d",&numbers[name[i]]);
 
 do
 
+```c
 {
 
 for(int i=0; i<line.length();i++)
 
 {
+
+```
 
 name[i][0]=line[i];
 
@@ -387,6 +423,7 @@ strcat(resposta,"\n");
 
 strcpy(r,resposta);
 
+```c
 }
 
 } while (next_permutation(line.begin(), line.end()));
@@ -394,6 +431,8 @@ strcpy(r,resposta);
 printf("%s",r);
 
 }
+
+```
 
 return 0;
 
