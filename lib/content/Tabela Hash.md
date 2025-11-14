@@ -8,17 +8,12 @@ source: "Tabela Hash.pdf"
 # AED III Tabela Hash
 
 
-## Página 1
-
 AED III
 
 Tabela Hash
 
 Ciência da Computação – IFSULDEMINAS
 
-Primeiro Semestre de 2014
-
-## Página 2
 
 Roteiro
 
@@ -38,15 +33,9 @@ Colisões
 
 Considerações Finais
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-2 / 30
-
-## Página 3
 
 Contextualização
 
@@ -66,15 +55,9 @@ Estruturas que podem ser usadas:
 
 ◮tabelas de espalhamento (hash)
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 30
-
-## Página 4
 
 Contextualização
 
@@ -94,15 +77,9 @@ Estruturas que podem ser usadas:
 
 ◮tabelas de espalhamento (hash)
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 30
-
-## Página 5
 
 Contextualização
 
@@ -130,15 +107,9 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 30
-
-## Página 6
 
 Contextualização
 
@@ -166,15 +137,9 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 30
-
-## Página 7
 
 Contextualização
 
@@ -202,15 +167,9 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 30
-
-## Página 8
 
 Contextualização
 
@@ -238,15 +197,9 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 30
-
-## Página 9
 
 Contextualização
 
@@ -260,15 +213,9 @@ A estrutura com tal propriedade é chamada de tabela hash.
 
 Como sabemos se 11, 20 e 45 está no vetor?
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 30
-
-## Página 10
 
 Deﬁnição de Hash
 
@@ -290,15 +237,9 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 30
-
-## Página 11
 
 Deﬁnição de Hash
 
@@ -320,15 +261,9 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 30
-
-## Página 12
 
 Deﬁnição de Hash
 
@@ -350,15 +285,9 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 30
-
-## Página 13
 
 Deﬁnição de Hash
 
@@ -380,27 +309,15 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 30
-
-## Página 14
 
 Deﬁnição de Hash
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 30
-
-## Página 15
 
 Tabela Hash
 
@@ -420,15 +337,9 @@ A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 30
-
-## Página 16
 
 Tabela Hash
 
@@ -448,15 +359,9 @@ A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 30
-
-## Página 17
 
 Tabela Hash
 
@@ -476,15 +381,9 @@ A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 30
-
-## Página 18
 
 Como representar tabela hash?
 
@@ -494,18 +393,38 @@ Vetor + Lista Encadeada: o vetor contém ponteiros para as listas
 
 que representam as informações.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 30
 
 ![Imagem 1](/images/Tabela Hash_p18_img0.jpeg)
 
 
-## Página 19
+Função de Hashing
+
+Função de Hashing
+
+A Função de Hashing é a responsável por gerar um índice a partir de
+
+uma determinada chave.
+
+O ideal é que a função forneça índices únicos para o conjunto das
+
+chaves de entrada possíveis.
+
+Características desejáveis: eﬁciência e bom espalhamento.
+
+A função de Hashing é extremamente importante, pois ela é
+
+responsável por distribuir as informações pela Tabela Hash.
+
+A implementação da função de Hashing tem inﬂuência direta na
+
+eﬁciência das operações sobre o Hash.
+
+
+AED III
+
 
 Função de Hashing
 
@@ -529,15 +448,9 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 30
-
-## Página 20
 
 Função de Hashing
 
@@ -561,15 +474,9 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 30
-
-## Página 21
 
 Função de Hashing
 
@@ -593,15 +500,9 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 30
-
-## Página 22
 
 Função de Hashing
 
@@ -625,47 +526,9 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 30
-
-## Página 23
-
-Função de Hashing
-
-Função de Hashing
-
-A Função de Hashing é a responsável por gerar um índice a partir de
-
-uma determinada chave.
-
-O ideal é que a função forneça índices únicos para o conjunto das
-
-chaves de entrada possíveis.
-
-Características desejáveis: eﬁciência e bom espalhamento.
-
-A função de Hashing é extremamente importante, pois ela é
-
-responsável por distribuir as informações pela Tabela Hash.
-
-A implementação da função de Hashing tem inﬂuência direta na
-
-eﬁciência das operações sobre o Hash.
-
-(Ciência da Computação – IFSULDEMINAS)
-
-AED III
-
-Primeiro Semestre de 2014
-
-10 / 30
-
-## Página 24
 
 Função de Hashing
 
@@ -693,15 +556,9 @@ chave.
 
 ◮p[i] é um inteiro de um conjunto de pesos gerado randomicamente.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 30
-
-## Página 25
 
 Função de Hashing
 
@@ -717,15 +574,9 @@ Escolha de funções de hashings apropriadas tentam minimizar a
 
 probabilidade de ocorrência de colisões.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 30
-
-## Página 26
 
 Hashing Perfeito
 
@@ -733,13 +584,9 @@ Para quaisquer chaves x e y diferentes e pertencentes a A, a função
 
 utilizada fornece saídas diferentes.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 30
 
 ![Imagem 1](/images/Tabela Hash_p26_img0.png)
 
@@ -747,26 +594,18 @@ Primeiro Semestre de 2014
 ![Imagem 2](/images/Tabela Hash_p26_img1.png)
 
 
-## Página 27
-
 Hashing Imperfeito
 
 Existe chaves x e y diferentes e pertencentes a A, onde a função Hash
 
 utilizada fornece saídas iguais.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 30
 
 ![Imagem 1](/images/Tabela Hash_p27_img0.png)
 
-
-## Página 28
 
 Exemplo - Hashing Imperfeito
 
@@ -820,15 +659,9 @@ S
 
 6
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 30
-
-## Página 29
 
 Considerações sobre funções de hashing
 
@@ -850,15 +683,9 @@ estruturas de dados:
 
 ◮Listas Encadeadas, Árvores Balanceadas, etc
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 30
-
-## Página 30
 
 Considerações sobre funções de hashing
 
@@ -880,15 +707,9 @@ estruturas de dados:
 
 ◮Listas Encadeadas, Árvores Balanceadas, etc
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 30
-
-## Página 31
 
 Considerações sobre funções de hashing
 
@@ -910,15 +731,9 @@ estruturas de dados:
 
 ◮Listas Encadeadas, Árvores Balanceadas, etc
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 30
-
-## Página 32
 
 Colisões
 
@@ -938,15 +753,9 @@ disponíveis na tabela.
 
 potencial de distribuição (espalhamento).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-17 / 30
-
-## Página 33
 
 Colisões
 
@@ -966,15 +775,9 @@ disponíveis na tabela.
 
 potencial de distribuição (espalhamento).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-17 / 30
-
-## Página 34
 
 Colisões
 
@@ -994,15 +797,9 @@ disponíveis na tabela.
 
 potencial de distribuição (espalhamento).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-17 / 30
-
-## Página 35
 
 Tratamento de colisões
 
@@ -1018,15 +815,9 @@ Técnicas mais comuns
 
 ◮Endereçamento Aberto (Rehash ou Hashing Fechado);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-18 / 30
-
-## Página 36
 
 Tratamento de colisões
 
@@ -1042,15 +833,9 @@ Técnicas mais comuns
 
 ◮Endereçamento Aberto (Rehash ou Hashing Fechado);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-18 / 30
-
-## Página 37
 
 Tratamento de colisões
 
@@ -1066,15 +851,9 @@ Técnicas mais comuns
 
 ◮Endereçamento Aberto (Rehash ou Hashing Fechado);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-18 / 30
-
-## Página 38
 
 Encadeamento
 
@@ -1090,18 +869,12 @@ H, A, V, E e S em um vetor de P = 7 posições conforme a seguinte
 
 função f(K) = KASCII%P.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 30
 
 ![Imagem 1](/images/Tabela Hash_p38_img0.jpeg)
 
-
-## Página 39
 
 Encadeamento - Operações
 
@@ -1125,15 +898,9 @@ Hash-Delete(T, x)
 
 remova x da lista T[h(x)]
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-20 / 30
-
-## Página 40
 
 Endereçamento
 
@@ -1155,15 +922,9 @@ rh(k, i) = (k + i) % M
 
 ◮i é o índice de reaplicação do Hash
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 30
-
-## Página 41
 
 Endereçamento
 
@@ -1185,15 +946,9 @@ rh(k, i) = (k + i) % M
 
 ◮i é o índice de reaplicação do Hash
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 30
-
-## Página 42
 
 Endereçamento
 
@@ -1215,15 +970,9 @@ rh(k, i) = (k + i) % M
 
 ◮i é o índice de reaplicação do Hash
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 30
-
-## Página 43
 
 Exemplo - Rehash Linear
 
@@ -1317,15 +1066,9 @@ S
 
 -
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-22 / 30
-
-## Página 44
 
 Exemplo - Rehash Linear
 
@@ -1343,15 +1086,9 @@ V
 
 E
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-23 / 30
-
-## Página 45
 
 Endereçamento
 
@@ -1371,15 +1108,9 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 30
-
-## Página 46
 
 Endereçamento
 
@@ -1399,15 +1130,9 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 30
-
-## Página 47
 
 Endereçamento
 
@@ -1427,15 +1152,9 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 30
-
-## Página 48
 
 Endereçamento
 
@@ -1455,15 +1174,9 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 30
-
-## Página 49
 
 Endereçamento
 
@@ -1483,15 +1196,9 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 30
-
-## Página 50
 
 Endereçamento - Operações
 
@@ -1515,15 +1222,9 @@ until T[j] == NIL or i == m
 
 return NIL
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-25 / 30
-
-## Página 51
 
 Endereçamento - Operações
 
@@ -1549,15 +1250,9 @@ until i == m
 
 error "Estouro da tabela hash"
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 30
-
-## Página 52
 
 Endereçamento - Operações
 
@@ -1581,15 +1276,9 @@ i = i + 1
 
 until T[j] == NIL or i == m
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-27 / 30
-
-## Página 53
 
 Limitações
 
@@ -1607,15 +1296,9 @@ No pior caso a complexidade das operações pode ser O(n). Caso em
 
 que todos os elementos inseridos colidirem.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-28 / 30
-
-## Página 54
 
 Limitações
 
@@ -1633,15 +1316,9 @@ No pior caso a complexidade das operações pode ser O(n). Caso em
 
 que todos os elementos inseridos colidirem.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-28 / 30
-
-## Página 55
 
 Limitações
 
@@ -1659,15 +1336,9 @@ No pior caso a complexidade das operações pode ser O(n). Caso em
 
 que todos os elementos inseridos colidirem.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-28 / 30
-
-## Página 56
 
 Vantagens x Desvantagens
 
@@ -1687,15 +1358,9 @@ Desvantagens:
 
 tipo de informação usada como chave.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 30
-
-## Página 57
 
 Vantagens x Desvantagens
 
@@ -1715,15 +1380,9 @@ Desvantagens:
 
 tipo de informação usada como chave.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 30
-
-## Página 58
 
 Exercícios
 
@@ -1737,10 +1396,6 @@ entre 1 a 100. Faça o tratamento de colisões utilizando
 
 encadeamento e endereçamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 30

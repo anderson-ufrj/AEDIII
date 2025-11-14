@@ -8,13 +8,10 @@ source: "004_-_Splay_Tree.pdf"
 # Microsoft PowerPoint - splay
 
 
-## Página 1
-
 AED III
 
 Splay Tree
 
-## Página 2
 
 Contextualização
 
@@ -34,7 +31,6 @@ da sequência é desconhecido.
 
 A árvore splay foi inventada por Daniel Sleator e Robert Tarjan em 1985.
 
-## Página 3
 
 Contextualização
 
@@ -50,7 +46,6 @@ recentemente acessados são mantidos perto da raiz e a árvore permanece
 
 aproximadamente equilibrada.
 
-## Página 4
 
 Rotação simples
 
@@ -60,8 +55,6 @@ Se pai(B) é raiz fazemos apenas uma rotação para esquerda ou direita.
 
 ![Imagem 1](/images/004_-_Splay_Tree_p4_img0.jpeg)
 
-
-## Página 5
 
 Rotação dupla (ZIG-ZIG, ZAG-ZAG)
 
@@ -76,8 +69,6 @@ pelo pai(pai(C)).
 ![Imagem 1](/images/004_-_Splay_Tree_p5_img0.jpeg)
 
 
-## Página 6
-
 Rotação dupla ZIG-ZAG
 
 ZIG-ZAG
@@ -88,8 +79,6 @@ pai(C) para direita e outra rotação no avô para esquerda de C.
 
 ![Imagem 1](/images/004_-_Splay_Tree_p6_img0.jpeg)
 
-
-## Página 7
 
 Rotação dupla ZAG-ZIG
 
@@ -102,8 +91,6 @@ pai(C) para esquerda e outra rotação no avô para direita de C.
 ![Imagem 1](/images/004_-_Splay_Tree_p7_img0.jpeg)
 
 
-## Página 8
-
 Busca
 
 Como a Splay Tree é um algoritmo, que ao passar das operações ela vai se
@@ -114,7 +101,6 @@ encontra um nó x que contenha i, o nó x é splayed. Se a busca não encontra i
 
 último nó não nulo da árvore é splayed e um ponteiro nulo é retornado.
 
-## Página 9
 
 Inserção
 
@@ -124,7 +110,6 @@ Busca, apenas com uma adição que o elemento que foi adicionado se torna a
 
 nova raiz.
 
-## Página 10
 
 Exercícios
 

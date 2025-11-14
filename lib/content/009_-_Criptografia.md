@@ -8,8 +8,6 @@ source: "009_-_Criptografia.pdf"
 # 
 
 
-## Página 1
-
 Criptografia
 
 Criptografia
@@ -50,8 +48,6 @@ Algoritmo e Estruturas de Dados III
 ![Imagem 2](/images/009_-_Criptografia_p1_img1.png)
 
 
-## Página 2
-
 Introdução
 
 Criptografia : é caracterizada como a ciência
@@ -77,8 +73,6 @@ compreendê-la.
 ![Imagem 3](/images/009_-_Criptografia_p2_img2.png)
 
 
-## Página 3
-
 Introdução
 
 Criptoanálise : a arte ou ciência de recuperar
@@ -103,8 +97,6 @@ chamada de ataque.
 
 ![Imagem 3](/images/009_-_Criptografia_p3_img2.png)
 
-
-## Página 4
 
 Motivação
 
@@ -145,8 +137,6 @@ informação correta.
 ![Imagem 3](/images/009_-_Criptografia_p4_img2.png)
 
 
-## Página 5
-
 Técnicas e Algoritmos
 
 de Criptografia:
@@ -174,8 +164,6 @@ Exemplo de Aplicação
 
 ![Imagem 4](/images/009_-_Criptografia_p5_img3.png)
 
-
-## Página 6
 
 Documento
 
@@ -209,8 +197,6 @@ Mecanismos de Segurança baseada em Papel
 
 ![Imagem 3](/images/009_-_Criptografia_p6_img2.png)
 
-
-## Página 7
 
 Serviços de Segurança Eletrônica
 
@@ -259,8 +245,6 @@ Confidencialidade
 ![Imagem 3](/images/009_-_Criptografia_p7_img2.png)
 
 
-## Página 8
-
 Internet & Segurança
 
 Mais de 70% das fraudes eletrônicas tem origem
@@ -287,8 +271,6 @@ Fonte: Forester Research
 
 ![Imagem 3](/images/009_-_Criptografia_p8_img2.png)
 
-
-## Página 9
 
 Fundamentos da Credibilidade
 
@@ -325,8 +307,6 @@ A origem da informação não pode ser negada
 ![Imagem 3](/images/009_-_Criptografia_p9_img2.png)
 
 
-## Página 10
-
 Aplicações
 
 Basicamente, a criptografia é utilizada
@@ -354,8 +334,6 @@ para garantir:
 ![Imagem 3](/images/009_-_Criptografia_p10_img2.png)
 
 
-## Página 11
-
 Criptografia Tradicional
 
 Até o advento dos computadores um dos fatores
@@ -376,8 +354,6 @@ necessárias.
 
 ![Imagem 3](/images/009_-_Criptografia_p11_img2.png)
 
-
-## Página 12
 
 História: A Roma Antiga
 
@@ -405,8 +381,6 @@ A palavra CESAR é escrita como FHVDU
 
 ![Imagem 3](/images/009_-_Criptografia_p12_img2.png)
 
-
-## Página 13
 
 A Roda Criptográfica - Século 18
 
@@ -1105,8 +1079,6 @@ enviada ou recebida
 
 ![Imagem 228](/images/009_-_Criptografia_p13_img227.png)
 
-
-## Página 14
 
 A Máquina Enigma - Século 20
 
@@ -2439,8 +2411,6 @@ embarcações navais
 ![Imagem 437](/images/009_-_Criptografia_p14_img436.png)
 
 
-## Página 15
-
 Criptografia Contemporânea
 
 A criptografia contemporânea não é mais
@@ -2466,8 +2436,6 @@ sistema.
 ![Imagem 3](/images/009_-_Criptografia_p15_img2.png)
 
 
-## Página 16
-
 Criptografia Contemporânea
 
 Para uso moderno, um criptosistema deve ter
@@ -2486,8 +2454,6 @@ secreto – uma chave.
 
 ![Imagem 3](/images/009_-_Criptografia_p16_img2.png)
 
-
-## Página 17
 
 Segurança
 
@@ -2511,8 +2477,6 @@ exceto as chaves utilizadas.
 
 ![Imagem 3](/images/009_-_Criptografia_p17_img2.png)
 
-
-## Página 18
 
 Premissas de segurança
 
@@ -2545,8 +2509,6 @@ receber as mensagens cifradas.
 ![Imagem 3](/images/009_-_Criptografia_p18_img2.png)
 
 
-## Página 19
-
 Modelo de criptosistema
 
 Finalidade básica:
@@ -2577,8 +2539,6 @@ original.
 
 ![Imagem 3](/images/009_-_Criptografia_p19_img2.png)
 
-
-## Página 20
 
 Modelo de Criptossistema
 
@@ -2617,8 +2577,6 @@ Atacante ativo ou passivo
 ![Imagem 3](/images/009_-_Criptografia_p20_img2.png)
 
 
-## Página 21
-
 Modelo de Criptossistema
 
 Matematicamente, tem-se:
@@ -2643,8 +2601,6 @@ cifragem e decifragem.
 
 ![Imagem 3](/images/009_-_Criptografia_p21_img2.png)
 
-
-## Página 22
 
 Ataque do texto cifrado
 
@@ -2680,8 +2636,6 @@ método para inferir Mn+1 a partir de Cn+1.
 
 ![Imagem 3](/images/009_-_Criptografia_p22_img2.png)
 
-
-## Página 23
 
 Ataque do texto conhecido
 
@@ -2720,8 +2674,6 @@ Mn+1 a partir de Cn+1
 ![Imagem 3](/images/009_-_Criptografia_p23_img2.png)
 
 
-## Página 24
-
 Ataque adaptativo do texto escolhido
 
 Pode existir uma realimentação entre uma
@@ -2750,8 +2702,6 @@ partir de Cn+1.
 
 ![Imagem 3](/images/009_-_Criptografia_p24_img2.png)
 
-
-## Página 25
 
 Ataque do texto cifrado escolhido
 
@@ -2782,8 +2732,6 @@ Cn.
 ![Imagem 3](/images/009_-_Criptografia_p25_img2.png)
 
 
-## Página 26
-
 Ataque da chave escolhida
 
 Embora não considerado por muitos especialistas
@@ -2810,8 +2758,6 @@ mensagens cifradas com estas chaves.
 
 ![Imagem 3](/images/009_-_Criptografia_p26_img2.png)
 
-
-## Página 27
 
 Criptografia tradicional
 
@@ -2842,8 +2788,6 @@ decifragem a mesma chave da cifragem.
 ![Imagem 3](/images/009_-_Criptografia_p27_img2.png)
 
 
-## Página 28
-
 Cifras de substituição
 
 Cifragem : cada caracter (ou grupo de caracteres) na
@@ -2868,8 +2812,6 @@ original.
 
 ![Imagem 3](/images/009_-_Criptografia_p28_img2.png)
 
-
-## Página 29
 
 Substituição monoalfabética
 
@@ -2899,8 +2841,6 @@ B é O, . . ., N é A, O é B, etc).
 
 ![Imagem 3](/images/009_-_Criptografia_p29_img2.png)
 
-
-## Página 30
 
 Substituição polialfabética
 
@@ -2933,8 +2873,6 @@ posições 1, 5, 9, 13, etc; a segunda nas posições 2,
 ![Imagem 3](/images/009_-_Criptografia_p30_img2.png)
 
 
-## Página 31
-
 Substituição por polígramos
 
 Utiliza grupos de caracteres em vez de
@@ -2961,8 +2899,6 @@ diante).
 
 ![Imagem 3](/images/009_-_Criptografia_p31_img2.png)
 
-
-## Página 32
 
 Cifras de transposição
 
@@ -3001,8 +2937,6 @@ substituição.
 ![Imagem 3](/images/009_-_Criptografia_p32_img2.png)
 
 
-## Página 33
-
 Técnicas de Cifragem
 
 Cifragem por blocos
@@ -3030,8 +2964,6 @@ um ou exclusivo.
 ![Imagem 3](/images/009_-_Criptografia_p33_img2.png)
 
 
-## Página 34
-
 Cifragem por bloco
 
 Bloco de entrada
@@ -3055,8 +2987,6 @@ Cifrador por blocos
 ![Imagem 3](/images/009_-_Criptografia_p34_img2.png)
 
 
-## Página 35
-
 Cifragem bit-a-bit
 
 Bit de entrada
@@ -3077,8 +3007,6 @@ Cifrador bit-a-bit
 
 ![Imagem 3](/images/009_-_Criptografia_p35_img2.png)
 
-
-## Página 36
 
 Encadeamento por blocos
 
@@ -3109,8 +3037,6 @@ Encadeamento por blocos
 ![Imagem 3](/images/009_-_Criptografia_p36_img2.png)
 
 
-## Página 37
-
 Encadeamento por blocos
 
 Realimentação de texto cifrado
@@ -3139,8 +3065,6 @@ Encadeamento por blocos
 
 ![Imagem 3](/images/009_-_Criptografia_p37_img2.png)
 
-
-## Página 38
 
 Exercícios:
 

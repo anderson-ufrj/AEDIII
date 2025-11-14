@@ -8,13 +8,10 @@ source: "mochila.pdf"
 # Microsoft PowerPoint - mochila
 
 
-## Página 1
-
 AED III
 
 Problema da Mochila
 
-## Página 2
 
 Problema da Mochila
 
@@ -28,7 +25,6 @@ No problema da mochila 0-1, o ladrão deve levar itens inteiros. Já no problema
 
 da mochila fracionária, o ladrão pode levar frações de um item.
 
-## Página 3
 
 Problema da Mochila 0-1
 
@@ -40,7 +36,6 @@ Problema da Mochila 0-1
 
 **Peso suportado pela mochila: 50Kg**
 
-## Página 4
 
 Problema da Mochila 0-1
 
@@ -50,9 +45,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -63,7 +55,6 @@ Valor: R$0,00
 
 0 Kg
 
-## Página 5
 
 Problema da Mochila 0-1
 
@@ -73,9 +64,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -86,7 +74,6 @@ Valor: R$0,00
 
 0 Kg
 
-## Página 6
 
 Problema da Mochila 0-1
 
@@ -96,9 +83,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -111,7 +95,6 @@ Item 1
 
 10 Kg
 
-## Página 7
 
 Problema da Mochila 0-1
 
@@ -121,9 +104,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -136,7 +116,6 @@ Valor: R$60,00
 
 Item 1
 
-## Página 8
 
 Problema da Mochila 0-1
 
@@ -146,9 +125,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -163,7 +139,6 @@ Item 2
 
 Item 1
 
-## Página 9
 
 Problema da Mochila 0-1
 
@@ -173,9 +148,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -190,7 +162,6 @@ Item 2
 
 Item 1
 
-## Página 10
 
 Problema da Mochila 0-1
 
@@ -200,9 +171,6 @@ Problema da Mochila 0-1
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Possível Solução
@@ -219,7 +187,6 @@ Item 2
 
 Item 1
 
-## Página 11
 
 Problema da Mochila 0-1
 
@@ -235,7 +202,6 @@ Item 2
 
 Item 1
 
-## Página 12
 
 Problema da Mochila 0-1
 
@@ -249,9 +215,6 @@ Solução Ótima
 | 3    | 120        | 30        | 4            |
 
 
-
-
-
 Mochila (50 Kg)
 
 Valor: R$220,00
@@ -262,7 +225,6 @@ Item 2
 
 Item 3
 
-## Página 13
 
 Problema da Mochila Fracionária
 
@@ -276,7 +238,6 @@ Então se pode fracionar o item de forma a colocar apenas 10% de seu peso na
 
 mochila e consequentemente colocar apenas 10% de seu valor.
 
-## Página 14
 
 Problema da Mochila Fracionária
 
@@ -286,14 +247,10 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Peso suportado pela mochila: 50Kg
 
-## Página 15
 
 Problema da Mochila Fracionária
 
@@ -303,9 +260,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -316,7 +270,6 @@ Valor: R$0,00
 
 0 Kg
 
-## Página 16
 
 Problema da Mochila Fracionária
 
@@ -326,9 +279,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -339,7 +289,6 @@ Valor: R$0,00
 
 0 Kg
 
-## Página 17
 
 Problema da Mochila Fracionária
 
@@ -349,9 +298,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -364,7 +310,6 @@ Item 1
 
 10 Kg
 
-## Página 18
 
 Problema da Mochila Fracionária
 
@@ -374,9 +319,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -389,7 +331,6 @@ Valor: R$60,00
 
 Item 1
 
-## Página 19
 
 Problema da Mochila Fracionária
 
@@ -399,9 +340,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -416,7 +354,6 @@ Item 2
 
 Item 1
 
-## Página 20
 
 Problema da Mochila Fracionária
 
@@ -426,9 +363,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -443,7 +377,6 @@ Item 2
 
 Item 1
 
-## Página 21
 
 Problema da Mochila Fracionária
 
@@ -453,9 +386,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -474,7 +404,6 @@ Item 2
 
 Item 1
 
-## Página 22
 
 Problema da Mochila Fracionária
 
@@ -484,9 +413,6 @@ Problema da Mochila Fracionária
 | 1    | 60         | 10        | 6            |
 | 2    | 100        | 20        | 5            |
 | 3    | 120        | 30        | 4            |
-
-
-
 
 
 Solução Ótima
@@ -505,7 +431,6 @@ Item 2
 
 Item 1
 
-## Página 23
 
 Problema da Mochila Fracionária
 
@@ -517,9 +442,6 @@ Problema da Mochila Fracionária
 | 3    | 120        | 30        | 4            |
 
 
-
-
-
 Solução Ótima
 
 Mochila (50 Kg)
@@ -534,7 +456,6 @@ Item 1
 
 2/3 do Item 3
 
-## Página 24
 
 Problema da Mochila Fracionária
 
@@ -552,7 +473,6 @@ Item 1
 
 2/3 do Item 3
 
-## Página 25
 
 Exercícios
 

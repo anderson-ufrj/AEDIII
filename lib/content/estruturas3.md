@@ -8,8 +8,6 @@ source: "estruturas3.pdf"
 # Microsoft PowerPoint - estruturas3
 
 
-## Página 1
-
 AED III
 
 Estruturas C++
@@ -22,7 +20,6 @@ Queue
 
 Priority Queue
 
-## Página 2
 
 Deque
 
@@ -38,8 +35,6 @@ Um deque pode ser usado da seguinte forma:
 
 ![Imagem 1](/images/estruturas3_p3_img0.jpeg)
 
-
-## Página 4
 
 ```cpp
 #include <bits/stdc++.h>
@@ -101,7 +96,6 @@ d = { 3 5}
 
 d = { 5}
 ```
-## Página 5
 
 Stack
 
@@ -115,8 +109,6 @@ O código a seguir mostra como uma pilha pode ser usada:
 
 ![Imagem 1](/images/estruturas3_p6_img0.jpeg)
 
-
-## Página 7
 
 Elemento do topo: 3
 
@@ -143,7 +135,6 @@ int main()
     return 0;
 }
 ```
-## Página 8
 
 Queue
 
@@ -157,8 +148,6 @@ O código a seguir mostra como uma fila pode ser usada:
 
 ![Imagem 1](/images/estruturas3_p9_img0.jpeg)
 
-
-## Página 10
 
 Elemento do inicio: 3
 
@@ -185,7 +174,6 @@ int main()
     return 0;
 }
 ```
-## Página 11
 
 Priority Queue
 
@@ -209,7 +197,6 @@ simples do que uma árvore binária equilibrada usada em um conjunto
 
 ordenado.
 
-## Página 12
 
 Por padrão, os elementos em uma fila de prioridade C++ são classificados em ordem
 
@@ -217,7 +204,6 @@ decrescente, e é possível encontrar e remover o maior elemento na fila. O cód
 
 seguir ilustra isso:
 
-## Página 13
 
 Elemento do inicio: 3
 
@@ -256,7 +242,6 @@ int main()
     return 0;
 }
 ```
-## Página 14
 
 Se quisermos criar uma fila de prioridade que suporte a descoberta e remoção
 
@@ -264,7 +249,6 @@ do menor elemento, podemos fazê-lo da seguinte maneira:
 
 priority_queue<int,vector<int>,greater<int>> q;
 
-## Página 15
 
 ```cpp
 #include <bits/stdc++.h>
@@ -291,7 +275,6 @@ return 0;
 
 }
 
-## Página 16
 
 Exercícios
 
@@ -325,7 +308,6 @@ término da simulação deve ser informado o tempo médio dos clientes
 
 aguardando na fila.
 
-## Página 17
 
 Exercícios
 
@@ -349,7 +331,6 @@ placa, cada vez que é pressionada a tecla S deve ser mostrado o estado do
 
 estacionamento.
 
-## Página 18
 
 Exercícios
 

@@ -8,13 +8,10 @@ source: "pesquisa_completa.pdf"
 # Microsoft PowerPoint - pesquisa_completa
 
 
-## Página 1
-
 AED III
 
 Pesquisa Completa
 
-## Página 2
 
 Pesquisa Completa
 
@@ -32,7 +29,6 @@ por todas as soluções, porque a pesquisa geralmente é fácil de implementar e
 
 sempre dá a resposta correta.
 
-## Página 3
 
 Gerando Permutações
 
@@ -44,7 +40,6 @@ elementos. Por exemplo, as permutações de {0, 1, 2} são (0, 1, 2), (0, 2, 1),
 
 recursão ou passar pelas permutações iterativamente.
 
-## Página 4
 
 Método 1
 
@@ -56,7 +51,6 @@ A função cria uma permutação vetorial que contém a permutação e a pesquis
 
 começa quando a função é chamada sem parâmetros.
 
-## Página 5
 
 ```cpp
 void search()
@@ -89,7 +83,6 @@ tamanho da permutação for igual ao tamanho do conjunto, uma permutação
 
 foi gerada.
 
-## Página 6
 
 Método 2
 
@@ -114,7 +107,6 @@ do
     // process permutation
 } while(next_permutation(permutation.begin(),permutation.end()));
 ```
-## Página 7
 
 Exercício Resolvido
 
@@ -176,7 +168,6 @@ cab
 
 cba
 
-## Página 8
 
 ```cpp
 #include <bits/stdc++.h>
@@ -205,7 +196,6 @@ int main()
 }
 ```
 
-## Página 9
 
 Se o sort() não existisse?
 
@@ -215,7 +205,6 @@ em ordem crescente. Porém, a função sort(), que faz tal ordenação não exis
 
 Como proceder?
 
-## Página 10
 
 Deve-se verificar todas as 6 combinações possíveis (3!)
 
@@ -234,7 +223,6 @@ int main()
     else if((c<=b)&&(b<=a)) printf("%d %d %d\n",c,b,a);
 }
 ```
-## Página 11
 
 4! = 24
 
@@ -248,8 +236,6 @@ int main()
 
 ![Imagem 1](/images/pesquisa_completa_p11_img0.jpeg)
 
-
-## Página 12
 
 ```cpp
 #include <bits/stdc++.h>
@@ -314,11 +300,6 @@ int main()
 }
 ```
 
-## Página 13
-
-## Página 14
-
-## Página 15
 
 Exercício
 
@@ -350,7 +331,6 @@ devem seguir, de modo que percorram a menor distância possível, com a sua
 
 nuvem voadora.
 
-## Página 16
 
 Escreva um programa que, dadas as coordenadas dos icosaedros, informe o
 

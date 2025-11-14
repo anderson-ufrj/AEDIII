@@ -8,17 +8,12 @@ source: "002_-_AVL-Implementacao.pdf"
 # AED III Árvores Binárias Balanceadas — AVL
 
 
-## Página 1
-
 AED III
 
 Árvores Binárias Balanceadas — AVL
 
 Ciência da Computação – IFSULDEMINAS
 
-Primeiro Semestre de 2014
-
-## Página 2
 
 Roteiro
 
@@ -38,15 +33,9 @@ Remoção em Árvore AVL
 
 Outra Proposta
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-2 / 15
-
-## Página 3
 
 Estrutura para Árvore AVL
 
@@ -64,15 +53,9 @@ esquerda ponteiro para o filho da esquerda;
 
 pai ponteiro para o pai;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 15
-
-## Página 4
 
 Inserção em Árvore AVL
 
@@ -90,15 +73,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 15
-
-## Página 5
 
 Inserção em Árvore AVL
 
@@ -116,15 +93,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 15
-
-## Página 6
 
 Inserção em Árvore AVL
 
@@ -142,15 +113,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 15
-
-## Página 7
 
 Inserção em Árvore AVL
 
@@ -168,15 +133,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 15
-
-## Página 8
 
 Inserção em Árvore AVL
 
@@ -207,15 +166,8 @@ BALANCEAR(T);
 ```
 
 
-(Ciência da Computação – IFSULDEMINAS)
-
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 15
-
-## Página 9
 
 Inserção em Árvore AVL
 
@@ -243,15 +195,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 10
 
 Inserção em Árvore AVL
 
@@ -279,15 +225,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 11
 
 Inserção em Árvore AVL
 
@@ -315,15 +255,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 12
 
 Inserção em Árvore AVL
 
@@ -351,15 +285,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 13
 
 Inserção em Árvore AVL
 
@@ -387,15 +315,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 14
 
 Inserção em Árvore AVL
 
@@ -423,15 +345,9 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 15
-
-## Página 15
 
 Remoção em Árvore AVL
 
@@ -449,15 +365,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 15
-
-## Página 16
 
 Remoção em Árvore AVL
 
@@ -475,15 +385,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 15
-
-## Página 17
 
 Remoção em Árvore AVL
 
@@ -501,15 +405,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 15
-
-## Página 18
 
 Remoção em Árvore AVL
 
@@ -527,15 +425,9 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 15
-
-## Página 19
 
 Remoção em Árvore AVL
 
@@ -575,15 +467,9 @@ Parâmetros da função:
 
 ◮k: valor a ser removido
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 15
-
-## Página 20
 
 Remoção em Árvore AVL
 
@@ -623,15 +509,9 @@ Parâmetros da função:
 
 ◮k: valor a ser removido
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 15
-
-## Página 21
 
 Outra Proposta de Inserção em Árvore AVL
 
@@ -659,15 +539,8 @@ int insereAVL(no **T, int x) {
 ```
 
 
-(Ciência da Computação – IFSULDEMINAS)
-
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 15
-
-## Página 22
 
 Analisando Inserção à Esquerda
 
@@ -689,15 +562,9 @@ if (cresceu) {
 }
 ```
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 15
-
-## Página 23
 
 Analisando Inserção à Esquerda
 
@@ -713,15 +580,9 @@ cresceu = 0;
 
 break;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 15
-
-## Página 24
 
 Analisando Inserção à Esquerda
 
@@ -737,15 +598,9 @@ cresceu = 1;
 
 break;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 15
-
-## Página 25
 
 Analisando Inserção à Esquerda
 
@@ -778,38 +633,21 @@ rot_dir(T);
 ```
 
 
-(Ciência da Computação – IFSULDEMINAS)
-
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 15
-
-## Página 26
 
 Analisando Inserção à Esquerda
 
 O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é -1.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 15
-
-## Página 27
 
 Analisando Inserção à Esquerda
 
 O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é 1.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 15

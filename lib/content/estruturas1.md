@@ -8,8 +8,6 @@ source: "estruturas1.pdf"
 # Microsoft PowerPoint - estruturas1
 
 
-## Página 1
-
 AED III
 
 Estruturas C++
@@ -18,7 +16,6 @@ Vector
 
 Iterator
 
-## Página 2
 
 Vector
 
@@ -44,7 +41,6 @@ v.erase(v.begin(), v.end()); // limpa o vetor
 
 sort(v.begin(),v.end()); //ordena o vetor
 
-## Página 3
 
 Iterator
 
@@ -68,7 +64,6 @@ Ele possui os métodos begin() e end() pra indicar onde começa e onde termina a
 
 iteração.
 
-## Página 4
 
 Iterator
 
@@ -96,7 +91,6 @@ int main()
     return 0;
 }
 ```
-## Página 5
 
 Problema
 

@@ -8,8 +8,6 @@ source: "estruturas2.pdf"
 # Microsoft PowerPoint - estruturas2
 
 
-## Página 1
-
 AED III
 
 Estruturas C++
@@ -22,7 +20,6 @@ Bitset
 
 Map
 
-## Página 2
 
 Set
 
@@ -44,7 +41,6 @@ funções que não estão disponíveis no unordered_set. Por outro lado,
 
 unordered_set pode ser mais eficiente.
 
-## Página 3
 
 Set
 
@@ -56,7 +52,6 @@ conjunto, a contagem de função retorna o número de ocorrências de um
 
 elemento no conjunto e a função apaga remove um elemento do conjunto.
 
-## Página 4
 
 ```cpp
 #include <bits/stdc++.h>
@@ -76,7 +71,6 @@ int main()
     return 0;
 }
 ```
-## Página 5
 
 Set
 
@@ -88,7 +82,6 @@ conjunto, imprime o número de elementos e itera através de todos os
 
 elementos:
 
-## Página 6
 
 ```cpp
 #include <bits/stdc++.h>
@@ -112,7 +105,6 @@ int main()
     return 0;
 }
 ```
-## Página 7
 
 Set
 
@@ -126,7 +118,6 @@ adiciona um elemento ao conjunto se ele já estiver lá. O código a seguir ilus
 
 isso:
 
-## Página 8
 
 ```cpp
 #include <bits/stdc++.h>
@@ -161,7 +152,6 @@ int main()
     return 0;
 }
 ```
-## Página 9
 
 Multiset
 
@@ -179,7 +169,6 @@ s.insert(5); s.insert(5); s.insert(5);
 
 printf("Quantidade de 5: %d\n", s.count(5));
 
-## Página 10
 
 Multiset
 
@@ -197,7 +186,6 @@ s.erase(s.find(5));
 
 printf("Quantidade de 5: %d\n", s.count(5));
 
-## Página 11
 
 ```cpp
 #include <bits/stdc++.h>
@@ -237,7 +225,6 @@ int main()
     return 0;
 }
 ```
-## Página 12
 
 Exercício
 
@@ -251,7 +238,6 @@ sejam previamente lidos, e permita que façam as seguintes operações:
 
 3) Crie um conjunto E com a subtração A - B
 
-## Página 13
 
 Bitset
 
@@ -273,7 +259,6 @@ algoritmos usando conjuntos de bits.
 
 O código a seguir mostra como manipular o bitset:
 
-## Página 14
 
 ```cpp
 #include <bits/stdc++.h>
@@ -296,7 +281,6 @@ int main()
     return 0;
 }
 ```
-## Página 15
 
 Exercício
 
@@ -308,7 +292,6 @@ Resolva as seguintes operações lógicas:
 
 12 ^10
 
-## Página 16
 
 Map
 
@@ -332,7 +315,6 @@ O código a seguir cria um mapa onde as chaves são strings e os valores são
 
 inteiros:
 
-## Página 17
 
 ```cpp
 #include <bits/stdc++.h>
@@ -349,7 +331,6 @@ int main()
     return 0;
 }
 ```
-## Página 18
 
 Map
 
@@ -361,7 +342,6 @@ automaticamente adicionada ao mapa com um valor padrão. Por exemplo, no
 
 código a seguir, a chave “fulano" com valor 0 é adicionada ao mapa.
 
-## Página 19
 
 ```cpp
 #include <bits/stdc++.h>
@@ -382,7 +362,6 @@ int main()
     return 0;
 }
 ```
-## Página 20
 
 Exercício
 
