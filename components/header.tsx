@@ -6,8 +6,19 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SearchBar } from "@/components/search-bar";
 import { SkipLink } from "@/components/skip-link";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Menu, Home, BookOpen, FileDown } from "lucide-react";
+import { useState } from "react";
 
 export function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <SkipLink />
@@ -42,6 +53,56 @@ export function Header() {
             <Button variant="ghost" asChild className="hidden lg:flex">
               <Link href="/#pdfs" aria-label="Ver PDFs disponíveis">PDFs</Link>
             </Button>
+
+            {/* Mobile Menu */}
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Abrir menu">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <SheetHeader>
+                  <SheetTitle>Menu</SheetTitle>
+                </SheetHeader>
+                <nav className="flex flex-col gap-4 mt-8">
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className="justify-start text-lg"
+                    onClick={() => setOpen(false)}
+                  >
+                    <Link href="/">
+                      <Home className="mr-2 h-5 w-5" />
+                      Início
+                    </Link>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className="justify-start text-lg"
+                    onClick={() => setOpen(false)}
+                  >
+                    <Link href="/content">
+                      <BookOpen className="mr-2 h-5 w-5" />
+                      Conteúdo
+                    </Link>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className="justify-start text-lg"
+                    onClick={() => setOpen(false)}
+                  >
+                    <Link href="/#pdfs">
+                      <FileDown className="mr-2 h-5 w-5" />
+                      PDFs
+                    </Link>
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
+
             <div className="border-l pl-2 ml-2" aria-label="Configurações">
               <ThemeToggle />
             </div>

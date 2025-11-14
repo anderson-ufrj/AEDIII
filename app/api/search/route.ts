@@ -2,10 +2,12 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { CONTENT_MAPPING } from "@/lib/types";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("q");
+  const categoryFilter = searchParams.get("category");
 
   if (!query || query.trim().length === 0) {
     return NextResponse.json({ results: [] });
@@ -23,6 +25,15 @@ export async function GET(request: Request) {
 
         const slug = filename.replace(/\.md$/, "");
         const title = data.title || slug;
+
+        // Get category from CONTENT_MAPPING
+        const contentInfo = CONTENT_MAPPING[slug];
+        const category = contentInfo?.category || "outros";
+
+        // Filter by category if specified
+        if (categoryFilter && category !== categoryFilter) {
+          return null;
+        }
 
         // Busca case-insensitive no título e conteúdo
         const lowerQuery = query.toLowerCase();
@@ -57,6 +68,7 @@ export async function GET(request: Request) {
           slug,
           title,
           excerpt,
+          category,
           // Score para ordenação (título tem mais peso)
           score: titleMatch ? 2 : 1,
         };
@@ -64,7 +76,7 @@ export async function GET(request: Request) {
       .filter((result) => result !== null)
       .sort((a, b) => b!.score - a!.score) // Ordena por relevância
       .slice(0, 10) // Limita a 10 resultados
-      .map(({ slug, title, excerpt }) => ({ slug, title, excerpt })); // Remove score do resultado final
+      .map(({ slug, title, excerpt, category }) => ({ slug, title, excerpt, category })); // Remove score do resultado final
 
     return NextResponse.json({ results });
   } catch (error) {

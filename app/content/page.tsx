@@ -10,6 +10,24 @@ import { FavoritesList } from "@/components/favorites-list";
 import { getAllContent, getContentByCategory, getAllSlugs } from "@/lib/content-loader";
 import { COURSE_CATEGORIES } from "@/lib/types";
 import { BookOpen, FileText, Star } from "lucide-react";
+import { getCategoryTheme } from "@/lib/category-config";
+
+// Helper function to extract plain text excerpt from markdown
+function getExcerpt(markdown: string, maxLength: number = 120): string {
+  // Remove markdown formatting and get plain text
+  const plainText = markdown
+    .replace(/#{1,6}\s/g, '') // Remove headers
+    .replace(/\*\*(.+?)\*\*/g, '$1') // Remove bold
+    .replace(/\*(.+?)\*/g, '$1') // Remove italic
+    .replace(/\[(.+?)\]\(.+?\)/g, '$1') // Remove links
+    .replace(/```[\s\S]*?```/g, '') // Remove code blocks
+    .replace(/`(.+?)`/g, '$1') // Remove inline code
+    .replace(/\n+/g, ' ') // Replace newlines with spaces
+    .trim();
+
+  if (plainText.length <= maxLength) return plainText;
+  return plainText.substring(0, maxLength).trim() + '...';
+}
 
 export default function ContentPage() {
   const allContent = getAllContent();
@@ -51,34 +69,49 @@ export default function ContentPage() {
 
             <TabsContent value="all" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {allContent.map((content) => (
-                  <Card key={content.slug} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="flex items-start justify-between gap-2">
-                        <CardTitle className="flex items-center gap-2 text-lg">
-                          <FileText className="h-5 w-5" />
+                {allContent.map((content) => {
+                  const theme = getCategoryTheme(content.category);
+                  const Icon = theme.icon;
+                  const excerpt = getExcerpt(content.content);
+
+                  return (
+                    <Card
+                      key={content.slug}
+                      className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col"
+                    >
+                      <CardHeader className="flex-grow">
+                        <div className="flex items-start justify-between gap-2 mb-3">
+                          <div className={`p-2 rounded-lg ${theme.bgColor}`}>
+                            <Icon className={`h-5 w-5 ${theme.color}`} />
+                          </div>
+                          <FavoriteButton
+                            contentSlug={content.slug}
+                            contentTitle={content.title}
+                            variant="icon"
+                          />
+                        </div>
+                        <CardTitle className="text-lg line-clamp-2">
                           {content.title}
                         </CardTitle>
-                        <FavoriteButton
-                          contentSlug={content.slug}
-                          contentTitle={content.title}
-                          variant="icon"
-                        />
-                      </div>
-                      <CardDescription>
-                        {content.pages > 0 && `${content.pages} páginas`}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Button variant="outline" className="w-full" asChild>
-                        <Link href={`/content/${content.slug}`}>
-                          <BookOpen className="mr-2 h-4 w-4" />
-                          Ler Material
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
+                        <CardDescription className="line-clamp-2 text-sm">
+                          {excerpt}
+                        </CardDescription>
+                        <div className="text-xs text-muted-foreground mt-2">
+                          {content.pages > 0 && `${content.pages} páginas`}
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <Button variant="outline" className="w-full group" asChild>
+                          <Link href={`/content/${content.slug}`}>
+                            <BookOpen className="mr-2 h-4 w-4" />
+                            Ler Material
+                            <span className="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </TabsContent>
 
@@ -90,34 +123,62 @@ export default function ContentPage() {
 
             {COURSE_CATEGORIES.map((category) => {
               const categoryContent = getContentByCategory(category.id);
+              const theme = getCategoryTheme(category.id);
+              const Icon = theme.icon;
+
               return (
                 <TabsContent key={category.id} value={category.id} className="space-y-4">
                   <div className="mb-6">
-                    <h2 className="text-2xl font-bold mb-2">{category.name}</h2>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className={`p-2 rounded-lg ${theme.bgColor}`}>
+                        <Icon className={`h-6 w-6 ${theme.color}`} />
+                      </div>
+                      <h2 className="text-2xl font-bold">{category.name}</h2>
+                    </div>
                     <p className="text-muted-foreground">{category.description}</p>
                   </div>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {categoryContent.map((content) => (
-                      <Card key={content.slug} className="hover:shadow-lg transition-shadow">
-                        <CardHeader>
-                          <CardTitle className="flex items-center gap-2 text-lg">
-                            <FileText className="h-5 w-5" />
-                            {content.title}
-                          </CardTitle>
-                          <CardDescription>
-                            {content.pages > 0 && `${content.pages} páginas`}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                          <Button variant="outline" className="w-full" asChild>
-                            <Link href={`/content/${content.slug}`}>
-                              <BookOpen className="mr-2 h-4 w-4" />
-                              Ler Material
-                            </Link>
-                          </Button>
-                        </CardContent>
-                      </Card>
-                    ))}
+                    {categoryContent.map((content) => {
+                      const excerpt = getExcerpt(content.content);
+
+                      return (
+                        <Card
+                          key={content.slug}
+                          className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col"
+                        >
+                          <CardHeader className="flex-grow">
+                            <div className="flex items-start justify-between gap-2 mb-3">
+                              <div className={`p-2 rounded-lg ${theme.bgColor}`}>
+                                <Icon className={`h-5 w-5 ${theme.color}`} />
+                              </div>
+                              <FavoriteButton
+                                contentSlug={content.slug}
+                                contentTitle={content.title}
+                                variant="icon"
+                              />
+                            </div>
+                            <CardTitle className="text-lg line-clamp-2">
+                              {content.title}
+                            </CardTitle>
+                            <CardDescription className="line-clamp-2 text-sm">
+                              {excerpt}
+                            </CardDescription>
+                            <div className="text-xs text-muted-foreground mt-2">
+                              {content.pages > 0 && `${content.pages} páginas`}
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <Button variant="outline" className="w-full group" asChild>
+                              <Link href={`/content/${content.slug}`}>
+                                <BookOpen className="mr-2 h-4 w-4" />
+                                Ler Material
+                                <span className="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                              </Link>
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      );
+                    })}
                   </div>
                 </TabsContent>
               );

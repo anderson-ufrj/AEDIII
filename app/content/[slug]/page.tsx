@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { ContentDetailClient } from "@/components/content-detail-client";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { TableOfContents } from "@/components/table-of-contents";
 import { getAllSlugs, getContentBySlug, getAdjacentContent } from "@/lib/content-loader";
 
 export async function generateStaticParams() {
@@ -32,13 +33,23 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
           ]}
         />
 
-        {/* Single column layout - all tools in side panel */}
-        <div className="max-w-5xl mx-auto">
-          <ContentDetailClient
-            content={content}
-            previous={previous ? { slug: previous.slug, title: previous.title } : null}
-            next={next ? { slug: next.slug, title: next.title } : null}
-          />
+        {/* Two column layout on desktop: Content + TOC Sidebar */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-8">
+            {/* Main content column */}
+            <div className="min-w-0">
+              <ContentDetailClient
+                content={content}
+                previous={previous ? { slug: previous.slug, title: previous.title } : null}
+                next={next ? { slug: next.slug, title: next.title } : null}
+              />
+            </div>
+
+            {/* TOC Sidebar - visible only on desktop */}
+            <aside className="hidden lg:block">
+              <TableOfContents />
+            </aside>
+          </div>
         </div>
       </main>
       <ScrollToTop />
