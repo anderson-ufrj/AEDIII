@@ -24,11 +24,23 @@ const CodeCompiler = dynamic(
   { ssr: false }
 );
 
+// Dynamically import NotesPanel to avoid SSR issues
+const NotesPanel = dynamic(
+  () => import("@/components/notes-panel").then((mod) => mod.NotesPanel),
+  { ssr: false }
+);
+
+// Import ReadingModeWrapper
+import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
+import { ContentSidePanel } from "@/components/content-side-panel";
+
 interface ContentDetailClientProps {
   content: CourseContent;
+  previous?: { slug: string; title: string } | null;
+  next?: { slug: string; title: string } | null;
 }
 
-export function ContentDetailClient({ content }: ContentDetailClientProps) {
+export function ContentDetailClient({ content, previous, next }: ContentDetailClientProps) {
   const [showPDFViewer, setShowPDFViewer] = useState(false);
   const [showCompiler, setShowCompiler] = useState(false);
   const [compilerCode, setCompilerCode] = useState("");
@@ -66,39 +78,13 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
                 </div>
               </div>
 
-              {/* PDF Actions */}
-              {pdfUrl && (
-                <div className="flex flex-col gap-2">
-                  <Button
-                    onClick={() => setShowPDFViewer(true)}
-                    className="gap-2"
-                  >
-                    <FileDown className="h-4 w-4" />
-                    Abrir PDF Original
-                  </Button>
-                  <Button variant="outline" asChild className="gap-2">
-                    <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4" />
-                      Nova Aba
-                    </a>
-                  </Button>
-                </div>
-              )}
             </div>
-
-            {pdfUrl && (
-              <div className="mt-4 p-4 bg-primary/10 rounded-lg">
-                <p className="text-sm text-primary font-medium">
-                  💡 Dica: Clique em "Abrir PDF Original" para visualizar o material com ferramentas de
-                  anotação interativas!
-                </p>
-              </div>
-            )}
           </Card>
 
           {/* Markdown Content */}
-          <Card className="p-8">
-            <article className="prose prose-zinc dark:prose-invert max-w-none">
+          <ReadingModeWrapper>
+            <Card className="p-8">
+              <article className="prose prose-zinc dark:prose-invert max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeHighlight]}
@@ -198,6 +184,7 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
               </ReactMarkdown>
             </article>
           </Card>
+          </ReadingModeWrapper>
 
           {/* Navigation */}
           <div className="mt-8 flex justify-between">
@@ -212,6 +199,16 @@ export function ContentDetailClient({ content }: ContentDetailClientProps) {
             </Button>
           </div>
       </div>
+
+      {/* Side Panel */}
+      <ContentSidePanel
+        contentSlug={content.slug}
+        contentTitle={content.title}
+        pdfUrl={pdfUrl}
+        onOpenPDF={() => setShowPDFViewer(true)}
+        previous={previous}
+        next={next}
+      />
 
       {/* PDF Viewer Modal */}
       {showPDFViewer && pdfUrl && (
