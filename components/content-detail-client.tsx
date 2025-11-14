@@ -36,6 +36,8 @@ import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
 import { ContentSidePanel } from "@/components/content-side-panel";
 import { CodeBlockWithActions } from "@/components/code-block-with-actions";
 import { TreeVisualizer } from "@/components/tree-visualizer";
+import { SplayTreeVisualizer } from "@/components/splay-tree-visualizer";
+import { BTreeVisualizer } from "@/components/btree-visualizer";
 
 interface ContentDetailClientProps {
   content: CourseContent;
@@ -130,6 +132,12 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
                     }
                     if (language === "tree-rbt") {
                       return <div className="my-6"><TreeVisualizer type="rbt" title="Visualizador de Árvore Rubro-Negra" /></div>;
+                    }
+                    if (language === "tree-splay") {
+                      return <div className="my-6"><SplayTreeVisualizer /></div>;
+                    }
+                    if (language === "tree-btree") {
+                      return <div className="my-6"><BTreeVisualizer order={3} /></div>;
                     }
 
                     const isCompilable = language === "c" || language === "cpp" || language === "C";
