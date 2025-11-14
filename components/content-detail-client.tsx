@@ -35,6 +35,7 @@ const NotesPanel = dynamic(
 import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
 import { ContentSidePanel } from "@/components/content-side-panel";
 import { CodeBlockWithActions } from "@/components/code-block-with-actions";
+import { TreeVisualizer } from "@/components/tree-visualizer";
 
 interface ContentDetailClientProps {
   content: CourseContent;
@@ -122,6 +123,15 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
                     // Detect language from className (format: language-c or language-cpp)
                     const match = /language-(\w+)/.exec(className || "");
                     const language = match ? match[1] : "";
+
+                    // Check for tree visualizers
+                    if (language === "tree-avl") {
+                      return <div className="my-6"><TreeVisualizer type="avl" /></div>;
+                    }
+                    if (language === "tree-rbt") {
+                      return <div className="my-6"><TreeVisualizer type="rbt" title="Visualizador de Árvore Rubro-Negra" /></div>;
+                    }
+
                     const isCompilable = language === "c" || language === "cpp" || language === "C";
 
                     // Extract text content from children (handles React elements)

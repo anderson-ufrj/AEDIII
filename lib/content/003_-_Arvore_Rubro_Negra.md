@@ -74,6 +74,13 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
+### 🔴⚫ Ferramenta Interativa: Visualizador de Árvore Rubro-Negra
+
+Explore o funcionamento das árvores Rubro-Negras! Insira e remova valores para observar como a árvore mantém o balanceamento através das cores dos nós (vermelho e preto). Veja em tempo real como as rotações e recolorações mantêm as propriedades da árvore.
+
+```tree-rbt
+```
+
 (Ciência da Computação – IFSULDEMINAS)
 
 AED III
