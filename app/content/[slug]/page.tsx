@@ -32,7 +32,7 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
           ]}
         />
 
-        {/* Single column layout - all tools in side panel */}
+        {/* Single column layout - TOC in side panel */}
         <div className="max-w-5xl mx-auto">
           <ContentDetailClient
             content={content}

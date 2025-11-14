@@ -9,8 +9,9 @@ import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, FileText, FileDown, ExternalLink, Play } from "lucide-react";
+import { ArrowLeft, FileText, FileDown, ExternalLink, Play, Copy, Check } from "lucide-react";
 import type { CourseContent } from "@/lib/types";
+import { toast } from "sonner";
 
 // Dynamically import PDFViewer to avoid SSR issues
 const PDFViewer = dynamic(
@@ -33,6 +34,10 @@ const NotesPanel = dynamic(
 // Import ReadingModeWrapper
 import { ReadingModeWrapper } from "@/components/reading-mode-wrapper";
 import { ContentSidePanel } from "@/components/content-side-panel";
+import { CodeBlockWithActions } from "@/components/code-block-with-actions";
+import { TreeVisualizer } from "@/components/tree-visualizer";
+import { SplayTreeVisualizer } from "@/components/splay-tree-visualizer";
+import { BTreeVisualizer } from "@/components/btree-visualizer";
 
 interface ContentDetailClientProps {
   content: CourseContent;
@@ -82,7 +87,7 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
           </Card>
 
           {/* Markdown Content */}
-          <ReadingModeWrapper>
+          <ReadingModeWrapper showControls={false}>
             <Card className="p-8">
               <article className="prose prose-zinc dark:prose-invert max-w-none">
               <ReactMarkdown
@@ -90,18 +95,21 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
                 rehypePlugins={[rehypeHighlight]}
                 components={{
                   h1: ({ node, ...props }) => (
-                    <h1 className="text-3xl font-bold mt-8 mb-4" {...props} />
+                    <h1 className="text-4xl md:text-5xl font-bold mt-12 mb-6 tracking-tight text-foreground border-b pb-4" {...props} />
                   ),
                   h2: ({ node, ...props }) => (
-                    <h2 className="text-2xl font-semibold mt-6 mb-3" {...props} />
+                    <h2 className="text-3xl md:text-4xl font-bold mt-10 mb-5 tracking-tight text-foreground" {...props} />
                   ),
                   h3: ({ node, ...props }) => (
-                    <h3 className="text-xl font-semibold mt-4 mb-2" {...props} />
+                    <h3 className="text-2xl md:text-3xl font-semibold mt-8 mb-4 tracking-tight text-foreground" {...props} />
                   ),
-                  p: ({ node, ...props }) => <p className="mb-4 leading-7" {...props} />,
-                  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4" {...props} />,
-                  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4" {...props} />,
-                  li: ({ node, ...props }) => <li className="mb-2" {...props} />,
+                  h4: ({ node, ...props }) => (
+                    <h4 className="text-xl md:text-2xl font-semibold mt-6 mb-3 text-foreground" {...props} />
+                  ),
+                  p: ({ node, ...props }) => <p className="mb-5 leading-relaxed text-lg" {...props} />,
+                  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-6 space-y-2" {...props} />,
+                  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-6 space-y-2" {...props} />,
+                  li: ({ node, ...props }) => <li className="leading-relaxed text-lg" {...props} />,
                   code: ({ node, inline, className, children, ...props }: any) => {
                     if (inline) {
                       return (
@@ -117,6 +125,21 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
                     // Detect language from className (format: language-c or language-cpp)
                     const match = /language-(\w+)/.exec(className || "");
                     const language = match ? match[1] : "";
+
+                    // Check for tree visualizers
+                    if (language === "tree-avl") {
+                      return <div className="my-6"><TreeVisualizer type="avl" /></div>;
+                    }
+                    if (language === "tree-rbt") {
+                      return <div className="my-6"><TreeVisualizer type="rbt" title="Visualizador de Árvore Rubro-Negra" /></div>;
+                    }
+                    if (language === "tree-splay") {
+                      return <div className="my-6"><SplayTreeVisualizer /></div>;
+                    }
+                    if (language === "tree-btree") {
+                      return <div className="my-6"><BTreeVisualizer order={3} /></div>;
+                    }
+
                     const isCompilable = language === "c" || language === "cpp" || language === "C";
 
                     // Extract text content from children (handles React elements)
@@ -134,26 +157,14 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
                     const codeString = extractText(children).replace(/\n$/, "");
 
                     return (
-                      <div className="relative group">
-                        {isCompilable && (
-                          <Button
-                            onClick={() => openCompiler(codeString, language === "cpp" ? "cpp" : "c")}
-                            size="sm"
-                            className="absolute top-2 right-2 gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10"
-                          >
-                            <Play className="h-3 w-3" />
-                            Executar no Compilador
-                          </Button>
-                        )}
-                        <pre className="!bg-zinc-900 !p-4 !rounded-lg overflow-x-auto !my-4">
-                          <code
-                            className={className}
-                            {...props}
-                          >
-                            {children}
-                          </code>
-                        </pre>
-                      </div>
+                      <CodeBlockWithActions
+                        code={codeString}
+                        language={language}
+                        className={className}
+                        onCompile={openCompiler}
+                      >
+                        {children}
+                      </CodeBlockWithActions>
                     );
                   },
                   img: ({ node, ...props }) => (

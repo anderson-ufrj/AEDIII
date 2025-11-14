@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Exercícios - Tabela Hash"
 author: ""
 pages: 1
 source: "Exercícios.pdf"
@@ -7,8 +7,6 @@ source: "Exercícios.pdf"
 
 # 
 
-
-## Página 1
 
 AED III – ALGORITMOS ESTRUTURAS DE DADOS III
 

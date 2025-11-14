@@ -8,17 +8,12 @@ source: "003_-_Arvore_Rubro_Negra.pdf"
 # AED III Árvores Rubro Negra
 
 
-## Página 1
-
 AED III
 
 Árvores Rubro Negra
 
 Ciência da Computação – IFSULDEMINAS
 
-Primeiro Semestre de 2014
-
-## Página 2
 
 Roteiro
 
@@ -50,15 +45,9 @@ Remoção em Árvore Rubro Negra
 
 Exercícios
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-2 / 43
-
-## Página 3
 
 Características
 
@@ -74,15 +63,16 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-(Ciência da Computação – IFSULDEMINAS)
+### 🔴⚫ Ferramenta Interativa: Visualizador de Árvore Rubro-Negra
+
+Explore o funcionamento das árvores Rubro-Negras! Insira e remova valores para observar como a árvore mantém o balanceamento através das cores dos nós (vermelho e preto). Veja em tempo real como as rotações e recolorações mantêm as propriedades da árvore.
+
+```tree-rbt
+```
+
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 43
-
-## Página 4
 
 Características
 
@@ -98,15 +88,9 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 43
-
-## Página 5
 
 Características
 
@@ -122,15 +106,9 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 43
-
-## Página 6
 
 Características
 
@@ -146,15 +124,9 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 43
-
-## Página 7
 
 Características
 
@@ -164,15 +136,9 @@ Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 43
-
-## Página 8
 
 Características
 
@@ -182,15 +148,9 @@ Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 43
-
-## Página 9
 
 Características
 
@@ -200,15 +160,9 @@ Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 43
-
-## Página 10
 
 Propriedades
 
@@ -230,15 +184,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 11
 
 Propriedades
 
@@ -260,15 +208,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 12
 
 Propriedades
 
@@ -290,15 +232,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 13
 
 Propriedades
 
@@ -320,15 +256,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 14
 
 Propriedades
 
@@ -350,15 +280,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 15
 
 Propriedades
 
@@ -380,15 +304,9 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 43
-
-## Página 16
 
 Altura Negra
 
@@ -402,15 +320,9 @@ Exemplo:
 
 Qual a altura negra do nó 7?
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 43
-
-## Página 17
 
 Altura Negra
 
@@ -424,18 +336,12 @@ Exemplo:
 
 Qual a altura negra do nó 7?
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p17_img0.jpeg)
 
-
-## Página 18
 
 Estrutura para Árvore Rubro Negra
 
@@ -453,15 +359,9 @@ esquerda ponteiro para o filho da esquerda;
 
 pai ponteiro para o pai;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 43
-
-## Página 19
 
 Rotações
 
@@ -469,52 +369,34 @@ As rotações para a direita e para a esquerda são utilizadas no
 
 balanceamento das árvores.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p19_img0.jpeg)
 
-
-## Página 20
 
 Exemplo Rotações
 
 Antes:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p20_img0.jpeg)
 
-
-## Página 21
 
 Exemplo Rotações
 
 Depois:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p21_img0.jpeg)
 
-
-## Página 22
 
 Algoritmo Rotação Esquerda
 
@@ -560,15 +442,9 @@ x.pai = y;
 
 }
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 43
-
-## Página 23
 
 Inserção em Árvore Rubro Negra
 
@@ -588,15 +464,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 24
 
 Inserção em Árvore Rubro Negra
 
@@ -616,15 +486,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 25
 
 Inserção em Árvore Rubro Negra
 
@@ -644,15 +508,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 26
 
 Inserção em Árvore Rubro Negra
 
@@ -672,15 +530,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 27
 
 Inserção em Árvore Rubro Negra
 
@@ -700,15 +552,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 28
 
 Inserção em Árvore Rubro Negra
 
@@ -728,15 +574,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 29
 
 Inserção em Árvore Rubro Negra
 
@@ -756,15 +596,9 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 43
-
-## Página 30
 
 Inserção em Árvore Rubro Negra
 
@@ -804,15 +638,9 @@ y.esquerda = z;
 
 else y.direita = z;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 43
-
-## Página 31
 
 Inserção em Árvore Rubro Negra
 
@@ -828,15 +656,9 @@ Sempre inserimos nós vermelhos.
 
 Após a inserção devemos balancear a árvore.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 43
-
-## Página 32
 
 Inserção em Árvore Rubro Negra
 
@@ -852,15 +674,9 @@ Sempre inserimos nós vermelhos.
 
 Após a inserção devemos balancear a árvore.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 43
-
-## Página 33
 
 Inserção em Árvore Rubro Negra
 
@@ -876,15 +692,9 @@ Sempre inserimos nós vermelhos.
 
 Após a inserção devemos balancear a árvore.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 43
-
-## Página 34
 
 Propriedades Violadas
 
@@ -906,15 +716,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 43
-
-## Página 35
 
 Propriedades Violadas
 
@@ -936,15 +740,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 43
-
-## Página 36
 
 Propriedades Violadas
 
@@ -966,15 +764,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 43
-
-## Página 37
 
 Propriedades Violadas
 
@@ -996,15 +788,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 43
-
-## Página 38
 
 Propriedades Violadas
 
@@ -1026,15 +812,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 43
-
-## Página 39
 
 A função RB_INSERE_FIXUP
 
@@ -1060,15 +840,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 40
 
 A função RB_INSERE_FIXUP
 
@@ -1094,15 +868,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 41
 
 A função RB_INSERE_FIXUP
 
@@ -1128,15 +896,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 42
 
 A função RB_INSERE_FIXUP
 
@@ -1162,15 +924,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 43
 
 A função RB_INSERE_FIXUP
 
@@ -1196,15 +952,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 44
 
 A função RB_INSERE_FIXUP
 
@@ -1230,15 +980,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 45
 
 A função RB_INSERE_FIXUP
 
@@ -1264,15 +1008,9 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 43
-
-## Página 46
 
 Caso 1
 
@@ -1282,15 +1020,9 @@ Colorimos o pai de z e o seu tio y de pretos e o avô de z de vermelho.
 
 O avô de z passa a ser o novo z.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-17 / 43
-
-## Página 47
 
 Caso 2
 
@@ -1300,15 +1032,9 @@ z passa a ser o pai de z.
 
 Executamos rotação à esquerda em z, caindo no caso 3.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-18 / 43
-
-## Página 48
 
 Caso 3
 
@@ -1318,15 +1044,9 @@ Colorimos o pai de z de preto e o avô de z de vermelho.
 
 Executamos rotação à direita no avô de z.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 43
-
-## Página 49
 
 Balanceamento em Árvore Rubro Negra
 
@@ -1386,75 +1106,45 @@ else ( igual à cláusula então com dir. e esq. trocadas)
 
 T.raiz.cor = PRETO;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-20 / 43
-
-## Página 50
 
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p50_img0.png)
 
 
-## Página 51
-
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-22 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p51_img0.png)
 
 
-## Página 52
-
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-23 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p52_img0.png)
 
 
-## Página 53
-
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p53_img0.png)
 
-
-## Página 54
 
 Exercício
 
@@ -1462,18 +1152,32 @@ Exercício
 
 2 Dado a árvore rubro negra insira o nó 7.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-25 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p54_img0.png)
 
 
-## Página 55
+Remoção em Árvore Rubro Negra
+
+Dados o ponteiro para a raiz, T, e um nó z a ser removido.
+
+O nó y é:
+
+◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+
+◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+
+◮y é o nó a ser removido.
+
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+
+y.
+
+
+AED III
+
 
 Remoção em Árvore Rubro Negra
 
@@ -1491,15 +1195,9 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 56
 
 Remoção em Árvore Rubro Negra
 
@@ -1517,15 +1215,9 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 57
 
 Remoção em Árvore Rubro Negra
 
@@ -1543,15 +1235,9 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 58
 
 Remoção em Árvore Rubro Negra
 
@@ -1569,15 +1255,9 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 59
 
 Remoção em Árvore Rubro Negra
 
@@ -1595,41 +1275,9 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 60
-
-Remoção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z a ser removido.
-
-O nó y é:
-
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
-
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
-
-◮y é o nó a ser removido.
-
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
-
-y.
-
-(Ciência da Computação – IFSULDEMINAS)
-
-AED III
-
-Primeiro Semestre de 2014
-
-26 / 43
-
-## Página 61
 
 Remoção em Árvore Rubro Negra
 
@@ -1657,15 +1305,9 @@ x = z.esquerda
 
 TRANSPLANT(T, z, z.esquerda);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-27 / 43
-
-## Página 62
 
 Remoção em Árvore Rubro Negra
 
@@ -1693,15 +1335,9 @@ RB_DELETE_FIXUP(T, x)
 
 desaloca y
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-28 / 43
-
-## Página 63
 
 Propriedades Violadas
 
@@ -1727,15 +1363,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 64
 
 Propriedades Violadas
 
@@ -1761,15 +1391,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 65
 
 Propriedades Violadas
 
@@ -1795,15 +1419,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 66
 
 Propriedades Violadas
 
@@ -1829,15 +1447,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 67
 
 Propriedades Violadas
 
@@ -1863,15 +1475,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 68
 
 Propriedades Violadas
 
@@ -1897,15 +1503,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 69
 
 Propriedades Violadas
 
@@ -1931,15 +1531,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 70
 
 Propriedades Violadas
 
@@ -1965,15 +1559,9 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 43
-
-## Página 71
 
 Remoção em Árvore Rubro Negra
 
@@ -1999,15 +1587,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 72
 
 Remoção em Árvore Rubro Negra
 
@@ -2033,15 +1615,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 73
 
 Remoção em Árvore Rubro Negra
 
@@ -2067,15 +1643,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 74
 
 Remoção em Árvore Rubro Negra
 
@@ -2101,15 +1671,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 75
 
 Remoção em Árvore Rubro Negra
 
@@ -2135,15 +1699,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 76
 
 Remoção em Árvore Rubro Negra
 
@@ -2169,15 +1727,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 77
 
 Remoção em Árvore Rubro Negra
 
@@ -2203,15 +1755,9 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 43
-
-## Página 78
 
 Caso 1
 
@@ -2225,15 +1771,9 @@ Rotação à esquerda no pai de x
 
 w passa a ser o irmão de x à direita
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-31 / 43
-
-## Página 79
 
 Caso 2
 
@@ -2243,15 +1783,9 @@ A cor de w passa a ser vermelha
 
 x passa a ser o pai de x
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-32 / 43
-
-## Página 80
 
 Caso 3
 
@@ -2267,15 +1801,9 @@ Rotação à direita em w
 
 w passa a ser o pai de x à direita
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-33 / 43
-
-## Página 81
 
 Caso 4
 
@@ -2291,27 +1819,15 @@ Rotação esquerda no pai de x
 
 x passa a ser a raiz
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-34 / 43
-
-## Página 82
 
 Caso 4
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-35 / 43
-
-## Página 83
 
 Remoção em Árvore Rubro Negra
 
@@ -2339,15 +1855,9 @@ LEFT_ROTATE(T, x.pai);
 
 w = x.pai.dir;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-36 / 43
-
-## Página 84
 
 Remoção em Árvore Rubro Negra
 
@@ -2375,15 +1885,9 @@ RIGHT_ROTATE(T, w);
 
 w = x.pai.dir;
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-37 / 43
-
-## Página 85
 
 Remoção em Árvore Rubro Negra
 
@@ -2411,79 +1915,49 @@ x.cor = PRETO;
 
 }
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-38 / 43
-
-## Página 86
 
 Exemplo
 
 Removendo o nó 250:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-39 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p86_img0.jpeg)
 
 
-## Página 87
-
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-40 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p87_img0.jpeg)
 
-
-## Página 88
 
 Exemplo
 
 Removendo o nó 250:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-41 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p88_img0.jpeg)
 
 
-## Página 89
-
 Exemplo
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-42 / 43
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p89_img0.jpeg)
 
-
-## Página 90
 
 Exercícios
 
@@ -2491,10 +1965,6 @@ Exercícios
 
 rubro negra faça a remoção dos elementos 19 e 8.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-43 / 43

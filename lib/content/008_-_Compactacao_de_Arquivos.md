@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Compactação de Arquivos - Técnicas e Algoritmos"
 author: ""
 pages: 17
 source: "008_-_Compactacao_de_Arquivos.pdf"
@@ -7,8 +7,6 @@ source: "008_-_Compactacao_de_Arquivos.pdf"
 
 # 
 
-
-## Página 1
 
 Compacta
 
@@ -56,8 +54,6 @@ Algoritmo e Estruturas de Dados III
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p1_img1.png)
 
 
-## Página 2
-
 Compactadores de arquivos são softwares especializados em
 
 gerar uma representação mais eficiente de vários arquivos dentro
@@ -87,11 +83,9 @@ Internet para reduzir a massa de dados a ser transferida pela rede.
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p2_img2.png)
 
 
-## Página 3
-
 Run-length (ou RLE) é uma técnica para comprimir cadeias de
 
-caracteres onde existem seqüências longas de caracteres repetidos.
+caracteres onde existem sequências longas de caracteres repetidos.
 
 O princípio do funcionamento dessa codificação é simples: Quando
 
@@ -131,8 +125,6 @@ teremos:
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p3_img2.png)
 
-
-## Página 4
 
 E conseguimos identificar exatamente onde o número 2 realmente
 
@@ -177,8 +169,6 @@ no caso do caractere de escape.
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p4_img2.png)
 
 
-## Página 5
-
 Na compressão de imagens esta técnica é mais promissora pois
 
 imagens apresentam maiores áreas contínuas de uma mesma cor.
@@ -193,7 +183,7 @@ monocromáticas. Nessas imagens cada pixel é representado por
 
 apenas um bit. Assim o arquivo pode ser armazenado como uma lista
 
-dos tamanhos das seqüências alternadamente de pixels brancos (1) e
+dos tamanhos das sequências alternadamente de pixels brancos (1) e
 
 negros (0), sem precisar indicar qual o valor da próxima seqüencia.
 
@@ -211,8 +201,6 @@ brancos.
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p5_img2.png)
 
-
-## Página 6
 
 Run-length bit a bit
 
@@ -251,8 +239,6 @@ Ou seja, o texto foi reduzido de 12 para 3 caracteres
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p6_img2.png)
 
 
-## Página 7
-
 Exercícios
 
 1 - Implemente um compactador e um
@@ -279,8 +265,6 @@ e h.
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p7_img2.png)
 
-
-## Página 8
 
 Compressão Estatística
 
@@ -321,8 +305,6 @@ representados por códigos proporcionalmente maiores.
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p8_img2.png)
 
 
-## Página 9
-
 •
 
 Algoritmo de Huffman
@@ -360,8 +342,6 @@ Retira-se da lista os dois caracteres de menor valor;
 
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p9_img3.png)
 
-
-## Página 10
 
 •
 
@@ -401,8 +381,6 @@ elemento na lista, cuja probabilidade seja 1.
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p10_img3.png)
 
 
-## Página 11
-
 Exemplo de Codificação Huffman
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p11_img0.png)
@@ -440,8 +418,6 @@ Exemplo de Codificação Huffman
 
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p13_img3.png)
 
-
-## Página 14
 
 Para se montar o código, gera-se "0" cada vez
 
@@ -500,8 +476,6 @@ a
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p14_img2.png)
 
 
-## Página 15
-
 • Algoritmo de Shannon-Fano
 
 A forma desta técnica tem muitas semelhanças com a de
@@ -542,8 +516,6 @@ probabilidades para a obtenção do código binário.
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p15_img3.png)
 
 
-## Página 16
-
 • Algoritmo de Shannon-Fano
 
 Uma vez feito isso, divide-se a tabela em dois grupos
@@ -569,8 +541,6 @@ binário 0 e o segundo recebe 1:
 
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p16_img3.png)
 
-
-## Página 17
 
 • Algoritmo de Shannon-Fano
 

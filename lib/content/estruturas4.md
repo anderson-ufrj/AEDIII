@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - estruturas4"
+title: "Estruturas C++ - Pair e Tuplas"
 author: "Ricardo"
 pages: 13
 source: "estruturas4.pdf"
@@ -8,15 +8,12 @@ source: "estruturas4.pdf"
 # Microsoft PowerPoint - estruturas4
 
 
-## Página 1
-
 AED III
 
 Estruturas C++
 
 Pair
 
-## Página 2
 
 Pair
 
@@ -46,7 +43,6 @@ membros com o comando
 
 par=make_pair(3, 2.5);
 
-## Página 3
 
 Uma das grandes utilidades do pair é podermos fazer um outro pair ser um de
 
@@ -80,7 +76,6 @@ ponto com o primeiro membro "3" e o segundo membro com os números
 
 "2.5" e "1.7" com o comando "ponto=make_pair(3, make_pair(2.5, 1.7));".
 
-## Página 4
 
 É importante lembrar que ao usarmos qualquer objeto que use os operadores "<>"
 
@@ -102,7 +97,6 @@ número, é muito confuso e cansativo escrevermos "first.second.second.first..."
 
 sendo recomendado o uso de uma struct.
 
-## Página 5
 
 Outra grande utilidade do pair é que ele já vem com os operadores de comparação
 
@@ -132,7 +126,6 @@ comparação, sabendo que a ordenação irá priorizar o primeiro membro de cada
 
 usando o segundo como critério de desempate.
 
-## Página 6
 
 Para melhor entendimento, imagine o seguinte problema de ordenação: há n
 
@@ -156,7 +149,6 @@ do aluno i, respectivamente. A saída deve conter um única linha, com as n
 
 identificações dos alunos, ordenadas.
 
-## Página 7
 
 Cada aluno consiste de três informações: nota, faltas e identificação, sendo
 
@@ -202,7 +194,6 @@ a desejada. Basta que na hora de imprimirmos os números, usemos seus
 
 opostos, ou seja, imprimiríamos 5 e 3, nessa ordem.
 
-## Página 8
 
 Desse modo, basta criarmos um vector de pair de nome aluno. Essa estrutura
 
@@ -216,7 +207,6 @@ depois imprimamos, em ordem, os identificadores de seus elementos, que
 
 serão seus membros second. Segue o código para melhor entendimento:
 
-## Página 9
 
 ```cpp
 #include <bits/stdc++.h>
@@ -242,7 +232,6 @@ printf("\n");
 return 0;
 }
 ```
-## Página 10
 
 Exercícios
 
@@ -298,7 +287,6 @@ Belgica 2 2 2
 
 Tailandia 2 2 2
 
-## Página 11
 
 Exercícios
 
@@ -324,7 +312,6 @@ posicionadas em uma fila única à frente no trenó. Nem todas as renas do
 
 estábulo são utilizadas em cada viagem, isto depende da carga total do trenó.
 
-## Página 12
 
 Exercícios
 
@@ -384,7 +371,6 @@ CENARIO {1}
 
 5 - Blitzen
 
-## Página 13
 
 Exercícios
 

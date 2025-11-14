@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { COURSE_CATEGORIES } from "@/lib/types";
-import { BookOpen, Code2, FileDown, ExternalLink } from "lucide-react";
+import { FileDown, ExternalLink } from "lucide-react";
+import { getCategoryTheme } from "@/lib/category-config";
+import { AnimatedHero } from "@/components/animated-hero";
 
 export default function Home() {
   return (
@@ -12,32 +14,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
-            <Code2 className="h-4 w-4" />
-            IFSULDEMINAS - Ciência da Computação
-          </div>
-          <h1 className="text-5xl font-bold tracking-tight mb-6">
-            Algoritmos e Estruturas de Dados III
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8">
-            Material didático completo sobre estruturas de dados avançadas, algoritmos de busca,
-            compressão, criptografia e técnicas de programação.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link href="/content">
-                <BookOpen className="mr-2 h-5 w-5" />
-                Explorar Conteúdo
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="#categories">Ver Categorias</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <AnimatedHero />
 
       {/* Categories Section */}
       <section id="categories" className="container mx-auto px-4 py-20">
@@ -47,23 +24,37 @@ export default function Home() {
             Explore os principais tópicos abordados na disciplina, organizados por área de conhecimento.
           </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {COURSE_CATEGORIES.map((category) => (
-              <Card key={category.id} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    {category.name}
-                  </CardTitle>
-                  <CardDescription>{category.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="ghost" className="w-full" asChild>
-                    <Link href={`/content?category=${category.id}`}>
-                      Ver Conteúdo →
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            {COURSE_CATEGORIES.map((category) => {
+              const theme = getCategoryTheme(category.id);
+              const Icon = theme.icon;
+
+              return (
+                <Card
+                  key={category.id}
+                  className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-l-4 overflow-hidden"
+                  style={{ borderLeftColor: `var(--${category.id}-accent, ${theme.accentColor})` }}
+                >
+                  <div className={`absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 rounded-full ${theme.bgColor} opacity-50`} />
+                  <CardHeader className="relative">
+                    <div className={`w-12 h-12 rounded-lg ${theme.bgColor} flex items-center justify-center mb-3`}>
+                      <Icon className={`h-6 w-6 ${theme.color}`} />
+                    </div>
+                    <CardTitle className="flex items-center gap-2">
+                      {category.name}
+                    </CardTitle>
+                    <CardDescription>{category.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <Button variant="ghost" className="w-full group" asChild>
+                      <Link href={`/content?category=${category.id}`}>
+                        Ver Conteúdo
+                        <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

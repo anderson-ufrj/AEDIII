@@ -8,17 +8,12 @@ source: "005_-_Arvore_B.pdf"
 # AED III Árvores B
 
 
-## Página 1
-
 AED III
 
 Árvores B
 
 Ciência da Computação – IFSULDEMINAS
 
-Primeiro Semestre de 2014
-
-## Página 2
 
 Roteiro
 
@@ -34,15 +29,9 @@ Inserção em árvore B
 
 Remoção em árvore B
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-2 / 33
-
-## Página 3
 
 Árvores B
 
@@ -64,15 +53,9 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 33
-
-## Página 4
 
 Árvores B
 
@@ -94,15 +77,9 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 33
-
-## Página 5
 
 Árvores B
 
@@ -124,15 +101,9 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 33
-
-## Página 6
 
 Árvores B
 
@@ -154,15 +125,9 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-3 / 33
-
-## Página 7
 
 Árvores B
 
@@ -176,15 +141,9 @@ chaves: chaves do nó em ordem crescente.
 
 folha: valor booleano que indica se o nó é uma folha.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-4 / 33
-
-## Página 8
 
 Árvores B
 
@@ -208,15 +167,9 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 33
-
-## Página 9
 
 Árvores B
 
@@ -240,15 +193,9 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 33
-
-## Página 10
 
 Árvores B
 
@@ -272,15 +219,9 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 33
-
-## Página 11
 
 Árvores B
 
@@ -304,15 +245,9 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 33
-
-## Página 12
 
 Árvores B
 
@@ -336,15 +271,42 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-(Ciência da Computação – IFSULDEMINAS)
+## 🌳 Ferramenta Interativa: Visualizador de Árvore B
+
+Experimente construir e manipular Árvores B! Insira valores e observe como a árvore automaticamente divide nós cheios, mantendo todas as folhas no mesmo nível. A ordem padrão é 3 (no máximo 3 filhos por nó).
+
+```tree-btree
+```
+
+Agora que você pode visualizar as operações, vamos entender o algoritmo de inserção:
+
+## Inserindo em uma árvore B
+
+Inserção
+
+Tente inserir a nova chave em um folha.
+
+Se o número de chaves do nó exceder o número de chaves permitidas,
+
+divida a folha em duas, promovendo a chave central para o pai da
+
+folha.
+
+Se o número de chaves do nó pai exceder o número de chaves
+
+permitidas, divida o nó pai em dois, promovendo a chave central para
+
+o ancestral do pai.
+
+Esta estratégia pode ser repetida por todo caminho até o topo.
+
+Se necessário, a raiz é dividida em dois nós, tornando a chave central
+
+em raiz. Se isto acontecer o nível da árvore aumenta.
+
 
 AED III
 
-Primeiro Semestre de 2014
-
-5 / 33
-
-## Página 13
 
 Inserindo em uma árvore B
 
@@ -370,15 +332,9 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 33
-
-## Página 14
 
 Inserindo em uma árvore B
 
@@ -404,15 +360,9 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 33
-
-## Página 15
 
 Inserindo em uma árvore B
 
@@ -438,15 +388,9 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 33
-
-## Página 16
 
 Inserindo em uma árvore B
 
@@ -472,66 +416,44 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-6 / 33
-
-## Página 17
-
-Inserindo em uma árvore B
-
-Inserção
-
-Tente inserir a nova chave em um folha.
-
-Se o número de chaves do nó exceder o número de chaves permitidas,
-
-divida a folha em duas, promovendo a chave central para o pai da
-
-folha.
-
-Se o número de chaves do nó pai exceder o número de chaves
-
-permitidas, divida o nó pai em dois, promovendo a chave central para
-
-o ancestral do pai.
-
-Esta estratégia pode ser repetida por todo caminho até o topo.
-
-Se necessário, a raiz é dividida em dois nós, tornando a chave central
-
-em raiz. Se isto acontecer o nível da árvore aumenta.
-
-(Ciência da Computação – IFSULDEMINAS)
-
-AED III
-
-Primeiro Semestre de 2014
-
-6 / 33
-
-## Página 18
 
 Árvores B
 
 Árvore B de grau mínimo 3:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-7 / 33
 
 ![Imagem 1](/images/005_-_Arvore_B_p18_img0.jpeg)
 
 
-## Página 19
+Construindo uma árvores B
+
+Suponha que nós começamos com uma árvore B vazia e as chaves
+
+chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
+
+16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
+
+Nós queremos construir uma árvore B de garu mínimo 3.
+
+Os cinco primeiras chaves vão para a raiz:
+
+Colocar a sexta chave na raiz viola o número máximo de chaves por
+
+nó.
+
+Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
+
+raiz.
+
+
+AED III
+
 
 Construindo uma árvores B
 
@@ -553,15 +475,9 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 33
-
-## Página 20
 
 Construindo uma árvores B
 
@@ -583,15 +499,9 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 33
-
-## Página 21
 
 Construindo uma árvores B
 
@@ -613,15 +523,9 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 33
-
-## Página 22
 
 Construindo uma árvores B
 
@@ -643,45 +547,9 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-8 / 33
-
-## Página 23
-
-Construindo uma árvores B
-
-Suponha que nós começamos com uma árvore B vazia e as chaves
-
-chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
-
-16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
-
-Nós queremos construir uma árvore B de garu mínimo 3.
-
-Os cinco primeiras chaves vão para a raiz:
-
-Colocar a sexta chave na raiz viola o número máximo de chaves por
-
-nó.
-
-Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
-
-raiz.
-
-(Ciência da Computação – IFSULDEMINAS)
-
-AED III
-
-Primeiro Semestre de 2014
-
-8 / 33
-
-## Página 24
 
 Construindo uma árvores B
 
@@ -695,15 +563,9 @@ A insersão de 6 excede a ordem da árvore, promovemos a chave
 
 mediana.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 33
-
-## Página 25
 
 Construindo uma árvores B
 
@@ -717,15 +579,9 @@ A insersão de 6 excede a ordem da árvore, promovemos a chave
 
 mediana.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 33
-
-## Página 26
 
 Construindo uma árvores B
 
@@ -739,15 +595,9 @@ A insersão de 6 excede a ordem da árvore, promovemos a chave
 
 mediana.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-9 / 33
-
-## Página 27
 
 Construindo uma árvores B
 
@@ -761,15 +611,9 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 33
-
-## Página 28
 
 Construindo uma árvores B
 
@@ -783,15 +627,9 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 33
-
-## Página 29
 
 Construindo uma árvores B
 
@@ -805,15 +643,9 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 33
-
-## Página 30
 
 Construindo uma árvores B
 
@@ -827,15 +659,9 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 33
-
-## Página 31
 
 Construindo uma árvores B
 
@@ -849,15 +675,9 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-10 / 33
-
-## Página 32
 
 Construindo uma árvores B
 
@@ -871,15 +691,9 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 33
-
-## Página 33
 
 Construindo uma árvores B
 
@@ -893,15 +707,9 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 33
-
-## Página 34
 
 Construindo uma árvores B
 
@@ -915,15 +723,9 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 33
-
-## Página 35
 
 Construindo uma árvores B
 
@@ -937,15 +739,9 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 33
-
-## Página 36
 
 Construindo uma árvores B
 
@@ -959,15 +755,9 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-11 / 33
-
-## Página 37
 
 Construindo uma árvores B
 
@@ -981,15 +771,9 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 33
-
-## Página 38
 
 Construindo uma árvores B
 
@@ -1003,15 +787,9 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 33
-
-## Página 39
 
 Construindo uma árvores B
 
@@ -1025,15 +803,9 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 33
-
-## Página 40
 
 Construindo uma árvores B
 
@@ -1047,15 +819,9 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 33
-
-## Página 41
 
 Construindo uma árvores B
 
@@ -1069,15 +835,9 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-12 / 33
-
-## Página 42
 
 Construindo uma árvores B
 
@@ -1095,15 +855,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 43
 
 Construindo uma árvores B
 
@@ -1121,15 +875,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 44
 
 Construindo uma árvores B
 
@@ -1147,15 +895,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 45
 
 Construindo uma árvores B
 
@@ -1173,15 +915,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 46
 
 Construindo uma árvores B
 
@@ -1199,15 +935,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 47
 
 Construindo uma árvores B
 
@@ -1225,15 +955,9 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-13 / 33
-
-## Página 48
 
 Aplicação
 
@@ -1243,15 +967,9 @@ Aplicação
 
 e 22.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-14 / 33
-
-## Página 49
 
 Split
 
@@ -1267,15 +985,9 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 33
-
-## Página 50
 
 Split
 
@@ -1291,15 +1003,9 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 33
-
-## Página 51
 
 Split
 
@@ -1315,15 +1021,9 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 33
-
-## Página 52
 
 Split
 
@@ -1339,15 +1039,9 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-15 / 33
-
-## Página 53
 
 Split
 
@@ -1385,15 +1079,9 @@ y.n = t - 1;
 
 // y tem o mínimo de chaves
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-16 / 33
-
-## Página 54
 
 Split
 
@@ -1427,15 +1115,9 @@ DISK-WRITE(x);
 
 }
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-17 / 33
-
-## Página 55
 
 Inserção
 
@@ -1471,15 +1153,9 @@ B-TREE-INSERT-NONFULL(r, k);
 
 }
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-18 / 33
-
-## Página 56
 
 Inserção
 
@@ -1513,15 +1189,9 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 33
-
-## Página 57
 
 Inserção
 
@@ -1555,15 +1225,9 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 33
-
-## Página 58
 
 Inserção
 
@@ -1597,15 +1261,9 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 33
-
-## Página 59
 
 Inserção
 
@@ -1639,15 +1297,9 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-19 / 33
-
-## Página 60
 
 Inserção
 
@@ -1679,15 +1331,9 @@ B-TREE-INSERT-NONFULL(x.filhos[i], k);
 
 }
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-20 / 33
-
-## Página 61
 
 Remoção
 
@@ -1709,15 +1355,9 @@ caso, podemos excluir a chave e promover a chave antecessora ou
 
 sucessora para a posição da chave removida.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 33
-
-## Página 62
 
 Remoção
 
@@ -1739,15 +1379,9 @@ caso, podemos excluir a chave e promover a chave antecessora ou
 
 sucessora para a posição da chave removida.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 33
-
-## Página 63
 
 Remoção
 
@@ -1769,15 +1403,9 @@ caso, podemos excluir a chave e promover a chave antecessora ou
 
 sucessora para a posição da chave removida.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-21 / 33
-
-## Página 64
 
 Remoção
 
@@ -1803,15 +1431,9 @@ chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-22 / 33
-
-## Página 65
 
 Remoção
 
@@ -1837,15 +1459,9 @@ chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-22 / 33
-
-## Página 66
 
 Remoção
 
@@ -1871,15 +1487,9 @@ chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-22 / 33
-
-## Página 67
 
 Caso 1: Remoção Simples
 
@@ -1887,15 +1497,9 @@ Assumindo uma árvore B de grau mínimo 3:
 
 Removendo a chave 2.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-23 / 33
-
-## Página 68
 
 Caso 1: Remoção Simples
 
@@ -1903,57 +1507,33 @@ Assumindo uma árvore B de grau mínimo 3:
 
 Remove 2: as chaves são suﬁciente, basta remover.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-24 / 33
-
-## Página 69
 
 Caso 2: Remoção de um nó interno
 
 Removendo a chave 52.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-25 / 33
-
-## Página 70
 
 Caso 2: Remoção de um nó interno
 
 Remove 52: 52 é um nó interno, tomamos o sucessor emprestado.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-26 / 33
-
-## Página 71
 
 Caso 4: Poucas chaves nos nós irmãos
 
 Removendo a chave 72.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-27 / 33
-
-## Página 72
 
 Caso 4: Poucas chaves nos nós irmãos
 
@@ -1961,43 +1541,25 @@ Remove 72: como há poucas chaves juntamos as chaves formando um
 
 novo nó.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-28 / 33
-
-## Página 73
 
 Caso 4: Poucas chaves nos nós irmãos
 
 Árvore resultante:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-29 / 33
-
-## Página 74
 
 Caso 3: Irmãos suﬁcientes
 
 Removendo a chave 22.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-30 / 33
-
-## Página 75
 
 Caso 3: Irmãos suﬁcientes
 
@@ -2005,29 +1567,17 @@ Remove 22: como os irmãos são suﬁcientes, rebaixa a chave raiz e
 
 promove a chave folha.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-31 / 33
-
-## Página 76
 
 Caso 3: Irmãos suﬁcientes
 
 Árvore resultante:
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-32 / 33
-
-## Página 77
 
 Aplicação
 
@@ -2037,10 +1587,6 @@ Aplicação
 
 Remova as chaves 4, 5, 7, 3 e 14.
 
-(Ciência da Computação – IFSULDEMINAS)
 
 AED III
 
-Primeiro Semestre de 2014
-
-33 / 33

@@ -1,5 +1,5 @@
 ---
-title: "003"
+title: "Entrada e Saída com Arquivos Utilizando a Linguagem C"
 author: "Ricardo Jose Martins"
 pages: 17
 source: "007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C.pdf"
@@ -7,8 +7,6 @@ source: "007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C.pdf"
 
 # 003
 
-
-## Página 1
 
 Entrada
 
@@ -65,8 +63,6 @@ Algoritmo e Estruturas de Dados III
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p1_img0.jpeg)
 
 
-## Página 2
-
 Entrada e Saída de Dados pelo Console
 
  As operações de Entrada e Saída (E/S) em ANSI C são
@@ -92,8 +88,6 @@ devolve o caractere escrito ou -1 (constante EOF definida em stdio.h)
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img1.jpeg)
 
-
-## Página 3
 
 Entrada e Sa
 
@@ -142,8 +136,6 @@ putchar(ch);
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img1.jpeg)
 
 
-## Página 4
-
  Leitura e Escrita de Strings
 
  char * gets(char *str);
@@ -172,8 +164,6 @@ Entrada e Saída de Dados pelo Console
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img1.jpeg)
 
 
-## Página 5
-
  Leitura e escrita formatada
 
  As funções printf() e scanf() podem ler e escrever dados em vários
@@ -201,8 +191,6 @@ da de Dados pelo Console
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img1.jpeg)
 
-
-## Página 6
 
  Introdução
 
@@ -240,8 +228,6 @@ da com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img1.jpeg)
 
 
-## Página 7
-
  Fluxos de Texto
 
  Um fluxo de texto é composto por uma seqüência de caracteres,
@@ -271,8 +257,6 @@ da com Arquivos
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img1.jpeg)
 
-
-## Página 8
 
 
 
@@ -325,8 +309,6 @@ da com Arquivos
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img1.jpeg)
 
-
-## Página 9
 
 Funções de manipulação de arquivos
 
@@ -406,8 +388,6 @@ da com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img1.jpeg)
 
 
-## Página 10
-
 
 
 Ponteiro de arquivo
@@ -474,8 +454,6 @@ Entrada e Saída com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img1.jpeg)
 
 
-## Página 11
-
 
 
 Fechar um arquivo
@@ -524,8 +502,6 @@ da com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img1.jpeg)
 
 
-## Página 12
-
 Exemplo 1
 
 Exemplo 1
@@ -569,8 +545,6 @@ da com Arquivos
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img1.jpeg)
 
-
-## Página 13
 
 Exemplo 2
 
@@ -621,8 +595,6 @@ da com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img1.jpeg)
 
 
-## Página 14
-
 EXERCÍCIOS DE FIXAÇÃO
 
 
@@ -654,8 +626,6 @@ da com Arquivos
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img1.jpeg)
 
-
-## Página 15
 
 
 
@@ -708,8 +678,6 @@ da com Arquivos
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img1.jpeg)
 
 
-## Página 16
-
 ```c
 int i = 101;
 long l = 123023L;
@@ -742,8 +710,6 @@ Entrada e Saída com Arquivos
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img1.jpeg)
 
-
-## Página 17
 
 Entrada e Sa
 

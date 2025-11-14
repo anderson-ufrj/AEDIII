@@ -1,5 +1,5 @@
 ---
-title: "001"
+title: "Manipulação de Dados e Dispositivos de Armazenamento"
 author: "Ricardo Jose Martins"
 pages: 19
 source: "005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento.pdf"
@@ -7,8 +7,6 @@ source: "005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento.pdf"
 
 # 001
 
-
-## Página 1
 
 Manipula
 
@@ -59,8 +57,6 @@ Algoritmo e Estruturas de Dados III
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p1_img0.jpeg)
 
 
-## Página 2
-
 Existe uma diversidade de dispositivos de armazenamento de dados
 
 num
@@ -102,8 +98,6 @@ Armazenamento de Dados
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img1.jpeg)
 
-
-## Página 3
 
 •
 
@@ -159,8 +153,6 @@ Exemplos de Dispositivos de Armazenamento de Dados
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img1.jpeg)
 
 
-## Página 4
-
 Registradores
 
 Cache no Chip
@@ -194,8 +186,6 @@ ria
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img1.jpeg)
 
-
-## Página 5
 
 Em relação aos dispositivos de armazenagem secundária, pode-se considerar na sua análise ou
 
@@ -255,8 +245,6 @@ ria
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img1.jpeg)
 
 
-## Página 6
-
 •
 
 Tempo de busca (seek time) ou posicionamento – para os dispositivos de disco
@@ -315,8 +303,6 @@ ria
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img1.jpeg)
 
 
-## Página 7
-
 Dispositivos de Acesso Seqüencial
 
 Exemplo típico: Fita
@@ -371,8 +357,6 @@ Dispositivos Existentes
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img1.jpeg)
 
 
-## Página 8
-
 •
 
 Exemplo típico para uma memória secundária de acesso
@@ -423,8 +407,6 @@ Estrutura dos Discos
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img1.jpeg)
 
 
-## Página 9
-
 Modelo
 
 Genérico
@@ -441,8 +423,6 @@ Estrutura dos Discos
 
 ![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img2.jpeg)
 
-
-## Página 10
 
 Modelo mais realista
 
@@ -476,8 +456,6 @@ Estrutura dos Discos
 
 ![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img2.jpeg)
 
-
-## Página 11
 
  Exemplo:
 
@@ -513,8 +491,6 @@ Estrutura dos Discos
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img1.jpeg)
 
 
-## Página 12
-
  Superfície
 
 Setores
@@ -544,8 +520,6 @@ Estrutura dos Discos
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img1.jpeg)
 
-
-## Página 13
 
 
 
@@ -596,8 +570,6 @@ Estrutura dos Discos
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img1.jpeg)
 
-
-## Página 14
 
 Considere uma unidade de disco magn
 
@@ -679,8 +651,6 @@ cio Dirigido
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img1.jpeg)
 
 
-## Página 15
-
 a. Qual e o numero de cilindros do disco ?
 
 9100 MB / 20 superfícies = 455 MB / superfície
@@ -719,8 +689,6 @@ cio Dirigido
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img1.jpeg)
 
 
-## Página 16
-
 b.
 
 b. Quantos registros de 128 bytes podem ser armazenados em 1 cilind
@@ -754,8 +722,6 @@ cio Dirigido
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img1.jpeg)
 
-
-## Página 17
 
 c.
 
@@ -795,8 +761,6 @@ cio Dirigido
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img1.jpeg)
 
 
-## Página 18
-
 d.
 
 d. Calcule o tempo gasto para a leitura aleat
@@ -834,8 +798,6 @@ cio Dirigido
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img1.jpeg)
 
-
-## Página 19
 
 e.
 
