@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - estruturas2"
+title: "Estruturas C++ - Set, Multiset e Map"
 author: "Ricardo"
 pages: 20
 source: "estruturas2.pdf"

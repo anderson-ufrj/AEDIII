@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - pesquisa_completa"
+title: "Pesquisa Completa - Força Bruta e Permutações"
 author: "Ricardo"
 pages: 16
 source: "pesquisa_completa.pdf"

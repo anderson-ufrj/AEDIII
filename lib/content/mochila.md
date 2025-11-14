@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - mochila"
+title: "Problema da Mochila - 0-1 e Fracionária"
 author: "Ricardo"
 pages: 25
 source: "mochila.pdf"

@@ -271,11 +271,16 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
+## 🌳 Ferramenta Interativa: Visualizador de Árvore B
 
-AED III
+Experimente construir e manipular Árvores B! Insira valores e observe como a árvore automaticamente divide nós cheios, mantendo todas as folhas no mesmo nível. A ordem padrão é 3 (no máximo 3 filhos por nó).
 
+```tree-btree
+```
 
-Inserindo em uma árvore B
+Agora que você pode visualizar as operações, vamos entender o algoritmo de inserção:
+
+## Inserindo em uma árvore B
 
 Inserção
 

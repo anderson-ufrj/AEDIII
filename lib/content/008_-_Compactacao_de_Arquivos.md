@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Compactação de Arquivos - Técnicas e Algoritmos"
 author: ""
 pages: 17
 source: "008_-_Compactacao_de_Arquivos.pdf"

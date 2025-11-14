@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - backtracking"
+title: "Backtracking - Técnicas de Busca Exaustiva"
 author: "Ricardo"
 pages: 15
 source: "backtracking.pdf"

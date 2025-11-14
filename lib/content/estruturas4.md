@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - estruturas4"
+title: "Estruturas C++ - Pair e Tuplas"
 author: "Ricardo"
 pages: 13
 source: "estruturas4.pdf"

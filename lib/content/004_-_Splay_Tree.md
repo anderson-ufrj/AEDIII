@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - splay"
+title: "Splay Tree - Árvores Auto-Ajustáveis"
 author: "Ricardo"
 pages: 10
 source: "004_-_Splay_Tree.pdf"
@@ -111,7 +111,16 @@ Busca, apenas com uma adição que o elemento que foi adicionado se torna a
 nova raiz.
 
 
-Exercícios
+## 🌳 Ferramenta Interativa: Visualizador de Árvore Splay
+
+Experimente o funcionamento das Splay Trees! Insira valores e observe como a árvore automaticamente move os elementos acessados para a raiz através de rotações (Zig, Zig-Zig, Zig-Zag). Use o botão "Buscar" para ver o efeito splay em ação!
+
+```tree-splay
+```
+
+Agora que você pode visualizar as operações, pratique com os exercícios abaixo:
+
+## Exercícios
 
 Faça todas as etapas e como ficará a árvore após cada uma delas.
 

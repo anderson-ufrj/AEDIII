@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - estruturas3"
+title: "Estruturas C++ - Deque, Stack, Queue e Priority Queue"
 author: "Ricardo"
 pages: 18
 source: "estruturas3.pdf"

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft PowerPoint - estruturas1"
+title: "Estruturas C++ - Vector e Iterator"
 author: "Ricardo"
 pages: 5
 source: "estruturas1.pdf"
