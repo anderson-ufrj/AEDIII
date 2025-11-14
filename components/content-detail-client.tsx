@@ -84,7 +84,7 @@ export function ContentDetailClient({ content, previous, next }: ContentDetailCl
           </Card>
 
           {/* Markdown Content */}
-          <ReadingModeWrapper>
+          <ReadingModeWrapper showControls={false}>
             <Card className="p-8">
               <article className="prose prose-zinc dark:prose-invert max-w-none">
               <ReactMarkdown
