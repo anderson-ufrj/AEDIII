@@ -27,12 +27,12 @@ export const DYNAMIC_IMPORT_CONFIG = {
   // Componentes pesados que só aparecem após interação
   heavy: {
     ssr: false,
-    loading: () => <DefaultLoadingComponent />,
+    loading: DefaultLoadingComponent,
   },
   // Componentes que podem ser renderizados no servidor
   interactive: {
     ssr: true,
-    loading: () => <DefaultLoadingComponent />,
+    loading: DefaultLoadingComponent,
   },
   // Componentes críticos que devem carregar rapidamente
   critical: {
@@ -42,7 +42,7 @@ export const DYNAMIC_IMPORT_CONFIG = {
   // Componentes de visualização que são opcionais
   optional: {
     ssr: false,
-    loading: () => <DefaultLoadingComponent />,
+    loading: DefaultLoadingComponent,
   },
 } as const;
 
