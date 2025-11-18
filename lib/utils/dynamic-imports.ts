@@ -9,20 +9,16 @@ import type { ComponentType } from 'react';
 /**
  * Componente de loading padrão para imports dinâmicos
  */
-export const DefaultLoadingComponent = () => (
-  <div className="flex items-center justify-center p-8">
-    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" />
-  </div>
-);
+export const DefaultLoadingComponent = () => {
+  return null; // Componente vazio para evitar erros de JSX
+};
 
 /**
  * Componente de erro padrão
  */
-export const DefaultErrorComponent = () => (
-  <div className="p-4 bg-destructive/10 border border-destructive rounded-md">
-    <p className="text-destructive">Erro ao carregar componente</p>
-  </div>
-);
+export const DefaultErrorComponent = () => {
+  return null; // Componente vazio para evitar erros de JSX
+};
 
 /**
  * Configurações de import dinâmico por categoria de componente
