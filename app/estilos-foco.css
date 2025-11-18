@@ -1,0 +1,173 @@
+/**
+ * Estilos de foco aprimorados para acessibilidade
+ * Garante que elementos interativos tenham indicadores visuais claros
+ */
+
+/* Estilo de foco global melhorado */
+*:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove outline padrão do navegador */
+*:focus {
+  outline: none;
+}
+
+/* Foco para botões */
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px hsl(var(--focus-ring) / 0.2);
+}
+
+/* Foco para links */
+a:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Foco para campos de entrada */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 0;
+  border-color: hsl(var(--focus-ring));
+  box-shadow: 0 0 0 4px hsl(var(--focus-ring) / 0.2);
+}
+
+/* Foco para checkboxes e radio buttons */
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px hsl(var(--focus-ring) / 0.2);
+}
+
+/* Foco para elementos de navegação */
+nav a:focus-visible {
+  background-color: hsl(var(--focus-background));
+  color: hsl(var(--focus-foreground));
+}
+
+/* Foco para cards clicáveis */
+[role="article"]:focus-visible,
+.card:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Foco para elementos de diálogo */
+[role="dialog"]:focus-visible,
+[role="alertdialog"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: -3px;
+}
+
+/* Foco para tabs */
+[role="tab"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: -3px;
+  background-color: hsl(var(--focus-background));
+}
+
+/* Foco para accordions */
+[role="button"][aria-expanded]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  background-color: hsl(var(--focus-background));
+}
+
+/* Foco para elementos de menu */
+[role="menuitem"]:focus-visible,
+[role="menuitemcheckbox"]:focus-visible,
+[role="menuitemradio"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: -3px;
+  background-color: hsl(var(--focus-background));
+}
+
+/* Foco para search input */
+input[type="search"]:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 0;
+  border-color: hsl(var(--focus-ring));
+  box-shadow: 0 0 0 4px hsl(var(--focus-ring) / 0.2);
+}
+
+/* Indicador de skip link visível apenas no foco */
+.skip-link:focus-visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  text-decoration: none;
+  font-weight: bold;
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+}
+
+/* Foco para ícones SVG clicáveis */
+svg:focus-visible {
+  outline: 3px solid hsl(var(--focus-ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Foco aprimorado para modo escuro */
+.dark *:focus-visible {
+  outline-color: hsl(var(--focus-ring-dark));
+}
+
+.dark button:focus-visible,
+.dark [role="button"]:focus-visible {
+  box-shadow: 0 0 0 4px hsl(var(--focus-ring-dark) / 0.3);
+}
+
+/* Animação suave para transição de foco */
+* {
+  transition: outline 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Indicador de foco para elementos draggable */
+[draggable="true"]:focus-visible {
+  outline: 3px dashed hsl(var(--focus-ring));
+  outline-offset: 2px;
+}
+
+/* Foco para elementos com tooltips */
+[data-tooltip]:focus-visible::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  border-radius: 4px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+/* Prevenir duplo outline em alguns navegadores */
+*::-moz-focus-inner {
+  border: 0;
+}
+
+/* Estilo especial para o primeiro elemento focável */
+body > *:first-child:focus-visible {
+  scroll-margin-top: 100px;
+}
