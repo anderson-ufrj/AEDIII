@@ -7,9 +7,6 @@ source: "estruturas3.pdf"
 
 # Microsoft PowerPoint - estruturas3
 
-
-AED III
-
 Estruturas C++
 
 Deque
@@ -19,7 +16,6 @@ Stack
 Queue
 
 Priority Queue
-
 
 Deque
 
@@ -34,7 +30,6 @@ pop_front que não estão disponíveis em um vetor.
 Um deque pode ser usado da seguinte forma:
 
 ![Imagem 1](/images/estruturas3_p3_img0.jpeg)
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -109,7 +104,6 @@ O código a seguir mostra como uma pilha pode ser usada:
 
 ![Imagem 1](/images/estruturas3_p6_img0.jpeg)
 
-
 Elemento do topo: 3
 
 Elemento do topo: 2
@@ -147,7 +141,6 @@ possível acessar o primeiro e último elemento de uma fila.
 O código a seguir mostra como uma fila pode ser usada:
 
 ![Imagem 1](/images/estruturas3_p9_img0.jpeg)
-
 
 Elemento do inicio: 3
 
@@ -197,13 +190,11 @@ simples do que uma árvore binária equilibrada usada em um conjunto
 
 ordenado.
 
-
 Por padrão, os elementos em uma fila de prioridade C++ são classificados em ordem
 
 decrescente, e é possível encontrar e remover o maior elemento na fila. O código a
 
 seguir ilustra isso:
-
 
 Elemento do inicio: 3
 
@@ -249,7 +240,6 @@ do menor elemento, podemos fazê-lo da seguinte maneira:
 
 priority_queue<int,vector<int>,greater<int>> q;
 
-
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -259,13 +249,11 @@ int main()
     for( int i= 0; i< 10; ++i ) q.push( rand() );
 ```
 
-
 while( !q.empty() )
 
 {
 
 printf("%d\n", q.top());
-
 
 q.pop();
 
@@ -274,7 +262,6 @@ q.pop();
 return 0;
 
 }
-
 
 Exercícios
 
@@ -308,7 +295,6 @@ término da simulação deve ser informado o tempo médio dos clientes
 
 aguardando na fila.
 
-
 Exercícios
 
 2. Manoel percebeu que seu estacionamento com uma entrada era um fiasco.
@@ -330,7 +316,6 @@ placa e retire carros usando o identificador (placa). Depois de ter informado a
 placa, cada vez que é pressionada a tecla S deve ser mostrado o estado do
 
 estacionamento.
-
 
 Exercícios
 

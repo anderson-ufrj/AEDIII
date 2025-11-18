@@ -7,15 +7,11 @@ source: "estruturas1.pdf"
 
 # Microsoft PowerPoint - estruturas1
 
-
-AED III
-
 Estruturas C++
 
 Vector
 
 Iterator
-
 
 Vector
 
@@ -41,7 +37,6 @@ v.erase(v.begin(), v.end()); // limpa o vetor
 
 sort(v.begin(),v.end()); //ordena o vetor
 
-
 Iterator
 
 É o mecanismo usado para "andar", elemento por elemento, por uma coleção de
@@ -63,7 +58,6 @@ independente da implementação de acessar os dados da coleção.
 Ele possui os métodos begin() e end() pra indicar onde começa e onde termina a
 
 iteração.
-
 
 Iterator
 
@@ -102,31 +96,15 @@ vetor V a seguir:
 
 A sublista contígua de maior soma é:
 
-10
-
-5
-
 -17 20
 
-50
-
 -1
-
-3
 
 -30 10
 
-10
-
-5
-
 -17 20
 
-50
-
 -1
-
-3
 
 -30 10
 

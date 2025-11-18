@@ -7,11 +7,7 @@ source: "pesquisa_completa.pdf"
 
 # Microsoft PowerPoint - pesquisa_completa
 
-
-AED III
-
 Pesquisa Completa
-
 
 Pesquisa Completa
 
@@ -29,7 +25,6 @@ por todas as soluções, porque a pesquisa geralmente é fácil de implementar e
 
 sempre dá a resposta correta.
 
-
 Gerando Permutações
 
 Consideramos o problema de gerar todas as permutações de um conjunto de n
@@ -40,7 +35,6 @@ elementos. Por exemplo, as permutações de {0, 1, 2} são (0, 1, 2), (0, 2, 1),
 
 recursão ou passar pelas permutações iterativamente.
 
-
 Método 1
 
 Como subconjuntos, permutações podem ser geradas usando recursão. A
@@ -50,7 +44,6 @@ busca de função a seguir passa pelas permutações do conjunto {0, 1,. . . , n
 A função cria uma permutação vetorial que contém a permutação e a pesquisa
 
 começa quando a função é chamada sem parâmetros.
-
 
 ```cpp
 void search()
@@ -74,7 +67,6 @@ void search()
 }
 ```
 
-
 Cada chamada de função adiciona um novo elemento à permutação. A matriz
 
 escolhida indica quais elementos já estão incluídos na permutação. Se o
@@ -82,7 +74,6 @@ escolhida indica quais elementos já estão incluídos na permutação. Se o
 tamanho da permutação for igual ao tamanho do conjunto, uma permutação
 
 foi gerada.
-
 
 Método 2
 
@@ -132,8 +123,6 @@ Exemplo de Entrada
 
 Exemplo de Saída
 
-3
-
 ab
 
 abc
@@ -168,7 +157,6 @@ cab
 
 cba
 
-
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -196,7 +184,6 @@ int main()
 }
 ```
 
-
 Se o sort() não existisse?
 
 Imagina a seguinte situação: É preciso ler três variáveis e imprimir estes valores
@@ -204,7 +191,6 @@ Imagina a seguinte situação: É preciso ler três variáveis e imprimir estes 
 em ordem crescente. Porém, a função sort(), que faz tal ordenação não existe.
 
 Como proceder?
-
 
 Deve-se verificar todas as 6 combinações possíveis (3!)
 
@@ -235,7 +221,6 @@ int main()
 ...
 
 ![Imagem 1](/images/pesquisa_completa_p11_img0.jpeg)
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -300,7 +285,6 @@ int main()
 }
 ```
 
-
 Exercício
 
 1. Reza a lenda que os Icosaedros do Lagarto são cristalinos e podem invocar o
@@ -331,7 +315,6 @@ devem seguir, de modo que percorram a menor distância possível, com a sua
 
 nuvem voadora.
 
-
 Escreva um programa que, dadas as coordenadas dos icosaedros, informe o
 
 caminho de menor distância, saindo de sua casa, capture todos os icosaedros e
@@ -341,8 +324,6 @@ volte para casa, além de informar a distância de tal caminho.
 Exemplo de Entrada
 
 Exemplo de Saída
-
-2
 
 11 11
 

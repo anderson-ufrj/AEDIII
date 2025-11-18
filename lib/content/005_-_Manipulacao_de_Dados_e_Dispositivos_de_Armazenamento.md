@@ -7,7 +7,6 @@ source: "005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento.pdf"
 
 # 001
 
-
 Manipula
 
 Manipulação
@@ -48,14 +47,11 @@ Curso de Bacharelado em Ciência da Computação
 
 ão
 
-AED III
-
 AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p1_img0.jpeg)
-
 
 Existe uma diversidade de dispositivos de armazenamento de dados
 
@@ -95,9 +91,7 @@ Armazenamento de Dados
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p2_img1.jpeg)
-
 
 •
 
@@ -149,9 +143,7 @@ Exemplos de Dispositivos de Armazenamento de Dados
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p3_img1.jpeg)
-
 
 Registradores
 
@@ -183,9 +175,7 @@ ria
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p4_img1.jpeg)
-
 
 Em relação aos dispositivos de armazenagem secundária, pode-se considerar na sua análise ou
 
@@ -241,9 +231,7 @@ ria
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p5_img1.jpeg)
-
 
 •
 
@@ -299,9 +287,7 @@ ria
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p6_img1.jpeg)
-
 
 Dispositivos de Acesso Seqüencial
 
@@ -353,9 +339,7 @@ Dispositivos Existentes
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p7_img1.jpeg)
-
 
 •
 
@@ -403,9 +387,7 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p8_img1.jpeg)
-
 
 Modelo
 
@@ -417,12 +399,9 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img1.png)
 
-
 ![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p9_img2.jpeg)
-
 
 Modelo mais realista
 
@@ -450,12 +429,9 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img1.png)
 
-
 ![Imagem 3](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p10_img2.jpeg)
-
 
  Exemplo:
 
@@ -487,9 +463,7 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p11_img1.jpeg)
-
 
  Superfície
 
@@ -517,9 +491,7 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p12_img1.jpeg)
-
 
 
 
@@ -567,9 +539,7 @@ Estrutura dos Discos
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p13_img1.jpeg)
-
 
 Considere uma unidade de disco magn
 
@@ -647,9 +617,7 @@ cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p14_img1.jpeg)
-
 
 a. Qual e o numero de cilindros do disco ?
 
@@ -685,9 +653,7 @@ cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p15_img1.jpeg)
-
 
 b.
 
@@ -719,9 +685,7 @@ cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p16_img1.jpeg)
-
 
 c.
 
@@ -757,9 +721,7 @@ cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p17_img1.jpeg)
-
 
 d.
 
@@ -795,9 +757,7 @@ cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img0.png)
 
-
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p18_img1.jpeg)
-
 
 e.
 
@@ -832,6 +792,5 @@ Soluções para as Questões do Exerc
 cio Dirigido
 
 ![Imagem 1](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img0.png)
-
 
 ![Imagem 2](/images/005_-_Manipulacao_de_Dados_e_Dispositivos_de_Armazenamento_p19_img1.jpeg)

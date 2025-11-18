@@ -7,7 +7,6 @@ source: "008_-_Compactacao_de_Arquivos.pdf"
 
 # 
 
-
 Compacta
 
 Compactação
@@ -42,17 +41,13 @@ Curso de Bacharelado em Ciência da Computação
 
 ão
 
-AED III
-
 AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p1_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p1_img1.png)
-
 
 Compactadores de arquivos são softwares especializados em
 
@@ -76,12 +71,9 @@ Internet para reduzir a massa de dados a ser transferida pela rede.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p2_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p2_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p2_img2.png)
-
 
 Run-length (ou RLE) é uma técnica para comprimir cadeias de
 
@@ -119,12 +111,9 @@ teremos:
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p3_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p3_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p3_img2.png)
-
 
 E conseguimos identificar exatamente onde o número 2 realmente
 
@@ -162,12 +151,9 @@ no caso do caractere de escape.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p4_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p4_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p4_img2.png)
-
 
 Na compressão de imagens esta técnica é mais promissora pois
 
@@ -195,12 +181,9 @@ brancos.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p5_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p5_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p5_img2.png)
-
 
 Run-length bit a bit
 
@@ -232,12 +215,9 @@ Ou seja, o texto foi reduzido de 12 para 3 caracteres
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p6_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p6_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p6_img2.png)
-
 
 Exercícios
 
@@ -259,12 +239,9 @@ e h.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p7_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p7_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p7_img2.png)
-
 
 Compressão Estatística
 
@@ -298,12 +275,9 @@ representados por códigos proporcionalmente maiores.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p8_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p8_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p8_img2.png)
-
 
 •
 
@@ -333,15 +307,11 @@ Retira-se da lista os dois caracteres de menor valor;
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p9_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p9_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p9_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p9_img3.png)
-
 
 •
 
@@ -371,53 +341,37 @@ elemento na lista, cuja probabilidade seja 1.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p10_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p10_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p10_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p10_img3.png)
-
 
 Exemplo de Codificação Huffman
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p11_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p11_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p11_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p11_img3.png)
-
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p12_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p12_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p12_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p12_img3.png)
-
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p13_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p13_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p13_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p13_img3.png)
-
 
 Para se montar o código, gera-se "0" cada vez
 
@@ -426,24 +380,6 @@ que for para a esquerda e "1" cada vez que
 for para a direita; assim o código formado fica
 
 o seguinte:
-
-101
-
-100
-
-0000
-
-0101
-
-001
-
-011
-
-0001
-
-0100
-
-11
 
 comprimento
 
@@ -469,12 +405,9 @@ a
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p14_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p14_img1.png)
 
-
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p14_img2.png)
-
 
 • Algoritmo de Shannon-Fano
 
@@ -506,15 +439,11 @@ probabilidades para a obtenção do código binário.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p15_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p15_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p15_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p15_img3.png)
-
 
 • Algoritmo de Shannon-Fano
 
@@ -532,15 +461,11 @@ binário 0 e o segundo recebe 1:
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p16_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p16_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p16_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p16_img3.png)
-
 
 • Algoritmo de Shannon-Fano
 
@@ -558,14 +483,10 @@ repete ate que não haja mais grupos a dividir.
 
 ![Imagem 1](/images/008_-_Compactacao_de_Arquivos_p17_img0.png)
 
-
 ![Imagem 2](/images/008_-_Compactacao_de_Arquivos_p17_img1.png)
-
 
 ![Imagem 3](/images/008_-_Compactacao_de_Arquivos_p17_img2.png)
 
-
 ![Imagem 4](/images/008_-_Compactacao_de_Arquivos_p17_img3.png)
-
 
 ![Imagem 5](/images/008_-_Compactacao_de_Arquivos_p17_img4.png)

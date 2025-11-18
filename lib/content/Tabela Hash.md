@@ -7,35 +7,35 @@ source: "Tabela Hash.pdf"
 
 # AED III Tabela Hash
 
-
-AED III
-
 Tabela Hash
-
-Ciência da Computação – IFSULDEMINAS
-
 
 Roteiro
 
-1
-
 Introdução
-
-2
 
 Hashing - Método de Pesquisa
 
-3
-
 Colisões
-
-4
 
 Considerações Finais
 
+Contextualização
 
-AED III
+Dado um conjunto de pares (chave, valor):
 
+◮determinar se há uma chave e um valor associado
+
+◮inserir um novo par no conjunto
+
+◮remover um par do conjunto
+
+Estruturas que podem ser usadas:
+
+◮tabelas simples (vetores ou listas)
+
+◮árvores de busca
+
+◮tabelas de espalhamento (hash)
 
 Contextualização
 
@@ -55,31 +55,31 @@ Estruturas que podem ser usadas:
 
 ◮tabelas de espalhamento (hash)
 
-
-AED III
-
-
 Contextualização
 
-Dado um conjunto de pares (chave, valor):
+Os métodos de pesquisa vistos até agora buscam informações
 
-◮determinar se há uma chave e um valor associado
+armazenadas com base na comparação de suas chaves.
 
-◮inserir um novo par no conjunto
+Para obtermos algoritmos eﬁcientes, armazenamos os elementos
 
-◮remover um par do conjunto
+ordenados e tiramos proveito dessa ordenação.
 
-Estruturas que podem ser usadas:
+Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
 
-◮tabelas simples (vetores ou listas)
+momento demandam esforço computacional O(log n), quando usamos
 
-◮árvores de busca
+uma tabela hash, esta pode realizar tais operações em tempo
 
-◮tabelas de espalhamento (hash)
+esperado O(1).
 
+Veremos agora, o método de pesquisa conhecido como hashing
 
-AED III
+(tabela de dispersão, espalhamento, indexação, escrutínio ou
 
+método de cálculo de endereço). Na maioria dos casos é possível
+
+encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
 Contextualização
 
@@ -107,10 +107,6 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-
-AED III
-
-
 Contextualização
 
 Os métodos de pesquisa vistos até agora buscam informações
@@ -137,10 +133,6 @@ método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
 
-
-AED III
-
-
 Contextualização
 
 Os métodos de pesquisa vistos até agora buscam informações
@@ -166,40 +158,6 @@ Veremos agora, o método de pesquisa conhecido como hashing
 método de cálculo de endereço). Na maioria dos casos é possível
 
 encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
-
-
-AED III
-
-
-Contextualização
-
-Os métodos de pesquisa vistos até agora buscam informações
-
-armazenadas com base na comparação de suas chaves.
-
-Para obtermos algoritmos eﬁcientes, armazenamos os elementos
-
-ordenados e tiramos proveito dessa ordenação.
-
-Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
-
-momento demandam esforço computacional O(log n), quando usamos
-
-uma tabela hash, esta pode realizar tais operações em tempo
-
-esperado O(1).
-
-Veremos agora, o método de pesquisa conhecido como hashing
-
-(tabela de dispersão, espalhamento, indexação, escrutínio ou
-
-método de cálculo de endereço). Na maioria dos casos é possível
-
-encontrar a chave com apenas UMA OPERAÇÃO de LEITURA.
-
-
-AED III
-
 
 Contextualização
 
@@ -213,9 +171,25 @@ A estrutura com tal propriedade é chamada de tabela hash.
 
 Como sabemos se 11, 20 e 45 está no vetor?
 
+Deﬁnição de Hash
 
-AED III
+Deﬁnição de hash
 
+Hash é uma generalização da noção mais simples de um arranjo
+
+comum, sendo uma estrutura de dados do tipo dicionário.
+
+Dicionários são estruturas especializadas em prover as operações de
+
+inserção, pesquisa e remoção e que não admitem repetições.
+
+A ideia central do Hash é utilizar uma função (Função de Hashing),
+
+aplicada sobre parte da informação (chave), para retornar o índice
+
+onde a informação deve ou deveria estar armazenada.
+
+A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
 Deﬁnição de Hash
 
@@ -237,9 +211,25 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
+Deﬁnição de Hash
 
-AED III
+Deﬁnição de hash
 
+Hash é uma generalização da noção mais simples de um arranjo
+
+comum, sendo uma estrutura de dados do tipo dicionário.
+
+Dicionários são estruturas especializadas em prover as operações de
+
+inserção, pesquisa e remoção e que não admitem repetições.
+
+A ideia central do Hash é utilizar uma função (Função de Hashing),
+
+aplicada sobre parte da informação (chave), para retornar o índice
+
+onde a informação deve ou deveria estar armazenada.
+
+A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
 Deﬁnição de Hash
 
@@ -261,63 +251,7 @@ onde a informação deve ou deveria estar armazenada.
 
 A estrutura de dados Hash é comumente chamada de Tabela Hash.
 
-
-AED III
-
-
 Deﬁnição de Hash
-
-Deﬁnição de hash
-
-Hash é uma generalização da noção mais simples de um arranjo
-
-comum, sendo uma estrutura de dados do tipo dicionário.
-
-Dicionários são estruturas especializadas em prover as operações de
-
-inserção, pesquisa e remoção e que não admitem repetições.
-
-A ideia central do Hash é utilizar uma função (Função de Hashing),
-
-aplicada sobre parte da informação (chave), para retornar o índice
-
-onde a informação deve ou deveria estar armazenada.
-
-A estrutura de dados Hash é comumente chamada de Tabela Hash.
-
-
-AED III
-
-
-Deﬁnição de Hash
-
-Deﬁnição de hash
-
-Hash é uma generalização da noção mais simples de um arranjo
-
-comum, sendo uma estrutura de dados do tipo dicionário.
-
-Dicionários são estruturas especializadas em prover as operações de
-
-inserção, pesquisa e remoção e que não admitem repetições.
-
-A ideia central do Hash é utilizar uma função (Função de Hashing),
-
-aplicada sobre parte da informação (chave), para retornar o índice
-
-onde a informação deve ou deveria estar armazenada.
-
-A estrutura de dados Hash é comumente chamada de Tabela Hash.
-
-
-AED III
-
-
-Deﬁnição de Hash
-
-
-AED III
-
 
 Tabela Hash
 
@@ -337,10 +271,6 @@ A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
 
-
-AED III
-
-
 Tabela Hash
 
 Tabela Hash
@@ -359,10 +289,6 @@ A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
 
-
-AED III
-
-
 Tabela Hash
 
 Tabela Hash
@@ -380,10 +306,6 @@ valor desejado.
 A ideia central por trás da construção de uma Tabela Hash é
 
 identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
-
-
-AED III
-
 
 Como representar tabela hash?
 
@@ -393,12 +315,29 @@ Vetor + Lista Encadeada: o vetor contém ponteiros para as listas
 
 que representam as informações.
 
-
-AED III
-
-
 ![Imagem 1](/images/Tabela Hash_p18_img0.jpeg)
 
+Função de Hashing
+
+Função de Hashing
+
+A Função de Hashing é a responsável por gerar um índice a partir de
+
+uma determinada chave.
+
+O ideal é que a função forneça índices únicos para o conjunto das
+
+chaves de entrada possíveis.
+
+Características desejáveis: eﬁciência e bom espalhamento.
+
+A função de Hashing é extremamente importante, pois ela é
+
+responsável por distribuir as informações pela Tabela Hash.
+
+A implementação da função de Hashing tem inﬂuência direta na
+
+eﬁciência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -422,9 +361,27 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
+Função de Hashing
 
-AED III
+Função de Hashing
 
+A Função de Hashing é a responsável por gerar um índice a partir de
+
+uma determinada chave.
+
+O ideal é que a função forneça índices únicos para o conjunto das
+
+chaves de entrada possíveis.
+
+Características desejáveis: eﬁciência e bom espalhamento.
+
+A função de Hashing é extremamente importante, pois ela é
+
+responsável por distribuir as informações pela Tabela Hash.
+
+A implementação da função de Hashing tem inﬂuência direta na
+
+eﬁciência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -448,10 +405,6 @@ A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
 
-
-AED III
-
-
 Função de Hashing
 
 Função de Hashing
@@ -473,62 +426,6 @@ responsável por distribuir as informações pela Tabela Hash.
 A implementação da função de Hashing tem inﬂuência direta na
 
 eﬁciência das operações sobre o Hash.
-
-
-AED III
-
-
-Função de Hashing
-
-Função de Hashing
-
-A Função de Hashing é a responsável por gerar um índice a partir de
-
-uma determinada chave.
-
-O ideal é que a função forneça índices únicos para o conjunto das
-
-chaves de entrada possíveis.
-
-Características desejáveis: eﬁciência e bom espalhamento.
-
-A função de Hashing é extremamente importante, pois ela é
-
-responsável por distribuir as informações pela Tabela Hash.
-
-A implementação da função de Hashing tem inﬂuência direta na
-
-eﬁciência das operações sobre o Hash.
-
-
-AED III
-
-
-Função de Hashing
-
-Função de Hashing
-
-A Função de Hashing é a responsável por gerar um índice a partir de
-
-uma determinada chave.
-
-O ideal é que a função forneça índices únicos para o conjunto das
-
-chaves de entrada possíveis.
-
-Características desejáveis: eﬁciência e bom espalhamento.
-
-A função de Hashing é extremamente importante, pois ela é
-
-responsável por distribuir as informações pela Tabela Hash.
-
-A implementação da função de Hashing tem inﬂuência direta na
-
-eﬁciência das operações sobre o Hash.
-
-
-AED III
-
 
 Função de Hashing
 
@@ -556,10 +453,6 @@ chave.
 
 ◮p[i] é um inteiro de um conjunto de pesos gerado randomicamente.
 
-
-AED III
-
-
 Função de Hashing
 
 Uma boa função hash (ou de hashing) deve apresentar duas
@@ -574,25 +467,15 @@ Escolha de funções de hashings apropriadas tentam minimizar a
 
 probabilidade de ocorrência de colisões.
 
-
-AED III
-
-
 Hashing Perfeito
 
 Para quaisquer chaves x e y diferentes e pertencentes a A, a função
 
 utilizada fornece saídas diferentes.
 
-
-AED III
-
-
 ![Imagem 1](/images/Tabela Hash_p26_img0.png)
 
-
 ![Imagem 2](/images/Tabela Hash_p26_img1.png)
-
 
 Hashing Imperfeito
 
@@ -600,12 +483,7 @@ Existe chaves x e y diferentes e pertencentes a A, onde a função Hash
 
 utilizada fornece saídas iguais.
 
-
-AED III
-
-
 ![Imagem 1](/images/Tabela Hash_p27_img0.png)
-
 
 Exemplo - Hashing Imperfeito
 
@@ -625,43 +503,35 @@ h(k)
 
 C
 
-67
-
-4
-
 H
-
-72
-
-2
 
 A
 
-65
-
-2
-
 V
-
-86
-
-2
 
 E
 
-69
-
-6
-
 S
 
-83
+Considerações sobre funções de hashing
 
-6
+Na prática funções de hashing perfeitas ou quase perfeitas:
 
+◮são encontradas apenas onde a colisão não é tolerável;
 
-AED III
+◮quando conhecemos previamente o conteúdo a ser armazenado na
 
+tabela.
+
+Nas Tabelas Hash comuns a colisão é indesejável, pois diminui o
+
+desempenho do sistema.
+
+Por causa das colisões, muitas Tabelas Hash são aliadas com outras
+
+estruturas de dados:
+
+◮Listas Encadeadas, Árvores Balanceadas, etc
 
 Considerações sobre funções de hashing
 
@@ -683,10 +553,6 @@ estruturas de dados:
 
 ◮Listas Encadeadas, Árvores Balanceadas, etc
 
-
-AED III
-
-
 Considerações sobre funções de hashing
 
 Na prática funções de hashing perfeitas ou quase perfeitas:
@@ -707,33 +573,23 @@ estruturas de dados:
 
 ◮Listas Encadeadas, Árvores Balanceadas, etc
 
+Colisões
 
-AED III
+Ocorrem quando duas ou mais chaves geram o mesmo endereço na
 
+Tabela Hash.
 
-Considerações sobre funções de hashing
+É comum ocorrer colisões.
 
-Na prática funções de hashing perfeitas ou quase perfeitas:
+Principais causas:
 
-◮são encontradas apenas onde a colisão não é tolerável;
+◮O número de chaves possíveis é muito maior que o número de entradas
 
-◮quando conhecemos previamente o conteúdo a ser armazenado na
+disponíveis na tabela.
 
-tabela.
+◮Não é possível garantir que as funções de hashing possuam um bom
 
-Nas Tabelas Hash comuns a colisão é indesejável, pois diminui o
-
-desempenho do sistema.
-
-Por causa das colisões, muitas Tabelas Hash são aliadas com outras
-
-estruturas de dados:
-
-◮Listas Encadeadas, Árvores Balanceadas, etc
-
-
-AED III
-
+potencial de distribuição (espalhamento).
 
 Colisões
 
@@ -753,10 +609,6 @@ disponíveis na tabela.
 
 potencial de distribuição (espalhamento).
 
-
-AED III
-
-
 Colisões
 
 Ocorrem quando duas ou mais chaves geram o mesmo endereço na
@@ -775,31 +627,19 @@ disponíveis na tabela.
 
 potencial de distribuição (espalhamento).
 
+Tratamento de colisões
 
-AED III
+Um bom método de resolução de colisões é essencial, não importando
 
+a qualidade da função de hashing.
 
-Colisões
+Há diversas técnicas de resolução de colisão.
 
-Ocorrem quando duas ou mais chaves geram o mesmo endereço na
+Técnicas mais comuns
 
-Tabela Hash.
+◮Encadeamento (Hashing Aberto);
 
-É comum ocorrer colisões.
-
-Principais causas:
-
-◮O número de chaves possíveis é muito maior que o número de entradas
-
-disponíveis na tabela.
-
-◮Não é possível garantir que as funções de hashing possuam um bom
-
-potencial de distribuição (espalhamento).
-
-
-AED III
-
+◮Endereçamento Aberto (Rehash ou Hashing Fechado);
 
 Tratamento de colisões
 
@@ -815,10 +655,6 @@ Técnicas mais comuns
 
 ◮Endereçamento Aberto (Rehash ou Hashing Fechado);
 
-
-AED III
-
-
 Tratamento de colisões
 
 Um bom método de resolução de colisões é essencial, não importando
@@ -832,28 +668,6 @@ Técnicas mais comuns
 ◮Encadeamento (Hashing Aberto);
 
 ◮Endereçamento Aberto (Rehash ou Hashing Fechado);
-
-
-AED III
-
-
-Tratamento de colisões
-
-Um bom método de resolução de colisões é essencial, não importando
-
-a qualidade da função de hashing.
-
-Há diversas técnicas de resolução de colisão.
-
-Técnicas mais comuns
-
-◮Encadeamento (Hashing Aberto);
-
-◮Endereçamento Aberto (Rehash ou Hashing Fechado);
-
-
-AED III
-
 
 Encadeamento
 
@@ -869,12 +683,7 @@ H, A, V, E e S em um vetor de P = 7 posições conforme a seguinte
 
 função f(K) = KASCII%P.
 
-
-AED III
-
-
 ![Imagem 1](/images/Tabela Hash_p38_img0.jpeg)
-
 
 Encadeamento - Operações
 
@@ -898,9 +707,25 @@ Hash-Delete(T, x)
 
 remova x da lista T[h(x)]
 
+Endereçamento
 
-AED III
+A estratégia é utilizar o próprio espaço da tabela que ainda não foi
 
+ocupado para armazenar a chave que gerou a colisão.
+
+Utilizado quando o número de registros a serem armazenados na
+
+tabela pode ser estimado.
+
+ReHash linear: a posição na tabela é dada por:
+
+rh(k, i) = (k + i) % M
+
+◮M é o tamanho da Tabela Hash
+
+◮k é a chave
+
+◮i é o índice de reaplicação do Hash
 
 Endereçamento
 
@@ -922,10 +747,6 @@ rh(k, i) = (k + i) % M
 
 ◮i é o índice de reaplicação do Hash
 
-
-AED III
-
-
 Endereçamento
 
 A estratégia é utilizar o próprio espaço da tabela que ainda não foi
@@ -945,34 +766,6 @@ rh(k, i) = (k + i) % M
 ◮k é a chave
 
 ◮i é o índice de reaplicação do Hash
-
-
-AED III
-
-
-Endereçamento
-
-A estratégia é utilizar o próprio espaço da tabela que ainda não foi
-
-ocupado para armazenar a chave que gerou a colisão.
-
-Utilizado quando o número de registros a serem armazenados na
-
-tabela pode ser estimado.
-
-ReHash linear: a posição na tabela é dada por:
-
-rh(k, i) = (k + i) % M
-
-◮M é o tamanho da Tabela Hash
-
-◮k é a chave
-
-◮i é o índice de reaplicação do Hash
-
-
-AED III
-
 
 Exemplo - Rehash Linear
 
@@ -996,10 +789,6 @@ i4 = rh(k)
 
 C
 
-67
-
-4
-
 -
 
 -
@@ -1007,10 +796,6 @@ C
 -
 
 H
-
-72
-
-2
 
 -
 
@@ -1020,33 +805,13 @@ H
 
 A
 
-65
-
-2
-
-3
-
 -
 
 -
 
 V
 
-86
-
-2
-
-3
-
-4
-
-5
-
 E
-
-69
-
-6
 
 -
 
@@ -1056,19 +821,9 @@ E
 
 S
 
-83
-
-6
-
-0
-
 -
 
 -
-
-
-AED III
-
 
 Exemplo - Rehash Linear
 
@@ -1086,9 +841,23 @@ V
 
 E
 
+Endereçamento
 
-AED III
+Características
 
+A função hash calcula uma posição para uma chave.
+
+Se a posição está livre a chave é armazenada.
+
+Caso contrário, veriﬁca-se a posição seguinte.
+
+A busca por uma posição continua até uma posição livre seja
+
+encontrada ou até que a capacidade da tabela seja esgotada.
+
+Obs: neste tipo de tratamanto considera-se a tabela como uma
+
+estrutura circular, onde a primeira posição sucede a última posição.
 
 Endereçamento
 
@@ -1108,9 +877,23 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
+Endereçamento
 
-AED III
+Características
 
+A função hash calcula uma posição para uma chave.
+
+Se a posição está livre a chave é armazenada.
+
+Caso contrário, veriﬁca-se a posição seguinte.
+
+A busca por uma posição continua até uma posição livre seja
+
+encontrada ou até que a capacidade da tabela seja esgotada.
+
+Obs: neste tipo de tratamanto considera-se a tabela como uma
+
+estrutura circular, onde a primeira posição sucede a última posição.
 
 Endereçamento
 
@@ -1130,10 +913,6 @@ Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
 
-
-AED III
-
-
 Endereçamento
 
 Características
@@ -1151,54 +930,6 @@ encontrada ou até que a capacidade da tabela seja esgotada.
 Obs: neste tipo de tratamanto considera-se a tabela como uma
 
 estrutura circular, onde a primeira posição sucede a última posição.
-
-
-AED III
-
-
-Endereçamento
-
-Características
-
-A função hash calcula uma posição para uma chave.
-
-Se a posição está livre a chave é armazenada.
-
-Caso contrário, veriﬁca-se a posição seguinte.
-
-A busca por uma posição continua até uma posição livre seja
-
-encontrada ou até que a capacidade da tabela seja esgotada.
-
-Obs: neste tipo de tratamanto considera-se a tabela como uma
-
-estrutura circular, onde a primeira posição sucede a última posição.
-
-
-AED III
-
-
-Endereçamento
-
-Características
-
-A função hash calcula uma posição para uma chave.
-
-Se a posição está livre a chave é armazenada.
-
-Caso contrário, veriﬁca-se a posição seguinte.
-
-A busca por uma posição continua até uma posição livre seja
-
-encontrada ou até que a capacidade da tabela seja esgotada.
-
-Obs: neste tipo de tratamanto considera-se a tabela como uma
-
-estrutura circular, onde a primeira posição sucede a última posição.
-
-
-AED III
-
 
 Endereçamento - Operações
 
@@ -1221,10 +952,6 @@ i = i + 1
 until T[j] == NIL or i == m
 
 return NIL
-
-
-AED III
-
 
 Endereçamento - Operações
 
@@ -1250,10 +977,6 @@ until i == m
 
 error "Estouro da tabela hash"
 
-
-AED III
-
-
 Endereçamento - Operações
 
 Remoção
@@ -1276,9 +999,21 @@ i = i + 1
 
 until T[j] == NIL or i == m
 
+Limitações
 
-AED III
+O Hash é uma estrutura de dados do tipo dicionário:
 
+◮Não permite armazenar elementos repetidos.
+
+◮Não permite recuperar elementos sequencialmente (ordenado).
+
+Para otimizar a função Hash é necessário conhecer a natureza e
+
+domínio da chave a ser utilizada.
+
+No pior caso a complexidade das operações pode ser O(n). Caso em
+
+que todos os elementos inseridos colidirem.
 
 Limitações
 
@@ -1296,10 +1031,6 @@ No pior caso a complexidade das operações pode ser O(n). Caso em
 
 que todos os elementos inseridos colidirem.
 
-
-AED III
-
-
 Limitações
 
 O Hash é uma estrutura de dados do tipo dicionário:
@@ -1315,30 +1046,6 @@ domínio da chave a ser utilizada.
 No pior caso a complexidade das operações pode ser O(n). Caso em
 
 que todos os elementos inseridos colidirem.
-
-
-AED III
-
-
-Limitações
-
-O Hash é uma estrutura de dados do tipo dicionário:
-
-◮Não permite armazenar elementos repetidos.
-
-◮Não permite recuperar elementos sequencialmente (ordenado).
-
-Para otimizar a função Hash é necessário conhecer a natureza e
-
-domínio da chave a ser utilizada.
-
-No pior caso a complexidade das operações pode ser O(n). Caso em
-
-que todos os elementos inseridos colidirem.
-
-
-AED III
-
 
 Vantagens x Desvantagens
 
@@ -1358,10 +1065,6 @@ Desvantagens:
 
 tipo de informação usada como chave.
 
-
-AED III
-
-
 Vantagens x Desvantagens
 
 Vantagens:
@@ -1379,10 +1082,6 @@ Desvantagens:
 ⋆O grau de espalhamento é sensível à função de hashing utilizada e ao
 
 tipo de informação usada como chave.
-
-
-AED III
-
 
 Exercícios
 
@@ -1395,7 +1094,4 @@ tamanho 6 e que os números possíveis de chaves estão no intervalo
 entre 1 a 100. Faça o tratamento de colisões utilizando
 
 encadeamento e endereçamento.
-
-
-AED III
 

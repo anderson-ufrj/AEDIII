@@ -7,31 +7,35 @@ source: "005_-_Arvore_B.pdf"
 
 # AED III Árvores B
 
-
-AED III
-
 Árvores B
-
-Ciência da Computação – IFSULDEMINAS
-
 
 Roteiro
 
-1
-
 Introdução
-
-2
 
 Inserção em árvore B
 
-3
-
 Remoção em árvore B
 
+Árvores B
 
-AED III
+Estrutura de dados projetada para funcionar especialmente em
 
+memória secundária (como disco magnético).
+
+Semelhante a árvore rubro negra, mas são melhores para minimizar
+
+operações de entrada e saída em disco.
+
+Muito empregada em aplicações que necessitam manipular grandes
+
+quantidades de informação tais como um banco de dados ou um
+
+sistema de arquivos.
+
+Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
+
+o grau de um nó pode ser muito grande.
 
 Árvores B
 
@@ -53,10 +57,6 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-
-AED III
-
-
 Árvores B
 
 Estrutura de dados projetada para funcionar especialmente em
@@ -77,10 +77,6 @@ Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
-
-AED III
-
-
 Árvores B
 
 Estrutura de dados projetada para funcionar especialmente em
@@ -100,34 +96,6 @@ sistema de arquivos.
 Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
 
 o grau de um nó pode ser muito grande.
-
-
-AED III
-
-
-Árvores B
-
-Estrutura de dados projetada para funcionar especialmente em
-
-memória secundária (como disco magnético).
-
-Semelhante a árvore rubro negra, mas são melhores para minimizar
-
-operações de entrada e saída em disco.
-
-Muito empregada em aplicações que necessitam manipular grandes
-
-quantidades de informação tais como um banco de dados ou um
-
-sistema de arquivos.
-
-Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
-
-o grau de um nó pode ser muito grande.
-
-
-AED III
-
 
 Árvores B
 
@@ -141,9 +109,27 @@ chaves: chaves do nó em ordem crescente.
 
 folha: valor booleano que indica se o nó é uma folha.
 
+Árvores B
 
-AED III
+Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
 
+Características
+
+Em um nó as chaves estão ordenadas.
+
+Todas as folhas estão no mesmo nível.
+
+Número de ﬁlhos:
+
+◮De t a 2 * t ﬁlhos.
+
+◮Raiz: de 2 a m ﬁlhos.
+
+Número de chaves:
+
+◮De t - 1 a 2 + t - 1 chaves.
+
+◮Raiz: de 1 a m - 1 chaves.
 
 Árvores B
 
@@ -167,10 +153,6 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-
-AED III
-
-
 Árvores B
 
 Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
@@ -193,10 +175,6 @@ Número de chaves:
 
 ◮Raiz: de 1 a m - 1 chaves.
 
-
-AED III
-
-
 Árvores B
 
 Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
@@ -218,36 +196,6 @@ Número de chaves:
 ◮De t - 1 a 2 + t - 1 chaves.
 
 ◮Raiz: de 1 a m - 1 chaves.
-
-
-AED III
-
-
-Árvores B
-
-Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
-
-Características
-
-Em um nó as chaves estão ordenadas.
-
-Todas as folhas estão no mesmo nível.
-
-Número de ﬁlhos:
-
-◮De t a 2 * t ﬁlhos.
-
-◮Raiz: de 2 a m ﬁlhos.
-
-Número de chaves:
-
-◮De t - 1 a 2 + t - 1 chaves.
-
-◮Raiz: de 1 a m - 1 chaves.
-
-
-AED III
-
 
 Árvores B
 
@@ -304,9 +252,29 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
+Inserindo em uma árvore B
 
-AED III
+Inserção
 
+Tente inserir a nova chave em um folha.
+
+Se o número de chaves do nó exceder o número de chaves permitidas,
+
+divida a folha em duas, promovendo a chave central para o pai da
+
+folha.
+
+Se o número de chaves do nó pai exceder o número de chaves
+
+permitidas, divida o nó pai em dois, promovendo a chave central para
+
+o ancestral do pai.
+
+Esta estratégia pode ser repetida por todo caminho até o topo.
+
+Se necessário, a raiz é dividida em dois nós, tornando a chave central
+
+em raiz. Se isto acontecer o nível da árvore aumenta.
 
 Inserindo em uma árvore B
 
@@ -332,10 +300,6 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-
-AED III
-
-
 Inserindo em uma árvore B
 
 Inserção
@@ -360,10 +324,6 @@ Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
 
-
-AED III
-
-
 Inserindo em uma árvore B
 
 Inserção
@@ -387,49 +347,32 @@ Esta estratégia pode ser repetida por todo caminho até o topo.
 Se necessário, a raiz é dividida em dois nós, tornando a chave central
 
 em raiz. Se isto acontecer o nível da árvore aumenta.
-
-
-AED III
-
-
-Inserindo em uma árvore B
-
-Inserção
-
-Tente inserir a nova chave em um folha.
-
-Se o número de chaves do nó exceder o número de chaves permitidas,
-
-divida a folha em duas, promovendo a chave central para o pai da
-
-folha.
-
-Se o número de chaves do nó pai exceder o número de chaves
-
-permitidas, divida o nó pai em dois, promovendo a chave central para
-
-o ancestral do pai.
-
-Esta estratégia pode ser repetida por todo caminho até o topo.
-
-Se necessário, a raiz é dividida em dois nós, tornando a chave central
-
-em raiz. Se isto acontecer o nível da árvore aumenta.
-
-
-AED III
-
 
 Árvores B
 
 Árvore B de grau mínimo 3:
 
-
-AED III
-
-
 ![Imagem 1](/images/005_-_Arvore_B_p18_img0.jpeg)
 
+Construindo uma árvores B
+
+Suponha que nós começamos com uma árvore B vazia e as chaves
+
+chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
+
+16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
+
+Nós queremos construir uma árvore B de garu mínimo 3.
+
+Os cinco primeiras chaves vão para a raiz:
+
+Colocar a sexta chave na raiz viola o número máximo de chaves por
+
+nó.
+
+Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
+
+raiz.
 
 Construindo uma árvores B
 
@@ -451,9 +394,25 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
+Construindo uma árvores B
 
-AED III
+Suponha que nós começamos com uma árvore B vazia e as chaves
 
+chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
+
+16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
+
+Nós queremos construir uma árvore B de garu mínimo 3.
+
+Os cinco primeiras chaves vão para a raiz:
+
+Colocar a sexta chave na raiz viola o número máximo de chaves por
+
+nó.
+
+Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
+
+raiz.
 
 Construindo uma árvores B
 
@@ -475,10 +434,6 @@ Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 Suponha que nós começamos com uma árvore B vazia e as chaves
@@ -498,58 +453,6 @@ nó.
 Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
 
 raiz.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-Suponha que nós começamos com uma árvore B vazia e as chaves
-
-chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
-
-16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
-
-Nós queremos construir uma árvore B de garu mínimo 3.
-
-Os cinco primeiras chaves vão para a raiz:
-
-Colocar a sexta chave na raiz viola o número máximo de chaves por
-
-nó.
-
-Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
-
-raiz.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-Suponha que nós começamos com uma árvore B vazia e as chaves
-
-chegam na seguinte ordem: 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52,
-
-16, 48, 68, 3, 26, 29, 53, 55, 45, 70, 24, 5 e 56.
-
-Nós queremos construir uma árvore B de garu mínimo 3.
-
-Os cinco primeiras chaves vão para a raiz:
-
-Colocar a sexta chave na raiz viola o número máximo de chaves por
-
-nó.
-
-Assim, quando 6 chega, pegamos a chave do meio para fazer a nova
-
-raiz.
-
-
-AED III
-
 
 Construindo uma árvores B
 
@@ -563,9 +466,17 @@ A insersão de 6 excede a ordem da árvore, promovemos a chave
 
 mediana.
 
+Construindo uma árvores B
 
-AED III
+1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
+55, 45, 70, 24, 5 e 56.
+
+Adicionando 6 à árvore.
+
+A insersão de 6 excede a ordem da árvore, promovemos a chave
+
+mediana.
 
 Construindo uma árvores B
 
@@ -579,25 +490,17 @@ A insersão de 6 excede a ordem da árvore, promovemos a chave
 
 mediana.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
 55, 45, 70, 24, 5 e 56.
 
-Adicionando 6 à árvore.
+Adicionando 14, 28, 17 e 7 à árvore.
 
-A insersão de 6 excede a ordem da árvore, promovemos a chave
+Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
-mediana.
-
-
-AED III
-
+Promovemos o nó mediano.
 
 Construindo uma árvores B
 
@@ -611,9 +514,17 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
+Construindo uma árvores B
 
-AED III
+1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
+55, 45, 70, 24, 5 e 56.
+
+Adicionando 14, 28, 17 e 7 à árvore.
+
+Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
+
+Promovemos o nó mediano.
 
 Construindo uma árvores B
 
@@ -627,10 +538,6 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
@@ -643,41 +550,17 @@ Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
 55, 45, 70, 24, 5 e 56.
 
-Adicionando 14, 28, 17 e 7 à árvore.
+Adicionando 16, 48, 68 e 3 à árvore.
 
-Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
-
-55, 45, 70, 24, 5 e 56.
-
-Adicionando 14, 28, 17 e 7 à árvore.
-
-Adicionando a chave 52 à folha direita, teríamos excesso de chaves.
+Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
-
-
-AED III
-
 
 Construindo uma árvores B
 
@@ -691,9 +574,17 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
+Construindo uma árvores B
 
-AED III
+1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
+55, 45, 70, 24, 5 e 56.
+
+Adicionando 16, 48, 68 e 3 à árvore.
+
+Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
+
+Promovemos o nó mediano.
 
 Construindo uma árvores B
 
@@ -707,10 +598,6 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
@@ -723,41 +610,17 @@ Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
 55, 45, 70, 24, 5 e 56.
 
-Adicionando 16, 48, 68 e 3 à árvore.
+Adicionando 26, 29, 53, 55, 45 e 70 à árvore.
 
-Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
-
-55, 45, 70, 24, 5 e 56.
-
-Adicionando 16, 48, 68 e 3 à árvore.
-
-Adicionando a chave 26 à folha esquerda, teríamos excesso de chaves.
+Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
-
-
-AED III
-
 
 Construindo uma árvores B
 
@@ -771,9 +634,17 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
+Construindo uma árvores B
 
-AED III
+1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
+55, 45, 70, 24, 5 e 56.
+
+Adicionando 26, 29, 53, 55, 45 e 70 à árvore.
+
+Adicionando a chave 24 à folha, teríamos excesso de chaves.
+
+Promovemos o nó mediano.
 
 Construindo uma árvores B
 
@@ -787,10 +658,6 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
@@ -803,41 +670,21 @@ Adicionando a chave 24 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
 55, 45, 70, 24, 5 e 56.
 
-Adicionando 26, 29, 53, 55, 45 e 70 à árvore.
-
-Adicionando a chave 24 à folha, teríamos excesso de chaves.
+Adicionando a chave 5 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
-
-Construindo uma árvores B
-
-1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
-
-55, 45, 70, 24, 5 e 56.
-
-Adicionando 26, 29, 53, 55, 45 e 70 à árvore.
-
-Adicionando a chave 24 à folha, teríamos excesso de chaves.
+Adicionando a chave 56 à folha, teríamos excesso de chaves.
 
 Promovemos o nó mediano.
 
-
-AED III
-
+A inserção fez com que a altura da árvore aumentasse.
 
 Construindo uma árvores B
 
@@ -855,9 +702,21 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
+Construindo uma árvores B
 
-AED III
+1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
 
+55, 45, 70, 24, 5 e 56.
+
+Adicionando a chave 5 à folha, teríamos excesso de chaves.
+
+Promovemos o nó mediano.
+
+Adicionando a chave 56 à folha, teríamos excesso de chaves.
+
+Promovemos o nó mediano.
+
+A inserção fez com que a altura da árvore aumentasse.
 
 Construindo uma árvores B
 
@@ -875,10 +734,6 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
@@ -895,10 +750,6 @@ Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
 
-
-AED III
-
-
 Construindo uma árvores B
 
 1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
@@ -914,50 +765,6 @@ Adicionando a chave 56 à folha, teríamos excesso de chaves.
 Promovemos o nó mediano.
 
 A inserção fez com que a altura da árvore aumentasse.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
-
-55, 45, 70, 24, 5 e 56.
-
-Adicionando a chave 5 à folha, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-Adicionando a chave 56 à folha, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-A inserção fez com que a altura da árvore aumentasse.
-
-
-AED III
-
-
-Construindo uma árvores B
-
-1, 12, 8, 2, 25, 6, 14, 28, 17, 7, 52, 16, 48, 68, 3, 26, 29, 53,
-
-55, 45, 70, 24, 5 e 56.
-
-Adicionando a chave 5 à folha, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-Adicionando a chave 56 à folha, teríamos excesso de chaves.
-
-Promovemos o nó mediano.
-
-A inserção fez com que a altura da árvore aumentasse.
-
-
-AED III
-
 
 Aplicação
 
@@ -967,9 +774,19 @@ Aplicação
 
 e 22.
 
+Split
 
-AED III
+Função responsável por dividir um nó cheio.
 
+A função recebe como parâmetros x e i:
+
+◮x: nó interno não cheio.
+
+◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
+
+A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
+
+tenha uma chave adicional.
 
 Split
 
@@ -985,10 +802,6 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-
-AED III
-
-
 Split
 
 Função responsável por dividir um nó cheio.
@@ -1003,10 +816,6 @@ A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
-
-AED III
-
-
 Split
 
 Função responsável por dividir um nó cheio.
@@ -1020,28 +829,6 @@ A função recebe como parâmetros x e i:
 A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
-
-
-AED III
-
-
-Split
-
-Função responsável por dividir um nó cheio.
-
-A função recebe como parâmetros x e i:
-
-◮x: nó interno não cheio.
-
-◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
-
-A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
-
-tenha uma chave adicional.
-
-
-AED III
-
 
 Split
 
@@ -1079,10 +866,6 @@ y.n = t - 1;
 
 // y tem o mínimo de chaves
 
-
-AED III
-
-
 Split
 
 for j = x.n + 1 downto i + 1
@@ -1114,10 +897,6 @@ DISK-WRITE(z);
 DISK-WRITE(x);
 
 }
-
-
-AED III
-
 
 Inserção
 
@@ -1153,9 +932,37 @@ B-TREE-INSERT-NONFULL(r, k);
 
 }
 
+Inserção
 
-AED III
+A função auxiliar de inserção recebe um nó x e a chave k a ser
 
+inserida.
+
+A inserção é feita nas folhas. Assim, a função percorre a árvore (de
+
+forma recursiva) até encontrar uma folha para a inserção.
+
+B-TREE-INSERT-NONFULL(x, k) {
+
+i = x.n;
+
+if x.folha
+
+// desloca chaves do nó para abrir espaço
+
+while i >= 1 e k < x.chaves[i]
+
+x.chaves[i + 1] = x.chaves[i];
+
+i = i - 1;
+
+// insere a nova chave
+
+x.chaves[i + 1] = k;
+
+x.n = x.n + 1;
+
+DISK-WRITE(x);
 
 Inserção
 
@@ -1189,10 +996,6 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-
-AED III
-
-
 Inserção
 
 A função auxiliar de inserção recebe um nó x e a chave k a ser
@@ -1225,10 +1028,6 @@ x.n = x.n + 1;
 
 DISK-WRITE(x);
 
-
-AED III
-
-
 Inserção
 
 A função auxiliar de inserção recebe um nó x e a chave k a ser
@@ -1260,46 +1059,6 @@ x.chaves[i + 1] = k;
 x.n = x.n + 1;
 
 DISK-WRITE(x);
-
-
-AED III
-
-
-Inserção
-
-A função auxiliar de inserção recebe um nó x e a chave k a ser
-
-inserida.
-
-A inserção é feita nas folhas. Assim, a função percorre a árvore (de
-
-forma recursiva) até encontrar uma folha para a inserção.
-
-B-TREE-INSERT-NONFULL(x, k) {
-
-i = x.n;
-
-if x.folha
-
-// desloca chaves do nó para abrir espaço
-
-while i >= 1 e k < x.chaves[i]
-
-x.chaves[i + 1] = x.chaves[i];
-
-i = i - 1;
-
-// insere a nova chave
-
-x.chaves[i + 1] = k;
-
-x.n = x.n + 1;
-
-DISK-WRITE(x);
-
-
-AED III
-
 
 Inserção
 
@@ -1331,9 +1090,25 @@ B-TREE-INSERT-NONFULL(x.filhos[i], k);
 
 }
 
+Remoção
 
-AED III
+Durante a inserção, a nova chave é inserida sempre em um nó folha.
 
+Para a exclusão temos quatro casos possíveis:
+
+◮Caso 1: Se a chave a ser removida está em um nó folha e removê-la
+
+não faz com que o nó ﬁque com menos que o número mínimo de
+
+chaves permitidas, podemos remover a chave.
+
+◮Caso 2: Se a chave a ser removida não está em uma folha então é
+
+garantido que seu antecessor ou sucessor está em uma folha. Neste
+
+caso, podemos excluir a chave e promover a chave antecessora ou
+
+sucessora para a posição da chave removida.
 
 Remoção
 
@@ -1355,10 +1130,6 @@ caso, podemos excluir a chave e promover a chave antecessora ou
 
 sucessora para a posição da chave removida.
 
-
-AED III
-
-
 Remoção
 
 Durante a inserção, a nova chave é inserida sempre em um nó folha.
@@ -1378,34 +1149,6 @@ garantido que seu antecessor ou sucessor está em uma folha. Neste
 caso, podemos excluir a chave e promover a chave antecessora ou
 
 sucessora para a posição da chave removida.
-
-
-AED III
-
-
-Remoção
-
-Durante a inserção, a nova chave é inserida sempre em um nó folha.
-
-Para a exclusão temos quatro casos possíveis:
-
-◮Caso 1: Se a chave a ser removida está em um nó folha e removê-la
-
-não faz com que o nó ﬁque com menos que o número mínimo de
-
-chaves permitidas, podemos remover a chave.
-
-◮Caso 2: Se a chave a ser removida não está em uma folha então é
-
-garantido que seu antecessor ou sucessor está em uma folha. Neste
-
-caso, podemos excluir a chave e promover a chave antecessora ou
-
-sucessora para a posição da chave removida.
-
-
-AED III
-
 
 Remoção
 
@@ -1431,10 +1174,6 @@ chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
 
-
-AED III
-
-
 Remoção
 
 Se os casos 1 ou 2 levam a um nó folha que contém menos que o
@@ -1459,10 +1198,6 @@ chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
 
-
-AED III
-
-
 Remoção
 
 Se os casos 1 ou 2 levam a um nó folha que contém menos que o
@@ -1486,10 +1221,6 @@ promoção de uma chave) e a nova folha terá o número correto de
 chaves. Se este passo deixar o progenitor com muito poucas chaves,
 
 repita o processo até a raiz, se necessário.
-
-
-AED III
-
 
 Caso 1: Remoção Simples
 
@@ -1497,43 +1228,23 @@ Assumindo uma árvore B de grau mínimo 3:
 
 Removendo a chave 2.
 
-
-AED III
-
-
 Caso 1: Remoção Simples
 
 Assumindo uma árvore B de grau mínimo 3:
 
 Remove 2: as chaves são suﬁciente, basta remover.
 
-
-AED III
-
-
 Caso 2: Remoção de um nó interno
 
 Removendo a chave 52.
-
-
-AED III
-
 
 Caso 2: Remoção de um nó interno
 
 Remove 52: 52 é um nó interno, tomamos o sucessor emprestado.
 
-
-AED III
-
-
 Caso 4: Poucas chaves nos nós irmãos
 
 Removendo a chave 72.
-
-
-AED III
-
 
 Caso 4: Poucas chaves nos nós irmãos
 
@@ -1541,25 +1252,13 @@ Remove 72: como há poucas chaves juntamos as chaves formando um
 
 novo nó.
 
-
-AED III
-
-
 Caso 4: Poucas chaves nos nós irmãos
 
 Árvore resultante:
 
-
-AED III
-
-
 Caso 3: Irmãos suﬁcientes
 
 Removendo a chave 22.
-
-
-AED III
-
 
 Caso 3: Irmãos suﬁcientes
 
@@ -1567,17 +1266,9 @@ Remove 22: como os irmãos são suﬁcientes, rebaixa a chave raiz e
 
 promove a chave folha.
 
-
-AED III
-
-
 Caso 3: Irmãos suﬁcientes
 
 Árvore resultante:
-
-
-AED III
-
 
 Aplicação
 
@@ -1586,7 +1277,4 @@ Aplicação
 45, 1, 5, 14, 25, 24, 13, 11, 8, 19, 4, 31, 35, 56, 15, 60, 16, 20 e 22.
 
 Remova as chaves 4, 5, 7, 3 e 14.
-
-
-AED III
 

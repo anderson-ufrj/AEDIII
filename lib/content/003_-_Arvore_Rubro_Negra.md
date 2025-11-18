@@ -7,47 +7,23 @@ source: "003_-_Arvore_Rubro_Negra.pdf"
 
 # AED III Árvores Rubro Negra
 
-
-AED III
-
 Árvores Rubro Negra
-
-Ciência da Computação – IFSULDEMINAS
-
 
 Roteiro
 
-1
-
 Introdução
-
-2
 
 Propriedades
 
-3
-
 Estrutura
-
-4
 
 Rotações
 
-5
-
 Inserção em Árvore Rubro Negra
-
-6
 
 Remoção em Árvore Rubro Negra
 
-7
-
 Exercícios
-
-
-AED III
-
 
 Características
 
@@ -70,9 +46,19 @@ Explore o funcionamento das árvores Rubro-Negras! Insira e remova valores para 
 ```tree-rbt
 ```
 
+Características
 
-AED III
+A árvore rubro-negra tem esse nome devido a coloração de seus nós.
 
+Uma árvore rubro negra é uma árvore binária de busca com um campo
+
+adicional na estrutura do nó: sua cor — VERMELHO ou PRETO.
+
+A coloração do nó é usada como fator de balanceamento da árvore
+
+Rubro Negra.
+
+Árvores Aproximadamente Balanceadas.
 
 Características
 
@@ -88,10 +74,6 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-
-AED III
-
-
 Características
 
 A árvore rubro-negra tem esse nome devido a coloração de seus nós.
@@ -106,27 +88,13 @@ Rubro Negra.
 
 Árvores Aproximadamente Balanceadas.
 
-
-AED III
-
-
 Características
 
-A árvore rubro-negra tem esse nome devido a coloração de seus nós.
+Cada nó passa a ter: cor, chave, esquerda, direita e pai.
 
-Uma árvore rubro negra é uma árvore binária de busca com um campo
+Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
-adicional na estrutura do nó: sua cor — VERMELHO ou PRETO.
-
-A coloração do nó é usada como fator de balanceamento da árvore
-
-Rubro Negra.
-
-Árvores Aproximadamente Balanceadas.
-
-
-AED III
-
+apontarem para um nó especial, denominado NIL.
 
 Características
 
@@ -136,10 +104,6 @@ Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
-
-AED III
-
-
 Características
 
 Cada nó passa a ter: cor, chave, esquerda, direita e pai.
@@ -148,21 +112,25 @@ Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
+Propriedades
 
-AED III
+Propriedades
 
+1 Todo nó é vermelho ou preto.
 
-Características
+2 A raiz é preta.
 
-Cada nó passa a ter: cor, chave, esquerda, direita e pai.
+3 Toda folha (NIL) é preta.
 
-Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
 
-apontarem para um nó especial, denominado NIL.
+5 Para cada nó, todos os caminhos simples do nó até as folhas
 
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
-AED III
+Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
+não contém chaves e sua cor é preta.
 
 Propriedades
 
@@ -184,9 +152,25 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
+Propriedades
 
-AED III
+Propriedades
 
+1 Todo nó é vermelho ou preto.
+
+2 A raiz é preta.
+
+3 Toda folha (NIL) é preta.
+
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+
+5 Para cada nó, todos os caminhos simples do nó até as folhas
+
+descendentes contêm o mesmo número de nós pretos (altura negra).
+
+Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+
+não contém chaves e sua cor é preta.
 
 Propriedades
 
@@ -208,10 +192,6 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-
-AED III
-
-
 Propriedades
 
 Propriedades
@@ -232,10 +212,6 @@ Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
-
-AED III
-
-
 Propriedades
 
 Propriedades
@@ -255,58 +231,6 @@ descendentes contêm o mesmo número de nós pretos (altura negra).
 Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
-
-
-AED III
-
-
-Propriedades
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
-
-não contém chaves e sua cor é preta.
-
-
-AED III
-
-
-Propriedades
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
-
-não contém chaves e sua cor é preta.
-
-
-AED III
-
 
 Altura Negra
 
@@ -320,10 +244,6 @@ Exemplo:
 
 Qual a altura negra do nó 7?
 
-
-AED III
-
-
 Altura Negra
 
 Altura Negra
@@ -335,13 +255,8 @@ que se encontram nos caminhos da raiz até uma folha.
 Exemplo:
 
 Qual a altura negra do nó 7?
-
-
-AED III
-
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p17_img0.jpeg)
-
 
 Estrutura para Árvore Rubro Negra
 
@@ -359,44 +274,25 @@ esquerda ponteiro para o filho da esquerda;
 
 pai ponteiro para o pai;
 
-
-AED III
-
-
 Rotações
 
 As rotações para a direita e para a esquerda são utilizadas no
 
 balanceamento das árvores.
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p19_img0.jpeg)
-
 
 Exemplo Rotações
 
 Antes:
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p20_img0.jpeg)
-
 
 Exemplo Rotações
 
 Depois:
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p21_img0.jpeg)
-
 
 Algoritmo Rotação Esquerda
 
@@ -442,9 +338,23 @@ x.pai = y;
 
 }
 
+Inserção em Árvore Rubro Negra
 
-AED III
+Dados o ponteiro para a raiz, T, e um nó z.
 
+Obs: o nó z já foi alocado e seus valores são:
+
+◮z.chave = v
+
+◮z.esquerda = z.direita = z.pai = NIL
+
+◮z.cor = VERMELHO
+
+x aponta para a raiz, começando da raiz da árvore, x traça um
+
+caminho descendente em busca do local de inserção de z.
+
+y é um ponteiro acompanhante, no percurso é o pai de x.
 
 Inserção em Árvore Rubro Negra
 
@@ -464,9 +374,23 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
+Inserção em Árvore Rubro Negra
 
-AED III
+Dados o ponteiro para a raiz, T, e um nó z.
 
+Obs: o nó z já foi alocado e seus valores são:
+
+◮z.chave = v
+
+◮z.esquerda = z.direita = z.pai = NIL
+
+◮z.cor = VERMELHO
+
+x aponta para a raiz, começando da raiz da árvore, x traça um
+
+caminho descendente em busca do local de inserção de z.
+
+y é um ponteiro acompanhante, no percurso é o pai de x.
 
 Inserção em Árvore Rubro Negra
 
@@ -486,9 +410,23 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
+Inserção em Árvore Rubro Negra
 
-AED III
+Dados o ponteiro para a raiz, T, e um nó z.
 
+Obs: o nó z já foi alocado e seus valores são:
+
+◮z.chave = v
+
+◮z.esquerda = z.direita = z.pai = NIL
+
+◮z.cor = VERMELHO
+
+x aponta para a raiz, começando da raiz da árvore, x traça um
+
+caminho descendente em busca do local de inserção de z.
+
+y é um ponteiro acompanhante, no percurso é o pai de x.
 
 Inserção em Árvore Rubro Negra
 
@@ -508,10 +446,6 @@ caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
 
-
-AED III
-
-
 Inserção em Árvore Rubro Negra
 
 Dados o ponteiro para a raiz, T, e um nó z.
@@ -529,76 +463,6 @@ x aponta para a raiz, começando da raiz da árvore, x traça um
 caminho descendente em busca do local de inserção de z.
 
 y é um ponteiro acompanhante, no percurso é o pai de x.
-
-
-AED III
-
-
-Inserção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z.
-
-Obs: o nó z já foi alocado e seus valores são:
-
-◮z.chave = v
-
-◮z.esquerda = z.direita = z.pai = NIL
-
-◮z.cor = VERMELHO
-
-x aponta para a raiz, começando da raiz da árvore, x traça um
-
-caminho descendente em busca do local de inserção de z.
-
-y é um ponteiro acompanhante, no percurso é o pai de x.
-
-
-AED III
-
-
-Inserção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z.
-
-Obs: o nó z já foi alocado e seus valores são:
-
-◮z.chave = v
-
-◮z.esquerda = z.direita = z.pai = NIL
-
-◮z.cor = VERMELHO
-
-x aponta para a raiz, começando da raiz da árvore, x traça um
-
-caminho descendente em busca do local de inserção de z.
-
-y é um ponteiro acompanhante, no percurso é o pai de x.
-
-
-AED III
-
-
-Inserção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z.
-
-Obs: o nó z já foi alocado e seus valores são:
-
-◮z.chave = v
-
-◮z.esquerda = z.direita = z.pai = NIL
-
-◮z.cor = VERMELHO
-
-x aponta para a raiz, começando da raiz da árvore, x traça um
-
-caminho descendente em busca do local de inserção de z.
-
-y é um ponteiro acompanhante, no percurso é o pai de x.
-
-
-AED III
-
 
 Inserção em Árvore Rubro Negra
 
@@ -638,9 +502,19 @@ y.esquerda = z;
 
 else y.direita = z;
 
+Inserção em Árvore Rubro Negra
 
-AED III
+Inserção
 
+z.cor = VERMELHO;
+
+RB_INSERT_FIXUP(T, z);
+
+}
+
+Sempre inserimos nós vermelhos.
+
+Após a inserção devemos balancear a árvore.
 
 Inserção em Árvore Rubro Negra
 
@@ -656,10 +530,6 @@ Sempre inserimos nós vermelhos.
 
 Após a inserção devemos balancear a árvore.
 
-
-AED III
-
-
 Inserção em Árvore Rubro Negra
 
 Inserção
@@ -674,27 +544,25 @@ Sempre inserimos nós vermelhos.
 
 Após a inserção devemos balancear a árvore.
 
+Propriedades Violadas
 
-AED III
+Após a inserção, mas antes da execução a função RB_INSERE_FIXUP,
 
+apenas as seguintes propriedades podem ser violadas:
 
-Inserção em Árvore Rubro Negra
+Propriedades
 
-Inserção
+1 Todo nó é vermelho ou preto.
 
-z.cor = VERMELHO;
+2 A raiz é preta.
 
-RB_INSERT_FIXUP(T, z);
+3 Toda folha (NIL) é preta.
 
-}
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
 
-Sempre inserimos nós vermelhos.
+5 Para cada nó, todos os caminhos simples do nó até as folhas
 
-Após a inserção devemos balancear a árvore.
-
-
-AED III
-
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
 Propriedades Violadas
 
@@ -716,9 +584,25 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
+Propriedades Violadas
 
-AED III
+Após a inserção, mas antes da execução a função RB_INSERE_FIXUP,
 
+apenas as seguintes propriedades podem ser violadas:
+
+Propriedades
+
+1 Todo nó é vermelho ou preto.
+
+2 A raiz é preta.
+
+3 Toda folha (NIL) é preta.
+
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+
+5 Para cada nó, todos os caminhos simples do nó até as folhas
+
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
 Propriedades Violadas
 
@@ -740,10 +624,6 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-
-AED III
-
-
 Propriedades Violadas
 
 Após a inserção, mas antes da execução a função RB_INSERE_FIXUP,
@@ -764,57 +644,29 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
+A função RB_INSERE_FIXUP
 
-AED III
+A propriedade 1 é violada quando a árvore é vazia.
 
+A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
 
-Propriedades Violadas
+(z.pai) são vermelhos.
 
-Após a inserção, mas antes da execução a função RB_INSERE_FIXUP,
+A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
 
-apenas as seguintes propriedades podem ser violadas:
+na árvore.
 
-Propriedades
+Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
-1 Todo nó é vermelho ou preto.
+o balanceamento a partir do pai do nó recém inserido (z):
 
-2 A raiz é preta.
+◮Levando em consideração se o pai de z é ﬁlho da direita ou da
 
-3 Toda folha (NIL) é preta.
+esquerda.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+◮Há três casos para cada situação.
 
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
-
-Propriedades Violadas
-
-Após a inserção, mas antes da execução a função RB_INSERE_FIXUP,
-
-apenas as seguintes propriedades podem ser violadas:
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
+Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -840,9 +692,29 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
+A função RB_INSERE_FIXUP
 
-AED III
+A propriedade 1 é violada quando a árvore é vazia.
 
+A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
+
+(z.pai) são vermelhos.
+
+A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
+
+na árvore.
+
+Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
+
+o balanceamento a partir do pai do nó recém inserido (z):
+
+◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+
+esquerda.
+
+◮Há três casos para cada situação.
+
+Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -868,9 +740,29 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
+A função RB_INSERE_FIXUP
 
-AED III
+A propriedade 1 é violada quando a árvore é vazia.
 
+A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
+
+(z.pai) são vermelhos.
+
+A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
+
+na árvore.
+
+Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
+
+o balanceamento a partir do pai do nó recém inserido (z):
+
+◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+
+esquerda.
+
+◮Há três casos para cada situação.
+
+Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -896,10 +788,6 @@ esquerda.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
 
-
-AED III
-
-
 A função RB_INSERE_FIXUP
 
 A propriedade 1 é violada quando a árvore é vazia.
@@ -923,94 +811,6 @@ esquerda.
 ◮Há três casos para cada situação.
 
 Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
-
-
-AED III
-
-
-A função RB_INSERE_FIXUP
-
-A propriedade 1 é violada quando a árvore é vazia.
-
-A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
-
-(z.pai) são vermelhos.
-
-A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
-
-na árvore.
-
-Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
-
-o balanceamento a partir do pai do nó recém inserido (z):
-
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
-
-esquerda.
-
-◮Há três casos para cada situação.
-
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
-
-
-AED III
-
-
-A função RB_INSERE_FIXUP
-
-A propriedade 1 é violada quando a árvore é vazia.
-
-A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
-
-(z.pai) são vermelhos.
-
-A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
-
-na árvore.
-
-Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
-
-o balanceamento a partir do pai do nó recém inserido (z):
-
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
-
-esquerda.
-
-◮Há três casos para cada situação.
-
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
-
-
-AED III
-
-
-A função RB_INSERE_FIXUP
-
-A propriedade 1 é violada quando a árvore é vazia.
-
-A propriedade 4 é violada quando o nó a ser inserido (z) e seu pai
-
-(z.pai) são vermelhos.
-
-A função RB_INSERE_FIXUP corrige as cores dos nós e faz rotações
-
-na árvore.
-
-Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
-
-o balanceamento a partir do pai do nó recém inserido (z):
-
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
-
-esquerda.
-
-◮Há três casos para cada situação.
-
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
-
-
-AED III
-
 
 Caso 1
 
@@ -1020,10 +820,6 @@ Colorimos o pai de z e o seu tio y de pretos e o avô de z de vermelho.
 
 O avô de z passa a ser o novo z.
 
-
-AED III
-
-
 Caso 2
 
 Caso 2: o tio y de z é preto e z é ﬁlho à direita
@@ -1032,10 +828,6 @@ z passa a ser o pai de z.
 
 Executamos rotação à esquerda em z, caindo no caso 3.
 
-
-AED III
-
-
 Caso 3
 
 Caso 3: o tio y de z é preto e z é ﬁlho à esquerda
@@ -1043,10 +835,6 @@ Caso 3: o tio y de z é preto e z é ﬁlho à esquerda
 Colorimos o pai de z de preto e o avô de z de vermelho.
 
 Executamos rotação à direita no avô de z.
-
-
-AED III
-
 
 Balanceamento em Árvore Rubro Negra
 
@@ -1106,45 +894,21 @@ else ( igual à cláusula então com dir. e esq. trocadas)
 
 T.raiz.cor = PRETO;
 
-
-AED III
-
-
 Exemplo
-
-
-AED III
-
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p50_img0.png)
 
-
 Exemplo
-
-
-AED III
-
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p51_img0.png)
 
-
 Exemplo
-
-
-AED III
-
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p52_img0.png)
 
-
 Exemplo
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p53_img0.png)
-
 
 Exercício
 
@@ -1152,12 +916,23 @@ Exercício
 
 2 Dado a árvore rubro negra insira o nó 7.
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p54_img0.png)
 
+Remoção em Árvore Rubro Negra
+
+Dados o ponteiro para a raiz, T, e um nó z a ser removido.
+
+O nó y é:
+
+◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+
+◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+
+◮y é o nó a ser removido.
+
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+
+y.
 
 Remoção em Árvore Rubro Negra
 
@@ -1175,9 +950,21 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
+Remoção em Árvore Rubro Negra
 
-AED III
+Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
+O nó y é:
+
+◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+
+◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+
+◮y é o nó a ser removido.
+
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+
+y.
 
 Remoção em Árvore Rubro Negra
 
@@ -1195,10 +982,6 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 Dados o ponteiro para a raiz, T, e um nó z a ser removido.
@@ -1215,10 +998,6 @@ O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 Dados o ponteiro para a raiz, T, e um nó z a ser removido.
@@ -1234,50 +1013,6 @@ O nó y é:
 O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
 
 y.
-
-
-AED III
-
-
-Remoção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z a ser removido.
-
-O nó y é:
-
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
-
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
-
-◮y é o nó a ser removido.
-
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
-
-y.
-
-
-AED III
-
-
-Remoção em Árvore Rubro Negra
-
-Dados o ponteiro para a raiz, T, e um nó z a ser removido.
-
-O nó y é:
-
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
-
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
-
-◮y é o nó a ser removido.
-
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
-
-y.
-
-
-AED III
-
 
 Remoção em Árvore Rubro Negra
 
@@ -1305,10 +1040,6 @@ x = z.esquerda
 
 TRANSPLANT(T, z, z.esquerda);
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 RB_DELETE
@@ -1335,9 +1066,29 @@ RB_DELETE_FIXUP(T, x)
 
 desaloca y
 
+Propriedades Violadas
 
-AED III
+A remoção de nós vermelhos não alteram as propriedades da árvore.
 
+Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
+
+execução a função RB_DELETE_FIXUP, apenas as seguintes
+
+propriedades podem ser violadas:
+
+Propriedades
+
+1 Todo nó é vermelho ou preto.
+
+2 A raiz é preta.
+
+3 Toda folha (NIL) é preta.
+
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+
+5 Para cada nó, todos os caminhos simples do nó até as folhas
+
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
 Propriedades Violadas
 
@@ -1363,9 +1114,29 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
+Propriedades Violadas
 
-AED III
+A remoção de nós vermelhos não alteram as propriedades da árvore.
 
+Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
+
+execução a função RB_DELETE_FIXUP, apenas as seguintes
+
+propriedades podem ser violadas:
+
+Propriedades
+
+1 Todo nó é vermelho ou preto.
+
+2 A raiz é preta.
+
+3 Toda folha (NIL) é preta.
+
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+
+5 Para cada nó, todos os caminhos simples do nó até as folhas
+
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
 Propriedades Violadas
 
@@ -1391,9 +1162,29 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
+Propriedades Violadas
 
-AED III
+A remoção de nós vermelhos não alteram as propriedades da árvore.
 
+Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
+
+execução a função RB_DELETE_FIXUP, apenas as seguintes
+
+propriedades podem ser violadas:
+
+Propriedades
+
+1 Todo nó é vermelho ou preto.
+
+2 A raiz é preta.
+
+3 Toda folha (NIL) é preta.
+
+4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+
+5 Para cada nó, todos os caminhos simples do nó até as folhas
+
+descendentes contêm o mesmo número de nós pretos (altura negra).
 
 Propriedades Violadas
 
@@ -1419,10 +1210,6 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-
-AED III
-
-
 Propriedades Violadas
 
 A remoção de nós vermelhos não alteram as propriedades da árvore.
@@ -1447,10 +1234,6 @@ Propriedades
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-
-AED III
-
-
 Propriedades Violadas
 
 A remoção de nós vermelhos não alteram as propriedades da árvore.
@@ -1474,94 +1257,6 @@ Propriedades
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
-
-Propriedades Violadas
-
-A remoção de nós vermelhos não alteram as propriedades da árvore.
-
-Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
-
-execução a função RB_DELETE_FIXUP, apenas as seguintes
-
-propriedades podem ser violadas:
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
-
-Propriedades Violadas
-
-A remoção de nós vermelhos não alteram as propriedades da árvore.
-
-Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
-
-execução a função RB_DELETE_FIXUP, apenas as seguintes
-
-propriedades podem ser violadas:
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
-
-Propriedades Violadas
-
-A remoção de nós vermelhos não alteram as propriedades da árvore.
-
-Mas a remoção de nós pretos alteram.Após a remoção, mas antes da
-
-execução a função RB_DELETE_FIXUP, apenas as seguintes
-
-propriedades podem ser violadas:
-
-Propriedades
-
-1 Todo nó é vermelho ou preto.
-
-2 A raiz é preta.
-
-3 Toda folha (NIL) é preta.
-
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
-
-5 Para cada nó, todos os caminhos simples do nó até as folhas
-
-descendentes contêm o mesmo número de nós pretos (altura negra).
-
-
-AED III
-
 
 Remoção em Árvore Rubro Negra
 
@@ -1587,9 +1282,29 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
+Remoção em Árvore Rubro Negra
 
-AED III
+Após uma remoção a árvore pode estar com suas propriedades
 
+violadas.
+
+Quando o nó removido é preto as propriedades da árvore devem ser
+
+restauradas.
+
+A função RB_DELETE_FIXUP é responsavel por restaurar as
+
+propriedades da árvore por meio da troca de cores e das rotações.
+
+◮A função recebe como parâmetro o nó x.
+
+◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
+
+◮A função trata quatro casos para restauração da árvores, levando em
+
+consideração se x é ﬁlho da direita ou da esquerda.
+
+Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
 Remoção em Árvore Rubro Negra
 
@@ -1615,9 +1330,29 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
+Remoção em Árvore Rubro Negra
 
-AED III
+Após uma remoção a árvore pode estar com suas propriedades
 
+violadas.
+
+Quando o nó removido é preto as propriedades da árvore devem ser
+
+restauradas.
+
+A função RB_DELETE_FIXUP é responsavel por restaurar as
+
+propriedades da árvore por meio da troca de cores e das rotações.
+
+◮A função recebe como parâmetro o nó x.
+
+◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
+
+◮A função trata quatro casos para restauração da árvores, levando em
+
+consideração se x é ﬁlho da direita ou da esquerda.
+
+Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
 Remoção em Árvore Rubro Negra
 
@@ -1643,10 +1378,6 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 Após uma remoção a árvore pode estar com suas propriedades
@@ -1671,10 +1402,6 @@ consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 Após uma remoção a árvore pode estar com suas propriedades
@@ -1698,66 +1425,6 @@ propriedades da árvore por meio da troca de cores e das rotações.
 consideração se x é ﬁlho da direita ou da esquerda.
 
 Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-
-AED III
-
-
-Remoção em Árvore Rubro Negra
-
-Após uma remoção a árvore pode estar com suas propriedades
-
-violadas.
-
-Quando o nó removido é preto as propriedades da árvore devem ser
-
-restauradas.
-
-A função RB_DELETE_FIXUP é responsavel por restaurar as
-
-propriedades da árvore por meio da troca de cores e das rotações.
-
-◮A função recebe como parâmetro o nó x.
-
-◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
-
-◮A função trata quatro casos para restauração da árvores, levando em
-
-consideração se x é ﬁlho da direita ou da esquerda.
-
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-
-AED III
-
-
-Remoção em Árvore Rubro Negra
-
-Após uma remoção a árvore pode estar com suas propriedades
-
-violadas.
-
-Quando o nó removido é preto as propriedades da árvore devem ser
-
-restauradas.
-
-A função RB_DELETE_FIXUP é responsavel por restaurar as
-
-propriedades da árvore por meio da troca de cores e das rotações.
-
-◮A função recebe como parâmetro o nó x.
-
-◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
-
-◮A função trata quatro casos para restauração da árvores, levando em
-
-consideração se x é ﬁlho da direita ou da esquerda.
-
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-
-AED III
-
 
 Caso 1
 
@@ -1771,10 +1438,6 @@ Rotação à esquerda no pai de x
 
 w passa a ser o irmão de x à direita
 
-
-AED III
-
-
 Caso 2
 
 Caso 2: o irmão w de x é preto e os ﬁlhos de w são pretos
@@ -1782,10 +1445,6 @@ Caso 2: o irmão w de x é preto e os ﬁlhos de w são pretos
 A cor de w passa a ser vermelha
 
 x passa a ser o pai de x
-
-
-AED III
-
 
 Caso 3
 
@@ -1801,10 +1460,6 @@ Rotação à direita em w
 
 w passa a ser o pai de x à direita
 
-
-AED III
-
-
 Caso 4
 
 Caso 4: o irmão w de x é preto e o ﬁlho à direita de w é vermelho
@@ -1819,15 +1474,7 @@ Rotação esquerda no pai de x
 
 x passa a ser a raiz
 
-
-AED III
-
-
 Caso 4
-
-
-AED III
-
 
 Remoção em Árvore Rubro Negra
 
@@ -1855,10 +1502,6 @@ LEFT_ROTATE(T, x.pai);
 
 w = x.pai.dir;
 
-
-AED III
-
-
 Remoção em Árvore Rubro Negra
 
 RB_DELETE_FIXUP
@@ -1884,10 +1527,6 @@ w.cor = VERMELHO;
 RIGHT_ROTATE(T, w);
 
 w = x.pai.dir;
-
-
-AED III
-
 
 Remoção em Árvore Rubro Negra
 
@@ -1915,56 +1554,29 @@ x.cor = PRETO;
 
 }
 
-
-AED III
-
-
 Exemplo
 
 Removendo o nó 250:
-
-
-AED III
-
 
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p86_img0.jpeg)
 
-
 Exemplo
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p87_img0.jpeg)
-
 
 Exemplo
 
 Removendo o nó 250:
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p88_img0.jpeg)
-
 
 Exemplo
 
-
-AED III
-
-
 ![Imagem 1](/images/003_-_Arvore_Rubro_Negra_p89_img0.jpeg)
-
 
 Exercícios
 
 1 Após a inserção dos elementos 41, 38, 31, 12, 19 e 8 em uma árvore
 
 rubro negra faça a remoção dos elementos 19 e 8.
-
-
-AED III
 

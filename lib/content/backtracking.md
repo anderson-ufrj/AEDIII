@@ -7,21 +7,15 @@ source: "backtracking.pdf"
 
 # Microsoft PowerPoint - backtracking
 
-
-AED III
-
 Backtracking
-
 
 Backtracking
 
 Um algoritmo de backtracking começa com uma solução vazia e amplia a solução passo a passo. A pesquisa recursivamente passa por todas as formas diferentes de como uma solução pode ser construída.
 
-
 Sudoku
 
 ![Imagem 1](/images/backtracking_p3_img0.jpeg)
-
 
 Sudoku
 
@@ -40,7 +34,6 @@ bool FindUnassignedLocation(int grid[N][N], int &row, int &col);
 // Checa se é permitido colocar um determinado número na célula encontrada
 bool isSafe(int grid[N][N], int row, int col, int num);
 ```
-
 
 /* Faz um preenchimento, para atribuir valores para todas as células não numeradas, verificando os requisitos para solução do Sudoku (não duplicação nas linhas, colunas e matrizes 3x3) */
 
@@ -75,7 +68,6 @@ bool SolveSudoku(int grid[N][N])
 }
 ```
 
-
 /* Procura uma célula que não foi preenchida. Se for encontrada, linha e coluna são retornadas nos ponteiros */
 
 ```c
@@ -89,7 +81,6 @@ bool FindUnassignedLocation(int grid[N][N], int &row, int &col)
     return false;
 }
 ```
-
 
 ```c
 // Retorna um booleano que indica se um número já foi utilizado em uma linha específica
@@ -124,7 +115,6 @@ bool UsedInBox(int grid[N][N], int boxStartRow, int boxStartCol, int num)
 }
 ```
 
-
 /* Retorna um booleano que indica se será permitido colocar um número em uma determinada célula */
 
 ```c
@@ -147,7 +137,6 @@ void printGrid(int grid[N][N])
     }
 }
 ```
-
 
 ```c
 int main()
@@ -172,13 +161,11 @@ int main()
 }
 ```
 
-
 Problema das N-Rainhas
 
 Como exemplo, considere o problema de calcular o número de maneiras em que as rainhas podem ser colocadas em um xadrez n × n para que nenhuma rainha se ataque. Por exemplo, quando n = 4, existem duas soluções possíveis:
 
 um algoritmo de backtracking começa com uma solução vazia e amplia a solução passo a passo. A pesquisa recursivamente passa por todas as formas diferentes de como uma solução pode ser construída.
-
 
 Backtracking
 
@@ -186,13 +173,11 @@ Como exemplo, considere o problema de calcular o número de maneiras em que as r
 
 ![Imagem 1](/images/backtracking_p11_img0.jpeg)
 
-
 Backtracking
 
 O problema pode ser resolvido usando backtracking colocando rainhas na linha da placa por linha. Mais precisamente, exatamente uma rainha será colocada em cada linha para que nenhuma rainha ataque qualquer das rainhas colocadas antes. Uma solução é encontrada quando todas as n rainhas foram colocadas na placa.
 
 Por exemplo, quando n = 4, algumas soluções parciais geradas pelo algoritmo de backtracking são as seguintes:
-
 
 Backtracking
 
@@ -202,11 +187,9 @@ Backtracking
 
 ![Imagem 3](/images/backtracking_p13_img2.jpeg)
 
-
 Backtracking
 
 No nível inferior, as três primeiras configurações são ilegais, porque as rainhas se atacam. No entanto, a quarta configuração é válida e pode ser estendida para uma solução completa colocando mais duas rainhas na placa. Existe apenas uma maneira de colocar as duas rainhas restantes.
-
 
 Exercícios
 

@@ -7,7 +7,6 @@ source: "Exercícios.pdf"
 
 # 
 
-
 AED III – ALGORITMOS ESTRUTURAS DE DADOS III
 
 Exercícios — Tabela Hash

@@ -7,7 +7,6 @@ source: "006_-_Formas_Basicas_de_Organizacao_de_Arquivos.pdf"
 
 # 002
 
-
 Formas
 
 Formas Básicas
@@ -58,17 +57,13 @@ Curso de Bacharelado em Ciência da Computação
 
 ão
 
-AED III
-
 AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p1_img1.png)
-
 
 Formas B
 
@@ -92,9 +87,7 @@ Tipos de Arquivos
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p2_img1.png)
-
 
  Arquivo Seqüencial
 
@@ -138,9 +131,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p3_img1.png)
-
 
  Arquivo Seqüencial
 
@@ -174,9 +165,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p4_img1.png)
-
 
  Arquivo Seqüencial
 
@@ -196,31 +185,21 @@ Salário
 
 Ademar
 
-34
-
 1,500
 
 Francisco
-
-45
 
 2,500
 
 Paulo
 
-22
-
 1,000
 
 Pedro
 
-30
-
 2,900
 
 Sônia
-
-26
 
 2,300
 
@@ -242,9 +221,7 @@ encial
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p5_img1.png)
-
 
  Arquivo Seqüencial
 
@@ -288,9 +265,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p6_img1.png)
-
 
  Arquivo Seqüencial
 
@@ -328,9 +303,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p7_img1.png)
-
 
  Arquivo Seqüencial Indexado
 
@@ -376,9 +349,7 @@ Registro de índice
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p8_img1.png)
-
 
  Arquivo Sequencial Indexado
 
@@ -400,12 +371,9 @@ veis
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img0.png)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img1.jpeg)
 
-
 ![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p9_img2.png)
-
 
  Arquivo Seqüencial Indexado
 
@@ -443,9 +411,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p10_img1.png)
-
 
 Formas B
 
@@ -463,18 +429,13 @@ registro
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img0.png)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img1.png)
-
 
 ![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img2.png)
 
-
 ![Imagem 4](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img3.jpeg)
 
-
 ![Imagem 5](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p11_img4.png)
-
 
 Arquivo Indexado com um
 
@@ -492,18 +453,13 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img0.png)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img1.png)
-
 
 ![Imagem 3](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img2.png)
 
-
 ![Imagem 4](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img3.jpeg)
 
-
 ![Imagem 5](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p12_img4.png)
-
 
  Arquivo Seqüencial Indexado
 
@@ -551,9 +507,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p13_img1.png)
-
 
  Arquivo Indexado
 
@@ -575,77 +529,17 @@ NOME
 
 IDADE
 
-1075
-
-2
-
-0
-
-1480
-
 IARA
-
-23
-
-1350
-
-1
-
-1
-
-1350
 
 EDMUNDO
 
-25
-
-1480
-
-0
-
-2
-
-1075
-
 CRISTIANO
-
-21
-
-1800
-
-5
-
-3
-
-1950
 
 TATIANA
 
-56
-
-1950
-
-3
-
-4
-
-2200
-
 GERSON
 
-34
-
-2200
-
-4
-
-5
-
-1800
-
 ANGELA
-
-21
 
 Arquivo Indexado
 
@@ -653,9 +547,7 @@ Arquivo Indexado
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p14_img1.png)
-
 
  Arquivo Indexado
 
@@ -697,9 +589,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p15_img1.png)
-
 
  Arquivo Indexado
 
@@ -733,9 +623,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p16_img1.png)
-
 
  Arquivo Direto
 
@@ -775,9 +663,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p17_img1.png)
-
 
  Arquivo Direto
 
@@ -815,9 +701,7 @@ sicas de Organização
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img0.jpeg)
 
-
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p18_img1.png)
-
 
  Arquivo Direto
 
@@ -852,6 +736,5 @@ sicas de Organização
 ão
 
 ![Imagem 1](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img0.jpeg)
-
 
 ![Imagem 2](/images/006_-_Formas_Basicas_de_Organizacao_de_Arquivos_p19_img1.png)

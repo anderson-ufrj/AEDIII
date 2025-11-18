@@ -7,13 +7,9 @@ source: "estruturas4.pdf"
 
 # Microsoft PowerPoint - estruturas4
 
-
-AED III
-
 Estruturas C++
 
 Pair
-
 
 Pair
 
@@ -42,7 +38,6 @@ elementos. Assim, poderíamos fazer par guardar os valores 3 e 2.5 em seus
 membros com o comando
 
 par=make_pair(3, 2.5);
-
 
 Uma das grandes utilidades do pair é podermos fazer um outro pair ser um de
 
@@ -76,7 +71,6 @@ ponto com o primeiro membro "3" e o segundo membro com os números
 
 "2.5" e "1.7" com o comando "ponto=make_pair(3, make_pair(2.5, 1.7));".
 
-
 É importante lembrar que ao usarmos qualquer objeto que use os operadores "<>"
 
 na sua declaração, devemos usar espaços para garantir que não escrevamos "<<" ou
@@ -96,7 +90,6 @@ podemos ter quantos elementos quisermos em um pair, mas a partir de certo
 número, é muito confuso e cansativo escrevermos "first.second.second.first...",
 
 sendo recomendado o uso de uma struct.
-
 
 Outra grande utilidade do pair é que ele já vem com os operadores de comparação
 
@@ -126,7 +119,6 @@ comparação, sabendo que a ordenação irá priorizar o primeiro membro de cada
 
 usando o segundo como critério de desempate.
 
-
 Para melhor entendimento, imagine o seguinte problema de ordenação: há n
 
 alunos que devem ser ordenados pelo seu desempenho acadêmico. Cada um
@@ -148,7 +140,6 @@ maneira, a i-ésima linha contêm dois inteiros s e f, a nota e o número de fal
 do aluno i, respectivamente. A saída deve conter um única linha, com as n
 
 identificações dos alunos, ordenadas.
-
 
 Cada aluno consiste de três informações: nota, faltas e identificação, sendo
 
@@ -194,7 +185,6 @@ a desejada. Basta que na hora de imprimirmos os números, usemos seus
 
 opostos, ou seja, imprimiríamos 5 e 3, nessa ordem.
 
-
 Desse modo, basta criarmos um vector de pair de nome aluno. Essa estrutura
 
 será usada na solução do problema. Quando lermos a descrição do aluno i,
@@ -206,7 +196,6 @@ f), i) ao vetor. Feito isso basta que o ordenemos com uma chamada do sort, e
 depois imprimamos, em ordem, os identificadores de seus elementos, que
 
 serão seus membros second. Segue o código para melhor entendimento:
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -253,8 +242,6 @@ Exemplo de Entrada
 
 Exemplo de Saída
 
-8
-
 Belgica 2 2 2
 
 Brasil 7 6 6
@@ -286,7 +273,6 @@ Suica 3 2 2
 Belgica 2 2 2
 
 Tailandia 2 2 2
-
 
 Exercícios
 
@@ -312,7 +298,6 @@ posicionadas em uma fila única à frente no trenó. Nem todas as renas do
 
 estábulo são utilizadas em cada viagem, isto depende da carga total do trenó.
 
-
 Exercícios
 
 Você conseguiu a lista com as características que são utilizadas para determinar
@@ -336,8 +321,6 @@ forma ordenada).
 Exemplo de Entrada
 
 Exemplo de Saída
-
-1
 
 9 5
 
@@ -371,7 +354,6 @@ CENARIO {1}
 
 5 - Blitzen
 
-
 Exercícios
 
 3. O professor Odracir organizou junto às suas turmas de Ciência da
@@ -394,8 +376,6 @@ Exemplo de Entrada
 
 Exemplo de Saída
 
-3
-
 Maria Joao
 
 branco P
@@ -407,8 +387,6 @@ vermelho P
 Maria Jose
 
 branco P
-
-0
 
 branco P Maria Joao
 

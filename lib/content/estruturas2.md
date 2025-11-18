@@ -7,9 +7,6 @@ source: "estruturas2.pdf"
 
 # Microsoft PowerPoint - estruturas2
 
-
-AED III
-
 Estruturas C++
 
 Set
@@ -19,7 +16,6 @@ Multiset
 Bitset
 
 Map
-
 
 Set
 
@@ -41,7 +37,6 @@ funções que não estão disponíveis no unordered_set. Por outro lado,
 
 unordered_set pode ser mais eficiente.
 
-
 Set
 
 O código a seguir cria um conjunto que contém números inteiros e mostra
@@ -51,7 +46,6 @@ algumas das operações. A inserção de função adiciona um elemento ao
 conjunto, a contagem de função retorna o número de ocorrências de um
 
 elemento no conjunto e a função apaga remove um elemento do conjunto.
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -81,7 +75,6 @@ possível acessar os elementos usando a notação []. O código a seguir cria um
 conjunto, imprime o número de elementos e itera através de todos os
 
 elementos:
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -117,7 +110,6 @@ no conjunto) ou 1 (o elemento está no conjunto) e a inserção de função nunc
 adiciona um elemento ao conjunto se ele já estiver lá. O código a seguir ilustra
 
 isso:
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -169,7 +161,6 @@ s.insert(5); s.insert(5); s.insert(5);
 
 printf("Quantidade de 5: %d\n", s.count(5));
 
-
 Multiset
 
 A função apagar remove todas as instâncias de um elemento de um multiset:
@@ -185,7 +176,6 @@ seguinte maneira:
 s.erase(s.find(5));
 
 printf("Quantidade de 5: %d\n", s.count(5));
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -238,7 +228,6 @@ sejam previamente lidos, e permita que façam as seguintes operações:
 
 3) Crie um conjunto E com a subtração A - B
 
-
 Bitset
 
 Um bitset é um vetor cujo cada valor seja 0 ou 1.
@@ -258,7 +247,6 @@ de forma eficiente usando operadores de bits, o que permite otimizar
 algoritmos usando conjuntos de bits.
 
 O código a seguir mostra como manipular o bitset:
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -292,7 +280,6 @@ Resolva as seguintes operações lógicas:
 
 12 ^10
 
-
 Map
 
 Um mapa é uma matriz generalizada que consiste em pares de valores chave.
@@ -314,7 +301,6 @@ hash.
 O código a seguir cria um mapa onde as chaves são strings e os valores são
 
 inteiros:
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -341,7 +327,6 @@ de uma chave for solicitado, mas o mapa não o contém, a chave é
 automaticamente adicionada ao mapa com um valor padrão. Por exemplo, no
 
 código a seguir, a chave “fulano" com valor 0 é adicionada ao mapa.
-
 
 ```cpp
 #include <bits/stdc++.h>

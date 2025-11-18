@@ -7,7 +7,6 @@ source: "007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C.pdf"
 
 # 003
 
-
 Entrada
 
 Entrada e
@@ -54,14 +53,11 @@ Curso de Bacharelado em Ciência da Computação
 
 ão
 
-AED III
-
 AED III – Algoritmo e Estruturas de Dados III
 
 Algoritmo e Estruturas de Dados III
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p1_img0.jpeg)
-
 
 Entrada e Saída de Dados pelo Console
 
@@ -85,9 +81,7 @@ devolve o caractere escrito ou -1 (constante EOF definida em stdio.h)
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p2_img1.jpeg)
-
 
 Entrada e Sa
 
@@ -108,7 +102,6 @@ main()
 char ch;
 
 printf(“Entre com algum texto (digite um . para sair)”);
-
 
 do
 
@@ -132,9 +125,7 @@ putchar(ch);
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p3_img1.jpeg)
-
 
  Leitura e Escrita de Strings
 
@@ -160,9 +151,7 @@ Entrada e Saída de Dados pelo Console
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p4_img1.jpeg)
-
 
  Leitura e escrita formatada
 
@@ -188,9 +177,7 @@ da de Dados pelo Console
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p5_img1.jpeg)
-
 
  Introdução
 
@@ -224,9 +211,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p6_img1.jpeg)
-
 
  Fluxos de Texto
 
@@ -254,9 +239,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p7_img1.jpeg)
-
 
 
 
@@ -306,9 +289,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p8_img1.jpeg)
-
 
 Funções de manipulação de arquivos
 
@@ -384,9 +365,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p9_img1.jpeg)
-
 
 
 
@@ -450,9 +429,7 @@ Entrada e Saída com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p10_img1.jpeg)
-
 
 
 
@@ -498,9 +475,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p11_img1.jpeg)
-
 
 Exemplo 1
 
@@ -542,9 +517,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p12_img1.jpeg)
-
 
 Exemplo 2
 
@@ -591,9 +564,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p13_img1.jpeg)
-
 
 EXERCÍCIOS DE FIXAÇÃO
 
@@ -623,9 +594,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p14_img1.jpeg)
-
 
 
 
@@ -656,7 +625,6 @@ Escreve alguns dados não-caracteres em um arquivo em disco e lê de volta.
 #include <stdlib.h>
 ```
 
-
 main()
 
 {
@@ -664,7 +632,6 @@ main()
 FILE *fp;
 
 double d = 12.23;
-
 
 Entrada e Sa
 
@@ -674,9 +641,7 @@ da com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p15_img1.jpeg)
-
 
 ```c
 int i = 101;
@@ -707,9 +672,7 @@ Entrada e Saída com Arquivos
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img0.png)
 
-
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p16_img1.jpeg)
-
 
 Entrada e Sa
 
@@ -752,6 +715,5 @@ cadastrados.
 : string[15]
 
 ![Imagem 1](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img0.png)
-
 
 ![Imagem 2](/images/007_-_Entrada_e_Saida_com_Arquivos_Utilizando_a_Linguagem_C_p17_img1.jpeg)

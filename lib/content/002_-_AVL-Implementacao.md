@@ -7,35 +7,17 @@ source: "002_-_AVL-Implementacao.pdf"
 
 # AED III Árvores Binárias Balanceadas — AVL
 
-
-AED III
-
 Árvores Binárias Balanceadas — AVL
-
-Ciência da Computação – IFSULDEMINAS
-
 
 Roteiro
 
-1
-
 Estrutura
-
-2
 
 Inserção em Árvore AVL
 
-3
-
 Remoção em Árvore AVL
 
-4
-
 Outra Proposta
-
-
-AED III
-
 
 Estrutura para Árvore AVL
 
@@ -53,9 +35,21 @@ esquerda ponteiro para o filho da esquerda;
 
 pai ponteiro para o pai;
 
+Inserção em Árvore AVL
 
-AED III
+Inserção
 
+Insira o novo nó.
+
+Iniciando com o nó pai do nó recém-inserido, teste se a propriedade
+
+AVL foi violada neste nó:
+
+◮Caso a condição AVL tenha sido violada: execute as operações de
+
+rotação conforme for o caso (Rotação Simples ou Dupla).
+
+◮Caso contrário, a árvore está correta.
 
 Inserção em Árvore AVL
 
@@ -73,10 +67,6 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-
-AED III
-
-
 Inserção em Árvore AVL
 
 Inserção
@@ -93,10 +83,6 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-
-AED III
-
-
 Inserção em Árvore AVL
 
 Inserção
@@ -112,30 +98,6 @@ AVL foi violada neste nó:
 rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
-
-
-AED III
-
-
-Inserção em Árvore AVL
-
-Inserção
-
-Insira o novo nó.
-
-Iniciando com o nó pai do nó recém-inserido, teste se a propriedade
-
-AVL foi violada neste nó:
-
-◮Caso a condição AVL tenha sido violada: execute as operações de
-
-rotação conforme for o caso (Rotação Simples ou Dupla).
-
-◮Caso contrário, a árvore está correta.
-
-
-AED III
-
 
 Inserção em Árvore AVL
 
@@ -165,9 +127,31 @@ BALANCEAR(T);
 }
 ```
 
+Inserção em Árvore AVL
 
-AED III
+Parâmetros da função:
 
+◮T: a raiz da árvore
+
+◮k: valor a ser inserido
+
+Usa as funções:
+
+◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
+
+O fator de balanceamento é dado pela diferença de alturas.
+
+◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+
+tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+
+rotações.
+
+◮Observação:
+
+ao rotacionar uma sub-árvore ajuste os fatores de
+
+balanceamento.
 
 Inserção em Árvore AVL
 
@@ -195,9 +179,31 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
+Inserção em Árvore AVL
 
-AED III
+Parâmetros da função:
 
+◮T: a raiz da árvore
+
+◮k: valor a ser inserido
+
+Usa as funções:
+
+◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
+
+O fator de balanceamento é dado pela diferença de alturas.
+
+◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+
+tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+
+rotações.
+
+◮Observação:
+
+ao rotacionar uma sub-árvore ajuste os fatores de
+
+balanceamento.
 
 Inserção em Árvore AVL
 
@@ -225,10 +231,6 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-
-AED III
-
-
 Inserção em Árvore AVL
 
 Parâmetros da função:
@@ -255,10 +257,6 @@ ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
 
-
-AED III
-
-
 Inserção em Árvore AVL
 
 Parâmetros da função:
@@ -284,70 +282,6 @@ rotações.
 ao rotacionar uma sub-árvore ajuste os fatores de
 
 balanceamento.
-
-
-AED III
-
-
-Inserção em Árvore AVL
-
-Parâmetros da função:
-
-◮T: a raiz da árvore
-
-◮k: valor a ser inserido
-
-Usa as funções:
-
-◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
-
-O fator de balanceamento é dado pela diferença de alturas.
-
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
-
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
-
-rotações.
-
-◮Observação:
-
-ao rotacionar uma sub-árvore ajuste os fatores de
-
-balanceamento.
-
-
-AED III
-
-
-Inserção em Árvore AVL
-
-Parâmetros da função:
-
-◮T: a raiz da árvore
-
-◮k: valor a ser inserido
-
-Usa as funções:
-
-◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
-
-O fator de balanceamento é dado pela diferença de alturas.
-
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
-
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
-
-rotações.
-
-◮Observação:
-
-ao rotacionar uma sub-árvore ajuste os fatores de
-
-balanceamento.
-
-
-AED III
-
 
 Remoção em Árvore AVL
 
@@ -365,9 +299,21 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
+Remoção em Árvore AVL
 
-AED III
+Remoção
 
+Remova o nó.
+
+Iniciando com o nó pai do nó removido, teste se a propriedade AVL
+
+foi violada neste nó:
+
+◮Caso a condição AVL tenha sido violada: execute as operações de
+
+rotação conforme for o caso (Rotação Simples ou Dupla).
+
+◮Caso contrário, a árvore está correta.
 
 Remoção em Árvore AVL
 
@@ -385,10 +331,6 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
 
-
-AED III
-
-
 Remoção em Árvore AVL
 
 Remoção
@@ -404,30 +346,6 @@ foi violada neste nó:
 rotação conforme for o caso (Rotação Simples ou Dupla).
 
 ◮Caso contrário, a árvore está correta.
-
-
-AED III
-
-
-Remoção em Árvore AVL
-
-Remoção
-
-Remova o nó.
-
-Iniciando com o nó pai do nó removido, teste se a propriedade AVL
-
-foi violada neste nó:
-
-◮Caso a condição AVL tenha sido violada: execute as operações de
-
-rotação conforme for o caso (Rotação Simples ou Dupla).
-
-◮Caso contrário, a árvore está correta.
-
-
-AED III
-
 
 Remoção em Árvore AVL
 
@@ -467,10 +385,6 @@ Parâmetros da função:
 
 ◮k: valor a ser removido
 
-
-AED III
-
-
 Remoção em Árvore AVL
 
 Remoção
@@ -508,10 +422,6 @@ Parâmetros da função:
 ◮T: a raiz da árvore
 
 ◮k: valor a ser removido
-
-
-AED III
-
 
 Outra Proposta de Inserção em Árvore AVL
 
@@ -538,10 +448,6 @@ int insereAVL(no **T, int x) {
 }
 ```
 
-
-AED III
-
-
 Analisando Inserção à Esquerda
 
 Inserção
@@ -562,10 +468,6 @@ if (cresceu) {
 }
 ```
 
-
-AED III
-
-
 Analisando Inserção à Esquerda
 
 A sub-árvore da direita era maior, não há crescimento
@@ -580,10 +482,6 @@ cresceu = 0;
 
 break;
 
-
-AED III
-
-
 Analisando Inserção à Esquerda
 
 A sub-árvore da direita tinha tamanho igual, houve crescimento
@@ -597,10 +495,6 @@ case 0:
 cresceu = 1;
 
 break;
-
-
-AED III
-
 
 Analisando Inserção à Esquerda
 
@@ -632,22 +526,11 @@ rot_dir(T);
 }
 ```
 
-
-AED III
-
-
 Analisando Inserção à Esquerda
 
 O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é -1.
 
-
-AED III
-
-
 Analisando Inserção à Esquerda
 
 O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é 1.
-
-
-AED III
 
