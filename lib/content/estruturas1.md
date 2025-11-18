@@ -7,6 +7,21 @@ source: "estruturas1.pdf"
 
 # Microsoft PowerPoint - estruturas1
 
+## 📚 Pré-requisitos
+
+Antes de estudar Estruturas C++ STL, certifique-se de conhecer:
+
+- **C++ básico**: Sintaxe, tipos de dados, funções
+- **Templates em C++**: Conceito de tipos genéricos
+- **Vetores tradicionais**: Arrays estáticos em C/C++
+- **Compilação C++**: Uso de `#include` e namespaces
+
+**Tempo estimado de estudo**: 2 horas
+
+---
+
+
+
 Estruturas C++
 
 Vector

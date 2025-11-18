@@ -7,6 +7,21 @@ source: "003_-_Arvore_Rubro_Negra.pdf"
 
 # AED III Árvores Rubro Negra
 
+## 📚 Pré-requisitos
+
+Antes de estudar Árvores Rubro-Negra, certifique-se de dominar:
+
+- **Árvores AVL completas** (teoria e implementação)
+- **Conceito de invariantes** em estruturas de dados
+- **Análise de complexidade amortizada**
+- **Propriedades de árvores balanceadas**
+
+**Tempo estimado de estudo**: 5-7 horas (conteúdo avançado)
+
+---
+
+
+
 Árvores Rubro Negra
 
 Roteiro
@@ -92,7 +107,7 @@ Características
 
 Cada nó passa a ter: cor, chave, esquerda, direita e pai.
 
-Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
+Se um filho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
@@ -100,7 +115,7 @@ Características
 
 Cada nó passa a ter: cor, chave, esquerda, direita e pai.
 
-Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
+Se um filho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
@@ -108,7 +123,7 @@ Características
 
 Cada nó passa a ter: cor, chave, esquerda, direita e pai.
 
-Se um ﬁlho ou pai de um nó não existir faremos estes ponteiros
+Se um filho ou pai de um nó não existir faremos estes ponteiros
 
 apontarem para um nó especial, denominado NIL.
 
@@ -122,13 +137,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -142,13 +157,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -162,13 +177,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -182,13 +197,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -202,13 +217,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -222,13 +237,13 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
 descendentes contêm o mesmo número de nós pretos (altura negra).
 
-Considera-se os nós NIL como nós ﬁctícios. Estes nós sempre são folhas,
+Considera-se os nós NIL como nós fictícios. Estes nós sempre são folhas,
 
 não contém chaves e sua cor é preta.
 
@@ -558,7 +573,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -578,7 +593,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -598,7 +613,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -618,7 +633,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -638,7 +653,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -660,13 +675,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -684,13 +699,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -708,13 +723,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -732,13 +747,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -756,13 +771,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -780,13 +795,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 A função RB_INSERE_FIXUP
 
@@ -804,13 +819,13 @@ Quando a propriedade 4 é violada, a função RB_INSERE_FIXUP faz
 
 o balanceamento a partir do pai do nó recém inserido (z):
 
-◮Levando em consideração se o pai de z é ﬁlho da direita ou da
+◮Levando em consideração se o pai de z é filho da direita ou da
 
 esquerda.
 
 ◮Há três casos para cada situação.
 
-Obs: analisaremos os casos em que o pai de z é ﬁlho à esquerda.
+Obs: analisaremos os casos em que o pai de z é filho à esquerda.
 
 Caso 1
 
@@ -822,7 +837,7 @@ O avô de z passa a ser o novo z.
 
 Caso 2
 
-Caso 2: o tio y de z é preto e z é ﬁlho à direita
+Caso 2: o tio y de z é preto e z é filho à direita
 
 z passa a ser o pai de z.
 
@@ -830,7 +845,7 @@ Executamos rotação à esquerda em z, caindo no caso 3.
 
 Caso 3
 
-Caso 3: o tio y de z é preto e z é ﬁlho à esquerda
+Caso 3: o tio y de z é preto e z é filho à esquerda
 
 Colorimos o pai de z de preto e o avô de z de vermelho.
 
@@ -924,13 +939,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -940,13 +955,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -956,13 +971,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -972,13 +987,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -988,13 +1003,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -1004,13 +1019,13 @@ Dados o ponteiro para a raiz, T, e um nó z a ser removido.
 
 O nó y é:
 
-◮y é o próprio nó z, quando z não tem ﬁlhos ou tem um ﬁlho.
+◮y é o próprio nó z, quando z não tem filhos ou tem um filho.
 
-◮y é o nó antecessor de z, quando z tem dois ﬁlhos.
+◮y é o nó antecessor de z, quando z tem dois filhos.
 
 ◮y é o nó a ser removido.
 
-O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um ﬁlho de
+O nó x é o nó que ocupará o lugar do nó z. Ou seja, é um filho de
 
 y.
 
@@ -1084,7 +1099,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1108,7 +1123,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1132,7 +1147,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1156,7 +1171,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1180,7 +1195,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1204,7 +1219,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1228,7 +1243,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1252,7 +1267,7 @@ Propriedades
 
 3 Toda folha (NIL) é preta.
 
-4 Se um nó é vermelho, então seus ﬁlhos são pretos.
+4 Se um nó é vermelho, então seus filhos são pretos.
 
 5 Para cada nó, todos os caminhos simples do nó até as folhas
 
@@ -1278,33 +1293,9 @@ propriedades da árvore por meio da troca de cores e das rotações.
 
 ◮A função trata quatro casos para restauração da árvores, levando em
 
-consideração se x é ﬁlho da direita ou da esquerda.
+consideração se x é filho da direita ou da esquerda.
 
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-Remoção em Árvore Rubro Negra
-
-Após uma remoção a árvore pode estar com suas propriedades
-
-violadas.
-
-Quando o nó removido é preto as propriedades da árvore devem ser
-
-restauradas.
-
-A função RB_DELETE_FIXUP é responsavel por restaurar as
-
-propriedades da árvore por meio da troca de cores e das rotações.
-
-◮A função recebe como parâmetro o nó x.
-
-◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
-
-◮A função trata quatro casos para restauração da árvores, levando em
-
-consideração se x é ﬁlho da direita ou da esquerda.
-
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
+Obs: analisaremos os casos quando x é filho da esquerda.
 
 Remoção em Árvore Rubro Negra
 
@@ -1326,33 +1317,9 @@ propriedades da árvore por meio da troca de cores e das rotações.
 
 ◮A função trata quatro casos para restauração da árvores, levando em
 
-consideração se x é ﬁlho da direita ou da esquerda.
+consideração se x é filho da direita ou da esquerda.
 
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-Remoção em Árvore Rubro Negra
-
-Após uma remoção a árvore pode estar com suas propriedades
-
-violadas.
-
-Quando o nó removido é preto as propriedades da árvore devem ser
-
-restauradas.
-
-A função RB_DELETE_FIXUP é responsavel por restaurar as
-
-propriedades da árvore por meio da troca de cores e das rotações.
-
-◮A função recebe como parâmetro o nó x.
-
-◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
-
-◮A função trata quatro casos para restauração da árvores, levando em
-
-consideração se x é ﬁlho da direita ou da esquerda.
-
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
+Obs: analisaremos os casos quando x é filho da esquerda.
 
 Remoção em Árvore Rubro Negra
 
@@ -1374,33 +1341,9 @@ propriedades da árvore por meio da troca de cores e das rotações.
 
 ◮A função trata quatro casos para restauração da árvores, levando em
 
-consideração se x é ﬁlho da direita ou da esquerda.
+consideração se x é filho da direita ou da esquerda.
 
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
-
-Remoção em Árvore Rubro Negra
-
-Após uma remoção a árvore pode estar com suas propriedades
-
-violadas.
-
-Quando o nó removido é preto as propriedades da árvore devem ser
-
-restauradas.
-
-A função RB_DELETE_FIXUP é responsavel por restaurar as
-
-propriedades da árvore por meio da troca de cores e das rotações.
-
-◮A função recebe como parâmetro o nó x.
-
-◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
-
-◮A função trata quatro casos para restauração da árvores, levando em
-
-consideração se x é ﬁlho da direita ou da esquerda.
-
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
+Obs: analisaremos os casos quando x é filho da esquerda.
 
 Remoção em Árvore Rubro Negra
 
@@ -1422,9 +1365,81 @@ propriedades da árvore por meio da troca de cores e das rotações.
 
 ◮A função trata quatro casos para restauração da árvores, levando em
 
-consideração se x é ﬁlho da direita ou da esquerda.
+consideração se x é filho da direita ou da esquerda.
 
-Obs: analisaremos os casos quando x é ﬁlho da esquerda.
+Obs: analisaremos os casos quando x é filho da esquerda.
+
+Remoção em Árvore Rubro Negra
+
+Após uma remoção a árvore pode estar com suas propriedades
+
+violadas.
+
+Quando o nó removido é preto as propriedades da árvore devem ser
+
+restauradas.
+
+A função RB_DELETE_FIXUP é responsavel por restaurar as
+
+propriedades da árvore por meio da troca de cores e das rotações.
+
+◮A função recebe como parâmetro o nó x.
+
+◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
+
+◮A função trata quatro casos para restauração da árvores, levando em
+
+consideração se x é filho da direita ou da esquerda.
+
+Obs: analisaremos os casos quando x é filho da esquerda.
+
+Remoção em Árvore Rubro Negra
+
+Após uma remoção a árvore pode estar com suas propriedades
+
+violadas.
+
+Quando o nó removido é preto as propriedades da árvore devem ser
+
+restauradas.
+
+A função RB_DELETE_FIXUP é responsavel por restaurar as
+
+propriedades da árvore por meio da troca de cores e das rotações.
+
+◮A função recebe como parâmetro o nó x.
+
+◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
+
+◮A função trata quatro casos para restauração da árvores, levando em
+
+consideração se x é filho da direita ou da esquerda.
+
+Obs: analisaremos os casos quando x é filho da esquerda.
+
+Remoção em Árvore Rubro Negra
+
+Após uma remoção a árvore pode estar com suas propriedades
+
+violadas.
+
+Quando o nó removido é preto as propriedades da árvore devem ser
+
+restauradas.
+
+A função RB_DELETE_FIXUP é responsavel por restaurar as
+
+propriedades da árvore por meio da troca de cores e das rotações.
+
+◮A função recebe como parâmetro o nó x.
+
+◮Após a remoção do nó y, o nó x passou a ocupar o lugar de y.
+
+◮A função trata quatro casos para restauração da árvores, levando em
+
+consideração se x é filho da direita ou da esquerda.
+
+Obs: analisaremos os casos quando x é filho da esquerda.
 
 Caso 1
 
@@ -1440,7 +1455,7 @@ w passa a ser o irmão de x à direita
 
 Caso 2
 
-Caso 2: o irmão w de x é preto e os ﬁlhos de w são pretos
+Caso 2: o irmão w de x é preto e os filhos de w são pretos
 
 A cor de w passa a ser vermelha
 
@@ -1448,9 +1463,9 @@ x passa a ser o pai de x
 
 Caso 3
 
-Caso 3: o irmão w de x é preto, o ﬁlho à esquerda de w é vermelho e
+Caso 3: o irmão w de x é preto, o filho à esquerda de w é vermelho e
 
-o ﬁlho à direita de w é preto
+o filho à direita de w é preto
 
 A cor de w a esquerda passa a ser preta
 
@@ -1462,7 +1477,7 @@ w passa a ser o pai de x à direita
 
 Caso 4
 
-Caso 4: o irmão w de x é preto e o ﬁlho à direita de w é vermelho
+Caso 4: o irmão w de x é preto e o filho à direita de w é vermelho
 
 A cor de w passa a ser a cor do pai de x
 

@@ -7,6 +7,20 @@ source: "002_-_AVL-Implementacao.pdf"
 
 # AED III Árvores Binárias Balanceadas — AVL
 
+## 📚 Pré-requisitos
+
+Antes de estudar a implementação de Árvores AVL, você deve ter estudado:
+
+- **Árvores AVL - Teoria** (arquivo anterior): Fator de balanceamento, rotações
+- **Programação em C/C++**: Structs, ponteiros, alocação dinâmica
+- **Recursão avançada**: Funções recursivas com múltiplas chamadas
+
+**Tempo estimado de estudo**: 3-4 horas
+
+---
+
+
+
 Árvores Binárias Balanceadas — AVL
 
 Roteiro
@@ -101,29 +115,24 @@ rotação conforme for o caso (Rotação Simples ou Dupla).
 
 Inserção em Árvore AVL
 
-Inserção
+### Algoritmo de Inserção (Pseudocódigo)
 
+```
 INSERIR(T, k) {
+    if T == NIL
+        Alocar um novo nó com chave k
+        T.raiz = novo;
 
-if T == NIL
-
-Alocar um novo nó com chave k
-
-T.raiz = novo;
-
-if k < T.chave
-
-INSERIR(T.esquerda, k);
-
-```c
-// Ajustar ponteiro para nó pai
-CALCULAR_FB(T);
-BALANCEAR(T);
-else
-INSERIR(T.direita, k);
-// Ajustar ponteiro para nó pai
-CALCULAR_FB(T);
-BALANCEAR(T);
+    if k < T.chave
+        INSERIR(T.esquerda, k);
+        // Ajustar ponteiro para nó pai
+        CALCULAR_FB(T);
+        BALANCEAR(T);
+    else
+        INSERIR(T.direita, k);
+        // Ajustar ponteiro para nó pai
+        CALCULAR_FB(T);
+        BALANCEAR(T);
 }
 ```
 
@@ -141,35 +150,9 @@ Usa as funções:
 
 O fator de balanceamento é dado pela diferença de alturas.
 
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
 
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
-
-rotações.
-
-◮Observação:
-
-ao rotacionar uma sub-árvore ajuste os fatores de
-
-balanceamento.
-
-Inserção em Árvore AVL
-
-Parâmetros da função:
-
-◮T: a raiz da árvore
-
-◮k: valor a ser inserido
-
-Usa as funções:
-
-◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
-
-O fator de balanceamento é dado pela diferença de alturas.
-
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
-
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
 
 rotações.
 
@@ -193,35 +176,9 @@ Usa as funções:
 
 O fator de balanceamento é dado pela diferença de alturas.
 
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
 
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
-
-rotações.
-
-◮Observação:
-
-ao rotacionar uma sub-árvore ajuste os fatores de
-
-balanceamento.
-
-Inserção em Árvore AVL
-
-Parâmetros da função:
-
-◮T: a raiz da árvore
-
-◮k: valor a ser inserido
-
-Usa as funções:
-
-◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
-
-O fator de balanceamento é dado pela diferença de alturas.
-
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
-
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
 
 rotações.
 
@@ -245,9 +202,9 @@ Usa as funções:
 
 O fator de balanceamento é dado pela diferença de alturas.
 
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
 
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
 
 rotações.
 
@@ -271,9 +228,61 @@ Usa as funções:
 
 O fator de balanceamento é dado pela diferença de alturas.
 
-◮BALANCEAR(T): veriﬁca se a condição de AVL foi violada. Caso
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
 
-tenha sido, veriﬁca o tipo de rotação a ser aplicada e executa as
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
+
+rotações.
+
+◮Observação:
+
+ao rotacionar uma sub-árvore ajuste os fatores de
+
+balanceamento.
+
+Inserção em Árvore AVL
+
+Parâmetros da função:
+
+◮T: a raiz da árvore
+
+◮k: valor a ser inserido
+
+Usa as funções:
+
+◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
+
+O fator de balanceamento é dado pela diferença de alturas.
+
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
+
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
+
+rotações.
+
+◮Observação:
+
+ao rotacionar uma sub-árvore ajuste os fatores de
+
+balanceamento.
+
+Inserção em Árvore AVL
+
+Parâmetros da função:
+
+◮T: a raiz da árvore
+
+◮k: valor a ser inserido
+
+Usa as funções:
+
+◮CALCULAR_FB(T): calcula o fator de balanceamento apenas de T.
+
+O fator de balanceamento é dado pela diferença de alturas.
+
+◮BALANCEAR(T): verifica se a condição de AVL foi violada. Caso
+
+tenha sido, verifica o tipo de rotação a ser aplicada e executa as
 
 rotações.
 
@@ -528,9 +537,9 @@ rot_dir(T);
 
 Analisando Inserção à Esquerda
 
-O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é -1.
+O fator de balanceamento do nó X é -1 e do seu filho à esquerda é -1.
 
 Analisando Inserção à Esquerda
 
-O fator de balanceamento do nó X é -1 e do seu ﬁlho à esquerda é 1.
+O fator de balanceamento do nó X é -1 e do seu filho à esquerda é 1.
 

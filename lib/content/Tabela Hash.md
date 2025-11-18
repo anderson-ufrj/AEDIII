@@ -7,6 +7,21 @@ source: "Tabela Hash.pdf"
 
 # AED III Tabela Hash
 
+## 📚 Pré-requisitos
+
+Antes de estudar Tabelas Hash, você deve dominar:
+
+- **Funções matemáticas**: Operações módulo, divisão inteira
+- **Vetores (arrays)**: Acesso direto por índice
+- **Listas encadeadas**: Tratamento de colisões por encadeamento
+- **Análise de complexidade**: Melhor caso, pior caso, caso médio
+
+**Tempo estimado de estudo**: 3-4 horas
+
+---
+
+
+
 Tabela Hash
 
 Roteiro
@@ -61,11 +76,11 @@ Os métodos de pesquisa vistos até agora buscam informações
 
 armazenadas com base na comparação de suas chaves.
 
-Para obtermos algoritmos eﬁcientes, armazenamos os elementos
+Para obtermos algoritmos eficientes, armazenamos os elementos
 
 ordenados e tiramos proveito dessa ordenação.
 
-Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
+Conclusão: os algoritmos mais eficientes de busca mostrados até o
 
 momento demandam esforço computacional O(log n), quando usamos
 
@@ -87,11 +102,11 @@ Os métodos de pesquisa vistos até agora buscam informações
 
 armazenadas com base na comparação de suas chaves.
 
-Para obtermos algoritmos eﬁcientes, armazenamos os elementos
+Para obtermos algoritmos eficientes, armazenamos os elementos
 
 ordenados e tiramos proveito dessa ordenação.
 
-Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
+Conclusão: os algoritmos mais eficientes de busca mostrados até o
 
 momento demandam esforço computacional O(log n), quando usamos
 
@@ -113,11 +128,11 @@ Os métodos de pesquisa vistos até agora buscam informações
 
 armazenadas com base na comparação de suas chaves.
 
-Para obtermos algoritmos eﬁcientes, armazenamos os elementos
+Para obtermos algoritmos eficientes, armazenamos os elementos
 
 ordenados e tiramos proveito dessa ordenação.
 
-Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
+Conclusão: os algoritmos mais eficientes de busca mostrados até o
 
 momento demandam esforço computacional O(log n), quando usamos
 
@@ -139,11 +154,11 @@ Os métodos de pesquisa vistos até agora buscam informações
 
 armazenadas com base na comparação de suas chaves.
 
-Para obtermos algoritmos eﬁcientes, armazenamos os elementos
+Para obtermos algoritmos eficientes, armazenamos os elementos
 
 ordenados e tiramos proveito dessa ordenação.
 
-Conclusão: os algoritmos mais eﬁcientes de busca mostrados até o
+Conclusão: os algoritmos mais eficientes de busca mostrados até o
 
 momento demandam esforço computacional O(log n), quando usamos
 
@@ -269,7 +284,7 @@ valor desejado.
 
 A ideia central por trás da construção de uma Tabela Hash é
 
-identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
+identificar, na chave de busca, quais as partes que são significativas.
 
 Tabela Hash
 
@@ -287,7 +302,7 @@ valor desejado.
 
 A ideia central por trás da construção de uma Tabela Hash é
 
-identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
+identificar, na chave de busca, quais as partes que são significativas.
 
 Tabela Hash
 
@@ -305,7 +320,7 @@ valor desejado.
 
 A ideia central por trás da construção de uma Tabela Hash é
 
-identiﬁcar, na chave de busca, quais as partes que são signiﬁcativas.
+identificar, na chave de busca, quais as partes que são significativas.
 
 Como representar tabela hash?
 
@@ -329,7 +344,7 @@ O ideal é que a função forneça índices únicos para o conjunto das
 
 chaves de entrada possíveis.
 
-Características desejáveis: eﬁciência e bom espalhamento.
+Características desejáveis: eficiência e bom espalhamento.
 
 A função de Hashing é extremamente importante, pois ela é
 
@@ -337,7 +352,7 @@ responsável por distribuir as informações pela Tabela Hash.
 
 A implementação da função de Hashing tem inﬂuência direta na
 
-eﬁciência das operações sobre o Hash.
+eficiência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -351,7 +366,7 @@ O ideal é que a função forneça índices únicos para o conjunto das
 
 chaves de entrada possíveis.
 
-Características desejáveis: eﬁciência e bom espalhamento.
+Características desejáveis: eficiência e bom espalhamento.
 
 A função de Hashing é extremamente importante, pois ela é
 
@@ -359,7 +374,7 @@ responsável por distribuir as informações pela Tabela Hash.
 
 A implementação da função de Hashing tem inﬂuência direta na
 
-eﬁciência das operações sobre o Hash.
+eficiência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -373,7 +388,7 @@ O ideal é que a função forneça índices únicos para o conjunto das
 
 chaves de entrada possíveis.
 
-Características desejáveis: eﬁciência e bom espalhamento.
+Características desejáveis: eficiência e bom espalhamento.
 
 A função de Hashing é extremamente importante, pois ela é
 
@@ -381,7 +396,7 @@ responsável por distribuir as informações pela Tabela Hash.
 
 A implementação da função de Hashing tem inﬂuência direta na
 
-eﬁciência das operações sobre o Hash.
+eficiência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -395,7 +410,7 @@ O ideal é que a função forneça índices únicos para o conjunto das
 
 chaves de entrada possíveis.
 
-Características desejáveis: eﬁciência e bom espalhamento.
+Características desejáveis: eficiência e bom espalhamento.
 
 A função de Hashing é extremamente importante, pois ela é
 
@@ -403,7 +418,7 @@ responsável por distribuir as informações pela Tabela Hash.
 
 A implementação da função de Hashing tem inﬂuência direta na
 
-eﬁciência das operações sobre o Hash.
+eficiência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -417,7 +432,7 @@ O ideal é que a função forneça índices únicos para o conjunto das
 
 chaves de entrada possíveis.
 
-Características desejáveis: eﬁciência e bom espalhamento.
+Características desejáveis: eficiência e bom espalhamento.
 
 A função de Hashing é extremamente importante, pois ela é
 
@@ -425,7 +440,7 @@ responsável por distribuir as informações pela Tabela Hash.
 
 A implementação da função de Hashing tem inﬂuência direta na
 
-eﬁciência das operações sobre o Hash.
+eficiência das operações sobre o Hash.
 
 Função de Hashing
 
@@ -849,7 +864,7 @@ A função hash calcula uma posição para uma chave.
 
 Se a posição está livre a chave é armazenada.
 
-Caso contrário, veriﬁca-se a posição seguinte.
+Caso contrário, verifica-se a posição seguinte.
 
 A busca por uma posição continua até uma posição livre seja
 
@@ -867,7 +882,7 @@ A função hash calcula uma posição para uma chave.
 
 Se a posição está livre a chave é armazenada.
 
-Caso contrário, veriﬁca-se a posição seguinte.
+Caso contrário, verifica-se a posição seguinte.
 
 A busca por uma posição continua até uma posição livre seja
 
@@ -885,7 +900,7 @@ A função hash calcula uma posição para uma chave.
 
 Se a posição está livre a chave é armazenada.
 
-Caso contrário, veriﬁca-se a posição seguinte.
+Caso contrário, verifica-se a posição seguinte.
 
 A busca por uma posição continua até uma posição livre seja
 
@@ -903,7 +918,7 @@ A função hash calcula uma posição para uma chave.
 
 Se a posição está livre a chave é armazenada.
 
-Caso contrário, veriﬁca-se a posição seguinte.
+Caso contrário, verifica-se a posição seguinte.
 
 A busca por uma posição continua até uma posição livre seja
 
@@ -921,7 +936,7 @@ A função hash calcula uma posição para uma chave.
 
 Se a posição está livre a chave é armazenada.
 
-Caso contrário, veriﬁca-se a posição seguinte.
+Caso contrário, verifica-se a posição seguinte.
 
 A busca por uma posição continua até uma posição livre seja
 
@@ -1051,9 +1066,9 @@ Vantagens x Desvantagens
 
 Vantagens:
 
-◮Algoritmos simples e eﬁcientes para inserção, retirada e busca.
+◮Algoritmos simples e eficientes para inserção, retirada e busca.
 
-◮Alta eﬁciência no custo de pesquisa, que é O(1) para o caso médio.
+◮Alta eficiência no custo de pesquisa, que é O(1) para o caso médio.
 
 Desvantagens:
 
@@ -1069,9 +1084,9 @@ Vantagens x Desvantagens
 
 Vantagens:
 
-◮Algoritmos simples e eﬁcientes para inserção, retirada e busca.
+◮Algoritmos simples e eficientes para inserção, retirada e busca.
 
-◮Alta eﬁciência no custo de pesquisa, que é O(1) para o caso médio.
+◮Alta eficiência no custo de pesquisa, que é O(1) para o caso médio.
 
 Desvantagens:
 
@@ -1085,7 +1100,7 @@ tipo de informação usada como chave.
 
 Exercícios
 
-Ilustre a organização ﬁnal de uma Tabela Hash após a inserção das
+Ilustre a organização final de uma Tabela Hash após a inserção das
 
 seguintes chaves: 35, 99, 27, 18, 65, 45. Considere a tabela com
 

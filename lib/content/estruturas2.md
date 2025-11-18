@@ -66,40 +66,11 @@ int main()
 }
 ```
 
-Set
+## Iteração e Propriedades do Set
 
 Um conjunto pode ser usado principalmente como um vetor, mas não é
 
-possível acessar os elementos usando a notação []. O código a seguir cria um
-
-conjunto, imprime o número de elementos e itera através de todos os
-
-elementos:
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    set<int> s;
-    set<int>:: iterator it;
-    s.insert(2);
-    s.insert(5);
-    s.insert(6);
-    s.insert(8);
-    printf("Tamanho do Conjunto: %d\n", s.size());
-    printf("s = {");
-    for (it = s.begin(); it != s.end(); ++it)
-    {
-        printf(" %d", *it);
-    }
-
-    printf("}\n");
-    return 0;
-}
-```
-
-Set
+possível acessar os elementos usando a notação [].
 
 Uma propriedade importante dos conjuntos é que todos os seus elementos são
 
@@ -109,7 +80,7 @@ no conjunto) ou 1 (o elemento está no conjunto) e a inserção de função nunc
 
 adiciona um elemento ao conjunto se ele já estiver lá. O código a seguir ilustra
 
-isso:
+isso, mostrando que tentar inserir elementos duplicados (5 e 8) não aumenta o tamanho do conjunto:
 
 ```cpp
 #include <bits/stdc++.h>
@@ -122,25 +93,28 @@ int main()
     s.insert(5);
     s.insert(6);
     s.insert(8);
-    printf("Tamanho do Conjunto: %d\n", s.size());
+
+    printf("Tamanho inicial do Conjunto: %d\n", s.size());
     printf("s = {");
     for (it = s.begin(); it != s.end(); ++it)
     {
         printf(" %d", *it);
     }
-
     printf("}\n");
-    s.insert(5);
-    s.insert(7);
-    s.insert(8);
-    printf("Tamanho do Conjunto: %d\n", s.size());
+
+    // Tentando inserir elementos duplicados e um novo
+    s.insert(5);  // Já existe
+    s.insert(7);  // Novo elemento
+    s.insert(8);  // Já existe
+
+    printf("Tamanho após inserções: %d\n", s.size());
     printf("s = {");
     for (it = s.begin(); it != s.end(); ++it)
     {
         printf(" %d", *it);
     }
-
     printf("}\n");
+
     return 0;
 }
 ```

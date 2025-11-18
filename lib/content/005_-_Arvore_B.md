@@ -33,7 +33,7 @@ quantidades de informação tais como um banco de dados ou um
 
 sistema de arquivos.
 
-Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
+Diferente das árvores binárias, cada nó pode ter muitos filhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
@@ -53,7 +53,7 @@ quantidades de informação tais como um banco de dados ou um
 
 sistema de arquivos.
 
-Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
+Diferente das árvores binárias, cada nó pode ter muitos filhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
@@ -73,7 +73,7 @@ quantidades de informação tais como um banco de dados ou um
 
 sistema de arquivos.
 
-Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
+Diferente das árvores binárias, cada nó pode ter muitos filhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
@@ -93,7 +93,7 @@ quantidades de informação tais como um banco de dados ou um
 
 sistema de arquivos.
 
-Diferente das árvores binárias, cada nó pode ter muitos ﬁlhos, isto é,
+Diferente das árvores binárias, cada nó pode ter muitos filhos, isto é,
 
 o grau de um nó pode ser muito grande.
 
@@ -105,7 +105,7 @@ n: número de chaves armazenadas em um nó.
 
 chaves: chaves do nó em ordem crescente.
 
-ﬁlhos ponteiros para os ﬁlhos.
+filhos ponteiros para os filhos.
 
 folha: valor booleano que indica se o nó é uma folha.
 
@@ -119,33 +119,11 @@ Em um nó as chaves estão ordenadas.
 
 Todas as folhas estão no mesmo nível.
 
-Número de ﬁlhos:
+Número de filhos:
 
-◮De t a 2 * t ﬁlhos.
+◮De t a 2 * t filhos.
 
-◮Raiz: de 2 a m ﬁlhos.
-
-Número de chaves:
-
-◮De t - 1 a 2 + t - 1 chaves.
-
-◮Raiz: de 1 a m - 1 chaves.
-
-Árvores B
-
-Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
-
-Características
-
-Em um nó as chaves estão ordenadas.
-
-Todas as folhas estão no mesmo nível.
-
-Número de ﬁlhos:
-
-◮De t a 2 * t ﬁlhos.
-
-◮Raiz: de 2 a m ﬁlhos.
+◮Raiz: de 2 a m filhos.
 
 Número de chaves:
 
@@ -163,33 +141,11 @@ Em um nó as chaves estão ordenadas.
 
 Todas as folhas estão no mesmo nível.
 
-Número de ﬁlhos:
+Número de filhos:
 
-◮De t a 2 * t ﬁlhos.
+◮De t a 2 * t filhos.
 
-◮Raiz: de 2 a m ﬁlhos.
-
-Número de chaves:
-
-◮De t - 1 a 2 + t - 1 chaves.
-
-◮Raiz: de 1 a m - 1 chaves.
-
-Árvores B
-
-Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
-
-Características
-
-Em um nó as chaves estão ordenadas.
-
-Todas as folhas estão no mesmo nível.
-
-Número de ﬁlhos:
-
-◮De t a 2 * t ﬁlhos.
-
-◮Raiz: de 2 a m ﬁlhos.
+◮Raiz: de 2 a m filhos.
 
 Número de chaves:
 
@@ -207,11 +163,55 @@ Em um nó as chaves estão ordenadas.
 
 Todas as folhas estão no mesmo nível.
 
-Número de ﬁlhos:
+Número de filhos:
 
-◮De t a 2 * t ﬁlhos.
+◮De t a 2 * t filhos.
 
-◮Raiz: de 2 a m ﬁlhos.
+◮Raiz: de 2 a m filhos.
+
+Número de chaves:
+
+◮De t - 1 a 2 + t - 1 chaves.
+
+◮Raiz: de 1 a m - 1 chaves.
+
+Árvores B
+
+Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
+
+Características
+
+Em um nó as chaves estão ordenadas.
+
+Todas as folhas estão no mesmo nível.
+
+Número de filhos:
+
+◮De t a 2 * t filhos.
+
+◮Raiz: de 2 a m filhos.
+
+Número de chaves:
+
+◮De t - 1 a 2 + t - 1 chaves.
+
+◮Raiz: de 1 a m - 1 chaves.
+
+Árvores B
+
+Uma árvore B de ordem mínima t é uma árvore de grau mínimo t:
+
+Características
+
+Em um nó as chaves estão ordenadas.
+
+Todas as folhas estão no mesmo nível.
+
+Número de filhos:
+
+◮De t a 2 * t filhos.
+
+◮Raiz: de 2 a m filhos.
 
 Número de chaves:
 
@@ -782,23 +782,9 @@ A função recebe como parâmetros x e i:
 
 ◮x: nó interno não cheio.
 
-◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
+◮i: índice de um filho de x, tal que x.filhos[i] é um nó cheio.
 
-A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
-
-tenha uma chave adicional.
-
-Split
-
-Função responsável por dividir um nó cheio.
-
-A função recebe como parâmetros x e i:
-
-◮x: nó interno não cheio.
-
-◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
-
-A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
+A função reparte o filho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
@@ -810,9 +796,9 @@ A função recebe como parâmetros x e i:
 
 ◮x: nó interno não cheio.
 
-◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
+◮i: índice de um filho de x, tal que x.filhos[i] é um nó cheio.
 
-A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
+A função reparte o filho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
@@ -824,9 +810,23 @@ A função recebe como parâmetros x e i:
 
 ◮x: nó interno não cheio.
 
-◮i: índice de um ﬁlho de x, tal que x.ﬁlhos[i] é um nó cheio.
+◮i: índice de um filho de x, tal que x.filhos[i] é um nó cheio.
 
-A função reparte o ﬁlho de x em dois e ajusta x de forma que ele
+A função reparte o filho de x em dois e ajusta x de forma que ele
+
+tenha uma chave adicional.
+
+Split
+
+Função responsável por dividir um nó cheio.
+
+A função recebe como parâmetros x e i:
+
+◮x: nó interno não cheio.
+
+◮i: índice de um filho de x, tal que x.filhos[i] é um nó cheio.
+
+A função reparte o filho de x em dois e ajusta x de forma que ele
 
 tenha uma chave adicional.
 
@@ -1232,7 +1232,7 @@ Caso 1: Remoção Simples
 
 Assumindo uma árvore B de grau mínimo 3:
 
-Remove 2: as chaves são suﬁciente, basta remover.
+Remove 2: as chaves são suficiente, basta remover.
 
 Caso 2: Remoção de um nó interno
 
@@ -1256,17 +1256,17 @@ Caso 4: Poucas chaves nos nós irmãos
 
 Árvore resultante:
 
-Caso 3: Irmãos suﬁcientes
+Caso 3: Irmãos suficientes
 
 Removendo a chave 22.
 
-Caso 3: Irmãos suﬁcientes
+Caso 3: Irmãos suficientes
 
-Remove 22: como os irmãos são suﬁcientes, rebaixa a chave raiz e
+Remove 22: como os irmãos são suficientes, rebaixa a chave raiz e
 
 promove a chave folha.
 
-Caso 3: Irmãos suﬁcientes
+Caso 3: Irmãos suficientes
 
 Árvore resultante:
 
