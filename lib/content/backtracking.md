@@ -35,9 +35,8 @@ bool FindUnassignedLocation(int grid[N][N], int &row, int &col);
 bool isSafe(int grid[N][N], int row, int col, int num);
 ```
 
-/* Faz um preenchimento, para atribuir valores para todas as células não numeradas, verificando os requisitos para solução do Sudoku (não duplicação nas linhas, colunas e matrizes 3x3) */
-
 ```c
+/* Faz um preenchimento, para atribuir valores para todas as células não numeradas, verificando os requisitos para solução do Sudoku (não duplicação nas linhas, colunas e matrizes 3x3) */
 bool SolveSudoku(int grid[N][N])
 {
     int row, col;
@@ -68,9 +67,8 @@ bool SolveSudoku(int grid[N][N])
 }
 ```
 
-/* Procura uma célula que não foi preenchida. Se for encontrada, linha e coluna são retornadas nos ponteiros */
-
 ```c
+/* Procura uma célula que não foi preenchida. Se for encontrada, linha e coluna são retornadas nos ponteiros */
 bool FindUnassignedLocation(int grid[N][N], int &row, int &col)
 {
     for (row = 0; row < N; row++)
@@ -115,17 +113,20 @@ bool UsedInBox(int grid[N][N], int boxStartRow, int boxStartCol, int num)
 }
 ```
 
-/* Retorna um booleano que indica se será permitido colocar um número em uma determinada célula */
-
 ```c
+/* Retorna um booleano que indica se será permitido colocar um número em uma determinada célula */
 bool isSafe(int grid[N][N], int row, int col, int num)
 {
+```c
     /* Checa se num já não está na linha definida, na coluna definida ou na matriz 3x3 correspondente */
     return !UsedInRow(grid, row, num) &&
+```
+
            !UsedInCol(grid, col, num) &&
            !UsedInBox(grid, row - row%3 , col - col%3, num);
 }
 
+```c
 /* Função para imprimir a matriz toda */
 void printGrid(int grid[N][N])
 {
@@ -136,6 +137,8 @@ void printGrid(int grid[N][N])
         printf("\n");
     }
 }
+```
+
 ```
 
 ```c

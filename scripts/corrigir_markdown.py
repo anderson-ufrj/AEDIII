@@ -43,10 +43,19 @@ def corrigir_comentarios_codigo(conteudo):
                     break
                 i += 1
 
-            # Verifica se a próxima linha não vazia é código
+            # Verifica se a próxima linha não vazia é código OU bloco de código
             j = i + 1
             while j < len(linhas) and linhas[j].strip() == '':
                 j += 1
+
+            # Se a próxima linha é um bloco de código existente, mescla o comentário nele
+            if j < len(linhas) and linhas[j].strip().startswith('```c'):
+                # Pula a abertura do bloco existente
+                resultado.append(linhas[j])  # ```c
+                resultado.extend(buffer_comentario)  # Adiciona comentário dentro
+                i = j
+                i += 1
+                continue
 
             # Se houver código depois, envolve tudo em bloco
             if j < len(linhas) and tem_caracteristicas_codigo(linhas[j]):
