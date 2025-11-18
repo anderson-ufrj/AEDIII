@@ -13,12 +13,28 @@ Este website foi criado para organizar e disponibilizar todo o material didátic
 
 ## Tecnologias Utilizadas
 
-- **[Next.js 16](https://nextjs.org/)** - Framework React com App Router
-- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Framework CSS utilitário
-- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes UI modernos
+### Core
+- **[Next.js 16](https://nextjs.org/)** - Framework React com App Router e Turbopack
+- **[React 19](https://react.dev/)** - Biblioteca UI com novos hooks
+- **[TypeScript 5](https://www.typescriptlang.org/)** - Tipagem estática robusta
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Framework CSS utilitário moderno
+
+### UI e Componentes
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes acessíveis e customizáveis
+- **[Radix UI](https://www.radix-ui.com/)** - Primitivos de UI sem estilo
+- **[Lucide React](https://lucide.dev/)** - Ícones SVG modernos
+- **[Framer Motion](https://www.framer.com/motion/)** - Animações fluidas
+
+### Funcionalidades Específicas
 - **[React Markdown](https://github.com/remarkjs/react-markdown)** - Renderização de Markdown
-- **[Lucide React](https://lucide.dev/)** - Ícones modernos
+- **[PDF.js](https://mozilla.github.io/pdf.js/)** - Visualização de PDFs
+- **[Fabric.js](http://fabricjs.com/)** - Canvas para anotações
+- **[Judge0 API](https://judge0.com/)** - Compilação de código C/C++
+- **[gray-matter](https://github.com/jonschlinkert/gray-matter)** - Parse de frontmatter
+
+### Testes
+- **[Vitest](https://vitest.dev/)** - Framework de testes rápido
+- **[Testing Library](https://testing-library.com/)** - Testes de componentes React
 
 ## Estrutura do Conteúdo
 
@@ -76,10 +92,19 @@ Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
 ## Scripts Disponíveis
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria build de produção
-- `npm run start` - Inicia servidor de produção
-- `npm run lint` - Executa o linter
+```bash
+# Desenvolvimento
+npm run dev          # Inicia servidor de desenvolvimento com Turbopack
+npm run build        # Cria build de produção otimizado
+npm run start        # Inicia servidor de produção
+npm run lint         # Executa ESLint
+
+# Testes
+npm test             # Executa testes em modo watch
+npm run test:run     # Executa todos os testes uma vez
+npm run test:ui      # Abre interface visual dos testes
+npm run test:coverage # Gera relatório de cobertura de testes
+```
 
 ## Deploy
 
@@ -115,13 +140,33 @@ aed3-website/
 
 ## Funcionalidades
 
-- ✅ Navegação por categorias
-- ✅ Visualização de conteúdo em Markdown
-- ✅ Design responsivo
-- ✅ Modo escuro/claro
+### Principais
+- ✅ **Navegação intuitiva** por 6 categorias organizadas
+- ✅ **Visualização de conteúdo** em Markdown com syntax highlighting
+- ✅ **Compilador C/C++ integrado** - Execute código direto no navegador
+- ✅ **Visualizador de PDF** com ferramentas de anotação
+- ✅ **Visualizadores interativos** de árvores (AVL, Rubro-Negra, Splay, B)
+- ✅ **Sistema de favoritos** para marcar conteúdos importantes
+- ✅ **Busca em tempo real** em todo o conteúdo do curso
+- ✅ **Modo escuro/claro** com transições suaves
+- ✅ **Design 100% responsivo** otimizado para mobile
+
+### Técnicas
+- ✅ Geração estática de páginas (SSG) para performance máxima
+- ✅ Code splitting avançado reduzindo bundle inicial
+- ✅ Cache em duas camadas (memória + localStorage)
+- ✅ Lazy loading de imagens com blur placeholder
 - ✅ Tipagem completa com TypeScript
-- ✅ Geração estática de páginas
-- ✅ SEO otimizado
+- ✅ SEO otimizado com metadados dinâmicos
+- ✅ PWA (Progressive Web App) com service worker
+
+### Acessibilidade
+- ✅ Navegação completa por teclado (atalhos Alt+Seta)
+- ✅ Labels ARIA em todos componentes interativos
+- ✅ Contraste de cores WCAG AA (muitos AAA)
+- ✅ Indicadores de foco visíveis e consistentes
+- ✅ Suporte a leitores de tela
+- ✅ Integração com VLibras (Língua Brasileira de Sinais)
 
 ## Conversão de PDFs
 
