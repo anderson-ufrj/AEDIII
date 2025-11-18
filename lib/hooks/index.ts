@@ -9,4 +9,4 @@ export { useProgressoLeitura, obterTodosProgressos } from './use-progresso-leitu
 export { useCachedData } from '../utils/cache-manager';
 
 // Re-export de hooks do diretório hooks/
-export { useMobile } from '../../hooks/use-mobile';
+export { useIsMobile } from '../../hooks/use-mobile';
