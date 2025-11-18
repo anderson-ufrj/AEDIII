@@ -83,28 +83,17 @@ export function createDynamicImport<T extends ComponentType<any>>(
 /**
  * Preload de componentes críticos
  * Executa preload de componentes que provavelmente serão usados
+ *
+ * Exemplo de uso:
+ * if (document.querySelector('[data-pdf]')) {
+ *   import('@/components/pdf-viewer');
+ * }
  */
 export function preloadCriticalComponents() {
   if (typeof window === 'undefined') return;
 
-  // Preload PDF viewer se houver PDFs na página
-  if (document.querySelector('[data-pdf]')) {
-    import('@/components/pdf-viewer');
-  }
-
-  // Preload compilador se houver código C/C++
-  if (document.querySelector('code.language-c, code.language-cpp')) {
-    import('@/components/code-compiler');
-  }
-
-  // Preload visualizadores se houver indicação de árvores
-  const contentText = document.body.textContent?.toLowerCase() || '';
-  if (contentText.includes('avl')) {
-    import('@/components/avl-tree-visualizer');
-  }
-  if (contentText.includes('rubro-negra') || contentText.includes('red-black')) {
-    import('@/components/redblack-tree-visualizer');
-  }
+  // Adicione imports de componentes reais aqui quando necessário
+  // Exemplo: import('@/components/seu-componente');
 }
 
 /**
