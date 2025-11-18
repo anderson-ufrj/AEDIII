@@ -84,7 +84,7 @@ docs/
 ## 🔖 04-referencias/ - Configuração e Referências
 
 ### 01-claude-instructions.md
-**Descrição**: Instruções para Claude Code (IA)
+**Descrição**: Instruções técnicas de desenvolvimento
 **Conteúdo**: Contexto do projeto, arquitetura, padrões
 
 ---

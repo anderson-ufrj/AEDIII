@@ -704,7 +704,6 @@ As melhorias são **mensuráveis**, **reproduzíveis** (via scripts) e **sustent
 
 ---
 
-**Relatório gerado por**: Claude Code (Anthropic)
 **Revisão técnica**: Aprovada
 **Data**: 18/11/2025
 
@@ -828,5 +827,4 @@ O site AED III agora possui:
 **Linhas de código de automação**: 550
 **Qualidade final**: ⭐⭐⭐⭐⭐ (Excelência Profissional)
 
-**Assinatura técnica**: Claude Code (Anthropic)
 **Aprovação final**: ✅ PRONTO PARA PRODUÇÃO

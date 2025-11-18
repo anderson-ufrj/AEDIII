@@ -235,7 +235,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 - **IFSULDEMINAS** - Estrutura e suporte acadêmico
 - **Prof. Ricardo José Martins** - Conteúdo original dos PDFs
-- **Claude Code (Anthropic)** - Revisão técnica e melhorias
 - **Comunidade Open Source** - Bibliotecas e ferramentas utilizadas
 
 ---
