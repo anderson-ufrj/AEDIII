@@ -48,67 +48,20 @@ export const DYNAMIC_IMPORT_CONFIG = {
 
 /**
  * Dynamic imports organizados por funcionalidade
+ *
+ * Nota: Os imports abaixo são exemplos de como usar dynamic imports.
+ * Descomente e ajuste conforme os componentes reais do projeto.
+ *
+ * Exemplo:
+ * export const PDFViewer = dynamic(
+ *   () => import('@/components/pdf-viewer').then(mod => ({ default: mod.PDFViewer })),
+ *   DYNAMIC_IMPORT_CONFIG.heavy
+ * );
  */
 
-// Visualizadores de árvores - Pesados, apenas client-side
-export const AVLTreeVisualizer = dynamic(
-  () => import('@/components/avl-tree-visualizer').then(mod => ({ default: mod.AVLTreeVisualizer })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-export const RedBlackTreeVisualizer = dynamic(
-  () => import('@/components/redblack-tree-visualizer').then(mod => ({ default: mod.RedBlackTreeVisualizer })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-export const SplayTreeVisualizer = dynamic(
-  () => import('@/components/splay-tree-visualizer').then(mod => ({ default: mod.SplayTreeVisualizer })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-export const BTreeVisualizer = dynamic(
-  () => import('@/components/btree-visualizer').then(mod => ({ default: mod.BTreeVisualizer })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-// PDF Viewer - Muito pesado (PDF.js + Fabric.js)
-export const PDFViewer = dynamic(
-  () => import('@/components/pdf-viewer').then(mod => ({ default: mod.PDFViewer })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-// Compilador de código - Pesado, apenas client-side
-export const CodeCompiler = dynamic(
-  () => import('@/components/code-compiler').then(mod => ({ default: mod.CodeCompiler })),
-  DYNAMIC_IMPORT_CONFIG.heavy
-);
-
-// Componentes interativos mais leves
-export const SearchBar = dynamic(
-  () => import('@/components/search-bar').then(mod => ({ default: mod.SearchBar })),
-  DYNAMIC_IMPORT_CONFIG.interactive
-);
-
-export const TableOfContents = dynamic(
-  () => import('@/components/table-of-contents').then(mod => ({ default: mod.TableOfContents })),
-  DYNAMIC_IMPORT_CONFIG.interactive
-);
-
-export const CourseProgress = dynamic(
-  () => import('@/components/course-progress').then(mod => ({ default: mod.CourseProgress })),
-  DYNAMIC_IMPORT_CONFIG.interactive
-);
-
-// Componentes opcionais
-export const FavoritesList = dynamic(
-  () => import('@/components/favorites-list').then(mod => ({ default: mod.FavoritesList })),
-  DYNAMIC_IMPORT_CONFIG.optional
-);
-
-export const AnimatedHero = dynamic(
-  () => import('@/components/animated-hero').then(mod => ({ default: mod.AnimatedHero })),
-  DYNAMIC_IMPORT_CONFIG.optional
-);
+// Descomente quando os componentes estiverem implementados:
+// export const PDFViewer = dynamic(() => import('@/components/pdf-viewer'), DYNAMIC_IMPORT_CONFIG.heavy);
+// export const CodeCompiler = dynamic(() => import('@/components/code-compiler'), DYNAMIC_IMPORT_CONFIG.heavy);
 
 /**
  * Helper para criar dynamic import customizado
