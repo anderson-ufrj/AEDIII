@@ -1,0 +1,385 @@
+/**
+ * Estilos otimizados para impressão
+ * Otimiza layout para economia de papel e tinta
+ */
+
+@media print {
+  /* Configurações globais de impressão */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 2cm 1.5cm;
+    size: A4;
+  }
+
+  /* Reset de cores para economizar tinta */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Esconder elementos não necessários na impressão */
+  header,
+  nav,
+  .no-print,
+  button:not(.print-keep),
+  [role="navigation"],
+  [aria-label="Navegação principal"],
+  .search-bar,
+  .theme-toggle,
+  .favorites-button,
+  .skip-link,
+  aside,
+  .sidebar,
+  .floating-button,
+  .scroll-to-top {
+    display: none !important;
+  }
+
+  /* Esconder controles de PDF viewer */
+  .pdf-controls,
+  .pdf-toolbar,
+  .annotation-tools,
+  .zoom-controls {
+    display: none !important;
+  }
+
+  /* Esconder elementos interativos */
+  .interactive-only,
+  [data-print="hide"] {
+    display: none !important;
+  }
+
+  /* Container principal */
+  main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Cabeçalhos otimizados */
+  h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 0;
+    margin-bottom: 16pt;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 18pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 16pt;
+    margin-bottom: 12pt;
+    color: #000;
+    border-bottom: 1pt solid #000;
+    padding-bottom: 4pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 12pt;
+    margin-bottom: 8pt;
+    color: #000;
+  }
+
+  h4, h5, h6 {
+    font-size: 12pt;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin-top: 8pt;
+    margin-bottom: 6pt;
+    color: #000;
+  }
+
+  /* Parágrafos */
+  p {
+    margin-bottom: 8pt;
+    text-align: justify;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Links - mostrar URL */
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    font-style: italic;
+    color: #666;
+  }
+
+  /* Não mostrar URL para links internos */
+  a[href^="/"]::after,
+  a[href^="#"]::after {
+    content: "";
+  }
+
+  /* Listas */
+  ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 8pt;
+  }
+
+  li {
+    margin-bottom: 4pt;
+  }
+
+  /* Código */
+  code {
+    font-family: 'Courier New', monospace;
+    font-size: 9pt;
+    background: #f5f5f5 !important;
+    padding: 1pt 3pt;
+    border: 1pt solid #ddd;
+    border-radius: 2pt;
+  }
+
+  pre {
+    background: #f5f5f5 !important;
+    border: 1pt solid #ddd;
+    padding: 8pt;
+    margin: 8pt 0;
+    overflow: visible;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    page-break-inside: avoid;
+  }
+
+  pre code {
+    background: none !important;
+    border: none;
+    padding: 0;
+  }
+
+  /* Tabelas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12pt 0;
+    page-break-inside: avoid;
+    font-size: 10pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  th {
+    background: #e0e0e0 !important;
+    border: 1pt solid #000;
+    padding: 6pt;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  td {
+    border: 1pt solid #000;
+    padding: 6pt;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    margin: 12pt 0;
+    padding-left: 12pt;
+    border-left: 3pt solid #000;
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+
+  /* Imagens */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Figura com legenda */
+  figure {
+    margin: 12pt 0;
+    page-break-inside: avoid;
+  }
+
+  figcaption {
+    font-size: 9pt;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4pt;
+  }
+
+  /* Cards de conteúdo */
+  .content-card,
+  article {
+    border: none !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  /* Breadcrumbs - manter visível */
+  .breadcrumbs {
+    font-size: 9pt;
+    margin-bottom: 12pt;
+    color: #666;
+  }
+
+  /* Metadados do documento */
+  .content-meta {
+    font-size: 10pt;
+    border-top: 1pt solid #000;
+    border-bottom: 1pt solid #000;
+    padding: 8pt 0;
+    margin: 12pt 0;
+  }
+
+  /* Quebras de página estratégicas */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+  }
+
+  /* Footer com informações */
+  footer {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8pt 0;
+    border-top: 1pt solid #000;
+    font-size: 8pt;
+    text-align: center;
+  }
+
+  /* Cabeçalho de página */
+  .print-header {
+    display: block;
+    text-align: right;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 12pt;
+  }
+
+  /* Índice - manter links funcionais */
+  .table-of-contents {
+    page-break-after: always;
+  }
+
+  .table-of-contents a::after {
+    content: "";
+  }
+
+  /* Notas de rodapé */
+  .footnote {
+    font-size: 9pt;
+    border-top: 1pt solid #ccc;
+    padding-top: 4pt;
+    margin-top: 12pt;
+  }
+
+  /* Destacar informações importantes */
+  .print-highlight {
+    background: #ffffcc !important;
+    padding: 2pt;
+  }
+
+  /* Avisos e alertas */
+  .alert,
+  .warning,
+  .note {
+    border: 2pt solid #000;
+    padding: 8pt;
+    margin: 12pt 0;
+    page-break-inside: avoid;
+  }
+
+  /* Remover sombras e efeitos visuais */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+  }
+
+  /* Otimização de fonte */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  code, pre {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* Contadores de página */
+  @page {
+    @top-right {
+      content: "Página " counter(page) " de " counter(pages);
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @bottom-center {
+      content: "AED III - IFSULDEMINAS";
+      font-size: 8pt;
+      color: #666;
+    }
+  }
+
+  /* Primeira página sem cabeçalho */
+  @page :first {
+    @top-right {
+      content: none;
+    }
+  }
+
+  /* Evitar quebras indesejadas */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  pre, table, figure, img {
+    page-break-inside: avoid;
+  }
+
+  /* Otimização final */
+  .print-optimize {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+/* Classe auxiliar para forçar impressão em preto e branco */
+@media print {
+  .force-bw * {
+    color: #000 !important;
+    background: #fff !important;
+    border-color: #000 !important;
+  }
+}
