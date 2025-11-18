@@ -1,3 +1,11 @@
+---
+title: "Otimizações de Performance"
+author: "Anderson Henrique da Silva"
+location: "Minas Gerais, Brazil"
+date: "2025-11-18"
+category: "Desenvolvimento"
+---
+
 # PDF Viewer Optimizations
 
 ## Performance Improvements Applied

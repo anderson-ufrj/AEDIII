@@ -1,3 +1,11 @@
+---
+title: "Guia de Contribuição"
+author: "Anderson Henrique da Silva"
+location: "Minas Gerais, Brazil"
+date: "2025-11-18"
+category: "Desenvolvimento"
+---
+
 # Guia de Contribuição
 
 Obrigado por considerar contribuir com o projeto AED III! Este documento fornece diretrizes para contribuir de forma efetiva.

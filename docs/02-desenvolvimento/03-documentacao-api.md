@@ -1,3 +1,11 @@
+---
+title: "Documentação da API"
+author: "Anderson Henrique da Silva"
+location: "Minas Gerais, Brazil"
+date: "2025-11-18"
+category: "Desenvolvimento"
+---
+
 # Documentação da API
 
 Esta documentação descreve as rotas de API disponíveis no projeto AED III.
