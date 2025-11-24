@@ -101,48 +101,52 @@ export function ReadingModeControls({ onSettingsChange }: ReadingModeControlsPro
         variant="outline"
         size="sm"
         onClick={() => setIsOpen(!isOpen)}
-        className="gap-2"
+        className={`gap-2 transition-all ${isOpen ? 'bg-primary text-primary-foreground' : ''}`}
         title="Configurações de leitura"
       >
-        <Settings className="h-4 w-4" />
-        Modo de Leitura
+        <Settings className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-90' : ''}`} />
+        <span className="hidden sm:inline">Modo de Leitura</span>
       </Button>
 
       {isOpen && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop with fade */}
           <div
-            className="fixed inset-0 z-40"
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm animate-fade-in"
             onClick={() => setIsOpen(false)}
           />
 
-          {/* Settings Panel */}
-          <Card className="absolute right-0 top-full mt-2 w-80 p-4 z-50 shadow-lg">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h3 className="font-semibold flex items-center gap-2">
-                  <Type className="h-4 w-4" />
-                  Configurações de Leitura
+          {/* Settings Panel with slide animation */}
+          <Card className="absolute right-0 top-full mt-2 w-80 sm:w-96 p-5 z-50 shadow-2xl border-2 animate-slide-up">
+            <div className="space-y-5">
+              <div className="flex items-center justify-between border-b pb-3">
+                <h3 className="text-lg font-bold flex items-center gap-2">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Type className="h-5 w-5 text-primary" />
+                  </div>
+                  Modo de Leitura
                 </h3>
               </div>
 
               {/* Font Size */}
-              <div>
-                <label className="text-sm font-medium mb-2 block">
-                  Tamanho da Fonte: {settings.fontSize}px
+              <div className="space-y-2">
+                <label className="text-sm font-semibold mb-2 flex items-center justify-between">
+                  <span>Tamanho da Fonte</span>
+                  <span className="text-primary font-bold">{settings.fontSize}px</span>
                 </label>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   <Button
                     variant="outline"
-                    size="sm"
+                    size="icon-sm"
                     onClick={decreaseFontSize}
                     disabled={settings.fontSize <= 12}
+                    className="shrink-0"
                   >
                     <Minus className="h-4 w-4" />
                   </Button>
-                  <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                  <div className="flex-1 h-3 bg-muted rounded-full overflow-hidden shadow-inner">
                     <div
-                      className="h-full bg-primary transition-all"
+                      className="h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-300 rounded-full"
                       style={{
                         width: `${((settings.fontSize - 12) / (24 - 12)) * 100}%`,
                       }}
@@ -150,32 +154,39 @@ export function ReadingModeControls({ onSettingsChange }: ReadingModeControlsPro
                   </div>
                   <Button
                     variant="outline"
-                    size="sm"
+                    size="icon-sm"
                     onClick={increaseFontSize}
                     disabled={settings.fontSize >= 24}
+                    className="shrink-0"
                   >
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
+                <div className="flex justify-between text-xs text-muted-foreground px-1">
+                  <span>12px</span>
+                  <span>24px</span>
+                </div>
               </div>
 
               {/* Line Height */}
-              <div>
-                <label className="text-sm font-medium mb-2 block">
-                  Espaçamento: {settings.lineHeight.toFixed(1)}
+              <div className="space-y-2">
+                <label className="text-sm font-semibold mb-2 flex items-center justify-between">
+                  <span>Espaçamento entre Linhas</span>
+                  <span className="text-primary font-bold">{settings.lineHeight.toFixed(1)}</span>
                 </label>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   <Button
                     variant="outline"
-                    size="sm"
+                    size="icon-sm"
                     onClick={decreaseLineHeight}
                     disabled={settings.lineHeight <= 1.2}
+                    className="shrink-0"
                   >
                     <Minus className="h-4 w-4" />
                   </Button>
-                  <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                  <div className="flex-1 h-3 bg-muted rounded-full overflow-hidden shadow-inner">
                     <div
-                      className="h-full bg-primary transition-all"
+                      className="h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-300 rounded-full"
                       style={{
                         width: `${((settings.lineHeight - 1.2) / (2.5 - 1.2)) * 100}%`,
                       }}
@@ -183,12 +194,17 @@ export function ReadingModeControls({ onSettingsChange }: ReadingModeControlsPro
                   </div>
                   <Button
                     variant="outline"
-                    size="sm"
+                    size="icon-sm"
                     onClick={increaseLineHeight}
                     disabled={settings.lineHeight >= 2.5}
+                    className="shrink-0"
                   >
                     <Plus className="h-4 w-4" />
                   </Button>
+                </div>
+                <div className="flex justify-between text-xs text-muted-foreground px-1">
+                  <span>Compacto</span>
+                  <span>Espaçado</span>
                 </div>
               </div>
 
@@ -229,22 +245,27 @@ export function ReadingModeControls({ onSettingsChange }: ReadingModeControlsPro
               </div>
 
               {/* Distraction Free Mode */}
-              <div>
+              <div className="pt-2 border-t">
                 <Button
                   variant={settings.isDistractionsMode ? "default" : "outline"}
-                  size="sm"
+                  size="lg"
                   onClick={toggleDistractionFree}
-                  className="w-full gap-2"
+                  className="w-full gap-2 font-semibold"
                 >
                   {settings.isDistractionsMode ? (
-                    <Minimize2 className="h-4 w-4" />
+                    <Minimize2 className="h-5 w-5" />
                   ) : (
-                    <Maximize2 className="h-4 w-4" />
+                    <Maximize2 className="h-5 w-5" />
                   )}
                   {settings.isDistractionsMode
-                    ? "Sair do Modo Sem Distrações"
-                    : "Modo Sem Distrações"}
+                    ? "Sair do Modo Foco"
+                    : "Ativar Modo Foco"}
                 </Button>
+                {settings.isDistractionsMode && (
+                  <p className="text-xs text-muted-foreground mt-2 text-center animate-fade-in">
+                    Sidebars ocultas para melhor concentração
+                  </p>
+                )}
               </div>
 
               {/* Reset */}
@@ -252,9 +273,9 @@ export function ReadingModeControls({ onSettingsChange }: ReadingModeControlsPro
                 variant="ghost"
                 size="sm"
                 onClick={resetSettings}
-                className="w-full"
+                className="w-full text-muted-foreground hover:text-foreground"
               >
-                Restaurar Padrões
+                Restaurar Configurações Padrão
               </Button>
             </div>
           </Card>
