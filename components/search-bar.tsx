@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { Search, X, FileText, Filter } from "lucide-react";
+import { Search, X, FileText, Filter, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -94,21 +94,28 @@ export function SearchBar() {
     <div className="relative w-full max-w-md">
       <div className="flex gap-2">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          {isLoading ? (
+            <Loader2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-primary animate-spin" />
+          ) : (
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground transition-colors" />
+          )}
           <Input
             type="text"
             placeholder="Buscar conteúdo..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="pl-10 pr-10"
+            className={`pl-10 pr-10 transition-all duration-200 ${
+              isLoading ? 'border-primary/50 shadow-sm shadow-primary/20' : ''
+            }`}
             onFocus={() => query && setIsOpen(true)}
           />
-          {query && (
+          {query && !isLoading && (
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7"
+              className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-destructive/10 hover:text-destructive transition-colors"
               onClick={handleClear}
+              aria-label="Limpar busca"
             >
               <X className="h-4 w-4" />
             </Button>
@@ -118,30 +125,32 @@ export function SearchBar() {
           variant={showFilters || selectedCategory ? "default" : "outline"}
           size="icon"
           onClick={() => setShowFilters(!showFilters)}
-          className="flex-shrink-0"
+          className="flex-shrink-0 transition-all duration-200"
+          aria-label="Filtrar por categoria"
         >
-          <Filter className="h-4 w-4" />
+          <Filter className={`h-4 w-4 transition-transform ${showFilters ? 'rotate-180' : ''}`} />
         </Button>
       </div>
 
       {/* Category filters */}
       {showFilters && (
-        <Card className="absolute top-full mt-2 w-full z-50 shadow-lg p-3">
+        <Card className="absolute top-full mt-2 w-full z-50 shadow-lg p-3 animate-slide-up border-2">
           <div className="flex flex-wrap gap-2">
             <Badge
               variant={selectedCategory === null ? "default" : "outline"}
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-105 transition-transform active:scale-95"
               onClick={() => setSelectedCategory(null)}
             >
               Todos
             </Badge>
-            {COURSE_CATEGORIES.map((cat) => {
+            {COURSE_CATEGORIES.map((cat, index) => {
               const theme = getCategoryTheme(cat.id);
               return (
                 <Badge
                   key={cat.id}
                   variant={selectedCategory === cat.id ? "default" : "outline"}
-                  className="cursor-pointer"
+                  className="cursor-pointer hover:scale-105 transition-all active:scale-95 animate-fade-in"
+                  style={{ animationDelay: `${index * 30}ms` }}
                   onClick={() => setSelectedCategory(cat.id)}
                 >
                   {cat.name.split(' ')[0]}
@@ -157,19 +166,27 @@ export function SearchBar() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 z-40"
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm animate-fade-in"
             onClick={() => setIsOpen(false)}
           />
 
           {/* Results card */}
-          <Card className="absolute top-full mt-2 w-full max-h-96 overflow-y-auto z-50 shadow-lg">
+          <Card className="absolute top-full mt-2 w-full max-h-96 overflow-y-auto z-50 shadow-2xl border-2 animate-slide-up">
             {isLoading ? (
-              <div className="p-4 text-center text-muted-foreground">
-                Buscando...
+              <div className="p-8 flex flex-col items-center gap-3 animate-fade-in">
+                <Loader2 className="h-8 w-8 text-primary animate-spin" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Buscando conteúdo...
+                </p>
+                <div className="flex gap-1">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                </div>
               </div>
             ) : filteredResults.length > 0 ? (
               <div className="divide-y">
-                {filteredResults.map((result) => {
+                {filteredResults.map((result, index) => {
                   const theme = getCategoryTheme(result.category);
                   const Icon = theme.icon;
 
@@ -178,19 +195,20 @@ export function SearchBar() {
                       key={result.slug}
                       href={`/content/${result.slug}`}
                       onClick={handleResultClick}
-                      className="block p-4 hover:bg-accent transition-colors"
+                      className="block p-4 hover:bg-accent transition-all duration-200 hover:translate-x-1 animate-fade-in group"
+                      style={{ animationDelay: `${index * 50}ms` }}
                     >
                       <div className="flex items-start gap-3">
-                        <div className={`p-1.5 rounded ${theme.bgColor} flex-shrink-0`}>
+                        <div className={`p-1.5 rounded ${theme.bgColor} flex-shrink-0 transition-transform group-hover:scale-110`}>
                           <Icon className={`h-4 w-4 ${theme.color}`} />
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-start gap-2 mb-1">
-                            <h3 className="font-medium text-sm line-clamp-1 flex-1">
+                            <h3 className="font-medium text-sm line-clamp-1 flex-1 group-hover:text-primary transition-colors">
                               {result.title}
                             </h3>
                           </div>
-                          <p className="text-xs text-muted-foreground line-clamp-2 mb-1">
+                          <p className="text-xs text-muted-foreground line-clamp-2 mb-1.5">
                             {result.excerpt}
                           </p>
                           <Badge variant="secondary" className="text-xs">
@@ -203,7 +221,7 @@ export function SearchBar() {
                 })}
               </div>
             ) : (
-              <div className="p-6">
+              <div className="p-6 animate-fade-in">
                 <EmptyState
                   icon={Search}
                   title="Nenhum resultado encontrado"
