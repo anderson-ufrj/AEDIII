@@ -69,7 +69,7 @@ export default function ContentPage() {
 
             <TabsContent value="all" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {allContent.map((content) => {
+                {allContent.map((content, index) => {
                   const theme = getCategoryTheme(content.category);
                   const Icon = theme.icon;
                   const excerpt = getExcerpt(content.content);
@@ -77,11 +77,12 @@ export default function ContentPage() {
                   return (
                     <Card
                       key={content.slug}
-                      className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col"
+                      className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 flex flex-col border-2 hover:border-primary/30 animate-fade-in group"
+                      style={{ animationDelay: `${index * 50}ms` }}
                     >
                       <CardHeader className="flex-grow">
                         <div className="flex items-start justify-between gap-2 mb-3">
-                          <div className={`p-2 rounded-lg ${theme.bgColor}`}>
+                          <div className={`p-2 rounded-lg ${theme.bgColor} transition-transform group-hover:scale-110`}>
                             <Icon className={`h-5 w-5 ${theme.color}`} />
                           </div>
                           <FavoriteButton
@@ -90,22 +91,27 @@ export default function ContentPage() {
                             variant="icon"
                           />
                         </div>
-                        <CardTitle className="text-lg line-clamp-2">
+                        <CardTitle className="text-lg line-clamp-2 group-hover:text-primary transition-colors">
                           {content.title}
                         </CardTitle>
                         <CardDescription className="line-clamp-2 text-sm">
                           {excerpt}
                         </CardDescription>
-                        <div className="text-xs text-muted-foreground mt-2">
-                          {content.pages > 0 && `${content.pages} páginas`}
+                        <div className="text-xs text-muted-foreground mt-2 flex items-center gap-1.5">
+                          {content.pages > 0 && (
+                            <>
+                              <FileText className="h-3 w-3" />
+                              <span>{content.pages} páginas</span>
+                            </>
+                          )}
                         </div>
                       </CardHeader>
                       <CardContent>
-                        <Button variant="outline" className="w-full group" asChild>
+                        <Button variant="outline" className="w-full group/btn" asChild>
                           <Link href={`/content/${content.slug}`}>
-                            <BookOpen className="mr-2 h-4 w-4" />
+                            <BookOpen className="mr-2 h-4 w-4 group-hover/btn:animate-pulse" />
                             Ler Material
-                            <span className="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                            <span className="ml-auto group-hover/btn:translate-x-1 transition-transform">→</span>
                           </Link>
                         </Button>
                       </CardContent>
@@ -138,17 +144,18 @@ export default function ContentPage() {
                     <p className="text-muted-foreground">{category.description}</p>
                   </div>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {categoryContent.map((content) => {
+                    {categoryContent.map((content, index) => {
                       const excerpt = getExcerpt(content.content);
 
                       return (
                         <Card
                           key={content.slug}
-                          className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col"
+                          className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 flex flex-col border-2 hover:border-primary/30 animate-fade-in group"
+                          style={{ animationDelay: `${index * 50}ms` }}
                         >
                           <CardHeader className="flex-grow">
                             <div className="flex items-start justify-between gap-2 mb-3">
-                              <div className={`p-2 rounded-lg ${theme.bgColor}`}>
+                              <div className={`p-2 rounded-lg ${theme.bgColor} transition-transform group-hover:scale-110`}>
                                 <Icon className={`h-5 w-5 ${theme.color}`} />
                               </div>
                               <FavoriteButton
@@ -157,22 +164,27 @@ export default function ContentPage() {
                                 variant="icon"
                               />
                             </div>
-                            <CardTitle className="text-lg line-clamp-2">
+                            <CardTitle className="text-lg line-clamp-2 group-hover:text-primary transition-colors">
                               {content.title}
                             </CardTitle>
                             <CardDescription className="line-clamp-2 text-sm">
                               {excerpt}
                             </CardDescription>
-                            <div className="text-xs text-muted-foreground mt-2">
-                              {content.pages > 0 && `${content.pages} páginas`}
+                            <div className="text-xs text-muted-foreground mt-2 flex items-center gap-1.5">
+                              {content.pages > 0 && (
+                                <>
+                                  <FileText className="h-3 w-3" />
+                                  <span>{content.pages} páginas</span>
+                                </>
+                              )}
                             </div>
                           </CardHeader>
                           <CardContent>
-                            <Button variant="outline" className="w-full group" asChild>
+                            <Button variant="outline" className="w-full group/btn" asChild>
                               <Link href={`/content/${content.slug}`}>
-                                <BookOpen className="mr-2 h-4 w-4" />
+                                <BookOpen className="mr-2 h-4 w-4 group-hover/btn:animate-pulse" />
                                 Ler Material
-                                <span className="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                                <span className="ml-auto group-hover/btn:translate-x-1 transition-transform">→</span>
                               </Link>
                             </Button>
                           </CardContent>
