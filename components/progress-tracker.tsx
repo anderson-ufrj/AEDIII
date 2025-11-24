@@ -47,33 +47,41 @@ export function ProgressTracker({ contentSlug, contentTitle }: ProgressTrackerPr
   }
 
   return (
-    <Card className="p-4 mb-6">
+    <Card className={`p-5 mb-6 transition-all duration-300 hover:shadow-md ${
+      isCompleted
+        ? "bg-gradient-to-br from-green-50 to-green-50/50 dark:from-green-950/20 dark:to-green-950/10 border-green-200 dark:border-green-800"
+        : "bg-gradient-to-br from-background to-muted/20 hover:border-primary/30"
+    }`}>
       <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4 flex-1">
           {isCompleted ? (
-            <div className="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center">
-              <Check className="h-5 w-5 text-white" />
+            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md animate-scale-in ring-2 ring-green-300 dark:ring-green-700">
+              <Check className="h-6 w-6 text-white font-bold" strokeWidth={3} />
             </div>
           ) : (
-            <div className="h-8 w-8 rounded-full border-2 border-muted-foreground/30 flex items-center justify-center">
-              <Circle className="h-4 w-4 text-muted-foreground/30" />
+            <div className="h-10 w-10 rounded-full border-2 border-dashed border-muted-foreground/40 flex items-center justify-center hover:border-primary/60 transition-colors">
+              <Circle className="h-5 w-5 text-muted-foreground/40" />
             </div>
           )}
-          <div>
-            <p className="text-sm font-medium">
-              {isCompleted ? "Conteúdo concluído!" : "Marcar como concluído"}
+          <div className="flex-1">
+            <p className="text-sm font-semibold mb-0.5">
+              {isCompleted ? "✅ Conteúdo concluído!" : "Marcar como concluído"}
             </p>
             <p className="text-xs text-muted-foreground">
               {isCompleted
-                ? "Você já estudou este conteúdo"
-                : "Marque quando finalizar a leitura"}
+                ? "Você já estudou este conteúdo. Ótimo trabalho!"
+                : "Marque quando finalizar a leitura deste material"}
             </p>
           </div>
         </div>
         <Button
           variant={isCompleted ? "outline" : "default"}
           onClick={toggleCompletion}
-          className="gap-2"
+          className={`gap-2 font-medium transition-all hover:scale-105 ${
+            isCompleted
+              ? "hover:bg-muted"
+              : "shadow-md hover:shadow-lg"
+          }`}
         >
           {isCompleted ? (
             <>
