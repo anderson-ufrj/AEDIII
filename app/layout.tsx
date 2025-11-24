@@ -3,7 +3,9 @@ import { Toaster } from "sonner";
 import { PWARegister } from "@/components/pwa-register";
 import { VLibrasWidget } from "@/components/vlibras-widget";
 import { MobileSearchButton } from "@/components/mobile-search-button";
+import { ProgressBar } from "@/components/progress-bar";
 import "./globals.css";
+import "./nprogress.css";
 
 export const metadata: Metadata = {
   title: "AED III - Ciência da Computação",
@@ -30,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body className="antialiased">
+        <ProgressBar />
         <PWARegister />
         {children}
         <MobileSearchButton />

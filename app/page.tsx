@@ -24,15 +24,18 @@ export default function Home() {
             Explore os principais tópicos abordados na disciplina, organizados por área de conhecimento.
           </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {COURSE_CATEGORIES.map((category) => {
+            {COURSE_CATEGORIES.map((category, index) => {
               const theme = getCategoryTheme(category.id);
               const Icon = theme.icon;
 
               return (
                 <Card
                   key={category.id}
-                  className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-l-4 overflow-hidden"
-                  style={{ borderLeftColor: `var(--${category.id}-accent, ${theme.accentColor})` }}
+                  className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-l-4 overflow-hidden animate-fade-in"
+                  style={{
+                    borderLeftColor: `var(--${category.id}-accent, ${theme.accentColor})`,
+                    animationDelay: `${index * 100}ms`
+                  }}
                 >
                   <div className={`absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 rounded-full ${theme.bgColor} opacity-50`} />
                   <CardHeader className="relative">
@@ -70,7 +73,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '0ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />
@@ -92,7 +95,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '100ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />
@@ -119,7 +122,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '200ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />
@@ -141,7 +144,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '300ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />
@@ -168,7 +171,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '400ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />
@@ -190,7 +193,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in" style={{ animationDelay: '500ms' }}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <FileDown className="h-5 w-5 text-primary" />

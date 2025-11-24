@@ -128,74 +128,149 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Typography improvements for technical content */
+  /* Enhanced Typography for technical content */
   .prose {
     @apply text-foreground;
     font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    line-height: 1.7;
+    font-size: 1.0625rem;
   }
 
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     @apply font-sans;
     font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    color: var(--foreground);
+    scroll-margin-top: 5rem;
   }
 
   .prose h1 {
-    @apply text-4xl mb-6 mt-8;
+    @apply text-4xl sm:text-5xl mb-6 mt-10;
+    font-weight: 800;
+    letter-spacing: -0.03em;
   }
 
   .prose h2 {
-    @apply text-3xl mb-4 mt-8;
+    @apply text-3xl sm:text-4xl mb-5 mt-12;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
   }
 
   .prose h3 {
-    @apply text-2xl mb-3 mt-6;
-  }
-
-  .prose h4 {
-    @apply text-xl mb-2 mt-4;
-  }
-
-  .prose p {
-    @apply leading-relaxed mb-4;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .prose code {
-    @apply font-mono;
-    font-feature-settings: "liga" 1, "calt" 1;
-    font-size: 0.9em;
-  }
-
-  .prose pre {
-    @apply font-mono;
-    font-feature-settings: "liga" 1, "calt" 1;
-    line-height: 1.6;
-  }
-
-  .prose strong {
-    @apply font-semibold;
+    @apply text-2xl sm:text-3xl mb-4 mt-8;
     font-weight: 600;
   }
 
+  .prose h4 {
+    @apply text-xl sm:text-2xl mb-3 mt-6;
+    font-weight: 600;
+  }
+
+  .prose h5 {
+    @apply text-lg sm:text-xl mb-2 mt-4;
+    font-weight: 600;
+  }
+
+  .prose p {
+    @apply leading-relaxed mb-5;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.0625rem;
+    max-width: 75ch;
+  }
+
+  .prose > p:first-of-type {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+  }
+
+  .prose code {
+    @apply font-mono bg-muted px-1.5 py-0.5 rounded text-sm;
+    font-feature-settings: "liga" 1, "calt" 1;
+    font-size: 0.875em;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .prose pre {
+    @apply font-mono bg-muted border border-border rounded-lg p-4 overflow-x-auto;
+    font-feature-settings: "liga" 1, "calt" 1;
+    line-height: 1.7;
+    font-size: 0.875rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0 text-sm;
+    color: inherit;
+  }
+
+  .prose strong {
+    font-weight: 650;
+    color: var(--foreground);
+  }
+
   .prose blockquote {
-    @apply border-l-4 border-primary pl-4 italic;
-    font-style: italic;
+    @apply border-l-4 border-primary bg-primary/5 pl-6 pr-4 py-4 my-6 rounded-r-lg;
+    font-style: normal;
+    font-size: 1.05rem;
+  }
+
+  .prose blockquote p {
+    margin: 0;
   }
 
   .prose ul, .prose ol {
-    @apply leading-relaxed;
+    @apply leading-relaxed space-y-2 my-6;
+    padding-left: 1.75rem;
   }
 
   .prose li {
     @apply mb-2;
+    line-height: 1.7;
+  }
+
+  .prose li::marker {
+    color: var(--primary);
+    font-weight: 600;
   }
 
   .prose table {
-    @apply font-sans;
+    @apply font-sans border-collapse w-full my-6;
     font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+
+  .prose table th,
+  .prose table td {
+    @apply border border-border px-4 py-2;
+  }
+
+  .prose table th {
+    @apply bg-muted font-semibold text-left;
+  }
+
+  .prose table tr:nth-child(even) {
+    @apply bg-muted/50;
+  }
+
+  .prose a {
+    @apply text-primary underline-offset-4 hover:underline;
+    font-weight: 500;
+    text-decoration-thickness: 1px;
+  }
+
+  .prose hr {
+    @apply border-border my-12;
+  }
+
+  /* Enhanced image styling */
+  .prose img {
+    @apply rounded-lg shadow-md my-6;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -204,7 +279,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Fade-in animation */
+/* Enhanced Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -217,7 +292,8 @@ html {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s ease-out;
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
 }
 
 /* Slide-up animation */
@@ -233,7 +309,47 @@ html {
 }
 
 .animate-slide-up {
-  animation: slideUp 0.4s ease-out;
+  animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+/* Shimmer animation for skeletons */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    var(--muted) 0%,
+    var(--muted-foreground) 20%,
+    var(--muted) 40%,
+    var(--muted) 100%
+  );
+  background-size: 1000px 100%;
 }
 
 /* Smooth transitions for theme switching */
