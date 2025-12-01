@@ -30,19 +30,20 @@ export function VLibrasWidget() {
     // No cleanup - let VLibras persist across page navigation
   }, []);
 
+  // VLibras requires specific custom attributes on DOM elements
+  // Using JSX instead of dangerouslySetInnerHTML for security
   return (
-    <div
-      dangerouslySetInnerHTML={{
-        __html: `
-          <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
-            </div>
-          </div>
-        `,
-      }}
-    />
+    <div>
+      <div
+        {...{ vw: "" }}
+        className="enabled"
+      >
+        <div {...{ "vw-access-button": "" }} className="active" />
+        <div {...{ "vw-plugin-wrapper": "" }}>
+          <div className="vw-plugin-top-wrapper" />
+        </div>
+      </div>
+    </div>
   );
 }
 
