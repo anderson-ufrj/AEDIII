@@ -21,12 +21,12 @@ export function AnimatedHero() {
     show: { opacity: 1, y: 0 },
   };
 
-  const float: any = {
+  const float = {
     y: [0, -10, 0],
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   };
 

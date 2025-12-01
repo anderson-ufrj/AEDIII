@@ -22,9 +22,22 @@ if (typeof window !== "undefined") {
   pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 }
 
+interface DrawAnnotationData {
+  path: Array<{ x: number; y: number }>;
+  color: string;
+  lineWidth: number;
+}
+
+interface TextAnnotationData {
+  text: string;
+  position: { x: number; y: number };
+  fontSize: number;
+  color: string;
+}
+
 interface Annotation {
   type: "draw" | "text";
-  data: any;
+  data: DrawAnnotationData | TextAnnotationData;
   page: number;
 }
 

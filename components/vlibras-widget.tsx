@@ -47,8 +47,16 @@ export function VLibrasWidget() {
 }
 
 // Extend Window interface for TypeScript
+interface VLibrasWidget {
+  new (url: string): void;
+}
+
+interface VLibrasAPI {
+  Widget: VLibrasWidget;
+}
+
 declare global {
   interface Window {
-    VLibras: any;
+    VLibras: VLibrasAPI;
   }
 }

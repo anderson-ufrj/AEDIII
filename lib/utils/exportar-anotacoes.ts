@@ -2,11 +2,33 @@
  * Utilitário para exportar anotações de PDF em diferentes formatos
  */
 
+interface DadosDesenho {
+  path: Array<{ x: number; y: number }>;
+  cor: string;
+  espessura: number;
+}
+
+interface DadosDestaque {
+  texto: string;
+  cor: string;
+  posicaoInicio: number;
+  posicaoFim: number;
+}
+
+interface DadosTexto {
+  conteudo: string;
+  posicao: { x: number; y: number };
+  tamanhoFonte: number;
+  cor: string;
+}
+
+type DadosAnotacao = DadosDesenho | DadosDestaque | DadosTexto;
+
 export interface Anotacao {
   id: string;
   pagina: number;
   tipo: 'desenho' | 'destaque' | 'texto';
-  dados: any;
+  dados: DadosAnotacao;
   criado: number;
 }
 

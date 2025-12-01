@@ -27,13 +27,14 @@ import {
   List,
   ArrowLeftRight,
 } from "lucide-react";
+import type { ReadingSettings } from "@/components/reading-mode-controls-inline";
 
 interface ContentSidePanelProps {
   contentSlug: string;
   contentTitle: string;
   pdfUrl?: string | null;
   onOpenPDF?: () => void;
-  onReadingSettingsChange?: (settings: any) => void;
+  onReadingSettingsChange?: (settings: ReadingSettings) => void;
   previous?: { slug: string; title: string } | null;
   next?: { slug: string; title: string } | null;
 }
