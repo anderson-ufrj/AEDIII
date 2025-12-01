@@ -4,6 +4,7 @@ import { PWARegister } from "@/components/pwa-register";
 import { VLibrasWidget } from "@/components/vlibras-widget";
 import { MobileSearchButton } from "@/components/mobile-search-button";
 import { ProgressBar } from "@/components/progress-bar";
+import { ErrorBoundary } from "@/components/error-boundary";
 import "./globals.css";
 import "./nprogress.css";
 
@@ -32,12 +33,14 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body className="antialiased">
-        <ProgressBar />
-        <PWARegister />
-        {children}
-        <MobileSearchButton />
-        <VLibrasWidget />
-        <Toaster position="top-right" richColors closeButton />
+        <ErrorBoundary>
+          <ProgressBar />
+          <PWARegister />
+          {children}
+          <MobileSearchButton />
+          <VLibrasWidget />
+          <Toaster position="top-right" richColors closeButton />
+        </ErrorBoundary>
       </body>
     </html>
   );
