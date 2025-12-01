@@ -267,14 +267,15 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
     requestAnimationFrame(() => {
       pageAnnotations.forEach((annotation) => {
         if (annotation.type === "draw") {
-          const { path, color: pathColor, lineWidth: pathWidth } = annotation.data;
+          const data = annotation.data as DrawAnnotationData;
+          const { path, color: pathColor, lineWidth: pathWidth } = data;
           ctx.strokeStyle = pathColor;
           ctx.lineWidth = pathWidth;
           ctx.lineCap = "round";
           ctx.lineJoin = "round";
 
           ctx.beginPath();
-          path.forEach((point: { x: number; y: number }, index: number) => {
+          path.forEach((point, index) => {
             if (index === 0) {
               ctx.moveTo(point.x, point.y);
             } else {
