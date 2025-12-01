@@ -108,9 +108,20 @@ export async function GET(request: Request) {
       .slice(0, 10) // Limita a 10 resultados
       .map(({ slug, title, excerpt, category }) => ({ slug, title, excerpt, category })); // Remove score do resultado final
 
-    return NextResponse.json({ results });
+    // Return response with cache headers
+    const response = NextResponse.json({ results });
+
+    // Cache successful responses for 1 hour (s-maxage for CDN, stale-while-revalidate for background refresh)
+    response.headers.set(
+      "Cache-Control",
+      "public, s-maxage=3600, stale-while-revalidate=7200"
+    );
+
+    return response;
   } catch (error) {
-    console.error("Erro na busca:", error);
+    if (process.env.NODE_ENV === "development") {
+      console.error("Erro na busca:", error);
+    }
     return NextResponse.json({ results: [], error: "Erro ao buscar conteúdo" }, { status: 500 });
   }
 }
