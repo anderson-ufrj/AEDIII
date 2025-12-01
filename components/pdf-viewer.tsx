@@ -92,6 +92,75 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
     });
   }, []);
 
+  // Keyboard navigation for PDF viewer
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignore if user is typing in an input
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      switch (e.key) {
+        case "ArrowLeft":
+          e.preventDefault();
+          changePage(-1);
+          break;
+        case "ArrowRight":
+          e.preventDefault();
+          changePage(1);
+          break;
+        case "ArrowUp":
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            changeScale(0.1);
+          }
+          break;
+        case "ArrowDown":
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            changeScale(-0.1);
+          }
+          break;
+        case "+":
+        case "=":
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            changeScale(0.1);
+          }
+          break;
+        case "-":
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            changeScale(-0.1);
+          }
+          break;
+        case "d":
+          // Toggle draw mode
+          setTool((prev) => (prev === "draw" ? "none" : "draw"));
+          break;
+        case "Escape":
+          // Exit draw mode or close viewer
+          if (tool !== "none") {
+            setTool("none");
+          } else {
+            onClose();
+          }
+          break;
+        case "Home":
+          e.preventDefault();
+          setPageNumber(1);
+          break;
+        case "End":
+          e.preventDefault();
+          setPageNumber(numPages);
+          break;
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [changePage, changeScale, tool, numPages, onClose]);
+
   // Drawing functions - optimized with useCallback
   const startDrawing = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     if (tool !== "draw") return;
@@ -417,13 +486,13 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t flex justify-between items-center">
+        <div className="p-4 border-t flex justify-between items-center flex-wrap gap-2">
           <p className="text-sm text-muted-foreground">
-            {tool === "draw" && "✏️ Modo desenho ativo - clique e arraste para desenhar"}
-            {tool === "none" && "💡 Dica: Use as ferramentas acima para fazer anotações"}
+            {tool === "draw" && "Modo desenho ativo - clique e arraste para desenhar"}
+            {tool === "none" && "Atalhos: Setas para navegar | Ctrl+/-: Zoom | D: Desenhar | Esc: Fechar"}
           </p>
           <p className="text-xs text-muted-foreground">
-            {pageAnnotations.length} anotação(ões) nesta página
+            {pageAnnotations.length} anotacao(oes) nesta pagina
           </p>
         </div>
       </Card>
