@@ -73,7 +73,7 @@ interface AsyncBoundaryProps {
 export function AsyncBoundary({
   children,
   errorFallback,
-}: AsyncBoundaryProps): JSX.Element {
+}: AsyncBoundaryProps): ReactNode {
   return (
     <ErrorBoundary fallback={errorFallback}>
       {children}
