@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
     };
   }
 
-  const categoryInfo = COURSE_CATEGORIES[content.category];
+  const categoryInfo = COURSE_CATEGORIES.find(cat => cat.id === content.category);
   const categoryName = categoryInfo?.name || content.category;
 
   // Extract first 160 chars of content for description
