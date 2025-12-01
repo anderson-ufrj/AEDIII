@@ -71,7 +71,17 @@ export function FavoriteButton({
     }
   };
 
-  if (!mounted) return null;
+  if (!mounted) {
+    // Skeleton placeholder to prevent layout shift during hydration
+    if (variant === "icon") {
+      return (
+        <div className={`h-9 w-9 bg-muted rounded-md animate-pulse ${className}`} />
+      );
+    }
+    return (
+      <div className={`h-8 w-24 bg-muted rounded-md animate-pulse ${className}`} />
+    );
+  }
 
   if (variant === "icon") {
     return (

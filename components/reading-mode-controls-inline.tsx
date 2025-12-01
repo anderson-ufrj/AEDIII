@@ -90,7 +90,36 @@ export function ReadingModeControlsInline({ onSettingsChange }: ReadingModeContr
     onSettingsChange?.(DEFAULT_SETTINGS);
   };
 
-  if (!mounted) return null;
+  if (!mounted) {
+    return (
+      <div className="space-y-4 animate-pulse">
+        <div>
+          <div className="h-4 w-32 bg-muted rounded mb-2" />
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-8 bg-muted rounded" />
+            <div className="flex-1 h-2 bg-muted rounded-full" />
+            <div className="h-8 w-8 bg-muted rounded" />
+          </div>
+        </div>
+        <div>
+          <div className="h-4 w-28 bg-muted rounded mb-2" />
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-8 bg-muted rounded" />
+            <div className="flex-1 h-2 bg-muted rounded-full" />
+            <div className="h-8 w-8 bg-muted rounded" />
+          </div>
+        </div>
+        <div>
+          <div className="h-4 w-36 bg-muted rounded mb-2" />
+          <div className="grid grid-cols-3 gap-2">
+            <div className="h-12 bg-muted rounded" />
+            <div className="h-12 bg-muted rounded" />
+            <div className="h-12 bg-muted rounded" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">

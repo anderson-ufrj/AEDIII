@@ -159,7 +159,27 @@ export function NotesPanel({ contentSlug, contentTitle }: NotesPanelProps) {
     });
   };
 
-  if (!mounted) return null;
+  if (!mounted) {
+    return (
+      <Card className="p-4 animate-pulse">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <div className="h-5 w-5 bg-muted rounded" />
+            <div className="h-5 w-24 bg-muted rounded" />
+          </div>
+          <div className="flex gap-2">
+            <div className="h-8 w-8 bg-muted rounded" />
+            <div className="h-8 w-8 bg-muted rounded" />
+          </div>
+        </div>
+        <div className="h-20 bg-muted rounded mb-4" />
+        <div className="flex justify-between items-center">
+          <div className="h-4 w-32 bg-muted rounded" />
+          <div className="h-8 w-28 bg-muted rounded" />
+        </div>
+      </Card>
+    );
+  }
 
   return (
     <Card className="p-4">
