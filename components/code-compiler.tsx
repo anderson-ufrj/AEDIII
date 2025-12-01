@@ -1,10 +1,40 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Play, Loader2, Code2, Terminal, X, FileCode, Trash2, Save } from "lucide-react";
+import { Play, Loader2, Code2, Terminal, X, Trash2 } from "lucide-react";
+
+// Custom debounce hook for localStorage saves
+function useDebouncedCallback<T extends (...args: Parameters<T>) => void>(
+  callback: T,
+  delay: number
+): T {
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const debouncedCallback = useCallback(
+    (...args: Parameters<T>) => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      timeoutRef.current = setTimeout(() => {
+        callback(...args);
+      }, delay);
+    },
+    [callback, delay]
+  ) as T;
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  return debouncedCallback;
+}
 
 interface CodeCompilerProps {
   initialCode?: string;
@@ -103,12 +133,19 @@ export function CodeCompiler({
   const [isCompiling, setIsCompiling] = useState(false);
   const [error, setError] = useState("");
 
-  // Auto-save to localStorage when code changes
-  useEffect(() => {
-    if (code && typeof window !== "undefined") {
-      localStorage.setItem(STORAGE_KEY, code);
+  // Debounced save function to avoid excessive localStorage writes
+  const saveToStorage = useCallback((codeToSave: string) => {
+    if (codeToSave && typeof window !== "undefined") {
+      localStorage.setItem(STORAGE_KEY, codeToSave);
     }
-  }, [code, STORAGE_KEY]);
+  }, [STORAGE_KEY]);
+
+  const debouncedSave = useDebouncedCallback(saveToStorage, 1000);
+
+  // Auto-save to localStorage when code changes (debounced)
+  useEffect(() => {
+    debouncedSave(code);
+  }, [code, debouncedSave]);
 
   const compileCode = useCallback(async () => {
     setIsCompiling(true);
