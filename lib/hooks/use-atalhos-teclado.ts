@@ -30,11 +30,18 @@ export function useAtalhosTeclado() {
 }
 
 function mostrarAtalhos() {
-  console.log('Atalhos disponíveis:');
-  console.log('Ctrl/Cmd + K: Buscar');
-  console.log('Ctrl/Cmd + /: Ver atalhos');
-  console.log('Alt + ←/→: Navegar entre conteúdos');
-  console.log('Esc: Fechar modais');
+  // Dispara evento customizado para exibir modal de atalhos
+  const event = new CustomEvent('show-keyboard-shortcuts', {
+    detail: {
+      shortcuts: [
+        { keys: 'Ctrl/Cmd + K', action: 'Buscar' },
+        { keys: 'Ctrl/Cmd + /', action: 'Ver atalhos' },
+        { keys: 'Alt + ←/→', action: 'Navegar entre conteúdos' },
+        { keys: 'Esc', action: 'Fechar modais' },
+      ],
+    },
+  });
+  window.dispatchEvent(event);
 }
 
 function fecharModais() {
