@@ -15,6 +15,7 @@ import {
   X
 } from "lucide-react";
 import { toast } from "sonner";
+import { safeLocalStorageGet, safeLocalStorageSet } from "@/lib/utils/local-storage";
 
 interface Note {
   id: string;
@@ -43,22 +44,15 @@ export function NotesPanel({ contentSlug, contentTitle }: NotesPanelProps) {
   }, [contentSlug]);
 
   const loadNotes = () => {
-    try {
-      const stored = localStorage.getItem(`notes_${contentSlug}`);
-      if (stored) {
-        setNotes(JSON.parse(stored));
-      }
-    } catch (error) {
-      console.error("Erro ao carregar notas:", error);
-    }
+    const stored = safeLocalStorageGet<Note[]>(`notes_${contentSlug}`, []);
+    setNotes(stored);
   };
 
   const saveNotes = (updatedNotes: Note[]) => {
-    try {
-      localStorage.setItem(`notes_${contentSlug}`, JSON.stringify(updatedNotes));
+    const success = safeLocalStorageSet(`notes_${contentSlug}`, updatedNotes);
+    if (success) {
       setNotes(updatedNotes);
-    } catch (error) {
-      console.error("Erro ao salvar notas:", error);
+    } else {
       toast.error("Erro ao salvar nota");
     }
   };

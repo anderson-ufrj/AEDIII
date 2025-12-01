@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import { toast } from "sonner";
+import { safeLocalStorageGet, safeLocalStorageSet } from "@/lib/utils/local-storage";
 
 interface FavoriteButtonProps {
   contentSlug: string;
@@ -29,22 +30,15 @@ export function FavoriteButton({
   }, [contentSlug]);
 
   const getFavorites = (): string[] => {
-    try {
-      const stored = localStorage.getItem("favorites");
-      return stored ? JSON.parse(stored) : [];
-    } catch (error) {
-      console.error("Error loading favorites:", error);
-      return [];
-    }
+    return safeLocalStorageGet<string[]>("favorites", []);
   };
 
   const saveFavorites = (favorites: string[]) => {
-    try {
-      localStorage.setItem("favorites", JSON.stringify(favorites));
+    const success = safeLocalStorageSet("favorites", favorites);
+    if (success) {
       // Trigger storage event for other components
       window.dispatchEvent(new Event("favoritesUpdated"));
-    } catch (error) {
-      console.error("Error saving favorites:", error);
+    } else {
       toast.error("Erro ao salvar favorito");
     }
   };
