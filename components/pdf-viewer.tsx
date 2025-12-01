@@ -397,6 +397,9 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
               {/* Annotation Canvas Overlay - The "Magic Glass" */}
               <canvas
                 ref={canvasRef}
+                role="img"
+                aria-label={`Área de anotações da página ${pageNumber}. ${pageAnnotations.length} anotações presentes.`}
+                tabIndex={tool === "draw" ? 0 : -1}
                 className={`absolute top-0 left-0 ${
                   tool === "draw" ? "cursor-crosshair" : "pointer-events-none"
                 }`}

@@ -33,7 +33,7 @@ export function AnimatedHero() {
   return (
     <section className="container mx-auto px-4 py-24 md:py-32 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -110,7 +110,7 @@ export function AnimatedHero() {
         </motion.div>
 
         {/* Floating code symbols */}
-        <div className="mt-16 flex justify-center gap-8 text-muted-foreground/30">
+        <div className="mt-16 flex justify-center gap-8 text-muted-foreground/30" aria-hidden="true">
           {['{ }', '< >', '[ ]', '( )', '//'].map((symbol, i) => (
             <motion.span
               key={i}
