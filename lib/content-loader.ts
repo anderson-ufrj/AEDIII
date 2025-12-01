@@ -5,7 +5,20 @@ import { CourseContent, CONTENT_MAPPING } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'lib/content');
 
-export function getAllContent(): CourseContent[] {
+// Cache for memoization - avoids repeated file system reads
+let cachedContent: CourseContent[] | null = null;
+let cacheTimestamp: number = 0;
+const CACHE_TTL = 60000; // 1 minute TTL for development, effectively permanent in production
+
+function isCacheValid(): boolean {
+  if (!cachedContent) return false;
+  // In production, cache is always valid once populated
+  if (process.env.NODE_ENV === 'production') return true;
+  // In development, check TTL for hot reload support
+  return Date.now() - cacheTimestamp < CACHE_TTL;
+}
+
+function loadContentFromDisk(): CourseContent[] {
   const fileNames = fs.readdirSync(contentDirectory);
 
   const allContent = fileNames
@@ -20,7 +33,9 @@ export function getAllContent(): CourseContent[] {
       const mapping = CONTENT_MAPPING[slug];
 
       if (!mapping) {
-        console.warn(`No mapping found for: ${slug}`);
+        if (process.env.NODE_ENV === 'development') {
+          console.warn(`No mapping found for: ${slug}`);
+        }
         return null;
       }
 
@@ -43,6 +58,21 @@ export function getAllContent(): CourseContent[] {
     }
     return a.order - b.order;
   });
+}
+
+export function getAllContent(): CourseContent[] {
+  if (isCacheValid()) {
+    return cachedContent!;
+  }
+
+  cachedContent = loadContentFromDisk();
+  cacheTimestamp = Date.now();
+  return cachedContent;
+}
+
+export function invalidateContentCache(): void {
+  cachedContent = null;
+  cacheTimestamp = 0;
 }
 
 export function getContentBySlug(slug: string): CourseContent | null {
