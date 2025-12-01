@@ -4,13 +4,43 @@ import path from "path";
 import matter from "gray-matter";
 import { CONTENT_MAPPING } from "@/lib/types";
 
+// Constants for input validation
+const MAX_QUERY_LENGTH = 200;
+const MIN_QUERY_LENGTH = 2;
+const VALID_CATEGORIES = ["arvores", "hash", "arquivos", "compressao", "algoritmos", "exercicios"];
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("q");
   const categoryFilter = searchParams.get("category");
 
+  // Input validation: empty query
   if (!query || query.trim().length === 0) {
     return NextResponse.json({ results: [] });
+  }
+
+  // Input validation: query too short
+  if (query.trim().length < MIN_QUERY_LENGTH) {
+    return NextResponse.json(
+      { results: [], error: "Query must be at least 2 characters" },
+      { status: 400 }
+    );
+  }
+
+  // Input validation: query too long (prevent DoS)
+  if (query.length > MAX_QUERY_LENGTH) {
+    return NextResponse.json(
+      { results: [], error: "Query too long" },
+      { status: 400 }
+    );
+  }
+
+  // Input validation: category filter
+  if (categoryFilter && !VALID_CATEGORIES.includes(categoryFilter)) {
+    return NextResponse.json(
+      { results: [], error: "Invalid category" },
+      { status: 400 }
+    );
   }
 
   try {
