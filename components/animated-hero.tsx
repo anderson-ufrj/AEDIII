@@ -40,7 +40,7 @@ export function AnimatedHero() {
         delayChildren: 0.2,
       },
     },
-  };
+  } as const;
 
   const item = {
     hidden: { opacity: 0, y: 20 },
@@ -48,11 +48,11 @@ export function AnimatedHero() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
       }
     },
-  };
+  } as const;
 
   const features = [
     { icon: TreeDeciduous, label: "Árvores Balanceadas", color: "text-green-500" },
