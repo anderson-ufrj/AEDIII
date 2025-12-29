@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -20,22 +20,7 @@ export function FavoritesList({ allContent }: FavoritesListProps) {
   const [favorites, setFavorites] = useState<FavoriteItem[]>([]);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    loadFavorites();
-
-    // Listen for favorites updates
-    const handleUpdate = () => loadFavorites();
-    window.addEventListener("favoritesUpdated", handleUpdate);
-    window.addEventListener("storage", handleUpdate);
-
-    return () => {
-      window.removeEventListener("favoritesUpdated", handleUpdate);
-      window.removeEventListener("storage", handleUpdate);
-    };
-  }, [allContent]);
-
-  const loadFavorites = () => {
+  const loadFavorites = useCallback(() => {
     try {
       const stored = localStorage.getItem("favorites");
       if (stored) {
@@ -51,7 +36,22 @@ export function FavoritesList({ allContent }: FavoritesListProps) {
     } catch (error) {
       console.error("Error loading favorites:", error);
     }
-  };
+  }, [allContent]);
+
+  useEffect(() => {
+    setMounted(true);
+    loadFavorites();
+
+    // Listen for favorites updates
+    const handleUpdate = () => loadFavorites();
+    window.addEventListener("favoritesUpdated", handleUpdate);
+    window.addEventListener("storage", handleUpdate);
+
+    return () => {
+      window.removeEventListener("favoritesUpdated", handleUpdate);
+      window.removeEventListener("storage", handleUpdate);
+    };
+  }, [loadFavorites]);
 
   const removeFavorite = (slug: string) => {
     try {
