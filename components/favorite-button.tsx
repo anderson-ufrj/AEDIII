@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import { toast } from "sonner";
@@ -22,16 +22,16 @@ export function FavoriteButton({
   const [isFavorite, setIsFavorite] = useState(false);
   const [mounted, setMounted] = useState(false);
 
+  const getFavorites = useCallback((): string[] => {
+    return safeLocalStorageGet<string[]>("favorites", []);
+  }, []);
+
   useEffect(() => {
     setMounted(true);
     // Load favorite status from localStorage
     const favorites = getFavorites();
     setIsFavorite(favorites.includes(contentSlug));
-  }, [contentSlug]);
-
-  const getFavorites = (): string[] => {
-    return safeLocalStorageGet<string[]>("favorites", []);
-  };
+  }, [contentSlug, getFavorites]);
 
   const saveFavorites = (favorites: string[]) => {
     const success = safeLocalStorageSet("favorites", favorites);

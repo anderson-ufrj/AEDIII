@@ -37,8 +37,9 @@ describe('ContentNavigation', () => {
     expect(links[1]).toHaveAttribute('href', '/content/test-next');
   });
 
-  it('não deve renderizar nada quando ambos são nulos', () => {
-    const { container } = render(<ContentNavigation previous={null} next={null} />);
-    expect(container.firstChild).toBeNull();
+  it('deve renderizar placeholders quando ambos são nulos', () => {
+    render(<ContentNavigation previous={null} next={null} />);
+    expect(screen.getByText('Este é o primeiro conteúdo')).toBeInTheDocument();
+    expect(screen.getByText('Este é o último conteúdo')).toBeInTheDocument();
   });
 });
