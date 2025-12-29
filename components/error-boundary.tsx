@@ -12,15 +12,18 @@ interface ErrorBoundaryProps {
 interface ErrorBoundaryState {
   hasError: boolean;
   error: Error | null;
+  retryCount: number;
 }
 
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  private static MAX_RETRIES = 3;
+
   constructor(props: ErrorBoundaryProps) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false, error: null, retryCount: 0 };
   }
 
-  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+  static getDerivedStateFromError(error: Error): Partial<ErrorBoundaryState> {
     return { hasError: true, error };
   }
 
@@ -31,7 +34,15 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
   }
 
   handleRetry = (): void => {
-    this.setState({ hasError: false, error: null });
+    this.setState((prevState) => ({
+      hasError: false,
+      error: null,
+      retryCount: prevState.retryCount + 1,
+    }));
+  };
+
+  handleReload = (): void => {
+    window.location.reload();
   };
 
   render(): ReactNode {
@@ -52,10 +63,24 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
               {this.state.error.message}
             </pre>
           )}
-          <Button onClick={this.handleRetry} className="gap-2">
-            <RefreshCw className="h-4 w-4" />
-            Tentar Novamente
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-2">
+            {this.state.retryCount < ErrorBoundary.MAX_RETRIES ? (
+              <Button onClick={this.handleRetry} className="gap-2">
+                <RefreshCw className="h-4 w-4" />
+                Tentar Novamente ({ErrorBoundary.MAX_RETRIES - this.state.retryCount} restantes)
+              </Button>
+            ) : (
+              <Button onClick={this.handleReload} className="gap-2">
+                <RefreshCw className="h-4 w-4" />
+                Recarregar Página
+              </Button>
+            )}
+          </div>
+          {this.state.retryCount > 0 && (
+            <p className="text-xs text-muted-foreground mt-2">
+              Tentativa {this.state.retryCount} de {ErrorBoundary.MAX_RETRIES}
+            </p>
+          )}
         </div>
       );
     }
