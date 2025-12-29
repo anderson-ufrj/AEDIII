@@ -6,7 +6,7 @@ interface HealthResponse {
   status: 'healthy' | 'degraded' | 'unhealthy';
   timestamp: string;
   version: string;
-  uptime: number;
+  responseTimeMs: number;
   checks: {
     name: string;
     status: 'pass' | 'fail';
@@ -36,7 +36,7 @@ export async function GET() {
     status: allPassing ? 'healthy' : 'degraded',
     timestamp: new Date().toISOString(),
     version: process.env.npm_package_version || '0.1.0',
-    uptime: Date.now() - startTime,
+    responseTimeMs: Date.now() - startTime,
     checks,
   };
 

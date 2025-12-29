@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { BTreeVisualizer } from "@/components/btree-visualizer";
@@ -181,12 +181,9 @@ describe("BTreeVisualizer", () => {
   });
 
   it("shows error when exporting empty tree", async () => {
-    const user = userEvent.setup();
-    const { toast } = await import("sonner");
-
     render(<BTreeVisualizer />);
 
-    // Export button should be disabled, but let's verify the behavior
+    // Export button should be disabled when tree is empty
     const exportButton = screen.getByRole("button", { name: /Exportar/i });
     expect(exportButton).toBeDisabled();
   });

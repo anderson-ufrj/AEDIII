@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { TreeVisualizer } from "@/components/tree-visualizer";
@@ -176,7 +176,7 @@ describe("TreeVisualizer", () => {
     await user.type(input, "42{Enter}");
 
     await waitFor(() => {
-      expect(screen.getByText(/Raiz:/i)).toBeInTheDocument();
+      expect(screen.getByText(/Altura:/i)).toBeInTheDocument();
     });
   });
 });
