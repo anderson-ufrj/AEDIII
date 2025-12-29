@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
   // Content Security Policy
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vlibras.gov.br https://ce.judge0.com",
+    "script-src 'self' 'unsafe-inline' https://vlibras.gov.br https://ce.judge0.com",
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https:",
     "font-src 'self' data:",
